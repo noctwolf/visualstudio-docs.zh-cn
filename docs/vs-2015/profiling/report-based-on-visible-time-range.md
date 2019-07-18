@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160325"
 ---
 # <a name="report-based-on-visible-time-range"></a>基于可见时间范围的报表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774583"
   
  在此处，可以找到有关表中数据的更多信息。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [不显示线程活动](../profiling/no-thread-activity-to-show-threads-view.md)   
  [执行分析报告](../profiling/execution-profile-report.md)   
  [同步时间](../profiling/synchronization-time.md)   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158265"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,6 +76,6 @@ ms.locfileid: "59664825"
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 [MSBuild 属性](msbuild-properties1.md)  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

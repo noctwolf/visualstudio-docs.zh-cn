@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156610"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "60108590"
 |Target Name|说明|
 |-----------------|-----------------|
 |`BeforeCompile`， `AfterCompile`|插入到这些目标之一中的任务，在完成内核编译之前或之后运行。 大多数自定义均在这两个目标之一中完成。|
-|`BeforeBuild`， `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 **注意：**`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件末尾的注释中定义。 以便轻松将预先生成和后期生成的事件添加到项目文件中。|
+|`BeforeBuild`， `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 注意：`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件末尾的注释中定义  。 以便轻松将预先生成和后期生成的事件添加到项目文件中。|
 |`BeforeRebuild`， `AfterRebuild`|插入到这些目标之一中的任务，在调用内核重新生成功能之前或之后运行。 Microsoft.Common.targets 中的目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|
 |`BeforeClean`， `AfterClean`|插入到这些目标之一中的任务，在调用内核清理功能之前或之后运行。|
 |`BeforePublish`， `AfterPublish`|插入到这些目标之一中的任务，在调用内核发布功能之前或之后运行。|
@@ -125,5 +125,5 @@ ms.locfileid: "60108590"
 |`CleanDependsOn`|在要从自定义生成过程中清理输出的情况下，要重写的属性。|
 |`CompileDependsOn`|在要在编译步骤之前或之后插入自定义过程的情况下，要重写的属性。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
  [Visual Studio 集成](../msbuild/visual-studio-integration-msbuild.md) [MSBuild 概念](../msbuild/msbuild-concepts.md) [.Targets 文件](../msbuild/msbuild-dot-targets-files.md)

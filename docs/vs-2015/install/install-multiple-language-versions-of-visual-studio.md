@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165448"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>安装 Visual Studio 的多个语言版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "59652272"
 
 - Visual Studio 服务包适用于所有已安装的 Visual Studio 语言版本。 不再需要安装用于每个已安装的 Visual Studio 语言版本的服务包。
 
-- 你可以通过使用 Visual Studio 安装程序的维护模式来卸载语言包。 打开“控制面板” 打开“程序和功能” ，选择你的 Visual Studio 版本，然后选择“卸载/更改” 。
+- 你可以通过使用 Visual Studio 安装程序的维护模式来卸载语言包。 打开“控制面板”  打开“程序和功能”  ，选择你的 Visual Studio 版本，然后选择“卸载/更改”  。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Microsoft 语言界面包 (LIP) 和 Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
 - [安装 Visual Studio](../install/install-visual-studio-2015.md)

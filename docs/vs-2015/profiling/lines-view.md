@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145635"
 ---
 # <a name="lines-view"></a>“行”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60058625"
   
 - 该语句的结束源代码行中的字符。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“行”视图](../profiling/lines-view-sampling-data.md)   
  [“行”视图 - 采样](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [“行”视图](../profiling/lines-view-contention-data.md)

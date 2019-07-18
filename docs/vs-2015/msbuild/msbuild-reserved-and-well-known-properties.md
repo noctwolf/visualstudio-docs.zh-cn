@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181075"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留属性和已知属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,5 +59,5 @@ ms.locfileid: "59649544"
 |`MSBuildToolsPath`|与 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]的值相关联的 `MSBuildToolsVersion` 版本的安装路径。<br /><br /> 不要将最终的反斜杠包含在路径中。<br /><br /> 不能重写此属性。|保留|  
 |`MSBuildToolsVersion`|用于生成项目的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工具集版本。<br /><br /> 注意：[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 工具集由用于生成应用程序的任务、目标和工具组成。 工具包括编译器例如 csc.exe 和 vbc.exe。 有关详细信息，请参阅 [工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)和[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。|保留|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md) [MSBuild 属性](msbuild-properties1.md)

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159232"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在设计时解析程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,5 +39,5 @@ ms.locfileid: "59657098"
   
  .NET Framework SDK 现在附带的目标包中具有该版本 Framework 中所有运行时程序集的列表，即再分发 (redist) 列表。 因此，生成系统不可能针对错误版本的程序集解析类型。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [高级概念](../msbuild/msbuild-advanced-concepts.md)

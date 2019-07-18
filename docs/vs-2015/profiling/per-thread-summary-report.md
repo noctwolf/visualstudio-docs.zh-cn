@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195516"
 ---
 # <a name="per-thread-summary-report"></a>“每线程摘要”报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 此条形图显示在当前可见时间范围内，各活动类别中的每个非隐藏线程所花费的时间比例。 “执行”表示线程正在执行；所有其他类别表示线程正在进行等待。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [执行时间（“线程”视图）](../profiling/execution-time-threads-view.md)   
  [I/O 时间（“线程”视图）](../profiling/i-o-time-threads-view.md)   
  [内存管理时间](../profiling/memory-management-time.md)   

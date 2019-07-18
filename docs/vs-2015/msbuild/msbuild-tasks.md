@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154813"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "59650586"
 ## <a name="overridden-tasks"></a>覆盖的任务  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在多个位置查找任务。 第一个位置位于存储在 .NET Framework 目录中扩展名为 .OverrideTasks 的文件中。 这些文件中的任务会覆盖具有相同名称的其他任何任务，包括项目文件中的任务。 第二个位置位于 .NET Framework 目录中扩展名为 .Tasks 的文件中。 如果在这些位置中找不到任务，则会使用项目文件中的任务。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [任务写入](../msbuild/task-writing.md)   

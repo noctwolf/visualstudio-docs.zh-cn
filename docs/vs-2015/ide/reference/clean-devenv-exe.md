@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1c32e062cf2a5406f235133fb646a16d21707cb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59646784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190411"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  可选。 清理命名的 `/project` 时要使用的项目生成配置的名称。  
   
 ## <a name="remarks"></a>备注  
- 在集成开发环境 (IDE) 中，此开关执行与“清理解决方案”菜单命令相同的功能。  
+ 在集成开发环境 (IDE) 中，此开关执行与“清理解决方案”菜单命令相同的功能  。  
   
  用双引号将含有空格的字符串引起来。  
   
- “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示清理和生成的摘要信息（包括错误）。  
+ “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示清理和生成的摘要信息（包括错误）  。  
   
 ## <a name="example"></a>示例  
  第一个示例使用解决方案文件中指定的默认配置清理 `MySolution` 解决方案。  
@@ -60,7 +60,7 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   

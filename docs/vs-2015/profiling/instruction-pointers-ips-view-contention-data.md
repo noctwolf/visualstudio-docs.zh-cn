@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187839"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>“指令指针”(IP) 视图 — 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54834577"
   
  下表说明“指令指针”视图中各列的值。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|该函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|执行指令时的阻塞时间所占的百分比。|  
@@ -45,7 +45,7 @@ ms.locfileid: "54834577"
 |**源行开始**|此指令在源文件中的起始行号。|  
 |**源行结束**|此指令在源文件中的结束行号。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view.md)   
  [“指令指针”(IP) 视图 - 采样](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

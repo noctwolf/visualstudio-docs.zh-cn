@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e34c4db965cacefabe752774e393a4339042040e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182708"
 ---
 # <a name="controlling-data-collection"></a>控制数据收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具可控制性能会话期间收集分析数据的时间，并指定分析的函数。 本节介绍如何从“性能资源管理器”和“数据收集控制”窗口启动和停止数据收集，以及如何限制要收集其分析数据的对象。  
+通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具可控制性能会话期间收集分析数据的时间，并指定分析的函数。 本节介绍如何从“性能资源管理器”  和“数据收集控制”  窗口启动和停止数据收集，以及如何限制要收集其分析数据的对象。  
   
 ## <a name="common-tasks"></a>常规任务  
   
@@ -34,5 +34,5 @@ ms.locfileid: "54780942"
 ## <a name="related-sections"></a>相关章节  
  [配置性能会话](../profiling/configuring-performance-sessions.md)  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)

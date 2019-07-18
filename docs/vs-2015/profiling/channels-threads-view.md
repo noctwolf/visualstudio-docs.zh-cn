@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 445eaf5269ce59e6f6f8fa323020a80648567f54
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193623"
 ---
 # <a name="channels-threads-view"></a>通道（线程视图）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,5 +50,5 @@ ms.locfileid: "54794197"
 ## <a name="gpu-channels"></a>GPU 通道  
  GPU 通道显示系统上有关 DirectX 11 活动的信息。  每个与图形卡关联的 DirectX 引擎都有一个单独的通道。  单独的段表示处理 DMA 数据包所花费的时间。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

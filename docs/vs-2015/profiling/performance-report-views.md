@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161991"
 ---
 # <a name="performance-report-views"></a>性能报告视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,5 +47,5 @@ ms.locfileid: "54785669"
  [“层交互”视图](../profiling/tier-interactions-view.md)  
  有关包含层交互数据的分析数据文件的交互视图和报告的参考信息。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)

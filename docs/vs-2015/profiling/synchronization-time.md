@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 218f333f97e8252993f87893238a0f51f964d6c1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151386"
 ---
 # <a name="synchronization-time"></a>同步时间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,5 +31,5 @@ ms.locfileid: "54790322"
   
   若要了解线程阻止事件的基本原因，可仔细检查阻止调用堆栈和分析报告。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

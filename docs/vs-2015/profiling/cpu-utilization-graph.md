@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180487"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +35,6 @@ CPU 使用率图显示一段时间内应用中的使用程度。 X 轴表示跟�
   
 - 白色表示系统上未使用逻辑内核的可用性。 如果可以找到更多的并行机会，这些核心则可用于你的进程。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [使用率视图](../profiling/utilization-view.md)   
  [CPU 平均使用率](../profiling/average-cpu-utilization.md)

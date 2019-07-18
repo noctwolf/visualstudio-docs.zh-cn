@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145376"
 ---
 # <a name="utilization-view"></a>使用率视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +51,6 @@ ms.locfileid: "54795827"
 ## <a name="zooming"></a>缩放  
  若要在 CPU 使用率关系图或 GPU 活动关系图上放大，请选择某个节，或使用关系图顶部的缩放滑块工具。 当切换到其他视图时，缩放设置仍然存在。 若要再次缩小，请使用缩放滑块工具。 还可以使用 Ctrl+滚动条进行缩放。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [并发可视化工具](../profiling/concurrency-visualizer.md)   
  [“核心”视图](../profiling/cores-view.md)

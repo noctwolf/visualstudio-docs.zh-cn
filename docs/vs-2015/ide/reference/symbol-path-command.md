@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 27c4c8ac23e2524245107d9052642350e9db09d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163270"
 ---
 # <a name="symbol-path-command"></a>“符号路径”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,6 +54,6 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“命令”窗口](../../ide/reference/command-window.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

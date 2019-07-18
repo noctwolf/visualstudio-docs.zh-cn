@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160431"
 ---
 # <a name="build-loggers"></a>生成记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ ms.locfileid: "59658885"
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>响应记录器详细信息值  
- 在某些情况下，如果 MSBuild.exe **/verbosity** 开关包含特定值，可能需要仅记录事件中的信息。 在此示例中，如果 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 属性为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`（由 /verbosity 开关设置），<xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件处理程序仅记录一条消息。  
+ 在某些情况下，如果 MSBuild.exe **/verbosity** 开关包含特定值，可能需要仅记录事件中的信息。 在此示例中，如果 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 属性为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`（由 /verbosity  开关设置），<xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件处理程序仅记录一条消息。  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>指定记录器  
  将记录器编译到程序集后，你需要告诉 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在生成过程中使用该记录器。 可以通过配合使用 **/logger** 开关和 MSBuild.exe 来执行此操作。 有关可用于 MSBuild.exe 的开关的详细信息，请参阅[命令行引用](../msbuild/msbuild-command-line-reference.md)。  
   
- 以下命令行生成项目 `MyProject.csproj`，并使用在 `SimpleLogger.dll` 中实现的记录器类。 **/nologo** 开关隐藏版权标志和版权消息，**/noconsolelogger** 开关禁用默认的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 控制台记录器。  
+ 以下命令行生成项目 `MyProject.csproj`，并使用在 `SimpleLogger.dll` 中实现的记录器类。 **/nologo** 开关隐藏版权标志和版权消息， **/noconsolelogger** 开关禁用默认的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 控制台记录器。  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
@@ -83,6 +83,6 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>注释  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)

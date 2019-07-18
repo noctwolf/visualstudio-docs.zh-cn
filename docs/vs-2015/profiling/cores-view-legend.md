@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05f768f6ff928ab00ebbd503c1ae9826dab8cd38
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161305"
 ---
 # <a name="cores-view-legend"></a>内核视图图例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,5 +38,5 @@ ms.locfileid: "54780577"
 |上下文切换总数|采样期间给定线程的上下文切换总数。 每次线程更改上下文（例如从执行到同步）时，将进行一次上下文切换计数。|  
 |跨越核心的上下文切换所占的百分比|通过跨核心上下文切换数除以上下文切换总数计算出的百分比。 此百分比越高，此特定线程的性能上的跨核心上下文切换的开销的整体效果越大。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [内核视图](../profiling/cores-view.md)

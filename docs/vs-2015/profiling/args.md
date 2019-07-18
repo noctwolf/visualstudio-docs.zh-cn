@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65759da4363891c713f906e6cb10f00443bcbceb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197915"
 ---
 # <a name="args"></a>参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  **Launch** 命令的目标应用程序的参数列表。  
   
 ## <a name="required-options"></a>必需选项  
- **Launch：**`AppName`  
+ **Launch：** `AppName`  
  启动指定的应用程序并开始使用采样方法进行分析。  
   
 ## <a name="example"></a>示例  
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

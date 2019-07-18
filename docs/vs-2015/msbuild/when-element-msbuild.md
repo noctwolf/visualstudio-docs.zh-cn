@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e23b89ab9aa48a87505eb9b53a8646da06df4931
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162310"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,6 +126,6 @@ ms.locfileid: "59649304"
 </Project>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [条件构造](../msbuild/msbuild-conditional-constructs.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

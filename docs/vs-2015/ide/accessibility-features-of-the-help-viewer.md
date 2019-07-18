@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 041e83f8d71679ffb26d24be37f353e39fbc08e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148281"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>帮助查看器的辅助功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,5 +39,5 @@ Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 
 ## <a name="internet-explorer-options"></a>Internet Explorer 选项  
  可以通过更改有关网页显示方式的 Internet Explorer 选项，使帮助查看器更易于访问。 有关详细信息，请参阅[自定义 (Help Viewer)](../ide/customize-the-help-viewer.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148217"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ VSPerfCmd [/U] [/options]
   
  下表描述了 VSPerfCmd.exe  工具选项。  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |**U**|以 Unicode 形式写入重定向的控制台输出。 必须是指定的第一个选项。|  
 |[Start](../profiling/start.md) **:** `mode`|在指定模式下启动分析服务。|  
@@ -59,7 +59,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sampling-method-options"></a>采样方法选项  
  只有在使用采样分析方法时才能使用以下选项。  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Executable*|启动指定的应用程序并开始分析。|  
 |[Args](../profiling/args.md) **:** *Arguments*|指定要传递到已启动应用程序的命令行参数。|  
@@ -71,7 +71,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sampling-interval-options"></a>采样间隔选项  
  以下选项指定采样间隔的类型和持续时间。 默认值为 Timer  。 还可以使用 Counter  选项将 CPU 计数器指定为间隔。 这些选项只能通过 Launch  或分析会话的第一个 Attach  指定。  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[ **:** _n_]|有关每个第 n 个页面错误的示例（默认值=10）。|  
 |[Sys](../profiling/sys-vsperfcmd.md)[ **:** _n_]|有关每个第 n 个系统调用的示例（默认值=10）。|  
@@ -82,7 +82,7 @@ VSPerfCmd [/U] [/options]
   
  必须在使用管理凭据运行的命令提示符下执行 Admin 选项。  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|允许或拒绝指定用户或组访问分析服务。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 允许用户访问此服务以执行跨会话分析。<br /><br /> SampleProfiling - 允许用户访问此驱动程序，以启用采样分析。 此外，用于在跟踪分析期间访问内核转换信息。<br /><br /> FullAccess - 允许用户访问 CrossSession 和 SampleProfiling。|  
 |**Admin:Security, List**|列出分析服务的当前状态并列出用户权限。|  
@@ -92,7 +92,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  VSPerfCmd /Driver  选项现已过时。 将 VsPerfCmdAdmin  选项用于此功能。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

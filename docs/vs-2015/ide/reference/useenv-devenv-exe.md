@@ -21,16 +21,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 48f1543bcecf64a37f98de3edddf2c57dbf46f5c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176918"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，并将环境变量加载到“VC++ 目录”对话框中。  
+启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，并将环境变量加载到“VC++ 目录”对话框中  。  
   
 ## <a name="syntax"></a>语法  
   
@@ -39,11 +39,11 @@ Devenv /useenv
 ```  
   
 ## <a name="example"></a>示例  
- 下面的示例会启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，并将环境变量加载到“VC++ 目录”对话框中。  
+ 下面的示例会启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，并将环境变量加载到“VC++ 目录”对话框中  。  
   
 ```  
 Devenv.exe /useenv  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

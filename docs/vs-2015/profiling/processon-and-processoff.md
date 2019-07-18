@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180206"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **Start:** `Method`  
  初始化命令行分析会话并设置指定的分析方法。  
   
- **Launch：**`AppName`  
+ **Launch：** `AppName`  
  启动指定的应用程序并开始使用采样方法进行分析。  
   
  **Attach:** `PID`  
@@ -62,7 +62,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  停止或启动对命令行分析会话中所有进程的分析。  
   
- {**ThreadOff**|**ThreadOn**}**:**`TID`  
+ {**ThreadOff**|**ThreadOn**} **:** `TID`  
  停止或启动对指定线程的分析（仅限检测方法）。  
   
 ## <a name="example"></a>示例  
@@ -80,7 +80,7 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

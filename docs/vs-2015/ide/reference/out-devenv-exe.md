@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e1f20b446d355ea0cbc6700de5f2e6f79de51d09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187886"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ devenv /out FileName
 ## <a name="remarks"></a>备注  
  如果指定的文件名不存在，则会自动创建该文件。 如果该文件已存在，则结果会附加到该文件的现有内容中。  
   
- “命令”窗口中以及“输出”窗口的“解决方案生成器”视图中会显示命令行生成错误。 如果你正在运行无人参与的生成，并需要查看结果，则此选项非常有用。  
+ “命令”窗口中以及“输出”窗口的“解决方案生成器”视图中会显示命令行生成错误   。 如果你正在运行无人参与的生成，并需要查看结果，则此选项非常有用。  
   
 ## <a name="example"></a>示例  
  此示例会运行 `MySolution`，并将错误写入文件 `MyErrorLog.txt` 中。  
@@ -53,7 +53,7 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
  [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

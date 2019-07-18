@@ -15,16 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ee744a8ab3a22d640f3d48e7291b546f36415d24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199305"
 ---
 # <a name="find-command"></a>“查找”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。  
+要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集   。  
   
 ## <a name="syntax"></a>语法  
   
@@ -81,7 +81,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

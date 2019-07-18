@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160414"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59655807"
 |FusionName|可选的字符串。 指定项的简单或强合成名称。<br /><br /> 此特性存在时，可以节省时间，因为程序集文件不必打开即可获取合成名称。|  
 |SpecificVersion|可选的布尔值。 指定是否应仅引用合成名称中的版本。|  
 |别名|可选的字符串。 引用的任何别名。|  
-|Private|可选的布尔值。 指定是否应将引用复制到输出文件夹。 此特性与 Visual Studio IDE 中的引用的“复制本地”属性相匹配。|  
+|Private|可选的布尔值。 指定是否应将引用复制到输出文件夹。 此特性与 Visual Studio IDE 中的引用的“复制本地”  属性相匹配。|  
   
 ### <a name="comreference"></a>COMReference  
  表示项目中的 COM（非托管）组件引用。  
@@ -88,7 +88,7 @@ ms.locfileid: "59655807"
 |DependentUpon|可选的字符串。 指定该文件正确编译所依赖的文件。|  
 |AutoGen|可选的布尔值。 指示是否已由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 为项目生成了文件。|  
 |链接|可选的字符串。 文件在物理上处于项目文件的影响范围之外时要显示的符号路径。|  
-|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”中显示文件。|  
+|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”  中显示文件。|  
 |CopyToOutputDirectory|可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
@@ -101,7 +101,7 @@ ms.locfileid: "59655807"
 |LastGenOutput|必选字符串。 在此项上运行的任何文件生成器创建的文件的名称。|  
 |CustomToolNamespace|必选字符串。 在此项上运行的任何文件生成器应在其中创建代码的命名空间。|  
 |链接|可选的字符串。 如果文件在物理上处于项目的影响范围之外，则显示符号路径。|  
-|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”中显示文件。|  
+|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”  中显示文件。|  
 |CopyToOutputDirectory|可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
 |LogicalName|必选字符串。 嵌入资源的逻辑名称。|  
   
@@ -114,13 +114,13 @@ ms.locfileid: "59655807"
 |Generator|必选字符串。 在此项上运行的任何文件生成器的名称。|  
 |LastGenOutput|必选字符串。 在此项上运行的任何文件生成器创建的文件的名称。|  
 |CustomToolNamespace|必选字符串。 在此项上运行的任何文件生成器应在其中创建代码的命名空间。|  
-|链接|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”中显示文件。|  
+|链接|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”  中显示文件。|  
 |PublishState|必选字符串。 内容的发布状态，为以下任一项：<br /><br /> -   默认<br />-   已包括<br />-   已排除<br />-   数据文件<br />-   必备组件|  
 |IsAssembly|可选的布尔值。 指定文件是否为程序集。|  
-|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”中显示文件。|  
+|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”  中显示文件。|  
 |CopyToOutputDirectory|可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
   
-### <a name="none"></a>None  
+### <a name="none"></a>无  
  表示不应在生成过程中具有角色的文件。  
   
 |项名称|说明|  
@@ -130,7 +130,7 @@ ms.locfileid: "59655807"
 |LastGenOutput|必选字符串。 在此项上运行的任何文件生成器创建的文件的名称。|  
 |CustomToolNamespace|必选字符串。 在此项上运行的任何文件生成器应在其中创建代码的命名空间。|  
 |链接|可选的字符串。 文件在物理上处于项目的影响范围之外时要显示的符号路径。|  
-|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”中显示文件。|  
+|可见|可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“解决方案资源管理器”  中显示文件。|  
 |CopyToOutputDirectory|可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
@@ -142,5 +142,5 @@ ms.locfileid: "59655807"
 ### <a name="import"></a>导入  
  表示应由 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 编译器导入其命名空间的程序集。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [常用的 MSBuild 项目属性](../msbuild/common-msbuild-project-properties.md)

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145548"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  停止或启动对命令行分析会话中所有进程的分析。  
   
- {**ProcessOff**|**ProcessOn**}**:**`TID`  
+ {**ProcessOff**|**ProcessOn**} **:** `TID`  
  停止或启动对指定进程的分析。  
   
 ## <a name="example"></a>示例  
@@ -71,7 +71,7 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
