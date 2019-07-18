@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179049"
 ---
 # <a name="empty-timeline-segment"></a>空时间线分段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,6 +33,6 @@ ms.locfileid: "60052813"
   
 - 对于标记通道，这意味着未生成任何标记。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“线程”视图](../profiling/threads-view-parallel-performance.md)   
  [缩放控件（“线程”视图）](../profiling/zoom-control-threads-view.md)

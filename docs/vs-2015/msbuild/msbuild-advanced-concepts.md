@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e7aade87e0e1f6fe6a07269a585b35f52d4a9e5d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191549"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,6 +34,6 @@ ms.locfileid: "59663921"
 |[多定向](../msbuild/msbuild-multitargeting-overview.md)|介绍如何将应用程序编译为在若干 .NET Framework 版本的任意一个版本上运行。|  
 |[最佳做法](../msbuild/msbuild-best-practices.md)|建议用于编写 MSBuild 脚本的最佳做法。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193320"
 ---
 # <a name="summary-view---net-memory-data"></a>“摘要”视图 - .NET 内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54803054"
 ## <a name="functions-allocating-most-memory"></a>分配最多内存的函数  
  列出在分析运行中分配了最大内存字节数的函数。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|函数名。|  
 |**字节数百分比**|由此函数或此函数调用的子函数分配的字节数占分析运行中分配的所有字节数的百分比。|  
@@ -37,7 +37,7 @@ ms.locfileid: "54803054"
 ## <a name="types-with-most-memory-allocated"></a>内存分配最多的类型  
  列出在分析运行中为其分配了最大内存字节数的类型。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|类型的名称。|  
 |**字节数百分比**|为此类型分配的字节数占分析运行中分配的所有字节数的百分比。|  
@@ -45,11 +45,11 @@ ms.locfileid: "54803054"
 ## <a name="types-with-most-instances"></a>实例最多的类型  
  列出在分析运行期间创建次数最多的类型。 具有  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|类型的名称。|  
 |**实例数百分比**|属于此类型的实例的 .NET 对象数占分析运行中创建的 .NET 对象总数的百分比。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“摘要”视图](../profiling/summary-view-sampling-data.md)   
  [“摘要”视图](../profiling/summary-view-instrumentation-data.md)

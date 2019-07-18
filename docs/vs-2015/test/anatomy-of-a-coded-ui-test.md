@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 46226d241db04cad0f4859650dc2aff855b72f08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155609"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -267,7 +267,7 @@ public void MyTestCleanup()
   
  `UIMap.uitest` 文件不是可直接编辑的文件。 不过，可以使用编码的 UI 测试生成器来修改测试，从而自动修改 `UIMap.uitest` 文件和 [UIMap.Designer.cs](#UIMapDesignerFile) 文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

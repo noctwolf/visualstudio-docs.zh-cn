@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157791"
 ---
 # <a name="status"></a>状态
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,12 +68,12 @@ VSPerfCmd.exe /Status
  用于控制此进程的数据收集的主要内部探查器计数。 该计数必须等于一才能收集数据。 启动/停止计数可以通过探查器 API 以及 VSPerfCmd 选项 **GlobalOn**、**GlobalOff**、**ProcessOn**、**ProcessOff**、**ThreadOn** 和 **ThreadOff** 进行控制。  
   
  **挂起/继续计数**  
- 用于控制此进程的数据收集的辅助内部探查器计数。 该计数必须小于或等于零才能收集数据。 “挂起/继续”计数只能通过探查器 API 进行控制。  
+ 用于控制此进程的数据收集的辅助内部探查器计数。 该计数必须小于或等于零才能收集数据。 “挂起/继续”  计数只能通过探查器 API 进行控制。  
   
  **有监视器访问权限的用户**  
  列出有权访问探查器的用户名。 可以使用 VSPerfCmd.exe **Admin** 选项向其他用户授予访问权  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

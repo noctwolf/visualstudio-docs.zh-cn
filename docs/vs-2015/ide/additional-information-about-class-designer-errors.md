@@ -30,16 +30,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 66a895b48051ed8797644b36d6f6663e1e35a8e6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145674"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>有关类设计器错误的附加信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-类设计器不会跟踪源文件的位置，因此修改项目结构或移动项目中的源文件就可能导致类设计器无法继续对类型（尤其是 typedef 的源类型、基类或关联类型）进行跟踪。 可能会收到错误，如“类设计器无法显示此类型”。 如果收到错误，要将修改过的或被重新定位的源代码再次拖到类图中以重新显示。  
+类设计器不会跟踪源文件的位置，因此修改项目结构或移动项目中的源文件就可能导致类设计器无法继续对类型（尤其是 typedef 的源类型、基类或关联类型）进行跟踪。 可能会收到错误，如“类设计器无法显示此类型”  。 如果收到错误，要将修改过的或被重新定位的源代码再次拖到类图中以重新显示。  
   
  你在以下资源中找到关于其他错误和警告的协助：  
   
@@ -49,5 +49,5 @@ ms.locfileid: "54783675"
  [Visual Studio 类设计器论坛](http://go.microsoft.com/fwlink/?LinkId=160754)  
  提供一个有关类设计器相关问题的论坛。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [设计和查看类与类型](../ide/designing-and-viewing-classes-and-types.md)

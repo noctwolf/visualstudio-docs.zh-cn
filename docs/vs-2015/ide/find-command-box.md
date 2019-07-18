@@ -14,29 +14,29 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160681"
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可以从“查找/命令”框搜索文本并运行 Visual Studio 命令。 “查找/命令”框仍可用作工具栏控件，但不再默认可见。 通过在“标准”工具栏上选择“添加或删除按钮”，然后选择“查找”，即可显示“查找/命令”框。  
+可以从“查找/命令”框搜索文本并运行 Visual Studio 命令  。 “查找/命令”框仍可用作工具栏控件，但不再默认可见  。 通过在“标准”工具栏上选择“添加或删除按钮”，然后选择“查找”，即可显示“查找/命令”框     。  
   
  要运行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，请在该命令前面加一个大于 (>) 符号。  
   
- “查找/命令”框保留最后输入的 20 个项，并将它们显示在下拉列表中。 选择箭头键可以浏览该列表。  
+ “查找/命令”框保留最后输入的 20 个项，并将它们显示在下拉列表中  。 选择箭头键可以浏览该列表。  
   
  ![Find&#47;Command Box](../ide/media/findcommandbox.png "FindCommandBox")  
 “查找/命令”框  
   
 ## <a name="searching-for-text"></a>搜索文本  
- 默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。  
+ 默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口   。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。  
   
 ## <a name="entering-commands"></a>输入命令  
- 要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或别名，而不是搜索文本，请输入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，并在该命令前面加一个大于 (>) 符号。 例如:  
+ 要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或别名，而不是搜索文本，请输入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，并在该命令前面加一个大于 (>) 符号  。 例如:  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
@@ -53,6 +53,6 @@ ms.locfileid: "54801220"
   
  插入符号在引号内或引号外的作用相同。 如果插入符号是行的最后一个字符，则忽略不计。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“命令”窗口](../ide/reference/command-window.md)   
  [查找和替换文本](../ide/finding-and-replacing-text.md)

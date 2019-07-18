@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205860"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>不显示线程活动（线程视图）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "60069702"
   
 - 是否隐藏太多线程？ 如果是这样，请尝试显示所有线程  
   
-- 如果选择了“仅我的代码”，则只能查看有关你的代码的数据。 尝试清除设置以确定是否有任何系统线程活动。  
+- 如果选择了“仅我的代码”  ，则只能查看有关你的代码的数据。 尝试清除设置以确定是否有任何系统线程活动。  
   
 - 确保“降噪”设置为低阈值。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192864"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ MSBuild 可以利用具有多个处理器或多核处理器的系统。 为每�
   
  为了避免此问题但仍启用多处理器生成，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可使用“进程隔离”。 通过使用进程隔离，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以创建最多 `n` 个进程，其中 `n` 为系统上可用的处理器数。 例如，如果 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 在具有两个处理器的系统上生成解决方案，则仅创建两个生成进程。 重复使用这两个进程可生成解决方案中的所有项目。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [任务](../msbuild/msbuild-tasks.md)

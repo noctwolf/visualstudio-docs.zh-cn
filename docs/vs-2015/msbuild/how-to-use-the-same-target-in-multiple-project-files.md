@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178320"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,6 +114,6 @@ ms.locfileid: "60056830"
 </Project>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [目标](../msbuild/msbuild-targets.md)

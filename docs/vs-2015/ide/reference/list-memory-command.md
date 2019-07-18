@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199157"
 ---
 # <a name="list-memory-command"></a>“列出内存”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  可选。 确定要显示的内存的字节数，从 `expression` 开始。  
   
  /Format:`formattype`  
- 可选。 查看“内存”窗口中的内存信息时使用的格式类型；可以为 OneByte、TwoBytes、FourBytes、EightBytes、Float（32 位）或 Double（64 位）。 如果使用 OneByte，则 `/Unicode` 不可用。  
+ 可选。 查看“内存”窗口中的内存信息时使用的格式类型；可以为 OneByte、TwoBytes、FourBytes、EightBytes、Float（32 位）或 Double（64 位）  。 如果使用 OneByte，则 `/Unicode` 不可用。  
   
  /Hex&#124;Signed&#124;Unsigned  
  可选。 指定查看数字时使用的格式：有符号、无符号的或十六进制。  
   
 ## <a name="remarks"></a>备注  
- 不必写出带所有开关的完整“Debug.ListMemory”命令，可以使用某些开关预设为指定值的预定义别名调用该命令。 例如，不必输入：  
+ 不必写出带所有开关的完整“Debug.ListMemory”命令，可以使用某些开关预设为指定值的预定义别名调用该命令  。 例如，不必输入：  
   
 ```  
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
@@ -64,7 +64,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >df /Count:30 /Unicode  
 ```  
   
- 下面是 Debug.ListMemory 命令的可用别名列表：  
+ 下面是 Debug.ListMemory 命令的可用别名列表  ：  
   
 |Alias|命令和开关|  
 |-----------|--------------------------|  
@@ -83,7 +83,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“列出调用堆栈”命令](../../ide/reference/list-call-stack-command.md)   
  [“列出线程”命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

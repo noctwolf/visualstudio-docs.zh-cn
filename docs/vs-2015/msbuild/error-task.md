@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201811"
 ---
 # <a name="error-task"></a>Error 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +65,6 @@ ms.locfileid: "59652873"
 </Project>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)

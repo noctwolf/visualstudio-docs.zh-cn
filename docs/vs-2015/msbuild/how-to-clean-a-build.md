@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156645"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "60075358"
 ## <a name="example"></a>示例  
  以下代码示例项目包含一个新目标 `Clean`，该目标使用 `RemoveDir` 任务删除目录和该目录中包含的所有文件和目录。 此外，在此示例中，`Compile` 目标还将为清理生成时删除的输出项创建一个单独的目录。  
   
- 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 /target 另外指定一个目标。 例如:  
+ 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 /target  另外指定一个目标。 例如:  
   
  `msbuild <file name>.proj /target:Clean`  
   
- /target 开关可以缩写为 /t 并可以指定多个目标。 例如，若要依次使用目标 `Clean` 和 `Compile`，请键入：  
+ /target  开关可以缩写为 /t  并可以指定多个目标。 例如，若要依次使用目标 `Clean` 和 `Compile`，请键入：  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
@@ -101,7 +101,7 @@ ms.locfileid: "60075358"
 </Project>  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Exec 任务](../msbuild/exec-task.md)   
  [MakeDir 任务](../msbuild/makedir-task.md)   
  [RemoveDir 任务](../msbuild/removedir-task.md)   

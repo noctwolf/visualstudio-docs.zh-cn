@@ -15,16 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157814"
 ---
 # <a name="replace-command"></a>Replace 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本。  
+使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本   。  
   
 ## <a name="syntax"></a>语法  
   
@@ -88,7 +88,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [查找和替换文本](../../ide/finding-and-replacing-text.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   

@@ -12,16 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c54bea7e5d80db2b6aecf9fac06070bf012d3d2e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163286"
 ---
 # <a name="startup-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“启动”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 使用此页可以自定义 Visual Studio 起始页或在 Visual Studio 启动时设置不同的默认操作。 有关详细信息，请参阅[自定义起始页](../../ide/customizing-the-start-page-for-visual-studio.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

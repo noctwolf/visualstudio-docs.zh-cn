@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195524"
 ---
 # <a name="performance-explorer-window"></a>“性能资源管理器”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60105315"
   
 - **报告** - 显示为会话生成的探查器数据文件的名称。 右键单击“报告”  可添加现有报告或比较两个探查器数据文件。 右键单击报告名称可打开、删除或导出探查器数据文件。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [控制数据收集](../profiling/controlling-data-collection.md)

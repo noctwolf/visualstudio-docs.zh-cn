@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e43541ddb75b067faa23437d315ce5f239256b1a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180229"
 ---
 # <a name="process-view---contention-data"></a>“进程”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54796773"
   
  下表说明“进程”视图表中各列的值。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**开始时间**|从分析开始到进程或线程启动的毫秒数或处理器周期数。|  
 |**阻塞的时间**|在此期间阻止进程或线程的函数执行的总时间。|  
@@ -41,6 +41,6 @@ ms.locfileid: "54796773"
 |**名称**|进程或线程的名称。|  
 |**唯一 ID**|探查器生成的标识符，对进程或线程是唯一的。|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“进程”视图](../profiling/process-view.md)

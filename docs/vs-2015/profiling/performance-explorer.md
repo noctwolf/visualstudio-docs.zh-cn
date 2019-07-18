@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155504"
 ---
 # <a name="performance-explorer"></a>性能资源管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,5 +48,5 @@ ms.locfileid: "54784095"
 |**以编程方式控制分析：** 了解如何使用托管的和本机分析工具 API 控制直接收集自源代码的数据。|[分析工具 API](../profiling/profiling-tools-apis.md)|  
 |**分析问题疑难解答**|[性能工具问题疑难解答](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [分析工具](../profiling/profiling-tools.md)

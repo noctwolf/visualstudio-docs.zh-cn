@@ -575,6 +575,8 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: 使用 XML 和 XSLT 文件
           href: xml-tools/xml-tools-in-visual-studio.md
+        - name: 使用容器进行开发
+          href: containers/index.yml
         - name: 开发非独占应用
           items:
             - name: 设计可访问应用

@@ -15,21 +15,21 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d047980a6d0b33dbe74182eec23b55aa4487799e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199238"
 ---
 # <a name="go-to-line"></a>转到行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-通过此对话框可以移动到活动文档中的特定行。 要访问此对话框，请打开要编辑的文档，然后在“编辑”菜单上选择“转到”。  
+通过此对话框可以移动到活动文档中的特定行。 要访问此对话框，请打开要编辑的文档，然后在“编辑”菜单上选择“转到”   。  
   
  行号 (1 - `n`)  
  允许输入想要移动到的活动文档中的行号。 输入的数量必须在 1 到 `n` 之间（n 为当前文档中的行号）。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [在代码中设置书签](../../ide/setting-bookmarks-in-code.md)   
  [查找和替换文本](../../ide/finding-and-replacing-text.md)   
  [编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184032"
 ---
 # <a name="creating-forwarding-loggers"></a>创建转发记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59648216"
 ## <a name="multi-processor-aware-loggers"></a>可识别多处理器的记录器  
  在多处理器系统上生成项目时，来自每个处理器的生成消息并不会按统一的顺序自动交错。 因此，必须使用附加到每条消息上的 <xref:Microsoft.Build.Framework.BuildEventContext> 类建立消息分组优先级。 有关多处理器生成的详细信息，请参阅[多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [生成记录器](../msbuild/build-loggers.md)   
  [多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)

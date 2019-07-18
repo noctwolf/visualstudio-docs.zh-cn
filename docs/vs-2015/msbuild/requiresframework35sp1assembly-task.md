@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ada207a619021922b999d0e821ecf27ba48dbb38
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158744"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ ms.locfileid: "59650633"
 |`ReferencedAssemblies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定在项目中引用的程序集。|  
 |`RequiresMinimumFramework35SP1`|可选 `Boolean` 输出参数。<br /><br /> 如果为 `true`，应用程序需要 .NET Framework 3.5 SP1。|  
 |`SigningManifests`|可选 `Boolean` 输出参数。<br /><br /> 如果为 `true`，ClickOnce 清单已签名。|  
-|`SuiteName`|可选 `String` 参数。<br /><br /> 指定“开始”菜单上，应用程序的安装文件夹的名称。|  
+|`SuiteName`|可选 `String` 参数。<br /><br /> 指定  “开始”菜单上，应用程序的安装文件夹的名称。|  
 |`TargetFrameworkVersion`|可选 `String` 参数。<br /><br /> 指定应用程序面向的 .NET Framework 版本。|  
   
 ## <a name="remarks"></a>备注  
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)

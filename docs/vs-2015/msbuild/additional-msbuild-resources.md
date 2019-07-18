@@ -600,11 +600,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187096"
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 资源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -622,5 +622,5 @@ ms.locfileid: "59647456"
 ## <a name="product-support"></a>产品支持  
  如果借助其他资源仍不能解决问题，则可以访问 [Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?linkid=1782)网站，与 Microsoft 支持服务联系。 若要了解所在区域中可用的产品支持，请参阅[与我们联系](../ide/talk-to-us.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

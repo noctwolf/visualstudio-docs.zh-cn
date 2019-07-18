@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191563"
 ---
 # <a name="midl-task"></a>MIDL 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60062030"
   
      可选 **String** 参数。  
   
-     命令行选项列表。 例如，**"**_/option1 /option2 /option#_"。 使用此参数可指定未由任何其他 MIDL 任务参数表示的命令行选项。  
+     命令行选项列表。 例如， **"** _/option1 /option2 /option#_ "。 使用此参数可指定未由任何其他 MIDL 任务参数表示的命令行选项。  
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“MIDL 命令行参考”。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60062030"
   
      如果为 `true`，则检查枚举值是否在允许的范围内。  
   
-     有关详细信息，请参阅 midl.exe 命令行帮助 (**/?**) 中的 **/error enum** 选项。  
+     有关详细信息，请参阅 midl.exe 命令行帮助 ( **/?** ) 中的 **/error enum** 选项。  
   
 - **ErrorCheckRefPointers**  
   
@@ -260,7 +260,7 @@ ms.locfileid: "60062030"
   
      可选 **String []** 参数。  
   
-     指定一个或多个*定义*，即要传递给 C 预处理器的名称和可选值，就如通过 `#define` 指令所指示那样。 每个定义的形式为 *name[=value]*。  
+     指定一个或多个*定义*，即要传递给 C 预处理器的名称和可选值，就如通过 `#define` 指令所指示那样。 每个定义的形式为 *name[=value]* 。  
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/D** 选项。 另请参阅此表中的 **UndefinePreprocessorDefinitions** 参数。  
   
@@ -420,5 +420,5 @@ ms.locfileid: "60062030"
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)
