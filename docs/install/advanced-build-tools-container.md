@@ -19,7 +19,7 @@ ms.lasthandoff: 07/11/2019
 ms.locfileid: "67825178"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
-
+<!--test-->
 ::: moniker range="vs-2017"
 
 [将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像和最新 Visual Studio 生成工具安装程序的 [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 映像。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
