@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 02a4c36f3969ca0f9ef61e817afb82eb8247f041
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203487"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;签名&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "54780312"
  可选。 指定在其中查找文件的名称`externalid`。 如果没有，则忽略此特性`externalid`存在。 此为可选属性。 默认值为但而不是.js 的.xml 文件扩展名的当前文件的名称。 默认情况下，用于本地化的托管的资源查找规则用于找到的文件。  
   
  `helpKeyword`  
- 可选。 F1 帮助关键字。  
+ 可选。 F1 帮助的关键字。  
   
  `locid`  
- 可选。 有关字段的本地化信息的标识符。 该标识符是任一成员 ID 或其对应于`name`属性在 OpenAjax 元数据定义消息绑定中的值。 标识符类型取决于中指定的格式[ \<loc >](../ide/loc-javascript.md)标记。  
+ 可选。 有关字段的本地化信息的标识符。 标识符是成员 ID 或对应于 OpenAjax 元数据定义的消息绑定中的 `name` 属性值。 标识符类型取决于 [\<loc>](../ide/loc-javascript.md) 标记中指定的格式。  
   
 ## <a name="remarks"></a>备注  
  使用一个`<signature>`元素为每个重载中的.js 文件或使用以下任意函数说明`<signature>`元素指定每个外部成员 ID。  
@@ -51,7 +51,7 @@ ms.locfileid: "54780312"
  `<signature>`元素必须置于任何语句之前在函数体中。 使用时[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，或者[\<返回 >](../ide/returns-javascript.md)元素`<signature>`元素，将放置在其他元素`<signature>`块。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示如何使用`<signature>`元素。  
+ 下面的代码示例演示如何使用 `<signature>` 元素。  
   
 ```javascript  
 // Use of <signature> with externalid.  
@@ -93,5 +93,5 @@ function add(a, b) {
 }  
 ```  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [XML 文档注释](../ide/xml-documentation-comments-javascript.md)
