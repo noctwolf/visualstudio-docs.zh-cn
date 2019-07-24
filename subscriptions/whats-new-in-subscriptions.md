@@ -2,17 +2,17 @@
 title: Visual Studio 订阅中的新增功能
 description: 了解可用于管理 Visual Studio 订阅的新功能和更新功能。
 ms.custom: ''
-ms.date: 06/27/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891076"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377942"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 
@@ -43,6 +43,4 @@ GitHub Enterprise 随 Visual Studio Enterprise 订阅和 Visual Studio Professio
 
 以上就是目前的更新！
 
-## <a name="see-also"></a>请参阅
 
-* [订阅者权益](subscriber-benefits.md)

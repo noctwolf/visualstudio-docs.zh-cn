@@ -3,24 +3,22 @@ title: Visual Studio 订阅者数据匿名化 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解订阅访问丢失时订阅者数据的匿名方式。
-ms.openlocfilehash: 1d4e4c5f2e1946a75a70ab4ddb49f000c951cd97
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ba1a462083281c2228f2d6e25c42485ead8aa19
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783657"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377956"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 订阅者信息匿名化
-
 当发生阻止订阅者使用订阅的事件时，例如订阅到期或删除订阅者的登录帐户，用户的个人信息（如姓名和登录帐户）基本上被扰乱以使其无法使用。  这样做是为了保护订阅者的个人信息。
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-intro-sentence.md)]
 
 ## <a name="when-does-anonymization-occur"></a>何时发生匿名？
-
 致使订阅者无法订阅的事件将触发匿名。  匿名发生的速度取决于订阅类型和触发事件。 有关详细信息，请参阅下表。
 
 | 订阅类型                                                                                                                       | 触发匿名的事件                                                                                                     | 匿名发生时 |
@@ -32,7 +30,6 @@ ms.locfileid: "67783657"
 | 所有订阅                                                                                                                       | 将从与 Azure Active Directory 帐户关联的租户中删除订阅者                                | 立即               |
 
 ## <a name="faq"></a>FAQ
-
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>问：订阅者个人信息匿名化是否导致他们无法访问订阅？
 答：不是。  匿名化是针对导致订阅权限丢失但不导致缺乏访问权限的事件而进行的。
 
@@ -40,5 +37,4 @@ ms.locfileid: "67783657"
 答：是的 - 只要订阅尚未过期，就可以将其重新分配给其他订阅者。
 
 ## <a name="next-steps"></a>后续步骤
-
 通过[链接 MSA 和 AAD 标识](/azure/active-directory/b2b/add-users-administrator)了解如何防止匿名。

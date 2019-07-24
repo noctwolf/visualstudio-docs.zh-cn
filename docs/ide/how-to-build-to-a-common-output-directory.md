@@ -8,17 +8,17 @@ helpviewer_keywords:
 - builds [Visual Studio], common directory
 - common directory
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1e669789d2117b4bd2ee550dfffb147e46620c4
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547814"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416743"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：生成到公共输出目录
 
@@ -28,9 +28,9 @@ ms.locfileid: "62547814"
 
 1. 单击解决方案中的项目。
 
-2. 在“项目”菜单上，单击“属性”。
+2. 在“项目”菜单上，单击“属性”   。
 
-3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。
+3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹    。
 
 4. 为解决方案中的所有项目重复 1-3 步骤。
 
