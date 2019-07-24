@@ -3,15 +3,15 @@ title: Visual Studio + GitHub 捆绑包 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解新的 Visual Studio + GitHub 捆绑包
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783439"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377649"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅简介  
 
@@ -62,15 +62,12 @@ ms.locfileid: "67783439"
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="q--where-is-my-github-subscription"></a>问：我的 GitHub 订阅在哪里？
-
 答：GitHub 订阅设置过程可能需要一段时间。  如果你等待了很久但未收到任何消息，则可能需要与 GitHub 管理员联系。  可能是你的管理员仍在进行处理或选择不向你分配 GitHub 订阅。 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>问：如何与我的 GitHub 管理员联系？
-
 答：如果你正在使用 GitHub Enterprise Server，则可单击客户端底部显示的**支持**链接与你的管理员联系。
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>问：我会获得完整的 Visual Studio 订阅（Professional 或 Enterprise）还是只获得带有此产品/服务的 IDE？
-
 答：除了 GitHub Enterprise 订阅，你还将获得完整的 Visual Studio 订阅。  如同单独购买订阅时一样，你将获得这些订阅随附的软件下载、云服务、技术支持和合作伙伴权益等各项权益。
 
 ## <a name="support-resources"></a>支持资源
@@ -81,5 +78,4 @@ ms.locfileid: "67783439"
 - 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="next-steps"></a>后续步骤
-
 如果你刚接触 GitHub，请查看 [GitHub 学习实验室](https://lab.github.com/)，它将带你了解一系列有趣又实用的项目，在整个过程中还会分享有用的反馈。

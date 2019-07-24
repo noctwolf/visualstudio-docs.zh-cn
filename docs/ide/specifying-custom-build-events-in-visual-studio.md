@@ -6,21 +6,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430883"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416738"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自定义生成事件
 
-通过指定自定义生成事件，可以在生成开始之前或在它完成之后自动运行命令。 例如，可以在生成开始之前运行 .bat 文件，或是在生成完成之后将新文件复制到文件夹中。 仅当生成在生成过程中成功到达这些点时，生成事件才会运行。
+通过指定自定义生成事件，可以在生成开始之前或在它完成之后自动运行命令。 例如，可以在生成开始之前运行 .bat 文件，或是在生成完成之后将新文件复制到文件夹中  。 仅当生成在生成过程中成功到达这些点时，生成事件才会运行。
 
  有关所使用的编程语言的特定信息，请参阅以下主题：
 
@@ -28,7 +28,7 @@ ms.locfileid: "63430883"
 
 - C# 和 F#--[如何：指定生成事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
 
-- Visual C++--[指定生成事件](/cpp/ide/specifying-build-events)。
+- Visual C++--[指定生成事件](/cpp/build/specifying-build-events)。
 
 ## <a name="syntax"></a>语法
 
@@ -36,7 +36,7 @@ ms.locfileid: "63430883"
 
  为获得最佳结果，请遵循以下这些格式设置提示：
 
-- 在运行 .bat 文件的所有生成事件之前，先添加 `call` 语句。
+- 在运行 .bat 文件的所有生成事件之前，先添加 `call` 语句  。
 
    示例：`call C:\MyFile.bat`
 

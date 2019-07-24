@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: faef9f55a88385953a121574f761193cc8c11ea9
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438192"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416833"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：将项目配置为面向平台
 
@@ -31,30 +31,30 @@ ms.locfileid: "63438192"
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>使用 Configuration Manager 设定目标平台
 
-“配置管理器”提供了一种快速添加面向项目的新平台的方法。 如果选择 Visual Studio 附带的平台之一，则将修改项目属性，以便生成适用于所选平台的项目。
+“配置管理器”  提供了一种快速添加面向项目的新平台的方法。 如果选择 Visual Studio 附带的平台之一，则将修改项目属性，以便生成适用于所选平台的项目。
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>将项目配置为面向 64 位平台
 
-1. 在菜单栏上，依次选择“生成” > “Configuration Manager”。
+1. 在菜单栏上，依次选择“生成” > “Configuration Manager”   。
 
-2. 在“活动解决方案平台”列表中，选择一个 64 位平台作为解决方案目标，然后选择“关闭”按钮。
+2. 在“活动解决方案平台”  列表中，选择一个 64 位平台作为解决方案目标，然后选择“关闭”  按钮。
 
-    1. 如果所需平台未出现在“活动解决方案平台”列表中，请选择“新建”。
+    1. 如果所需平台未出现在“活动解决方案平台”列表中，请选择“新建”   。
 
-         将显示“新建解决方案平台”对话框。
+         将显示“新建解决方案平台”  对话框。
 
-    2. 在“键入或选择新平台”列表中，选择“x64”。
+    2. 在“键入或选择新平台”  列表中，选择“x64”  。
 
         > [!NOTE]
-        > 如果对配置进行了重命名，则可能需要修改“项目设计器”中的设置，以面向正确的平台。
+        > 如果对配置进行了重命名，则可能需要修改“项目设计器”  中的设置，以面向正确的平台。
 
-    3. 如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。
+    3. 如果要复制当前平台配置的设置，请选择它，然后选择“确定”  按钮。
 
 面向 64 位平台的所有项目的属性均已更新，并将为 64 位平台优化项目的下一个生成。
 
 ## <a name="target-platforms-in-the-project-designer"></a>在项目设计器中设定平台目标
 
-项目设计器还提供使项目面向不同平台的方法。 如果在“新建解决方案平台”对话框的列表中选择的平台之一不适合自己的解决方案，则可以创建自定义配置名称并修改“项目设计器”中的配置以面向正确的平台。
+项目设计器还提供使项目面向不同平台的方法  。 如果在“新建解决方案平台”  对话框的列表中选择的平台之一不适合自己的解决方案，则可以创建自定义配置名称并修改“项目设计器”  中的配置以面向正确的平台。
 
 此任务的执行根据所用编程语言而有所不同。 有关详细信息，请参阅以下链接：
 
