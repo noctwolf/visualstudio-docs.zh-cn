@@ -62,7 +62,7 @@ interface IManagedAddin : IUnknown
 
 2. 应用程序在每个 VSTO 外接程序的注册表项下查找 `Manifest` 项。
 
-    托管的 VSTO 加载项可存储在清单中的完整路径`Manifest`下的项**HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<应用程序名称 >_ \Addins\\ _\<外接程序 ID>_ **。 清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。
+    托管的 VSTO 加载项可存储在清单中的完整路径`Manifest`下的项**HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<应用程序名称 >_ \Addins\\ _\<外接程序 ID>_** 。 清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。
 
 3. 如果应用程序找到 `Manifest` 项，便会尝试加载托管 VSTO 外接程序加载程序组件。 应用程序会尝试创建实现 IManagedAddin 接口的 COM 对象。
 
