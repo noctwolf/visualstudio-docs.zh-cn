@@ -7,7 +7,7 @@
     - name: 关于代码编辑器
       href: tutorial-editor.md
     - name: 关于项目和解决方案
-      href: tutorial-projects-solutions.md
+      href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: 更多 Visual Studio 功能
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
 - name: 创建应用

@@ -18,7 +18,6 @@
 #### [使用工作或学校帐户登录](sign-in-work.md)
 #### [使用 GitHub 登录](sign-in-github.md)
 #### [备用标识](vs-alternate-identity.md)
-#### [使用别名登录](aliasing.md)
 #### [登录问题](sign-in-issues.md)
 #### [订阅者数据匿名化](anonymization.md)
 ### [订阅门户概述](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Internet 演示](internet-demos.md)
 ## 管理员
 ### [管理员职责](admin-responsibilities.md)
+#### [预生产库存](admin-inventory.md)
+#### [管理大型团队和外部承包商](manage-teams.md)
+#### [跟踪用户分配和处理订单](assignments-orders.md)
 ### [批量许可](volume-license-admins.md)
 ### 加入组织
 #### [迁移后加入](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [过度分配](handle-overclaimed-license.md)
 #### [最大用量](maximum-usage.md)
 #### [过期订阅](handle-expired-license.md)
+#### [使用别名的订阅者](aliasing.md)
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
 ### [使用 GitHub Enterprise 管理 Visual Studio](assign-github.md)
 ## 资源
