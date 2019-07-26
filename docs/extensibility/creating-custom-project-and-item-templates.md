@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377752"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493122"
 ---
 # <a name="create-custom-project-and-item-templates"></a>创建自定义项目和项模板
 
@@ -35,7 +35,6 @@ Visual Studio SDK 包括用于创建自定义项目模板和自定义项模板�
      该模板将生成一个类文件、一个图标、一个 *.vstemplate*文件、一个名为*ProjectTemplate. .vbproj*或*ProjectTemplate*的可编辑项目文件以及一些通常由其他项目类型生成的文件, 如*resources .resx*文件、 *AssemblyInfo*文件和 *. 设置*文件。 每个代码文件都在适当的位置包含通用参数替换。
 
 ![项目模板项目选择](media/project-template-selection.png)
-
 
 2. 根据项目的需要, 在项目中添加和删除项。 请勿删除可编辑的项目文件、 *AssemblyInfo*文件或 *.vstemplate*文件。
 

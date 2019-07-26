@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7a33f7510eb862ed6af1f1d5337d8d3e2743ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993755"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493092"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>使用 TextTransform 实用工具生成文件
 
@@ -26,11 +26,11 @@ TextTransform.exe 是一个命令行工具，可用于转换文本模板。 当�
 
  TextTransform.exe 位于以下目录中：
 
- **\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+ **\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
 专业版或
 
- **\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+ **\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
  对于 Enterprise edition 中。
 
