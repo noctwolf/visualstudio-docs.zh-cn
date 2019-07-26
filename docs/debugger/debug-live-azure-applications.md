@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415733"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493321"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用
 
@@ -109,7 +109,6 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 ## <a name="take-a-snapshot"></a>获取快照
 
 设置吸附点后, 可以通过转到网站的 "浏览器" 视图并运行标记的代码行或等待用户从网站的使用中生成一个快照, 手动生成快照。
-
 
 ## <a name="inspect-snapshot-data"></a>检查快照数据
 
