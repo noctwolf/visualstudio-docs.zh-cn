@@ -1,20 +1,19 @@
 ---
 title: Visual Studio 订阅者标识
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 04/10/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.openlocfilehash: bec00f6e49ce04781ad69a56b30637b375000b6e
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1c6f052f4e5c7d3382f8244dd8e551f9e400513f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784718"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378037"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
-
 激活 Visual Studio 订阅时，我们会将用户激活期间使用的标识（或登录名）与 Visual Studio 订阅关联起来。 这样，我们便能在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 和 Azure 中识别你。
 
 在 Azure DevOps 中，我们会在你每次登录时检查你的 Visual Studio 订阅状态，并在你所属的每个组织中自动授予相应功能。
@@ -24,8 +23,7 @@ ms.locfileid: "67784718"
 
 在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，除激活过程中使用的标识外，还可添加“备用标识”  。 现在，如果使用 Microsoft 帐户激活订阅，则可添加备用标识。 这样，你还能添加工作或学校帐户（登录 Visual Studio、Office 365 或公司/学校网络时使用的帐户），以使用个人帐户和工作或学校帐户访问 Azure DevOps。
 
-## <a name="add-an-alternate-account-to-your-visual-studio-subscription"></a>向 Visual Studio 订阅添加备用帐户
-
+## <a name="add-an-alternate-account-to-your-subscription"></a>向订阅添加备用帐户
 在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识享受订阅权益（如 Azure DevOps 和 Azure）。 在过去，仅当 Visual Studio (VS) 订阅已分配到 Microsoft 帐户 (MSA) 时此功能才可用。 我们已经将此功能扩展到 Azure Active Directory (Azure AD) 中的工作或学校帐户。
 
 这不会向其他帐户提供订阅副本；它仅可使用备用帐户访问这两项权益。
@@ -33,18 +31,9 @@ ms.locfileid: "67784718"
 对于所有订阅，都可添加“工作或学校帐户”，从而使用此帐户享受需要登录的权益（VS IDE、Azure DevOps 和 Azure）。
 
 ### <a name="add-the-alternate-account"></a>添加备用帐户
-
 1. 使用 Microsoft 帐户 (https://my.visualstudio.com) 登录到 Visual Studio 订阅者门户。
-
-2. 转到“订阅”  。
-
-    > [!div class="mx-imgBorder"]
-    > ![添加备用帐户 - 转到 VS 门户中的“订阅”](_img/vs-alternate-identity/my-vs-subscriptions.png)
-
+2. 单击“订阅”选项卡  。
 3. 选择“添加备用帐户”  。
-    > [!div class="mx-imgBorder"]
-    > ![选择添加备用帐户](_img/vs-alternate-identity/choose-add-alternate-account.png)
-
 4. 添加工作或学校帐户。
     > [!div class="mx-imgBorder"]
     > ![添加工作或学校帐户](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
@@ -61,10 +50,10 @@ ms.locfileid: "67784718"
 
 答：如果你使用主要标识或备用标识登录，Azure DevOps 应该会自动识别你的订阅。 如果没有，可尝试以下操作：
 
-* 检查是否拥有[包含 Azure DevOps 权益](vs-azure-devops.md)的有效 Visual Studio 订阅。
+* 检查是否拥有包含 [Azure DevOps 权益](vs-azure-devops.md#eligibility)的有效 Visual Studio 订阅。
 
 * 确认使用的登录名/标识是 Visual Studio 订阅的主要或备用标识。
 
 * 登录 Azure DevOps 前，至少先访问一次 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 
-如果 Azure DevOps 仍无法识别你的订阅，请[联系支持人员](https://visualstudio.microsoft.com/team-services/support/)
+如果 Azure DevOps 仍无法识别你的订阅，请联系 [Azure DevOps 支持](https://azure.microsoft.com/support/devops/)。
