@@ -1,17 +1,17 @@
 ---
 title: 使用订阅者门户 - http://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅门户为你提供的所有权益
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784772"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377921"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用订阅者门户 - my.visualstudio.com
 
@@ -51,3 +51,6 @@ Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[市场](https://marketplace.visualstudio.com/)
 
 需要续订 Visual Studio 云订阅？  想要下载 Visual Studio 系列产品的最新扩展？  市场有助于用户查找增强 Azure DevOps、Azure DevOps Server 和 Visual Studio Code 的扩展、工具和服务。 甚至可以成为发布者，在市场上发布你自己的扩展。
+
+## <a name="next-steps"></a>后续步骤
+在 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 登录门户网站，查看你的权益。  还可以了解有关使用 [Microsoft 帐户](sign-in-msa.md) (MSA)、[工作或学校帐户](sign-in-work.md)，甚至是 [GitHub 帐户](sign-in-github.md)登录门户网站的详细信息。 

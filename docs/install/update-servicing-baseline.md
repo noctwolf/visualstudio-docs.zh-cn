@@ -1,7 +1,7 @@
 ---
 title: 在维修基线上更新 Visual Studio
 description: 了解如何在维修基线上更新 Visual Studio。
-ms.date: 05/22/2019
+ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
@@ -12,16 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250334"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300547"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在维修基线上更新 Visual Studio
 
-Visual Studio 2019 将在其[产品生命周期](/visualstudio/productinfo/release-rhythm#release-channel-updates)内频繁提供更新。 更新将包括可能添加新功能和组件的次要版本更新（例如，从 16.0 到 16.1）和只包含针对关键问题的修补程序的维护更新（例如，从 16.0.4 到 16.0.5）。
+我们经常在 Visual Studio 的产品生命周期中更新它。 有两种类型的更新： 
+
+* **次要版本更新** &mdash; 例如从 16.0 更新到 16.1&mdash;，其中包含新功能和组件。  
+* **服务更新** - 例如，从 16.0.4 更新到 16.0.5，仅包含针对关键问题的目标修复。
 
 企业管理员可以选择将其客户端保管在维护基线上。 在发布下一个维护基线后的一年内将使用维护更新支持该维护基线。
 
@@ -34,7 +37,7 @@ Visual Studio 2019 将在其[产品生命周期](/visualstudio/productinfo/relea
 > [!NOTE]
 > 请注意区分不可编辑版本的引导程序和标准引导程序。 标准引导程序已配置为使用 Visual Studio 的最新可用版本。 从 My.VisualStudio.com 下载标准引导程序后，它们的文件名包含编号（例如 vs_enterprise__123456789-123456789.exe）。
 
-安装时，企业管理员必须配置自己的客户端，以防止客户端更新到最新版本。 可以通过多种方式来配置客户端：
+安装时，企业管理员必须配置自己的客户端，以防止客户端更新到最新版本。 有若干方法可实现此操作：
 - [更改响应配置文件中的 `channelUri` 设置](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network)，以在布局或本地文件夹中使用通道清单。
 - [通过命令行执行修改 channelUri](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet)，以使用不存在的文件。
 - [在客户端系统上设置策略来禁用更新](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating)，以防止客户端自更新。
@@ -59,7 +62,7 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 若提供了维护基线更新，[My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0) 将向该维护更新提供不可编辑版本的引导程序文件。
 
-对于通过网络布局安装部署的管理员，管理员需要更新[布局位置](update-a-network-installation-of-visual-studio.md)。 从该位置安装的客户端将收到更新通知。 若需要将更新部署到客户端，请按照[这些说明](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines)操作。 通过修改“response.json”来获取更新时，请不要添加其他工作负载、组件或语言。 更新产品后，必须以“修改”部署的形式管理这些设置。
+对于使用网络布局安装进行部署的管理员，管理员应更新[布局位置](update-a-network-installation-of-visual-studio.md)。 从该位置安装的客户端将收到更新通知。 如果必须将更新部署到客户端，请按照[这些说明](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines)操作。 通过修改“response.json”来获取更新时，请不要添加其他工作负载、组件或语言。 更新产品后，必须以“修改”部署的形式管理这些设置。
 
 对于基于 Internet 的安装，请在客户端上使用指向不存在的通道清单的 `--channelUri` 参数运行新的不可编辑版本的引导程序。 若使用安静或被动模式部署更新，请使用下面的两个独立的命令：
 

@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531628"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416475"
 ---
-# <a name="generate-usings-in-visual-studio"></a>在 Visual Studio 中生成 using
+# <a name="add-missing-usings-in-visual-studio"></a>在 Visual Studio 中添加缺少的 usings
 
 此代码生成适用于：
 
@@ -26,16 +28,16 @@ ms.locfileid: "65531628"
 
 **使用时机：** 通常的做法是从项目或其他源中的不同位置复制代码并将其粘贴到新代码中。 此快速操作找到复制和粘贴代码的缺少导入语句，然后提示添加它们。
 
-操作原因：由于此快速操作自动添加必要导入，因此不必手动复制代码所需的 `using` 语句。
+操作原因：  由于此快速操作自动添加必要导入，因此不必手动复制代码所需的 `using` 语句。
 
-## <a name="generate-usings-refactoring"></a>生成 using 重构
+## <a name="add-missing-usings-refactoring"></a>添加缺少的 usings 重构
 
 1. 复制来自文件的代码并将其粘贴到新代码中，无需包括必要的 `using` 语句。 生成的错误会伴随一个代码修补程序出现，该修补程序可添加缺少的 `using` 语句。
 
     > [!NOTE]
-    > 需要在“工具”>“选项”>“文本编辑器”>“C#”>“高级”>“使用指令”中启用此建议。
+    > 需要在“工具”>“选项”>“文本编辑器”>“C#”>“高级”>“使用指令”  中启用此建议。
 
-2. 选择 Ctrl+。 打开“快速操作和重构”菜单。
+2. 选择 Ctrl+。 打开“快速操作和重构”菜单  。
 
     ![生成 using](media/generate-using-codefix.png)
 
