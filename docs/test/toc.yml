@@ -54,9 +54,9 @@
       items:
         - name: 演练：创建并运行托管代码的单元测试
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 快速入门：通过测试资源管理器进行测试驱动开发
+        - name: 演练：测试驱动开发
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: 在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员
+        - name: 在单元测试中使用 MSTest API
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: 使用 assert 类
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: 创建数据驱动的单元测试
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 演练：使用配置文件定义数据源
+            - name: 使用配置文件定义数据源
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: 泛型方法的单元测试
           href: unit-tests-for-generic-methods.md
-        - name: 配置单元测试以面向 .NET Framework 的早期版本
+        - name: 配置单元测试以面向 .NET 的早期版本
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: C/C++ 代码的单元测试
       items:
