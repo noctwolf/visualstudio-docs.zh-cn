@@ -1,6 +1,6 @@
 ---
 title: 使用 TextTransform 实用工具生成文件
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493092"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606090"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>使用 TextTransform 实用工具生成文件
 
@@ -24,21 +24,37 @@ TextTransform.exe 是一个命令行工具，可用于转换文本模板。 当�
 > [!NOTE]
 > 如果你想要将文本转换作为生成过程的一部分，请考虑使用 MSBuild 文本转换任务。 有关详细信息，请参阅[生成过程中的代码生成](../modeling/code-generation-in-a-build-process.md)。 在计算机中安装了 Visual Studio，还可以编写的应用程序或可以转换文本模板的 Visual Studio 扩展。 有关详细信息，请参阅[通过使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
- TextTransform.exe 位于以下目录中：
+TextTransform.exe 位于以下目录中：
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
-专业版或
+对于专业版, 或
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- 对于 Enterprise edition 中。
+适用于 Enterprise edition。
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+对于专业版, 或
+
+**\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+适用于 Enterprise edition。
 
 在以前版本的 Visual Studio 中，在以下位置找到该文件：
 
 **\Program Files (x86)\Common Files\Microsoft Shared\TextTemplating\{version}**
 
 其中 {version} 取决于安装以前版本。
+
+::: moniker-end
 
 ## <a name="syntax"></a>语法
 
