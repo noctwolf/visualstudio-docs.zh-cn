@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 订阅
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378049"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493357"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 
@@ -73,7 +73,6 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 3. 在“关于”选项卡上，可以更改姓名、电子邮件、国家/地区、个人资料图片和联系人首选项  。 在“首选项”选项卡上，可以选择首选语言、日期和时间模式、时区，以及用户界面主题。 
 4. 完成更改后，单击“保存”  。
 5. 单击浏览器的“返回”按钮以返回到“权益”页  。
-
 
 ### <a name="setting-communications-preferences"></a>设置通信首选项
 若想要收到关于你的订阅和权益的定期更新，其中包括每月 Visual Studio 订阅新闻稿，请选中 Visual Studio 个人资料中的“Visual Studio 订阅”框，来[更新首选项](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)。 可以随时更改这些首选项，或取消订阅。 

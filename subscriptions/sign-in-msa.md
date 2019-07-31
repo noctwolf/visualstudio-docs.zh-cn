@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: 如何使用 Microsoft 帐户 (MSA) 登录 Visual Studio 订阅
-ms.openlocfilehash: 3f90dec91530cbcb559dfb950a8e7d43faf274b2
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315348"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493086"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>使用 Microsoft 帐户 (MSA) 登录 Visual Studio 订阅
 
@@ -29,7 +29,6 @@ ms.locfileid: "68315348"
 3. 输入密码。
 4. 单击“登录”  。
 5. 此时，应显示“权益”页。
-
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q--im-unable-to-sign-in-using-my-msa"></a>问：我无法使用 MSA 登录。  

@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377942"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493399"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 
@@ -42,5 +42,3 @@ GitHub Enterprise 随 Visual Studio Enterprise 订阅和 Visual Studio Professio
 如果你的组织已有包含 GitHub Enterprise 订阅的 Visual Studio，则你可以在我们的文档中了解有关[管理包含 GitHub Enterprise 的 Visual Studio ](assign-github.md)的更多信息。  
 
 以上就是目前的更新！
-
-
