@@ -71,8 +71,9 @@
 #### [加入视频](https://youtu.be/plSu6fpi7UI)
 ### 使用管理门户
 #### [概述](using-admin-portal.md)
-#### [分配订阅](assign-license.md)
-#### [重新发送分配电子邮件](resend-assignment-email.md)
+#### 分配订阅
+##### [添加单用户](assign-license.md)
+##### [添加多个用户](assign-license-bulk.md)
 #### [编辑订阅](edit-license.md)
 #### [删除订阅](delete-license.md)
 #### [搜索订阅](search-license.md)
@@ -84,7 +85,7 @@
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
 ### [使用 GitHub Enterprise 管理 Visual Studio](assign-github.md)
 ## 资源
-### [Visual Studio 许可白皮书](https://aka.ms/vslicensing)
+### [Visual Studio 授权白皮书](https://aka.ms/vslicensing)
 ### [比较订阅选项和定价](https://visualstudio.microsoft.com/vs/pricing)
 ### [比较 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
 ### [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
