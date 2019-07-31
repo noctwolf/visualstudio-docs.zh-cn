@@ -1,23 +1,24 @@
 ---
 title: “高级生成设置”对话框 (C#)
 ms.date: 06/20/2017
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745015"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461886"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 
@@ -93,7 +94,7 @@ ms.locfileid: "66745015"
 
 指定要加载 DLL 的首选基址。 DLL 的默认基址由 .NET Framework 公共语言运行时设置。 有关详细信息，请参阅 [/baseaddress（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)
 - [“项目设计器”->“生成”页 (C#)](../../ide/reference/build-page-project-designer-csharp.md)

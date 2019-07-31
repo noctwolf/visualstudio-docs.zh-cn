@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817918"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461374"
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
@@ -24,11 +24,11 @@ ms.locfileid: "62817918"
 
 ::: moniker range="vs-2017"
 
-本文介绍 Visual Studio 2017 中的各选项。 对于 Visual Studio 2015，请在目录上方的选择器中选择“2015”。
+本文介绍 Visual Studio 2017 中的各选项。 对于 Visual Studio 2015，请在目录上方的选择器中选择“2015”  。
 
 ::: moniker-end
 
-要访问此属性页，请按 Ctrl+Q 以激活搜索框，然后键入“experimental”。 在键入前几个字母后，搜索会查找该页面。 此外，还可以选择“工具” > “选项”，依次展开“文本编辑器”和“C/C++”，再选择“试验”。
+要访问此属性页，请按 Ctrl+Q   以激活搜索框，然后键入“experimental”  。 在键入前几个字母后，搜索会查找该页面。 此外，还可以选择“工具” > “选项”，依次展开“文本编辑器”和“C/C++”，再选择“试验”      。
 
 这些功能在 Visual Studio 安装中可用。
 
@@ -43,7 +43,7 @@ ms.locfileid: "62817918"
 
 ## <a name="enable-faster-project-load"></a>启用更快的项目加载
 
-自 Visual Studio 2017 版本 15.3 起：此功能当前称为“启用项目缓存”，并已移至 [VC++ 项目设置](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)属性页。
+自 Visual Studio 2017 版本 15.3 起：此功能当前称为“启用项目缓存”，并已移至 [VC++ 项目设置](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)属性页  。
 
 此选项使 Visual Studio 能缓存项目数据，以便下次打开该项目时，它能直接加载缓存的数据，而无需通过项目文件重新对其计算。 使用缓存数据可显著缩短项目加载时间。
 

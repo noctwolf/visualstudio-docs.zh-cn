@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790845"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605861"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>“选项”对话框：环境 \> 扩展
 
@@ -36,7 +36,3 @@ ms.locfileid: "62790845"
 ## <a name="additional-extension-galleries"></a>其他扩展库
 
 一个企业功能，可启用对专有扩展的库的支持。 有关详细信息，请参阅[专用库](../../extensibility/private-galleries.md)。
-
-## <a name="see-also"></a>请参阅
-
-- [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)
