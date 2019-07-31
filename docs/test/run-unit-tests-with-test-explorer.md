@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747780"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493302"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -29,7 +29,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 在生成测试项目时，测试将出现在测试资源管理器中。 如果测试资源管理器不可见，请选择 Visual Studio 菜单上的“测试”  ，然后依次选择“Windows”  、“测试资源管理器”  。
 
-![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
+![测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
 
 当你运行、编写以及重新运行测试时，测试资源管理器将在 **“失败的测试”** 、 **“通过的测试”** 、 **“跳过的测试”** 和 **“未运行的测试”** 默认组中显示结果。 你可以更改测试资源管理器对测试进行分组的方式。
 
@@ -228,3 +228,4 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 - [单元测试代码](../test/unit-test-your-code.md)
 - [将单元测试作为 64 位进程运行](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [测试资源管理器常见问题解答](test-explorer-faq.md)

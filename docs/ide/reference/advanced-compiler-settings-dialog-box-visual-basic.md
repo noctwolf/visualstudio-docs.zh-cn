@@ -1,37 +1,38 @@
 ---
 title: “高级编译器设置”对话框 (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792226"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461464"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 
-使用“项目设计器”的“高级编译器设置”对话框可指定项目的高级生成配置属性。 此对话框仅适用于 Visual Basic 项目。
+使用“项目设计器”的“高级编译器设置”对话框可指定项目的高级生成配置属性   。 此对话框仅适用于 Visual Basic 项目。
 
 ## <a name="to-access-this-dialog-box"></a>访问此对话框
 
-1. 在“解决方案资源管理器”中，选择项目节点（而非“解决方案”节点）。
+1. 在“解决方案资源管理器”中，选择项目节点（而非“解决方案”节点）。  
 
-2. 在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。
+2. 在“项目”菜单上，单击“属性”   。 当“项目设计器”出现时，单击“编译”选项卡   。
 
-3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”   。 在简化生成配置中，不会显示“配置”和“平台”列表   。 有关详细信息，请参阅[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
-4. 单击“高级编译选项”。
+4. 单击“高级编译选项”  。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -55,29 +56,29 @@ ms.locfileid: "62792226"
 
  **生成调试信息**
 
- 从列表中选择“无”、“完整”或“仅 pdb”。 “无”指定不生成调试信息。 “完整”指定生成完整调试信息，“仅 pdb”指定仅生成 PDB 调试信息。 该选项的默认值为“完整”。
+ 从列表中选择“无”、“完整”或“仅 pdb”    。 “无”指定不生成调试信息  。 “完整”指定生成完整调试信息，“仅 pdb”指定仅生成 PDB 调试信息   。 该选项的默认值为“完整”  。
 
 ## <a name="compilation-constants"></a>编译常量
 
 条件编译常量具有与在源文件中使用 [#Const](/dotnet/visual-basic/language-reference/directives/const-directive) 预处理器指令类似的效果，只是定义的常数为公共的且应用于项目中的所有文件。 可以将条件编译常量与 [#If...Then...#Else](/dotnet/visual-basic/language-reference/directives/if-then-else-directives) 指令一起使用，从而有条件地编译源文件。 请参阅[条件编译](/dotnet/visual-basic/programming-guide/program-structure/conditional-compilation)。
 
- “定义 DEBUG 常量”
+ “定义 DEBUG 常量” 
 
  默认为选中此复选框，指定设置 DEBUG 常量。
 
- “定义 TRACE 常量”
+ “定义 TRACE 常量” 
 
  默认为选中此复选框，指定设置 TRACE 常量。
 
  **自定义常量**
 
- 在此文本框中输入应用程序的任何自定义常量。 条目应使用以下形式用逗号分隔：**Name1="Value1",Name2="Value2",Name3="Value3"**。
+ 在此文本框中输入应用程序的任何自定义常量。 条目应使用以下形式用逗号分隔：**Name1="Value1",Name2="Value2",Name3="Value3"** 。
 
 ## <a name="other-settings"></a>其他设置
 
 **生成序列化程序集**
 
-此设置指定编译器是否创建 XML 序列化程序集。 序列化程序集可以提高 <xref:System.Xml.Serialization.XmlSerializer> 的启动性能（如果已使用该类序列化代码中的类型）。 该选项的默认值为“自动”。“自动”指定仅在已使用 <xref:System.Xml.Serialization.XmlSerializer> 将代码中的类型编码为 XML 的情况下，才会生成序列化程序集。 若设置为“关闭”，则指定永远不会生成序列化程序集，无论代码是否使用 <xref:System.Xml.Serialization.XmlSerializer>。 若设置为“打开”，则指定始终会生成序列化程序集。 序列化程序集命名为 `TypeName`.XmlSerializers.dll。
+此设置指定编译器是否创建 XML 序列化程序集。 序列化程序集可以提高 <xref:System.Xml.Serialization.XmlSerializer> 的启动性能（如果已使用该类序列化代码中的类型）。 该选项的默认值为“自动”  。“自动”指定仅在已使用 <xref:System.Xml.Serialization.XmlSerializer> 将代码中的类型编码为 XML 的情况下，才会生成序列化程序集  。 若设置为“关闭”，则指定永远不会生成序列化程序集，无论代码是否使用 <xref:System.Xml.Serialization.XmlSerializer>  。 若设置为“打开”  ，则指定始终会生成序列化程序集。 序列化程序集命名为 `TypeName`.XmlSerializers.dll。
 
 ## <a name="see-also"></a>请参阅
 

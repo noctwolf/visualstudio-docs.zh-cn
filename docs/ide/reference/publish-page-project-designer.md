@@ -1,46 +1,49 @@
 ---
 title: “项目设计器”->“发布”页
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968885"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461645"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
+
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。
 
- 若要访问“发布”  页面，请在“解决方案资源管理器” 中选择项目节点，再在“项目”  菜单上单击“属性” 。 当 **“项目设计器”** 出现时，单击 **“发布”** 选项卡。
+ 若要访问“发布”  页面，请在“解决方案资源管理器”  中选择项目节点，再在“项目”  菜单上单击“属性”  。 当 **“项目设计器”** 出现时，单击 **“发布”** 选项卡。
 
 > [!NOTE]
-> 此处介绍的一些 ClickOnce 属性也可以在“发布向导”（可从“生成”菜单或通过单击此页面上的“发布向导”按钮来使用）中进行设置。
+> 此处介绍的一些 ClickOnce 属性也可以在“发布向导”（可从“生成”菜单或通过单击此页面上的“发布向导”按钮来使用）中进行设置    。
 
 ## <a name="uielement-list"></a>UIElement 列表
+
  **发布文件夹所在的位置**
 
- 指定发布应用程序的位置。 可为驱动器路径 (`C:\deploy\myapplication`)、文件共享 (`\\server\myapplication`) 或 FTP 服务器 (`ftp://ftp.microsoft.com/myapplication`)。 请注意，“发布位置”  框中必须存在文本才能使浏览（“...”）按钮正常工作。
+ 指定发布应用程序的位置。 可为驱动器路径 (`C:\deploy\myapplication`)、文件共享 (`\\server\myapplication`) 或 FTP 服务器 (`ftp://ftp.microsoft.com/myapplication`)。 请注意，“发布位置”  框中必须存在文本才能使浏览（“...”  ）按钮正常工作。
 
  **安装文件夹 URL**
 
- 可选。 指定用户要用于安装应用程序的网站。 仅当与“发布位置” 不同时（例如，将应用程序发布到暂存服务器时），这才是必需的。
+ 可选。 指定用户要用于安装应用程序的网站。 仅当与“发布位置”  不同时（例如，将应用程序发布到暂存服务器时），这才是必需的。
 
  **安装模式和设置**
 
  确定应用程序是直接从“发布位置”  运行（选择“该应用程序只能联机使用”  时），还是安装并添加到“开始”  菜单和“控制面板”  中的“添加或删除程序”  项（选择“该应用程序也可以脱机使用”  时）。
 
- 对于 WPF Web 浏览器应用，“该应用程序也可以脱机使用”选项处于禁用状态，因为此类应用程序只能联机使用。
+ 对于 WPF Web 浏览器应用，“该应用程序也可以脱机使用”  选项处于禁用状态，因为此类应用程序只能联机使用。
 
  **应用程序文件**
 
@@ -60,7 +63,7 @@ ms.locfileid: "62968885"
 
  **发布版本**
 
- 设置应用程序的发布版本号；版本号更改时，会将应用程序作为更新发布。 发布版本的每个部分（“主版本”、“次版本” 、“生成号” 、“修订号” ）的最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，这是 <xref:System.Version>允许的最大值。
+ 设置应用程序的发布版本号；版本号更改时，会将应用程序作为更新发布。 发布版本的每个部分（“主版本”  、“次版本”  、“生成号”  、“修订号”  ）的最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，这是 <xref:System.Version>允许的最大值。
 
  当使用 ClickOnce 安装多个版本的应用程序时，安装会将应用程序的早期版本移动到位于你指定的发布位置的名为“Archive”的文件夹中。 按照这种方式对早期版本进行存档，可以使安装目录与早期版本所在的文件夹分开。
 
@@ -74,7 +77,7 @@ ms.locfileid: "62968885"
 
  **立即发布**
 
- 使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮。
+ 使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮   。
 
 ## <a name="see-also"></a>请参阅
 

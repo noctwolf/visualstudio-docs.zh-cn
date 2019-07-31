@@ -12,35 +12,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531618"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605428"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：在编辑器中管理自动换行
 
-可以设置和清除“自动换行”选项。 如果设置了此选项，较长行中超出代码编辑器窗口当前宽度的部分将在下一行显示。 如果清除了此选项，例如，为方便使用行号，则可以向右滚动查看较长行的末尾。
+可以设置和清除“自动换行”选项  。 如果设置了此选项，较长行中超出代码编辑器窗口当前宽度的部分将在下一行显示。 如果清除了此选项，例如，为方便使用行号，则可以向右滚动查看较长行的末尾。
 
 > [!NOTE]
 > 本主题仅适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 目前不支持自动换行。
 
 ## <a name="to-set-word-wrap-preferences"></a>设置换行首选项
 
-1. 在“工具”菜单上选择“选项”。
+1. 在“工具”菜单上选择“选项”   。
 
-2. 在“文本编辑器”文件夹的“所有语言”子文件夹中选择“常规”选项，在全局设置此选项。
+2. 在“文本编辑器”文件夹的“所有语言”子文件夹中选择“常规”选项，在全局设置此选项    。
 
      — 或 —
 
-     在编程所用的语言的子文件夹中选择“常规”选项。
+     在编程所用的语言的子文件夹中选择“常规”选项  。
 
-3. 在“设置”下，选择或清除“自动换行”选项。
+3. 在“设置”下，选择或清除“自动换行”选项   。
 
-     选中“自动换行”选项将启用“显示可视的自动换行标志符号”选项。
+     选中“自动换行”选项将启用“显示可视的自动换行标志符号”选项   。
 
-4. 如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项。 如果不希望显示这些指示箭头，则清除此复选框。
+4. 如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项  。 如果不希望显示这些指示箭头，则清除此复选框。
 
     > [!NOTE]
     > 这些提醒箭头不会添加到代码中，它们仅用于显示。
@@ -55,5 +55,4 @@ ms.locfileid: "65531618"
 
 ## <a name="see-also"></a>请参阅
 
-- [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)
 - [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)
