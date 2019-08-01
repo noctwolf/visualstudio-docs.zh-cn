@@ -62,9 +62,7 @@
 #### [预生产库存](admin-inventory.md)
 #### [管理大型团队和外部承包商](manage-teams.md)
 #### [跟踪用户分配和处理订单](assignments-orders.md)
-### [批量许可](volume-license-admins.md)
 ### 加入组织
-#### [迁移后加入](post-migration-onboarding.md)
 #### [打开和打开许可证迁移](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [云订阅](cloud-admin.md)
