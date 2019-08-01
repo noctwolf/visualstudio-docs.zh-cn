@@ -1,5 +1,5 @@
 ---
-title: 显示自定义信息使用 DebuggerDisplay |Microsoft Docs
+title: 使用 DebuggerDisplay 显示自定义信息 |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929605"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680592"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>要演示如何使用 DebuggerDisplay 特性让调试程序 (C#，Visual Basic 中， F#， C++/CLI)
-<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 特性 (C#、Visual Basic、 F#、 C++/cli) 告诉调试器要显示的内容
+<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。 如果应用于基类型, 则属性也适用于子类。
 
 `DebuggerDisplay` 特性有一个参数，此参数是要在值列中为类型的实例显示的字符串。 此字符串可以包含大括号（`{` 和 `}`）。 一对大括号之间的文本将作为字段、属性或方法进行计算。
 
 如果一个类中有重写的 `ToString()` 方法，调试器将使用该重写的方法而非默认 `{<typeName>}`。 因此，如果你已重写 `ToString()` 方法，调试器将使用重写的方法而非默认`{<typeName>}`，你无需使用 `DebuggerDisplay`。 如果同时使用，`DebuggerDisplay` 属性优先于替代的 `ToString()` 方法。
 
-调试器是否计算此隐式 `ToString()` 调用取决于“工具”/“选项”/“调试”  对话框中的用户设置。 Visual Basic 不实现此隐式 `ToString()` 计算。
+调试器是否计算此隐式 `ToString()` 调用取决于“工具”/“选项”/“调试” 对话框中的用户设置。 Visual Basic 不实现此隐式 `ToString()` 计算。
 
 > [!IMPORTANT]
-> 如果在“工具”/“选项”/“调试”  对话框中选中了“在变量窗口中显示对象的原始结构”  复选框，则将忽略 `DebuggerDisplay` 特性。
+> 如果在“工具”/“选项”/“调试” 对话框中选中了“在变量窗口中显示对象的原始结构” 复选框，则将忽略 `DebuggerDisplay` 特性。
 
 > [!NOTE]
-> 对于本机代码，此属性仅支持在C++/CLI 代码。
+> 对于本机代码, 此属性仅在/Cli 代码C++中受支持。
 
 下表显示 `DebuggerDisplay` 特性的一些可能用法和示例输出。
 
@@ -90,15 +90,15 @@ public sealed class MyClass
 }
 ```
 
-"，nq"后缀指示表达式计算器才能删除引号时显示的最终值 (nq = 无加引号)。
+", Nq" 后缀通知表达式计算器在显示最终值时删除引号 (nq = no 引号)。
 
 ## <a name="example"></a>示例
 下面的代码示例演示如何使用 `DebuggerDisplay`以及 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在调试器变量窗口（如 **“监视”** 窗口）中查看时，它生成类似以下内容的扩展：
 
 |**名称**|**“值”**|**Type**|
 |--------------|---------------|--------------|
-|键|"three"|object {string}|
-|“值”|3|object {int}|
+|Key|"three"|object {string}|
+|值|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
