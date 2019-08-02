@@ -42,7 +42,7 @@ ms.locfileid: "62986840"
 
 要运行脚本，请执行以下步骤：
 
-1. 右键单击脚本并选择“另存为”以在 Mac 上保存文件。
+1. 右键单击脚本并选择“另存为”以在 Mac 上保存文件  。
 2. 打开“终端”，并将工作目录更改为下载脚本的位置：
 
     ```bash
@@ -64,7 +64,7 @@ ms.locfileid: "62986840"
 
 要运行脚本，请执行以下步骤：
 
-1. 右键单击脚本并选择“另存为”以在 Mac 上保存文件。
+1. 右键单击脚本并选择“另存为”以在 Mac 上保存文件  。
 2. 打开“终端”，并将工作目录更改为下载脚本的位置：
 
     ```bash
@@ -82,7 +82,7 @@ ms.locfileid: "62986840"
 
 ## <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
-从 Mac 中卸载 Visual Studio 的第一步是在 /Applications 目录中找到 Visual Studio.app，并将其拖动到回收站。 或者，单击右键并选择“移到回收站”，如下图所示：
+从 Mac 中卸载 Visual Studio 的第一步是在 /Applications 目录中找到 Visual Studio.app，并将其拖动到回收站    。 或者，单击右键并选择“移到回收站”，如下图所示  ：
 
 ![将 Visual Studio 应用程序移动到回收站](media/uninstall-image1.png)
 
@@ -102,7 +102,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
-可能还要删除以下包含各种 Xamarin 文件和文件夹的目录。 不过，这样做前，应注意此目录包含 Android 签名密钥。 有关详细信息，请参阅**[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
+可能还要删除以下包含各种 Xamarin 文件和文件夹的目录。 不过，这样做前，应注意此目录包含 Android 签名密钥。 有关详细信息，请参阅 **[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin
@@ -139,7 +139,7 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>卸载 Android SDK 和 Java SDK
 
-开发 Android 应用程序需要 Android SDK。 要完全删除 Android SDK 的所有部分，请在 ~/Library/Developer/Xamarin/ 中找到相关文件，并将其移到回收站。
+开发 Android 应用程序需要 Android SDK。 要完全删除 Android SDK 的所有部分，请在 ~/Library/Developer/Xamarin/ 中找到相关文件，并将其移到回收站   。
 
 > [!WARNING]
 > 应注意，Visual Studio for Mac 生成的 Android 签名密钥位于 `~/Library/Developer/Xamarin/Keystore` 中。 请务必适当备份，或避免在要保留密钥存储时删除此目录。
