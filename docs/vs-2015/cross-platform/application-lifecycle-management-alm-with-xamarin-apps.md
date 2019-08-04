@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 258b9fcb8b36be1d179d9f907ef2da16ff1c3037
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696251"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740181"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>适用于 Xamarin 应用的应用程序生命周期管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65696251"
  下表标识了哪些 Visual Studio ALM 功能预期能与 Xamarin 项目很好地配合使用、哪些功能具有局限性。 请参阅链接文档，获取功能自身的详细信息。  
   
 ## <a name="agile-tools"></a>敏捷工具  
- 参考链接：**[工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** （使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere）  
+ 参考链接： **[工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (使用 Visual Studio Team Services 或 TFS, 包括 Team Explorer Everywhere)  
   
  常规注释：所有的计划和跟踪功能均独立于项目类型和编码语言。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "65696251"
 |报告和可视化进度|是||  
   
 ## <a name="modeling"></a>建模  
- 参考链接：**[分析体系结构和建模](../modeling/analyze-and-model-your-architecture.md)**  
+ 参考链接： **[体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)**  
   
  设计功能独立于编程语言，或与 C# 之类的.NET 语言配合使用。 有关与代码相关的方面，请参阅[体系结构关系图和建模图在软件开发中的角色](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools)。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "65696251"
 |[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)|是||  
   
 ## <a name="build"></a>Build  
- 参考链接：**[生成](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ 参考链接： **[构造](/azure/devops/pipelines/index)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  
@@ -79,7 +79,7 @@ ms.locfileid: "65696251"
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|  
   
 ## <a name="testing"></a>正在测试  
- 参考链接：**[测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ 参考链接： **[测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  
@@ -91,18 +91,18 @@ ms.locfileid: "65696251"
 |[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)|仅限 Windows|Visual Studio 的 UI 测试记录器仅用于 Windows。 有关所有平台，请参阅 [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder)（Xamarin 测试记录器）。|  
   
 ## <a name="improve-code-quality"></a>提高代码质量  
- 参考链接：**[提高代码质量](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ 参考链接： **[提高代码质量](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  
 |[分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是||  
 |[使用代码克隆检测功能查找重复代码](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是||  
 |[测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是||  
-|[性能资源管理器](../profiling/performance-explorer.md)|否|改用通过 Xamarin Studio 使用 [Xamarin 探查器](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 请注意 Xamarin 探查器当前处于预览状态，并且尚不适用于 Windows 目标。|  
-|[分析 .NET Framework 内存问题](../misc/analyze-dotnet-framework-memory-issues.md)|否|Visual Studio 工具没有深入 Mono 框架进行探查的挂钩。|  
+|[性能资源管理器](../profiling/performance-explorer.md)|No|改用通过 Xamarin Studio 使用 [Xamarin 探查器](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 请注意 Xamarin 探查器当前处于预览状态，并且尚不适用于 Windows 目标。|  
+|[分析 .NET Framework 内存问题](../misc/analyze-dotnet-framework-memory-issues.md)|No|Visual Studio 工具没有深入 Mono 框架进行探查的挂钩。|  
   
 ## <a name="release-management"></a>发布管理  
- 参考链接：**[使用 Release Management 自动进行部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ 参考链接： **[通过 Release Management 自动执行部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  
@@ -111,7 +111,7 @@ ms.locfileid: "65696251"
 |上载到应用商店|部分|提供了一些扩展，这些扩展可使某些应用商店的此进程自动化。  请参阅 [Visual Studio Team Services 的扩展](https://marketplace.visualstudio.com/VSTS)；例如，[Google Play 的扩展](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|  
   
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 进行监控  
- 参考链接：**[使用 HockeyApp 进行监控](https://www.hockeyapp.net/features/)**  
+ 参考链接： **[使用 HockeyApp 进行监控](https://www.hockeyapp.net/features/)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  

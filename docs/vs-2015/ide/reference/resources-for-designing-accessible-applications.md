@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 35e84dc3ae817ab3c5346d83fc5f37934a34e0f9
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689579"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740161"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计支持辅助功能的应用程序的资源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "65689579"
   
 ## <a name="windows-applications"></a>Windows 应用程序  
   
-- [演练：创建基于可访问 Windows 的应用程序](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)本主题提供用于在示例 Windows 应用程序中包括认证的 Windows 徽标的五个可访问性需求的分步说明。  
+- [演练：创建可访问的基于 Windows 的](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b)应用程序本主题提供了有关在示例 windows 应用程序中包含适用于 windows 的已认证徽标的五个辅助功能要求的分步说明。  
   
-- **键盘用户界面设计的准则** 此技术文章介绍如何设计用户可以从键盘导航的 Windows 应用程序用户界面。 有关详细信息，请参阅 [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx)。  
+- [键盘用户界面设计的准则](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) 此技术文章介绍如何设计用户可以从键盘导航的 Windows 应用程序用户界面。  
   
-- **控制台辅助功能** 此技术文章介绍用于公开 Windows XP 中面向辅助工具的控制台的 API 和事件。 有关详细信息，请参阅 [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx)。  
+- [控制台辅助功能](/previous-versions/windows/desktop/dnacc/console-accessibility) 此技术文章介绍用于公开 Windows XP 中面向辅助工具的控制台的 API 和事件。 
   
 ## <a name="web-sites"></a>网站  
   
-- [演练：使用图像控件、 菜单控件以及 AutoPostBack 的辅助功能准则](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)本主题提供了示例网页，以及一些辅助功能设计提示 web 包含可访问控件的分步说明。  
+- [演练：使用图像控件、Menu 控件和 AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)的辅助功能指南本主题提供了有关在示例网页中包含可访问控件的分步说明, 并提供了一些有关 Web 的辅助功能设计提示。  
   
-- **使网页更易于访问** 此技术文章列出了可访问的 HTML 3.2 元素以及可进行访问以便在网站开发中使用的元素。 有关详细信息，请参阅 [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)。  
+- [使网页更易于访问](/previous-versions/windows/desktop/dnacc/making-web-pages-more-accessible) 此技术文章列出了可访问的 HTML 3.2 元素以及可进行访问以便在网站开发中使用的元素。 
   
-- **使用 DHTML 创建可访问网页** 此技术文章列出了可访问的 HTML 4.0 元素以及可访问 Web 设计提示。 有关详细信息，请参阅 [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx)。  
+- [使用 DHTML 创建可访问网页](/previous-versions//ms528445(v=vs.85)) 此技术文章列出了可访问的 HTML 4.0 元素以及可访问 Web 设计提示。 
   
-- **无法访问的网页的文本替代项** 此技术文章介绍如何使用 XML 和 XSLT 提供相同网页的多个视图（如纯文本版本）。 有关详细信息，请参阅 [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx)。  
+- [无法访问的网页的文本替代项](/previous-versions/windows/desktop/dnacc/text-alternatives-to-inaccessible-web-pages) 此技术文章介绍如何使用 XML 和 XSLT 提供相同网页的多个视图（如纯文本版本）。 
   
 ### <a name="third-party-resources"></a>第三方资源  
   

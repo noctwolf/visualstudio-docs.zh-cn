@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7ac637c478b5bb105b48abeb1d0ec074122e3dda
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821625"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739690"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "67821625"
   你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
   
 > [!NOTE]
-> 你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成应用程序](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+> 你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成应用程序](/azure/devops/pipelines/index)。  
   
  本主题概述了 MSBuild。 有关介绍性教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
@@ -88,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ## <a name="BKMK_ProjectFile"></a>项目文件  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用基于 XML 的项目文件格式，既简单又可扩展。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式允许开发者描述要生成的项，以及如何针对不同的操作系统和配置生成这些项。 另外，这种项目文件格式还允许开发人员创作可重用的生成规则，这些规则可以包含到不同的文件中，以便可以在产品内的不同项目之间一致地执行生成。  
   
- 以下各节介绍了 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参见[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
+ 以下各节介绍了 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参见[演练：从头开始](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)创建 MSBuild 项目文件。  
   
 ### <a name="BKMK_Properties"></a>属性  
  属性表示可用于配置生成的键/值对。 属性的声明方式是：创建一个与属性同名的元素，将其指定为 [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 元素的子元素。 例如，下面的代码将创建一个名为 `BuildDir` 的属性，其值为 `Build`。  
