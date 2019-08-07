@@ -1,5 +1,6 @@
 ---
 title: 常见快速操作
+description: C# 和 Visual Basic 最常用的快速操作包括修复拼错的关键字或符号、解决合并冲突、删除必要的导入、生成类型、引入局部变量等。
 ms.date: 03/28/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976519"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483733"
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 

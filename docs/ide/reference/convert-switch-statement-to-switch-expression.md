@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecb7750301101a2607c17e68b5e919623a03caba
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67329086"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740058"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>将 Switch 语句转换为 Switch 表达式
 
@@ -30,7 +30,7 @@ ms.locfileid: "67329086"
 
 ## <a name="how-to"></a>操作说明
 
-1. 在项目文件中[将语言版本设置为预览版](/dotnet/csharp/language-reference/configure-language-version#set-the-language-version-in-visual-studio)，因为 `switch` 表达式是新的 C# 8.0 功能。
+1. 在项目文件中[将语言版本设置为预览版](/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file)，因为 `switch` 表达式是新的 C# 8.0 功能。
 2. 请将光标置于 `switch` 关键字，并按“Ctrl+.”   。 触发“快速操作和重构”  菜单。
 3. 选择“将 Switch 语句转换为表达式”。 
 

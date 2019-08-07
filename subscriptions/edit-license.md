@@ -1,23 +1,22 @@
 ---
-title: 在管理员门户中编辑订阅 | Microsoft 文档
+title: 在管理门户中编辑订阅 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: 了解管理员如何编辑订阅分配。
-ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: e55cee74f861973e3cc29e3f19dc9b31a107f437
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783479"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605654"
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
-
+# <a name="edit-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
 作为订阅管理员，可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。
 
-## <a name="making-changes-to-subscriber-information"></a>对订阅者的信息进行更改
+## <a name="change-subscriber-information"></a>更改订阅者信息
 可以编辑订阅者的信息来更正错误或更新信息。
 
 若要对订阅者进行编辑，请在鼠标悬停在订阅者的电子邮件地址旁时，选择出现的省略号 (…)。 此时将显示下拉列表。  选择“编辑”  ，以修改订阅者的详细信息。 也可双击网格中订阅者的行来打开编辑窗口。
@@ -29,8 +28,7 @@ ms.locfileid: "67783479"
    > [!NOTE]
    > 如果需要更改订阅者的订阅级别，则需要从门户中删除该用户，然后再重新添加。 订阅级别不可编辑。
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>使用批量编辑对多个订阅者进行编辑
-
+## <a name="edit-multiple-subscribers-using-bulk-edit"></a>使用批量编辑对多个订阅者进行编辑
 可使用批量编辑进程一次编辑多个订阅者。 此功能主要用于正在更改公司电子邮件地址的组织，或者决定对下载进行限制的组织。
 
    > [!IMPORTANT]
@@ -49,3 +47,7 @@ ms.locfileid: "67783479"
    > ![编辑许可证 - 批量编辑文件上传](_img/edit-license/edit-license-bulk-file-upload1.png)
 
 5. 文件上传后，将看到上传成功的通知。 此时，编辑将反映到订阅者信息当中。
+
+## <a name="next-steps"></a>后续步骤
+- 有关查找特定订阅的帮助，请查阅[搜索订阅](search-license.md)。
+- 需要创建所有订阅的列表？  请查阅[导出订阅](exporting-subscriptions.md)。

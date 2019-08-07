@@ -5,16 +5,16 @@ author: cobey
 ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1c0113346031853e21e9182a56078a44097119a5
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691985"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787687"
 ---
 # <a name="code-snippets"></a>代码片段
 
-代码片段通常被称为“代码模板”，对高效编程很有帮助，因为它们支持插入和编辑预编写的代码块 __ 。 使用代码片段，可以方便地快速添加常用模式，甚至还可在使用不熟悉的语法进行开发时非常方便地学习新模式。 针对 C#、F#、HTML、XML、Python 和 Razor 提供了模板。
+代码片段通常被称为“代码模板”，对高效编程很有帮助，因为它们支持插入和编辑预编写的代码块  。 使用代码片段，可以方便地快速添加常用模式，甚至还可在使用不熟悉的语法进行开发时非常方便地学习新模式。 针对 C#、F#、HTML、XML、Python 和 Razor 提供了模板。
 
 本部分介绍如何在代码中创建、插入和使用代码片段。
 
@@ -30,7 +30,7 @@ ms.locfileid: "67691985"
 
   [![工具箱中的代码片段](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **插入模板命令** &ndash; 目前没有为插入模板设置默认的键绑定。 要创建一个键绑定，请浏览到“Visual Studio”>“首选项”>“键绑定”，并搜索 `template`  。 这会将所需键绑定添加到“编辑绑定”字段中，然后单击“应用” **** ：
+- **插入模板命令** &ndash; 目前没有为插入模板设置默认的键绑定。 要创建一个键绑定，请浏览到“Visual Studio”>“首选项”>“键绑定”，并搜索 `template`  。 这会将所需键绑定添加到“编辑绑定”字段中，然后单击“应用”： 
 
   ![插入模板命令](media/source-editor-image15.png)
 

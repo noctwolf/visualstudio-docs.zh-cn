@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552864"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493333"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-已针对[版本 16.1](/visualstudio/releases/2019/release-notes/) 进行更新 
+已针对[版本 16.2](/visualstudio/releases/2019/release-notes/) 进行更新 
 
 >[!div class="button"]
 >[下载 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -102,6 +102,12 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 有关详细信息，请参阅[通过 Visual Studio 2019 创建更出色的多监视器体验](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)博客文章。
 
+### <a name="test-explorer"></a>测试资源管理器
+
+**16.2 中的新增功能**：更新了测试资源管理器，改进了大型测试集的处理，简化了筛选，增加了可发现的命令和选项卡式播放列表视图，并增加了允许微调所显示测试信息的可自定义列。
+
+   ![在测试资源管理器中显示用户界面改进的屏幕截图](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>协作
 
 查看以下视频，以了解如何建立团队来解决问题。 <br><br>*视频长度：4.22 分钟*
@@ -178,6 +184,12 @@ Visual Studio 2019 中会默认安装此服务。
 
 有关详细信息，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用](../debugger/debug-live-azure-applications.md)页，和 [Visual Studio Enterprise 2019 按时间顺序查看调试简介](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)博客文章。
 
+### <a name="microsoft-edge-insider-support"></a>Microsoft Edge Insider 支持
+
+**16.2 中的新增功能**：你可通过使用 [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) 浏览器设置 JavaScript 应用程序中的断点并启动调试会话。 执行此操作时，Visual Studio 会在启用调试的情况下打开一个新的浏览器窗口，以允许你在 Visual Studio 中单步调试 JavaScript 应用程序。
+
+   ![在浏览器中显示 JavaScript 代码呈现的屏幕截图](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>后续步骤
 
 我们经常更新 Visual Studio 2019 的新功能，不断提升开发体验。 若要了解有关我们最新创新的详细信息，请查看 [Visual Studio 博客](https://devblogs.microsoft.com/visualstudio/)。 对于我们迄今为止在预览版中发布的内容记录，请参阅[预览发行说明](/visualstudio/releases/2019/release-notes-preview/)。
@@ -194,9 +206,8 @@ Visual Studio 2019 中会默认安装此服务。
 
 ## <a name="see-also"></a>请参阅
 
-* [宣布推出 Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 for Mac 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Visual Studio 2019 for Mac 发行说明](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Microsoft Build 2019 会议](https://www.microsoft.com/build)
 * [Microsoft Connect()；2018 会议](https://www.microsoft.com/connectevent)

@@ -14,18 +14,29 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429437"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662013"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Visual Studio 2019 中的特征分组位于何处？
+此特征分组已移至列。 通过 Visual Studio 2019 版本 16.2 中的多层和可自定义层次结构，我们认为将特征作为分组包含在内造成了不必要的视觉复杂性。 我们希望获得关于此设计的反馈！ https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+现在，你可以右键单击测试资源管理器中的列，然后选择“列”。 检查“特征”列，它将出现在测试资源管理器中。 你现在可以依据你感兴趣的特征筛选此列。
+
+![显示特征列](media/vs-2019/trait-column.png)
+![筛选特征列](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
+
 ## <a name="dynamic-test-discovery"></a>动态测试发现
 
-**测试资源管理器未发现动态定义的测试。（例如，理论、自定义适配器、自定义特征和 #ifdef 等）如何发现这些测试？**
+**测试资源管理器未发现动态定义的测试。（例如，理论、自定义适配器、自定义特征和 #ifdef 等）如何发现这些测试？ 
 
 请生成项目，并确保在“工具” > “选项” > “测试”中打开基于程序集的发现    。
 

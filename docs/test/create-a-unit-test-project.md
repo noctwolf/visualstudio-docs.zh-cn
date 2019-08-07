@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965526"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483828"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 
@@ -23,31 +23,35 @@ ms.locfileid: "62965526"
 
 ## <a name="to-create-a-unit-test-project"></a>创建单元测试项目
 
-1. 在“文件”菜单上，选择“新建” > “项目”，或按 Ctrl+Shift+N。
+1. 在“文件”菜单上，选择“新建” > “项目”，或按 Ctrl+Shift+N       。
 
 ::: moniker range="vs-2017"
 
-2. 在“新建项目”对话框中，展开“已安装”节点，选择要用于测试项目的语言，然后选择“测试”。
+2. 在“新建项目”对话框中，展开“已安装”节点，选择要用于测试项目的语言，然后选择“测试”    。
 
-3. 若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 为项目命名，然后选择“确定”。
+3. 选择要使用的测试框架的项目模板，例如“MSTest 测试项目”或“NUnit 测试项目”   。 为项目命名，然后选择“确定”  。
+
+   ![Visual Studio 2017 中的测试项目模板](media/test-project-templates.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 在“创建新项目”页上，在搜索框中键入“单元测试”。 选择“单元测试项目(.NET Framework)”项目模板，然后单击“下一步”。
+2. 在“创建新项目”页上，在搜索框中键入“单元测试”   。 选择要使用的测试框架的项目模板（例如“MSTest 测试项目”或“NUnit 测试项目”），然后选择“下一步”    。
 
-3. 在“配置新项目”页上，输入项目名称，然后单击“创建”。
+   ![Visual Studio 2019 中的测试项目模板](media/vs-2019/test-project-templates.png)
+
+3. 在“配置新项目”页上，输入项目名称，然后选择“创建”   。
 
 ::: moniker-end
 
 4. 在单元测试项目中，添加对被测代码的引用。 要添加对相同解决方案中代码项目的引用，请执行以下操作：
 
-   1. 在解决方案资源管理器中选择测试项目。
+   1. 在解决方案资源管理器中选择测试项目  。
 
-   2. 在“项目”菜单上，选择“添加引用” 。
+   2. 在“项目”  菜单上，选择“添加引用”  。
 
-   3. 在“引用管理器”中，选择“项目”下的“解决方案”节点。 选择要测试的代码项目，然后选择“确定”。
+   3. 在“引用管理器”中，选择“项目”下的“解决方案”节点    。 选择要测试的代码项目，然后选择“确定”  。
 
    如果要测试的代码位于其他位置，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)了解有关添加引用的信息。
 

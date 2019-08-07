@@ -1,6 +1,7 @@
 ---
 title: 对 MSBuild 问题进行故障排除并为其创建日志
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518193"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461484"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>对 MSBuild 问题进行故障排除并为其创建日志
 
@@ -116,11 +117,11 @@ ms.locfileid: "67518193"
 ## <a name="create-a-detailed-log"></a>创建详细的日志
 
 1. 从 Visual Studio 主菜单中，转到“工具”   > “选项”   > “项目和解决方案”   >“生成并运行”  。
-1. 在两个组合框中，将“Msbuild 项目生成详细程度”  设置为“详细”  。 上面的组合框控制输出窗口  中的生成详细程度，第二个组合框控制生成期间在每个项目的 Intermediate 目录中创建的 \<projectname\>.log 文件中的生成详细程度。
-1. 从 Visual Studio 开发人员命令提示符中，输入以下命令之一，替换你的实际路径和配置值：
+1. 在两个组合框中，将“Msbuild 项目生成详细程度”  设置为“详细”  。 上面的组合框控制“输出窗口”中的生成详细程度，第二个组合框控制生成期间在每个项目的中间目录中创建的 \<projectname\>.log 文件中的生成详细程度  。
+2. 从 Visual Studio 开发人员命令提示符中，输入以下命令之一，替换你的实际路径和配置值：
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     or

@@ -6,17 +6,17 @@ ms.date: 12/04/2017
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 0caebc01e2a1db85a38f967b47226e998cfc69d6
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043393"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461691"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
@@ -107,7 +107,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
    using namespace std;
    ```
 
-   你可能注意到了，输入代码时出现了一个框。 此框包含针对所输入字符的自完成建议。 此框是 C++ IntelliSense 的一部分，它提供了编码提示，包括类或接口的成员和参数信息。 你还可以使用代码段，它们是预定义的代码块。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md) 和[代码片段](../ide/code-snippets.md)。
+   你可能注意到了，输入代码时出现了一个框。 此框包含针对所输入字符的自动填充建议。 此框是 C++ IntelliSense 的一部分，它提供了编码提示，包括类或接口的成员和参数信息。 你还可以使用代码段，它们是预定义的代码块。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md) 和[代码片段](../ide/code-snippets.md)。
 
    ![编辑器中修复的代码](../ide/media/get-started-cpp-cout-fix.png)
 

@@ -1,22 +1,23 @@
 ---
 title: “系统必备”对话框
 ms.date: 06/29/2018
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 925f36f2ed82f65afcc0eef9622cab1a8c9542b5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746490"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533382"
 ---
 # <a name="prerequisites-dialog-box"></a>“系统必备”对话框
 
@@ -36,6 +37,9 @@ ms.locfileid: "66746490"
 |**从与我的应用程序相同的位置下载系统必备组件**|指定从与应用程序相同的位置安装系统必备组件。 这会将所有系统必备包复制到发布位置。 要让此选项正常工作，系统必备包必须位于开发计算机上。|
 |**从下列位置下载系统必备组件**|指定从输入的位置安装系统必备组件。 可使用“浏览”  按钮选择位置。|
 
+> [!NOTE]
+> 有关在何处放置必备组件的信息。请参阅[创建引导程序包](../../deployment/creating-bootstrapper-packages.md#create-custom-bootstrapper-packages)。
+
 ## <a name="prerequisites-information"></a>系统必备信息
 
 出现在“系统必备”  对话框中的系统必备组件可能与下面列表中的不同。 第一次打开对话框时将自动设置 **“系统必备”对话框**中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动选择必备组件，以便与新目标框架相匹配。
@@ -45,7 +49,7 @@ ms.locfileid: "66746490"
 |**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 Visual Studio 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”  的所有 Visual Basic 和 C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 C# 项目是针对所有 CPU 体系结构进行编译的。 有关详细信息，请参阅 [Framework 定位概述](../../ide/visual-studio-multi-targeting-overview.md)和[部署 64 位应用的必备条件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。|
 |**Microsoft .NET Framework 4.x**|此包为 x86 和 x64 平台安装 .NET Framework 4.x。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 和 x86)**|此包为 x64 或 x86 平台安装 Microsoft System CLR Types for SQL Server 2014。|
-|**SQL Server 2008 R2 Express**|此包安装 Microsoft SQL Server 2008 R2 Express，这是免费版 Microsoft SQL Server 2008 R2，适用于小型网站、服务器或桌面应用程序的理想数据库。 它可免费用于开发和生产。|
+|**SQL Server 2008 R2 Express**|此包安装 Microsoft SQL Server 2008 R2 Express，这是 Microsoft SQL Server 2008 R2 的免费版，是适用于小型网站、服务器或桌面应用程序的理想数据库。 它可免费用于开发和生产。|
 |**SQL Server 2012 Express**|此包安装 Microsoft SQL Server 2012 Express。|
 |**SQL Server 2012 Express LocalDB**|此包安装 Microsoft SQL Server 2012 Express LocalDB。|
 |**Visual C++ "14" 运行时库 (ARM)**|此程序包将为 Itanium 体系结构安装 Visual C++ 运行库，以便为 Microsoft Windows 操作系统编程提供例程。 这些例程可自动处理许多 C 和 C++ 语言没有提供的常见编程任务。<br /><br /> 有关详细信息，请参阅 [C 运行时库参考](/cpp/c-runtime-library/c-run-time-library-reference)。|

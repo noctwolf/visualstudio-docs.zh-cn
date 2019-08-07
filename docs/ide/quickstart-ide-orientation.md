@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f039081309f29e0cd86b3d56ae102b4e55d82ad
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 063024605f142cd2d836eb9322274e7b81cdd9f0
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820972"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483784"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -71,7 +71,7 @@ ms.locfileid: "66820972"
 
    ![在 Visual Studio 起始页上搜索项目模板](media/start-page-search-templates.png)
 
-   Visual Studio 提供了各种类型的项目模板，帮助你快速开始编写代码。 选择 C#“控制台应用(.NET Framework)”项目模板  。 （或者，如果你是 Visual Basic、C++、Javascript 或其他语言开发人员，请随意使用其中一种语言创建项目。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
+   Visual Studio 提供了各种类型的项目模板，帮助你快速开始编写代码。 选择 C#“控制台应用(.NET Core)”项目模板  。 （或者，如果你是 Visual Basic、C++、Javascript 或其他语言开发人员，请随意使用其中一种语言创建项目。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
 
 1. 在显示的“新建项目”对话框中，接受默认的项目名称并选择“确定”   。
 
@@ -87,13 +87,13 @@ ms.locfileid: "66820972"
 
    ![Visual Studio 2019 中的“新建项目”对话框](media/vs-2019/create-a-new-project.png)
 
-1. 如果已选择 C#、Visual Basic 或 F# 作为你的语言，请选择“控制台应用(.NET Framework)”  模板，然后选择“下一步”  。 （如果已选择其他语言，只需选择任意模板。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
+1. 如果已选择 C#、Visual Basic 或 F# 作为你的语言，请选择“控制台应用(.NET Core)”模板，然后选择“下一步”   。 （如果已选择其他语言，只需选择任意模板。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
 
 1. 在“配置新项目”  页上，接受默认的项目名称和位置，然后选择“创建”  。
 
 ::: moniker-end
 
-   创建项目，并在“编辑器”窗口中打开名为 Program.cs 的文件   。 编辑器可显示文件的内容，是你在 Visual Studio 中完成大部分编码工作的地方  。
+   创建项目，并在“编辑器”窗口中打开名为 Program.cs 的文件   。 “编辑器”可显示文件的内容，是你在 Visual Studio 中完成大部分编码工作的地方  。
 
    ![Visual Studio 中的编辑器](media/editor.png)
 

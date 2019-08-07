@@ -1,20 +1,19 @@
 ---
 title: 如何购买 Visual Studio 云订阅
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
-ms.openlocfilehash: 557f23a6ffa4af39dce2e9716a56ea0e99875f82
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5844ac1e22346e8001f0a682848b36fdb6b3f8a5
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891057"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606109"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
-
 可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为“云订阅”  。
 
 [比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)
@@ -23,11 +22,10 @@ ms.locfileid: "67891057"
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。 仍可购买新的月度云订阅。
 
 ## <a name="before-you-start"></a>准备工作
-
-* 若要为购买的订阅计费，需要有 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/)。 可在首次购买之前或在 Visual Studio Marketplace 中首次购买时[注册](https://portal.azure.com)。
+若要为购买的订阅计费，需要有 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/)。 可在首次购买之前或在 Visual Studio Marketplace 中首次购买时[注册](https://portal.azure.com)。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>谁可以购买 Visual Studio 云订阅？
-拥有 Azure 订阅[所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)、[服务管理员](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription)或[共同管理员](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription)访问权限的任何人都可以购买云订阅。
+拥有 Azure 订阅[所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)、[服务管理员或共同管理员](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription)访问权限的任何人都可以购买云订阅。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何购买云订阅
 
@@ -70,11 +68,6 @@ ms.locfileid: "67891057"
 
 * 若要取消这些订阅，可将订阅数减为零 (0)。 下一个计费周期开始时（对于月度云订阅，为次月第一天；对于年度云订阅，为 12 个月后），它们不再续订。
 
-## <a name="buy-cloud-subscriptions-now"></a>立即购买云订阅
-
-* [Visual Studio Professional 月度](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Enterprise 月度](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="for-new-customers"></a>对于新客户：
@@ -96,11 +89,9 @@ ms.locfileid: "67891057"
 答：不是。  你可以原样不变地保有和管理订阅。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户增加订阅数量，该怎么办？
-
-答：在特定月份购买的年度订阅会立即收取全年费用，并且有效期为一整年。 因此，管理员只能修改当前购买月份的许可证数量，其有效期为 1 年，计费时间为 1 年。 在购买月份之外，不再增加订阅数量。
+答：你可以随时购买更多年度订阅。  购买的年度订阅会立即收取全年费用，并且有效期为一整年。 
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户减少订阅数量，该怎么办？
-
 答：管理员仍然可以通过访问 https://manage.visualstudio.com 并遵循本文中减少订阅数的说明来减少订阅数量。 系统将不会生成按比例计费的额度  。 有关退款，需要联系 Azure 账单团队。
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>问：如果我取消订阅，以后还能再买一份年度云订阅吗？
@@ -123,8 +114,12 @@ ms.locfileid: "67891057"
 答：虽然他们无法再买一份云年度订阅，但是可以选择购买 Visual Studio 订阅。  更多信息请访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。
 
 ## <a name="related-resources"></a>相关资源
+- [Visual Studio 订阅管理门户](https://manage.visualstudio.com/)
+- [Visual Studio 订阅支持](https://visualstudio.microsoft.com/vs/support/)
+- [Visual Studio 云订阅计费常见问题解答](vscloud-billing-faq.md)
+- [适用于 CSP 的 Visual Studio 云订阅购买](vscloud-csp.md)
 
-* [Visual Studio 订阅管理门户](https://manage.visualstudio.com/)
-* [Visual Studio 订阅支持](https://visualstudio.microsoft.com/vs/support/)
-* [Visual Studio 云订阅计费常见问题解答](vscloud-billing-faq.md)
-* [适用于 CSP 的 Visual Studio 云订阅购买](vscloud-csp.md)
+## <a name="next-steps"></a>后续步骤
+购买云订阅
+- [Visual Studio Professional 月度](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+- [Visual Studio Enterprise 月度](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786472"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662062"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>使用 Visual Studio 执行 Live Unit Testing
 
@@ -36,14 +36,14 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 如果你有正在引用 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的测试项目（该项目是基于较旧的 MSTest），并且不想移动到较新的 MSTest NuGet 包，请升级到 Visual Studio 2017 版本 15.4 或更高版本。
 
-在某些情况下，可能需要显式还原解决方案中项目引用的 NuGet 包，以便 Live Unit Testing 可正常运行。 可先通过显式生成解决方案（从顶级 Visual Studio 菜单中选择“生成” > “重新生成解决方案”）或通过还原解决方案中的包（右键单击解决方案并选择“还原 NuGet 包”）实现此操作，然后再启用 Living Unit Testing。
+在某些情况下，可能需要显式还原解决方案中项目引用的 NuGet 包，以便 Live Unit Testing 可正常运行。 可先通过显式生成解决方案（从顶级 Visual Studio 菜单中选择“生成” > “重新生成解决方案”）或通过还原解决方案中的包（右键单击解决方案并选择“还原 NuGet 包”）实现此操作，然后再启用 Living Unit Testing    。
 
 ## <a name="configure-live-unit-testing"></a>配置 Live Unit Testing
 
-可按以下方式配置 Live Unit Testing：从顶级 Visual Studio 菜单栏中选择“工具” > “选项”，然后在“选项”对话框左窗格中选择“Live Unit Testing”。
+可按以下方式配置 Live Unit Testing：从顶级 Visual Studio 菜单栏中选择“工具” > “选项”，然后在“选项”对话框左窗格中选择“Live Unit Testing”     。
 
 > [!TIP]
-> 启用 Live Unit Testing 后（详见[启动、暂停和停止 Live Unit Testing](#start-pause-and-stop-live-unit-testing) 部分），还可通过选择“测试” > “Live Unit Testing” > “选项”打开“选项”对话框。
+> 启用 Live Unit Testing 后（详见[启动、暂停和停止 Live Unit Testing](#start-pause-and-stop-live-unit-testing) 部分），还可通过选择“测试” > “Live Unit Testing” > “选项”打开“选项”对话框     。
 
 下图显示对话框中可用的 Live Unit Testing 配置选项：
 
@@ -69,32 +69,32 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 - Live Unit Testing 进程可占用的内存上限。
 
-- 写入 Live Unit Testing“输出”窗口的信息级别。
+- 写入 Live Unit Testing“输出”  窗口的信息级别。
 
-   选项包括无日志记录（“无”）、仅限错误消息（“错误”）、错误和信息性消息（默认值为“信息”）或所有详细信息（“详细”）。
+   选项包括无日志记录（“无”  ）、仅限错误消息（“错误”  ）、错误和信息性消息（默认值为“信息”  ）或所有详细信息（“详细”  ）。
 
-   还可向名为 `VS_UTE_DIAGNOSTICS` 的用户级环境变量分配值“1”，再重启 Visual Studio，从而在 Live Unit Testing 的“输出”窗口显示详细输出。
+   还可向名为 `VS_UTE_DIAGNOSTICS` 的用户级环境变量分配值“1”，再重启 Visual Studio，从而在 Live Unit Testing 的“输出”窗口显示详细输出  。
 
    要捕获文件中 Live Unit Testing 的详细 MSBuild 日志消息，请将 `LiveUnitTesting_BuildLog` 用户级环境变量设为该文件的名称以包含日志。
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>启动、暂停和停止 Live Unit Testing
 
-通过从顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “启动”来启用 Live Unit Testing。 启用 Live Unit Testing 后，“Live Unit Testing”菜单上的可用选项从一个“开始”项变为“暂停”、“停止”和“重置清理”。
+通过从顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “启动”来启用 Live Unit Testing    。 启用 Live Unit Testing 后，“Live Unit Testing”  菜单上的可用选项从一个“开始”  项变为“暂停”  、“停止”  和“重置清理”  。
 
 > [!NOTE]
-> 如果在不包含单元测试项目的解决方案中启动 Live Unit Testing，“Live Unit Testing”菜单上会显示“暂停”、“停止”和“重置清理”选项，但 Live Unit Testing 不会启动。 “输出”窗口显示以“此解决方案没有引用受支持的测试适配器...”开头的消息
+> 如果在不包含单元测试项目的解决方案中启动 Live Unit Testing，“Live Unit Testing”菜单上会显示“暂停”、“停止”和“重置清理”选项，但 Live Unit Testing 不会启动     。 “输出”窗口显示以“此解决方案没有引用受支持的测试适配器...”开头的消息 
 
 在任何时候，都可以临时暂停或完全停止 Live Unit Testing。 例如，当你正在重构且知道测试将停止一段时间时，你可能想要执行此操作。 三个菜单选项为：
 
 - **暂停**，用于临时挂起 Live Unit Testing。
 
-    暂停 Live Unit Testing 后，覆盖率可视化效果不会出现在编辑器中，但会保留所有已收集的数据。 若要恢复 Live Unit Testing，请选择”Live Unit Testing”菜单中的“继续”。 Live Unit Testing 将执行必要工作，以便与其暂停时所做的全部编辑保持同步，并相应地更新字形。
+    暂停 Live Unit Testing 后，覆盖率可视化效果不会出现在编辑器中，但会保留所有已收集的数据。 若要恢复 Live Unit Testing，请选择”Live Unit Testing”菜单中的“继续”  。 Live Unit Testing 将执行必要工作，以便与其暂停时所做的全部编辑保持同步，并相应地更新字形。
 
 - **停止**，用于完全停止 Live Unit Testing。 Live Unit Testing 将放弃已收集的所有数据。
 
 - **重置清理**：可停止 Live Unit Testing、删除持久化数据，并重启 Live Unit Testing。
 
-- **选项**：可打开[配置 Live Unit Testing](#configure-live-unit-testing) 部分中所述的“选项”对话框。
+- **选项**：可打开[配置 Live Unit Testing](#configure-live-unit-testing) 部分中所述的“选项”对话框  。
 
 ## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>在编辑器中查看键入时的覆盖率可视化效果
 
@@ -133,23 +133,23 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 通常，**测试资源管理器**具有可供运行、调试和分析测试结果的界面。 Live Unit Testing 与**测试资源管理器**集成。 当 Live Unit Testing 未启用或已停止时，**测试资源管理器**将显示上次运行测试时的单元测试状态。 源代码更改需要重新运行测试。 与此相反，启用 Live Unit Testing 后，**测试资源管理器**中的单元测试状态将立即更新。 不再需要显式运行单元测试。
 
 > [!NOTE]
-> 可在顶级 Visual Studio 菜单中依次选择“测试” > “Windows” > “测试资源管理器”，打开测试资源管理器。
+> 可在顶级 Visual Studio 菜单中依次选择“测试” > “Windows” > “测试资源管理器”，打开测试资源管理器     。
 
-可能会注意到，在“测试资源管理器”窗口中，一些测试已淡化。例如，如果在打开以前保存的项目后启用 Live Unit Testing，除了未通过测试外，“测试资源管理器”窗口淡化了所有测试，如下图所示。 在此示例中，Live Unit Testing 已重新运行未通过测试，但没有重新运行已通过测试，因为 Live Unit Testing 的持久化数据表明，自上一次成功运行测试以来没有任何变化。
+可能会注意到，在“测试资源管理器”  窗口中，一些测试已淡化。例如，如果在打开以前保存的项目后启用 Live Unit Testing，除了未通过测试外，“测试资源管理器”  窗口淡化了所有测试，如下图所示。 在此示例中，Live Unit Testing 已重新运行未通过测试，但没有重新运行已通过测试，因为 Live Unit Testing 的持久化数据表明，自上一次成功运行测试以来没有任何变化。
 
   ![图像](media/lut-test-explorer.png)
 
-可以重新运行淡化的任何测试，具体方法是选择“测试资源管理器”菜单上的“全部运行”或“运行”选项，或选择并右键单击“测试资源管理器”菜单中的一个或多个测试，再从弹出菜单中选择“运行选定测试”或“调试选定测试”。 运行的测试会向上冒到顶部。
+可以重新运行淡化的任何测试，具体方法是选择“测试资源管理器”  菜单上的“全部运行”  或“运行”  选项，或选择并右键单击“测试资源管理器”  菜单中的一个或多个测试，再从弹出菜单中选择“运行选定测试”  或“调试选定测试”  。 运行的测试会向上冒到顶部。
 
-Live Unit Testing 自动运行、更新测试结果与通过“测试资源管理器”显式运行测试结果有所不同。 区别包括：
+Live Unit Testing 自动运行、更新测试结果与通过“测试资源管理器”  显式运行测试结果有所不同。 区别包括：
 
 - 从测试资源管理器窗口运行或调试测试将运行常规二进制文件，而 Live Unit Testing 运行已检测二进制文件。
 - Live Unit Testing 不会新建应用程序域来运行测试，而是通过默认域运行测试。 从**测试资源管理器**窗口运行的测试确实会创建新的应用程序域。
-- Live Unit Testing 按顺序运行每个测试程序集中的测试。 如果通过“测试资源管理器”窗口运行多个测试，且已选择“并行运行测试”按钮，测试将并行运行。
+- Live Unit Testing 按顺序运行每个测试程序集中的测试。 在“测试资源管理器”窗口中，可以选择一个选项以并行运行多个测试  。
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing 和大型解决方案
 
-如果解决方案包含 10 个或更多项目，那么当用户启动 Live Unit Testing 且没有永久性数据时，或当用户在顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “重置清理”选项时，Visual Studio 会显示下面的对话框，以警告用户在大型项目中动态运行大量测试可能会严重影响性能。 如果用户选择“确定”，Live Unit Testing 会在解决方案中执行所有测试。 如果用户选择“取消”，可以选择要执行的测试。 有关如何执行此操作的信息，请参阅以下部分：[包括和排除测试项目和测试方法](#include-and-exclude-test-projects-and-test-methods)。
+如果解决方案包含 10 个或更多项目，那么当用户启动 Live Unit Testing 且没有永久性数据时，或当用户在顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “重置清理”选项时，Visual Studio 会显示下面的对话框，以警告用户在大型项目中动态运行大量测试可能会严重影响性能    。 如果用户选择“确定”  ，Live Unit Testing 会在解决方案中执行所有测试。 如果用户选择“取消”  ，可以选择要执行的测试。 有关如何执行此操作的信息，请参阅以下部分：[包括和排除测试项目和测试方法](#include-and-exclude-test-projects-and-test-methods)。
 
  ![大型项目的“Live Unit Testing”对话框](media/lut-large-project.png)
 
@@ -161,12 +161,12 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 
 若要在单元测试中选择单个项目，请在启动 Live Unit Testing 后执行以下操作：
 
-1. 在解决方案资源管理器中右键单击解决方案并依次选择“实时测试” > “排除”以排除整个解决方案。
-1. 右键单击想要包括在测试中的每个测试项目，然后依次选择“实时测试” > “包括”。
+1. 在解决方案资源管理器中右键单击解决方案并依次选择“实时测试” > “排除”以排除整个解决方案    。
+1. 右键单击想要包括在测试中的每个测试项目，然后依次选择“实时测试” > “包括”   。
 
 **从代码编辑器窗口中排除个别测试**
 
-可以使用代码编辑器窗口，包括或排除个别测试方法。 右键单击代码编辑器窗口中测试方法的签名，再选择“实时测试” > “包括 [选定方法]”、“实时测试” > “排除 [选定方法]”或“实时测试” > “排除 [选定方法] 以外的所有方法”，其中“选定方法”是在代码窗口中已选的方法名称。
+可以使用代码编辑器窗口，包括或排除个别测试方法。 右键单击代码编辑器窗口中测试方法的签名，再选择“实时测试” > “包括 [选定方法]”、“实时测试” > “排除 [选定方法]”或“实时测试” > “排除 [选定方法] 以外的所有方法”，其中“选定方法”是在代码窗口中已选的方法名称       。
 
 **以编程方式排除测试**
 

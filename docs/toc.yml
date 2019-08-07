@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: 使用引用管理器添加或删除引用
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: 使用 NuGet 与扩展 SDK 添加引用
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: 添加或删除导入的命名空间 (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: 有关无效引用的疑难解答
