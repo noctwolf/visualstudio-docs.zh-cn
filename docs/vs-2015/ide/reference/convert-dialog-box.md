@@ -15,20 +15,20 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 8dfceb7ca6221a342a5adbc3b3fcd3c193e0109e
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "65705857"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822408"
 ---
 # <a name="convert-dialog-box"></a>“转换”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 通过“转换”  对话框，可以选择转换工具以通过旧项目创建新项目，如通过 Visual Basic 6 项目创建 [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] 项目。 还可以使用 [Visual Studio 项目转换器](http://go.microsoft.com/fwlink/?LinkID=246465)（在 CodePlex 网站上提供）升级在 Visual Studio 的早期版本中创建的项目。  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
-  
+ [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
+
 ## <a name="opening-the-convert-dialog-box"></a>打开“转换”对话框  
   
 #### <a name="to-access-the-convert-dialog-box"></a>访问“转换”对话框  

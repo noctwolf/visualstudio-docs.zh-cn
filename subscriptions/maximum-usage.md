@@ -6,20 +6,18 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 了解如何在管理门户中查看分配的最大订阅数
-ms.openlocfilehash: 7a3205fd29c0eb69e20fee03a2679ab227243058
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416993"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605498"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用最大用量功能跟踪分配的订阅数
-
 Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配的订阅数量，并确定在过去一年和整个协议期间分配的每个级别的峰值订阅数。 
 
 ## <a name="view-your-maximum-usage"></a>查看最大用量
 查看为任何协议和订阅级别分配的峰值订阅数：
-
 1. 在门户左上角的下拉列表中选择要查看的协议。 （若只有一个协议，则已经选择了该协议。）
 2. 单击“最大用量”选项卡  。  
     > [!div class="mx-imgBorder"]
@@ -41,8 +39,7 @@ Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>问：最大用量中的信息与门户左侧“概述”部分中提供的分配信息有何不同？
-
-答：概述中的信息显示每个订阅级别的当前分配和可用订阅。  这可能与在任何时候为协议分配的最大订阅数有很大不同。  使用最大用量功能，可查看达到最大分配级别的时间及达到的具体级别。  这是一个重要的区别，因为在校准期间是根据全年任何时候分配的最大订阅数对订阅进行计费的。 
+答：概述中的信息显示每个订阅级别的当前分配和可用订阅  。  这可能与在当前年度或协议有效期内为协议分配的最大订阅数有很大不同。  使用最大用量功能，可查看达到最大分配级别的时间及达到的具体级别。  这是一个重要的区别，因为在校准期间是根据全年任何时候分配的最大订阅数对订阅进行计费的。 
 
 ## <a name="resources"></a>资源
 - [Visual Studio 授权白皮书](https://aka.ms/vslicensing)
@@ -50,5 +47,5 @@ Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配
 - [批量许可条款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>后续步骤
-如果对订阅分配或门户管理的其他方面有任何疑问，请联系 https://visualstudio.microsoft.com/subscriptions/support/ 获取帮助。 
-
+- 如果对订阅分配或门户管理的其他方面有任何疑问，请联系 https://visualstudio.microsoft.com/subscriptions/support/ 获取帮助。 
+- 详细了解如果分配的订阅数超过了所购买的订阅数（称为[超额分配](handle-overclaimed-license.md)）应该怎么办。

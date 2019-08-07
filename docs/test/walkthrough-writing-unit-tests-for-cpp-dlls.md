@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 1e9e77cd3b6cd02810873127bf9173eac80d7e74
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132155"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661898"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C++ DLL 单元测试
 
@@ -88,7 +88,7 @@ ms.locfileid: "67132155"
 
 以下步骤说明如何在 Visual Studio 2019 中创建 DLL 项目。
 
-1. 使用“Windows 桌面向导”创建 C++ 项目  ：右键单击“解决方案资源管理器”中的解决方案名称，然后依次选择“添加” > “新建项目”    。 将“语言”设置为 C++，然后在搜索框中键入“windows”  。 从结果列表中选择“Windows 桌面向导”  。 
+1. 使用“Windows 桌面向导”创建 C++ 项目  ：右键单击“解决方案资源管理器”中的解决方案名称，然后依次选择“添加” > “新建项目”    。 将“语言”设置为 C++，然后在搜索框中键入“windows”  。 从结果列表中选择“Windows 桌面向导”  。
 
      在本演练中，该项目的名称为 `RootFinder`。
 
@@ -321,10 +321,21 @@ ms.locfileid: "67132155"
 
 6. 现在所有测试均通过。
 
-     ![所有测试通过](../test/media/ute_ult_alltestspass.png)
+   ![所有测试通过](../test/media/ute_ult_alltestspass.png)
+
+::: moniker range="vs-2017"
 
 > [!TIP]
 > 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE_parallelicon - 小](../test/media/ute_parallelicon-small.png)切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> 如果各个测试没有阻止其以任何顺序运行的依赖项，则可以在工具栏的设置菜单中启用并行测试执行。 这可以显著降低运行所有测试所需的时间。
+
+::: moniker-end
 
 ## <a name="refactor"></a> 在不更改测试的情况下重构代码
 
@@ -353,7 +364,7 @@ ms.locfileid: "67132155"
 
 - **签入测试。** 在每个团队成员向源代码管理签入代码之前，您可以强制执行某些测试。 这通常是一组完整版本验证测试中的一部分。
 
-     也可以强制实施最低级别的代码覆盖率。
+   也可以强制实施最低级别的代码覆盖率。
 
 ## <a name="see-also"></a>请参阅
 

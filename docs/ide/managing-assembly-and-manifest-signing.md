@@ -1,6 +1,7 @@
 ---
 title: 管理程序集和清单签名
 ms.date: 02/17/2017
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -8,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538236"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461491"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理程序集和清单签名
 
@@ -37,13 +38,13 @@ ms.locfileid: "62538236"
 
 可对 .NET 程序集和应用程序清单进行签名：
 
-- 可执行文件 (.exe)
+- 可执行文件 (.exe  )
 
-- 应用程序清单 (.exe.manifest)
+- 应用程序清单 (.exe.manifest  )
 
-- 部署清单 (.application)
+- 部署清单 (.application  )
 
-- 共享组件程序集 (.dll)
+- 共享组件程序集 (.dll  )
 
 对以下类型的资产进行签名：
 
@@ -57,16 +58,16 @@ ms.locfileid: "62538236"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何对 Visual Studio 中的程序集进行签名
 
-若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。
+若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”  选项卡（在“解决方案资源管理器”  中，右键单击项目节点并选择“属性”  ）。 选择“签名”  选项卡，然后选中“为程序集签名”  复选框。
 
-指定密钥文件。 如果选择新建密钥文件，始终以 .pfx 格式创建新密钥文件。 需要为新文件设置名称和密码。
+指定密钥文件。 如果选择新建密钥文件，始终以 .pfx 格式创建新密钥文件  。 需要为新文件设置名称和密码。
 
 > [!WARNING]
 > 应始终使用密码保护密钥文件，以防他人使用。 还可以使用提供程序或证书存储来保护密钥。
 
 也可以指向已创建的密钥。 有关创建密钥的详细信息，请参阅[创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
-如果仅对公钥具有访问权限，可以使用延迟签名来推迟分配密钥。 可通过选择“仅延迟签名”复选框来启用延迟签名。 延迟签名的项目将不会运行，并且无法调试。 但是，可以通过 [Sn.exe 强名称工具](/dotnet/framework/tools/sn-exe-strong-name-tool)及 `-Vr` 选项，在开发过程中跳过验证。
+如果仅对公钥具有访问权限，可以使用延迟签名来推迟分配密钥。 可通过选择“仅延迟签名”  复选框来启用延迟签名。 延迟签名的项目将不会运行，并且无法调试。 但是，可以通过 [Sn.exe 强名称工具](/dotnet/framework/tools/sn-exe-strong-name-tool)及 `-Vr` 选项，在开发过程中跳过验证。
 
 有关对清单签名的详细信息，请参阅[如何：对应用程序和部署清单签名](../ide/how-to-sign-application-and-deployment-manifests.md)。
 

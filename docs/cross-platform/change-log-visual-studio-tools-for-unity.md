@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,40 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821336"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661956"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="4201"></a>4.2.0.1
+
+发布时间：2019 年 7 月 24 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了一个新选项，可从 Unity 项目资源管理器创建任意类型的文件。
+  
+  - 改进了在对 Unity 项目使用快速生成时的诊断缓存。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了文件扩展名不是由任何已知编辑器处理的问题。
+
+  - 修复了对 Unity 项目资源管理器中自定义扩展的支持。
+
+  - 修复了在主对话框外保存设置的问题。
+
+  - 删除了旧的 Microsoft.VisualStudio.MPF 依赖项。
 
 ## <a name="4110"></a>4.1.1.0
 

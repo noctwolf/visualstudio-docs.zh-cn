@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: cae7a02c774773d08c287dde7df59ff62fdbec58
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195250"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533342"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概述
 
@@ -80,9 +80,9 @@ Roslyn 分析器不仅会报告静态代码分析也会报告的相同类型的�
 
 无法设置作为 Visual Studio 扩展安装的分析器的规则严重性。 若要配置[规则严重性](../code-quality/use-roslyn-analyzers.md#rule-severity)，则应将分析器安装为 NuGet 包。
 
-### <a name="categories"></a>类别
+## <a name="categories"></a>类别
 
-下面介绍有助于分析代码的不同类型的分析器。 
+下面介绍有助于分析代码的不同分析器类型：
 
 - Microsoft 建议的分析器：[FxCop 分析器](../code-quality/fxcop-analyzers.yml)
 - Visual Studio IDE 分析器：[配置](../ide/code-styles-and-code-cleanup.md)

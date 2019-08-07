@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821505"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661822"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="2200"></a>2.2.0.0
+
+发布时间：2019 年 7 月 25 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **评估版：**
+
+  - 修复了 IntPtr 类型的检测。
+
+- **调试器：**
+
+  - 修复了捕获点和函数断点的处理。
+
+## <a name="2130"></a>2.1.3.0
+
+发布时间：2019 年 7 月 9 日
+
+### <a name="new-features"></a>新增功能
+
+- **调试器：**
+
+  - 增加了对捕获异常子类的支持。
+
+  - 增加了对 MDS 协议 2.51 的支持。
+
+- **集成：**
+
+  - 增加了对 asmdef 文件的支持。
+
+  - 从模板添加文件时切换到重命名模式（模仿 Unity 编辑器的行为）。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了与 Unity 播放器通信时格式错误消息的处理。
+
+- **评估版：**
+
+  - 修复了表达式中命名空间的处理。
+
+## <a name="2120"></a>2.1.2.0
+
+发布时间：2019 年 7 月 2 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **评估版：**
+
+  - 修复了包含不可解析表达式的错误报告。
+
+## <a name="2110"></a>2.1.1.0
+
+发布时间：2019 年 6 月 27 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 已将 MonoBehaviour API 更新到 2019.1。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了 Unity 项目资源管理器的性能。
+
+  - 启用轻型生成时，修复了要输出的报告警告和错误。
+
+  - 修复了轻型生成性能。
+
+## <a name="2100"></a>2.1.0.0
+
+发布时间：2019 年 6 月 20 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 禁用了 Unity 项目的完整生成，取而代之的是使用 IntelliSense 错误和警告。 事实上，Unity 使用表示 Unity 内部所执行操作的类库项目创建 Visual Studio 解决方案。 尽管如此，Visual Studio 中的生成结果从未由 Unity 使用或选取，因为其编译管道已关闭。 在 Visual Studio 中生成只是使用资源。 如果由于你具有工具或具有依赖于完整生成的安装程序而需要完整生成，则可以禁用此优化（设置/Tools for Unity/禁用项目的完整生成）。
+  
+  - 添加了对 UPE 中的 Unity 包的支持。 只有引用包（使用 Packages 文件夹中的 manifest.json）和本地包（嵌入在 Packages 文件夹中）是可见的。
+
+## <a name="2021"></a>2.0.2.1
+
+发布时间：2019 年 5 月 30 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 增加了 Unity 执行目标的自定义图标。
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -42,6 +136,7 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了空帧的程序集筛选和帧检查。
 
 ## <a name="2011"></a>2.0.1.1
+ 
  发布日期：2019 年 3 月 26 日
 
 ### <a name="bug-fixes"></a>Bug 修复
@@ -87,6 +182,7 @@ Visual Studio Tools for Unity 更改日志。
   - 从模板中删除了命名空间。
 
 ## <a name="2003"></a>2.0.0.3
+ 
  发布日期：2019 年 3 月 5 日
 
 ### <a name="new-features"></a>新增功能

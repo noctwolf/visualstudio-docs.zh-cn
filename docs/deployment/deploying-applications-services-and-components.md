@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032554"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533364"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>先查看 Visual Studio 中的部署
 
@@ -105,7 +105,11 @@ ms.locfileid: "67032554"
 
 如果需要比 [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) 提供的更为复杂的桌面应用程序安装，则可以创建 Windows Installer 包（MSI 或 EXE 安装文件）或自定义引导程序。
 
-- 可以使用 [WiX 工具集 Visual Studio 2017 扩展](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)创建基于 MSI 的安装程序包。 这是一个命令行工具集。
+- 可以使用 [WiX 工具集扩展](https://marketplace.visualstudio.com/items?itemName=WixToolset.WiXToolset)创建基于 MSI 的安装程序包。 这是一个命令行工具集。
+
+   ::: moniker range=">=vs-2019"
+   对于 Visual Studio 2019，请参阅 [WiX Toolset Visual Studio 2019 Extension](https://marketplace.visualstudio.com/items?itemName=WixToolset.WixToolsetVisualStudio2019Extension)（WiX 工具集 Visual Studio 2019 扩展）。
+   ::: moniker-end
 
 - 可以使用 Flexera Software 中的 [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) 创建 MSI 或 EXE 安装程序包。 InstallShield 可与 Visual Studio 2017 及更高版本（不支持 Community Edition）一起使用。 请注意，InstallShield Limited Edition 不再包含在 Visual Studio 中，且不受 Visual Studio 2017 及更高版本支持；请查看 [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)，了解其未来的可用性。
 

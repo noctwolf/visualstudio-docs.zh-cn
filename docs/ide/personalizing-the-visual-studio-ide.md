@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953291"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606078"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
@@ -27,24 +27,24 @@ ms.locfileid: "62953291"
 
 ## <a name="general-environment-options"></a>常规环境选项
 
-许多个性化设置选项会通过“[环境选项](../ide/reference/environment-options-dialog-box.md)”对话框公开。 可通过两种方法来访问此对话框：
+许多个性化设置选项会通过“[环境选项](../ide/reference/general-environment-options-dialog-box.md)”对话框公开。 可通过两种方法来访问此对话框：
 
-- 在菜单栏上，依次选择“工具” > “选项”，如果尚未展开，则请展开“环境”节点。
+- 在菜单栏上，依次选择“工具” > “选项”，如果尚未展开，则请展开“环境”节点。   
 
-- 按 Ctrl+Q，在搜索框中键入“环境”，然后从结果中选择“环境”-->“常规”。
+- 按 Ctrl+Q，在搜索框中键入“环境”，然后从结果中选择“环境”>“常规”     。
 
 > [!TIP]
-> 出现“选项”对话框后，可按 F1 获取有关该页面上的各种设置的帮助。
+> 出现“选项”对话框后，可按 F1  获取有关该页面上的各种设置的帮助。
 
 ## <a name="environment-color-themes"></a>环境颜色主题
 
-若要在浅色、深色和蓝色之间更改颜色主题，请在搜索框中键入“环境”并选择“环境”-->“常规”。 在“选项”对话框中，更改“颜色主题”选项。
+要在浅色、深色和蓝色之间更改颜色主题，请在搜索框中键入“环境”，然后选择“环境”>“常规”   。 在“选项”对话框中，更改“颜色主题”选项。  
 
-若要更改编辑器中的着色选项，请在搜索框中键入“环境”，然后选择“环境”-->“字体和颜色”。 请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
+要更改编辑器中的着色选项，请在搜索框中键入“环境”，然后选择“环境”>“字体和颜色”   。 请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主菜单中的大小写
 
-可以在“词首字母大写”（如“File”）和“全部大写”（如“FILE”）之间更改主菜单大小写。 在搜索框中键入“环境”，选择“环境”>“常规”，然后更改“将词首字母大写样式应用到菜单栏”选项。
+可以在“词首字母大写”（如“File”）和“全部大写”（如“FILE”）之间更改主菜单大小写。   在搜索框中键入“环境”，选择“环境”>“常规”，然后更改“将词首字母大写样式应用到菜单栏”选项    。
 
 ### <a name="customize-menus-and-toolbars"></a>自定义菜单和工具栏
 
@@ -64,7 +64,7 @@ ms.locfileid: "62953291"
 
 ## <a name="external-tools"></a>外部工具
 
-可以自定义“工具”菜单以启动外部工具。 有关详细信息，请参阅[管理外部工具](../ide/managing-external-tools.md)。
+可以自定义“工具”菜单以启动外部工具  。 有关详细信息，请参阅[管理外部工具](../ide/managing-external-tools.md)。
 
 ## <a name="see-also"></a>请参阅
 

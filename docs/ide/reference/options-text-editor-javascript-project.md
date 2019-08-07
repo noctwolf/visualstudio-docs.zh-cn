@@ -1,28 +1,28 @@
 ---
 title: “选项”>“文本编辑器”>“JavaScript”>“项目”
 ms.date: 1/15/2019
-ms.technology: vs-ide-general
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Project
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 190cbdb2a8096415985d83fc525b997572d252c2
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778168"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605930"
 ---
 # <a name="options-text-editor-javascript-project"></a>“选项”>“文本编辑器”>“JavaScript”>“项目”
 
-使用“选项”对话框中的“项目”页，可以指定代码编辑器中的 JavaScript 项目选项。 若要访问此页，请先依次选择菜单栏中的“工具” > “选项”，再依次展开“文本编辑器” > “JavaScript” > “项目”。
+使用“选项”对话框中的“项目”页，可以指定代码编辑器中的 JavaScript 和 TypeScript 项目选项   。 要访问此页，请先依次选择菜单栏中的“工具” > “选项”，再依次展开“文本编辑器” > “JavaScript/TypeScript” > “项目”      。
 
 ## <a name="project-analysis-options"></a>项目分析选项
 
@@ -52,7 +52,7 @@ ms.locfileid: "62778168"
 
 ## <a name="ecmascript-version-for-files-that-are-not-part-of-a-project"></a>不属于项目的文件的 ECMAScript 版本
 
-使用这些选项，可以选择不属于项目的文件的 ECMAScript 版本。 可以选择“ECMAScript 3”、“ECMAScript 5”或“ECMAScript 6”。
+使用这些选项，可以选择不属于项目的文件的 ECMAScript 版本。 可以选择“ECMAScript 3”  、“ECMAScript 5”  或“ECMAScript 6”  。
 
 ## <a name="jsx-emit-for-tsx-files-that-are-not-part-of-a-project"></a>不属于项目的 TSX 文件的 JSX 发出内容
 
@@ -62,8 +62,8 @@ ms.locfileid: "62778168"
 
 |选项|说明|
 |------------|-----------------|
-|**React 框架**|在你选中此选项后，代码编辑器会发出 .js 文件扩展名。|
-|**Preserve**|在你选中此选项后，代码编辑器会在输出中保留 JSX，并发出 .jsx 文件扩展名。|
+|**React 框架**|在你选中此选项后，代码编辑器会发出 .js  文件扩展名。|
+|**Preserve**|在你选中此选项后，代码编辑器会在输出中保留 JSX，并发出 .jsx  文件扩展名。|
 
 ## <a name="see-also"></a>请参阅
 

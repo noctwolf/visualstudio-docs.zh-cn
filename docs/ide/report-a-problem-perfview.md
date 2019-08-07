@@ -15,16 +15,16 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: baae89b7bf45a4848c571f75e37c6cc0d203d459
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 6b1f61888fa642ed544c6da7d1cf77c43b52b2d9
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518183"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461542"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>使用 PerfView 收集 ETL 跟踪
 
-PerfView 是一个基于 [Windows 事件跟踪](/windows/desktop/ETW/event-tracing-portal)创建 ETL（事件跟踪日志）文件的工具，可用于排查 Visual Studio 存在的某类问题。 有时，当你报告问题时，产品团队可能会要求你运行 PerfView 以收集其他信息。
+PerfView 是一个基于 [Windows 事件跟踪](/windows/desktop/ETW/event-tracing-portal)创建 ETL（事件跟踪日志）文件的工具，可用于排查 Visual Studio 存在的某些问题类型。 有时，当你报告问题时，产品团队可能会要求你运行 PerfView 以收集其他信息。
 
 ## <a name="install-perfview"></a>安装 PerfView
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820749"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661967"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -232,7 +232,17 @@ public void My_Test ()
 
 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部  。 选择一个测试以在底部窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”  （快捷键： **“F12”** ），显示所选测试的源代码。
 
+::: moniker range="vs-2017"
+
 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果各个测试没有阻止其以任何顺序运行的依赖项，则可以在工具栏的设置菜单中启用并行测试执行。 这可以显著降低运行所有测试所需的时间。
+
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>每次生成后运行测试
 

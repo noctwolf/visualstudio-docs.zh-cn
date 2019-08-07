@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698000"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740237"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 代码分析概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ C/C++ 代码分析工具为开发人员提供有关其 C/C++ 源代码中可能�
  建议要求所有源代码签入均满足特定策略。 具体而言，建议确保在最近的本地生成过程中运行分析。 有关启用代码分析签入策略的详细信息，请参阅[创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Team Build 集成  
- 你可以使用生成系统的集成功能在 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] 生成过程中运行代码分析工具。 有关详细信息，请参阅[生成应用程序](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+ 你可以使用生成系统的集成功能在 [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] 生成过程中运行代码分析工具。 有关详细信息，请参阅[生成应用程序](/azure/devops/pipelines/index)。  
   
 ## <a name="command-line-support"></a>命令行支持  
  除了完全集成到开发环境中，开发人员还可以通过命令行使用分析工具，如以下示例所示：  

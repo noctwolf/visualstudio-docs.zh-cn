@@ -1,7 +1,7 @@
 ---
 title: 创建脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
-ms.date: 04/16/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365236"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483510"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 
@@ -133,8 +133,19 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > 完整的 Visual Studio 布局至少需要 35 GB 磁盘空间。 若要了解如何创建仅包含要安装的组件的布局，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)。
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > 完整的 Visual Studio 布局至少需要 35 GB 磁盘空间。 有关详细信息，请参阅[系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs/)。 要了解如何创建仅包含要安装的组件的布局，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > 完整的 Visual Studio 布局至少需要 35 GB 磁盘空间。 有关详细信息，请参阅[系统要求](/visualstudio/releases/2019/system-requirements/)。 要了解如何创建仅包含要安装的组件的布局，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)。
+
+::: moniker-end
 
 如果要安装非英语语言，请从[语言区域设置列表](#list-of-language-locales)中将 `en-US` 更改为区域设置。 然后，使用此[可用组件和工作负载列表](workload-and-component-ids.md)，进一步自定义安装缓存。
 

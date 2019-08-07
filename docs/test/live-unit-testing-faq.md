@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258134"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662026"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -46,7 +46,7 @@ Live Unit Testing 是否适用于 .NET Core？
 
 可以。 Live Unit Testing 可与 .NET Core 和 .NET Framework 配合使用。 在 Visual Studio 2017 版本 15.3 中增加了对 .NET Core 的支持。 若希望 Live Unit Testing 支持 .NET Core，请将 Visual Studio 升级到此版本或更高版本。
 
-## <a name="configuration"></a>Configuration
+## <a name="configuration"></a>配置
 
 启用 Live Unit Testing 后，为什么它不工作？ 
 
@@ -139,7 +139,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 - Live Unit Testing 不会创建新的应用程序域来运行测试，但从测试资源管理器窗口运行的测试确实会创建新的应用程序域  。
 
-- Live Unit Testing 按顺序运行每个测试程序集中的测试，但如果从测试资源管理器窗口运行多个测试，并选择“并行运行测试”按钮，它们将并行运行   。
+- Live Unit Testing 按顺序运行每个测试程序集中的测试；在“测试资源管理器”窗口中，可以选择并行运行多个测试  。
 
 - Live Unit Testing 中测试的发现和执行使用 `TestPlatform` 版本 2，而测试资源管理器窗口使用版本 1  。 但在大多数情况下，将不会注意到有差异。
 

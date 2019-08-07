@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315253"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533373"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -322,7 +322,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 ## <a name="add-a-build-script-to-transpile-the-jsx"></a>添加用于转译 JSX 的生成脚本
 
-在 Node.js 的最新版本中，需要生成脚本。 不是在命令行转译 JSX（如上一节所示），而是在使用 Visual Studio 生成时转译 JSX。
+从 Visual Studio 2019 开始，需要生成脚本。 不是在命令行转译 JSX（如上一节所示），而是在使用 Visual Studio 生成时转译 JSX。
 
 * 打开 package.json  并在 `dependencies` 部分后添加以下部分：
 
