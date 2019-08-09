@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26845b3878a89ea52a3f77f9a0a8d23363877edd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960458"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870677"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>从文本模板访问 Visual Studio 或其他主机
 
@@ -24,7 +24,7 @@ ms.locfileid: "62960458"
 
 ## <a name="obtain-access-to-the-host"></a>获取对主机的访问
 
-若要访问主机，请设置`hostspecific="true"`在`template`指令。 现在，可以使用`this.Host`，其中包含类型<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>类型具有可用于，例如，解析文件名称和记录错误的成员。
+若要访问主机，请设置`hostspecific="true"`在`template`指令。 现在, 可以使用`this.Host`类型为[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))的。 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))类型具有可用于解析文件名和日志错误的成员, 例如。
 
 ### <a name="resolve-file-names"></a>解析文件名称
 
