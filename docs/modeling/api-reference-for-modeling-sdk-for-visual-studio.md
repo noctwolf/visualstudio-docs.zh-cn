@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be903b2d0e269a0bce99ab57ff83e1b4bf8caa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 429ce6ed8d44387d3289ee7100da4e639f16ad8e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934348"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870593"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio 的建模 SDK 的 API 参考
 
@@ -33,11 +33,11 @@ Visual Studio 可视化和建模 SDK 提供了基于你的域特定语言 (DSL) 
 |<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|实现 DSL 可扩展性的扩展方法的模型元素。|
 |<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|扩展属性|
 |<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|能让你的模型部分只读的。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration?displayProperty=fullName>|Modelbus API，它可以帮助您将集成不同的模型。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker?displayProperty=fullName>|对话框中，可让用户导航到的模型和元素来创建 Modelbus 引用。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting?displayProperty=fullName>|选取器服务中。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell?displayProperty=fullName>|Visual Studio Modelbus 适配器框架。|
-|<xref:Microsoft.VisualStudio.Modeling.Integration.Shell.Picker?displayProperty=fullName>|选取器对话框中，可让用户导航到的模型和元素来创建 Modelbus 引用。|
+|[VisualStudio 集成](/previous-versions/ee904412(v=vs.140))|Modelbus API，它可以帮助您将集成不同的模型。|
+|[VisualStudio (& e)](/previous-versions/ee904394(v=vs.140))|对话框中，可让用户导航到的模型和元素来创建 Modelbus 引用。|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|选取器服务中。|
+|[VisualStudio 命令行界面](/previous-versions/ee869435(v=vs.140))|Visual Studio Modelbus 适配器框架。|
+|[VisualStudio (如果选择)](/previous-versions/ee886769(v=vs.140))|选取器对话框中，可让用户导航到的模型和元素来创建 Modelbus 引用。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Dsl 和 Visual Studio 之间的接口。|
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|你可以定义快捷 （上下文） 菜单命令。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|你可以定义验证约束。|

@@ -9,23 +9,23 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 672efc49d712d9cd800bf53a2ca8487c96d502b6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444645"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871680"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-如果您编写读取模型包含的文本模板[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 引用，你可能想要解析对访问目标模型的引用。 在这种情况下，您需要调整文本模板和引用特定于域的语言 (Dsl):
+如果您编写的文本模板读取了包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 引用的模型, 则可能需要解析引用以访问目标模型。 在这种情况下，您需要调整文本模板和引用特定于域的语言 (Dsl):
 
 - 引用目标 DSL 必须具有配置为从文本模板访问 ModelBus 适配器。 如果你还可以从其他代码访问 DSL，除了标准的 ModelBus 适配器需要重新配置的适配器。
 
-     适配器管理器必须继承自<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>必须具有属性和`[HostSpecific(HostName)]`。
+     适配器管理器必须从[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))继承, 并且必须具有特性`[HostSpecific(HostName)]`。
 
-- 模板必须继承自<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>。
+- 该模板必须继承自[ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140))。
 
 > [!NOTE]
 > 如果你想要读取 DSL 模型中不包含 ModelBus 引用，可以使用在你的 DSL 项目中生成的指令处理器。 有关详细信息，请参阅[从文本模板访问模型](../modeling/accessing-models-from-text-templates.md)。
@@ -33,19 +33,19 @@ ms.locfileid: "63444645"
  有关文本模板的详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 ## <a name="creating-a-model-bus-adapter-for-access-from-text-templates"></a>为从文本模板访问创建模型总线适配器
- 若要解决文本模板中的 ModelBus 引用，目标 DSL 必须具有兼容的适配器。 在单独的 AppDomain 中执行文本模板[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文档编辑器，因此适配器必须加载而不是通过 DTE 访问模型。
+ 若要解决文本模板中的 ModelBus 引用，目标 DSL 必须具有兼容的适配器。 文本模板在不同于[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文档编辑器的 AppDomain 中执行, 因此适配器必须加载模型, 而不是通过 DTE 来访问它。
 
 #### <a name="to-create-a-modelbus-adapter-that-is-compatible-with-text-templates"></a>若要创建文本模板与兼容的 ModelBus 适配器
 
 1. 如果目标 DSL 解决方案不具有**ModelBusAdapter**项目中，创建一个使用 Modelbus 扩展向导：
 
-    1. 下载并安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 扩展，如果尚未这样做。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 下载并安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 扩展 (如果尚未执行此操作)。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
     2. 打开 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。
 
     3. 在对话框中，选择**我想要向 ModelBus 公开此 DSL**。 如果希望此 DSL 同时公开其模型和使用对其他 Dsl 的引用，可以选择这两个选项。
 
-    4. 单击 **“确定”**。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
+    4. 单击 **“确定”** 。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
 
     5. 单击**转换所有模板**。
 
@@ -81,7 +81,7 @@ ms.locfileid: "63444645"
 
 4. 在 AdapterManager.tt:
 
-    - 将 AdapterManagerBase 的声明更改，以便它继承<xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>。
+    - 更改 AdapterManagerBase 的声明, 使其从[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))继承。
 
          `public partial class <#= dslName =>AdapterManagerBase :`
 
@@ -102,7 +102,7 @@ ms.locfileid: "63444645"
 ## <a name="writing-a-text-template-that-can-resolve-modelbus-references"></a>编写文本模板可以解析 ModelBus 引用
  通常情况下，在开始使用模板来读取和生成文件从"source"DSL。 此模板使用要读取源模型文件中所述的方式中的源 DSL 项目中生成的指令[从文本模板访问模型](../modeling/accessing-models-from-text-templates.md)。 但是，源 DSL 包含对"目标"DSL 的 ModelBus 引用。 因此想要启用用于解析引用和访问目标 DSL 的模板代码。 因此必须通过执行以下步骤来适应模板：
 
-- 更改到模板的基本类<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>。
+- 将模板的基类更改为[ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140))。
 
 - 包括`hostspecific="true"`模板指令中。
 
@@ -152,7 +152,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
  执行此文本模板时，`SourceDsl`指令将文件加载`Sample.source`。 在模板可以访问该模型中，从开始的元素`this.ModelRoot`。 代码可以使用的域类和属性的 DSL。
 
- 此外，该模板可以解析 ModelBus 引用。 其中的引用指向目标模型时，程序集指令让使用的域类和该模型的 DSL 的属性的代码。
+ 此外，该模板可以解析 ModelBus 引用。 如果引用指向目标模型, 则程序集指令使代码可以使用该模型的 DSL 的域类和属性。
 
 - 如果不使用生成的 DSL 项目的指令，还应包括以下。
 
@@ -184,7 +184,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. 在 DSL 定义关系图中，右键单击顶部附近，不是关系图的空白部分，然后单击**启用 Modelbus**。
 
-   - 如果没有看到**启用 Modelbus**，必须下载并安装 VMSDK ModelBus 扩展。 VMSDK 网站上找到它：[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   - 如果没有看到**启用 Modelbus**，必须下载并安装 VMSDK ModelBus 扩展。 在 VMSDK 站点上查找:[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 3. 在中**启用 Modelbus**对话框中，选择**向 ModelBus 公开此 DSL**，然后单击**确定**。
 
@@ -214,11 +214,11 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. 在`T4ModelBusAdapter`项目中，添加对的引用：**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. `T4ModelBusAdapter`在项目中, 添加对的引用:**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. 打开 T4ModelBusAdapter\AdapterManager.tt:
 
-   1. 将 AdapterManagerBase 的基类更改为 <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>。 该文件的此部分现在如下所示。
+   1. 将 AdapterManagerBase 的基类更改为[VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))。 该文件的此部分现在如下所示。
 
        ```
        namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters
@@ -288,13 +288,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="create-a-modelbus-reference-to-another-file-in-the-solution"></a>在解决方案中创建对另一个文件的 ModelBus 引用
 
-1. 在 MBConsumer 解决方案中，按 CTRL + F5。 实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中打开**MBConsumer\Debugging**项目。
+1. 在 MBConsumer 解决方案中，按 CTRL + F5。 的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]实验实例将在**MBConsumer\Debugging**项目中打开。
 
 2. 添加一份到 Sample.provide **MBConsumer\Debugging**项目。 这是必需的因为 ModelBus 引用必须引用同一解决方案中的文件。
 
    1. 右键单击调试项目，指向**外**，然后单击**现有项**。
 
-   2. 在中**添加项**对话框中，将筛选器设置为**的所有文件 (\*。\*)**.
+   2. 在中**添加项**对话框中，将筛选器设置为**的所有文件 (\*。\*)** .
 
    3. 导航到`MBProvider\Debugging\Sample.provide`，然后单击**添加**。
 
@@ -304,13 +304,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 5. 保存该文件。
 
-    (不要关闭的实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。)
+    (请不要关闭的实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。)
 
    您已创建包含另一个模型中元素的 ModelBus 引用的模型。
 
 #### <a name="resolve-a-modelbus-reference-in-a-text-template"></a>解决文本模板中的 ModelBus 引用
 
-1. 在实验实例中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，打开示例文本模板文件。 按如下所示设置其内容。
+1. 在的实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中, 打开示例文本模板文件。 按如下所示设置其内容。
 
     ```
     <#@ template debug="true" hostspecific="true" language="C#"
@@ -366,7 +366,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="resolve-a-modelbus-reference-in-a-gesture-handler"></a>解决在笔势处理程序中的 ModelBus 引用
 
-1. 关闭实验实例的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，如果它正在运行。
+1. 如果正在运行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)], 请关闭的实验实例。
 
 2. 添加内容的名为 MBConsumer\Dsl\Custom.cs 并将其内容设置为以下文件。
 
@@ -403,7 +403,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 3. 按 Ctrl+F5。
 
-4. 在实验实例中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，打开`Debugging\Sample.consume`。
+4. 在的实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中, 打开。 `Debugging\Sample.consume`
 
 5. 双击一个形状。
 
