@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 462ddeebba217e3a129736d1532aeec6b106d0cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 725bf599d8d13d345767f5af4d38db619263c23d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542139"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920386"
 ---
 # <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149:透明方法不得调入本机代码
 
@@ -27,16 +27,16 @@ ms.locfileid: "62542139"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 一个方法调用通过如 P/Invoke 的方法存根 （stub） 的本机函数。
+方法通过方法存根 (如 P/Invoke) 调用本机函数。
 
 ## <a name="rule-description"></a>规则说明
- 直接调用到本机代码，例如，通过使用 P/Invoke 的任何透明方法将引发此规则。 违反此规则会导致<xref:System.MethodAccessException>中，级别 2 透明度模型，并完整要求<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>级别 1 透明度模型中。
+此规则对通过 P/Invoke 直接调用本机代码的任何透明方法引发。 违反此规则会导致级别 2 <xref:System.MethodAccessException>透明度模型中出现, 并<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>在1级透明度模型中提供完全要求。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复此规则的冲突，请将标记调用本机代码的方法<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>属性。
+若要修复与此规则的冲突, 请使用<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>特性标记调用本机代码的方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- [!code-csharp[FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../code-quality/codesnippet/CSharp/ca2149-transparent-methods-must-not-call-into-native-code_1.cs)]
+[!code-csharp[FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../code-quality/codesnippet/CSharp/ca2149-transparent-methods-must-not-call-into-native-code_1.cs)]

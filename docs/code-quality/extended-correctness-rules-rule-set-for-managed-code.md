@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816629"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924000"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
-Microsoft 扩展的正确性规则规则集可最大化代码分析来报告逻辑和框架使用错误。 着重强调了在特定方案，例如 COM 互操作性和移动应用程序上。 应考虑包含此规则集如果其中一种情形适用于你的项目，或在项目中找到其他问题。
+Microsoft 扩展的正确性规则集可最大程度地提高代码分析报告的逻辑和框架使用错误。 对特定方案 (如 COM 互操作性和移动应用程序) 施加了额外的强调。 如果其中一个方案适用于你的项目或在项目中发现其他问题, 则应考虑包含此规则集。
 
- Microsoft 扩展的正确性规则规则集包含在 Microsoft 基本正确性规则规则中设置的规则。 基本正确性规则包括 Microsoft 最少量建议规则规则中设置的规则。 有关详细信息请参阅[托管代码的基本正确性规则规则集](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)和[托管建议规则规则集的托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Microsoft 扩展的正确性规则集包括 Microsoft 基本更正规则规则集中的规则。 基本更正规则包括 Microsoft 建议的最低规则规则集中的规则。 有关详细信息, 请参阅托管代码的[基本更正规则设置](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)和托管[代码的托管建议规则规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- 下表描述中的所有规则的 Microsoft 扩展的正确性规则规则集。
+下表介绍了 Microsoft 扩展的正确性规则集中的所有规则。
 
 |规则|描述|
 |----------|-----------------|

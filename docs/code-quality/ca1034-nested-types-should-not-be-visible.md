@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb01065fed41a30f26e15d7295fabc03fb3f1f4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a086ad80bd13fb18f866769db34d72cae3e67496
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779072"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922863"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034:嵌套类型不应是可见的
 
@@ -36,26 +36,26 @@ ms.locfileid: "62779072"
 
 ## <a name="cause"></a>原因
 
-外部可见类型包含的外部可见的类型声明。 嵌套的枚举和受保护的类型不受此规则。
+外部可见类型包含外部可见的类型声明。 嵌套的枚举和受保护的类型不受此规则的保护。
 
 ## <a name="rule-description"></a>规则说明
- 嵌套的类型是另一种类型的范围内声明的类型。 嵌套的类型可用于封装包含类型的私有实现详细信息。 如果用于此用途，则嵌套类型不应是外部可见的。
+嵌套类型是在另一个类型的范围内声明的类型。 嵌套类型适用于封装包含类型的私有实现详细信息。 如果用于此用途，则嵌套类型不应是外部可见的。
 
- 不使用外部可见的嵌套的类型的逻辑分组或以避免名称冲突;相反，使用命名空间。
+不要使用外部可见的嵌套类型进行逻辑分组或避免名称冲突;请改用命名空间。
 
- 嵌套的类型包括成员可访问性，其中一些程序员不清楚地了解这一概念。
+嵌套类型包括成员可访问性的概念, 而某些程序员并不清楚清楚。
 
- 子类和高级自定义方案中的嵌套的类型中，可以使用受保护的类型。
+在高级自定义方案中, 可以在子类和嵌套类型中使用受保护的类型。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 如果你确实想要从外部可见的嵌套的类型，更改类型的可访问性。 否则，删除从其父级的嵌套的类型。 如果嵌套的目的是进行分类的嵌套的类型，使用命名空间改为创建层次结构。
+如果不想让嵌套类型在外部可见, 请更改类型的可访问性。 否则, 请从其父级中删除嵌套类型。 如果嵌套的目的是对嵌套类型进行分类, 请改用命名空间来创建层次结构。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例显示了违反了此规则的类型。
+下面的示例演示违反规则的类型。
 
- [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
- [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
- [!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]
+[!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
+[!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/VisualBasic/ca1034-nested-types-should-not-be-visible_1.vb)]

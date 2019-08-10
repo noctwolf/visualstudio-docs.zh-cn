@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7739f33bad62667fdc7be8704237ebdd3932739c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783324"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918568"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：基于 XSD 架构创建 XML 文档
 
-**生成示例 XML**功能生成基于 XML 架构 (XSD) 文件的示例 XML 文件。
+"**生成示例 xml** " 功能根据 xml 架构 (XSD) 文件生成一个示例 xml 文件。
 
- 可以在下列情况下使用此选项：
+可以在下列情况下使用此选项：
 
 - 了解架构中各个构造的使用情况。
 
 - 确认架构发挥了应有的作用。
 
-**生成示例 XML**功能仅对全局元素可用，并且需要有效的 XML 架构集。
+"**生成示例 XML** " 功能仅适用于全局元素, 需要一个有效的 XML 架构集。
 
 此功能通常会生成有效的 XML 文档。 但是，如果架构包含下列一项或多项内容，示例可能无效：
 
@@ -41,11 +41,11 @@ ms.locfileid: "62783324"
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>基于 XSD 文件生成 XML 实例文档
 
-1. 按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1. [按照如何:创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2. 在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
+2. 在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)中, 右键单击`PurchaseOrder`全局元素。 选择 "**生成示例 XML**"。
 
-     当您选择此选项，PurchaseOrder。*xml*将生成并在 XML 编辑器中打开文件包含以下示例 XML 内容：
+     选择此选项时, PurchaseOrder。将在 XML 编辑器中生成并打开包含以下示例 XML 内容的*xml*文件:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a716da8eb0fb1b741c302ed32408e63a4933567b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808361"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921136"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004:移除对 GC.KeepAlive 的调用
 
@@ -28,16 +28,16 @@ ms.locfileid: "62808361"
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
 |类别|Microsoft.Reliability|
-|是否重大更改|非换行|
+|是否重大更改|不间断|
 
 ## <a name="cause"></a>原因
- 类使用`SafeHandle`，但仍包含对调用`GC.KeepAlive`。
+类使用`SafeHandle`但仍包含对`GC.KeepAlive`的调用。
 
 ## <a name="rule-description"></a>规则说明
- 如果将转换为`SafeHandle`使用情况，删除所有调用的`GC.KeepAlive`（对象）。 在这种情况下，类不必调用`GC.KeepAlive`，假定它们没有终结器但是依赖于`SafeHandle`它们完成 OS 句柄。  虽然保留对的调用中的成本`GC.KeepAlive`可能是由性能，感觉度量，可以忽略不计，调用`GC.KeepAlive`是必需或足以解决可能不再存在的问题使代码更加困难的生存期维护。
+如果要转换为`SafeHandle`用法, 请删除对`GC.KeepAlive` (object) 的所有调用。 在这种情况下, 类不应调用`GC.KeepAlive`, 前提是它们没有终结器, 而是`SafeHandle`依赖于完成它们的操作系统句柄。  尽管对的调用`GC.KeepAlive`的开销可能会因为性能的衡量而忽略不计, 但感觉到`GC.KeepAlive`对的调用是必要的或足以解决可能不再存在的生存期问题, 这会使代码更难以实现.
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 删除对调用`GC.KeepAlive`。
+删除对`GC.KeepAlive`的调用。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 仅当不从技术上讲正确，将转换为可取消显示此警告`SafeHandle`在类中的使用情况。
+仅当在技术上不能转换为`SafeHandle`类中的使用情况时, 才可以禁止显示此警告。

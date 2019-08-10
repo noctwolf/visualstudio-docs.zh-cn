@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abe71337b5eb09d44ec6a244dc17e656768847a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79ebba23b26e0967bc29a79e719e02d834a29f1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541046"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919856"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke 声明不应是安全关键的
 
@@ -25,7 +25,7 @@ ms.locfileid: "62541046"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- A P/Invoke 声明已标记有 <xref:System.Security.SecuritySafeCriticalAttribute>：
+A P/Invoke 声明已标记有 <xref:System.Security.SecuritySafeCriticalAttribute>：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -39,13 +39,13 @@ public class C
    }
 ```
 
- 在本例中，`C.Beep(...)` 已标记为安全可靠关键的方法。
+在本例中，`C.Beep(...)` 已标记为安全可靠关键的方法。
 
 ## <a name="rule-description"></a>规则说明
- 当方法执行安全敏感性操作时，将被标记为 SecuritySafeCritical，但透明代码使用它们也是安全的。 安全透明度模型的一个基本规则是透明代码可能从不通过 P/Invoke 直接调用本机代码。 因此，将 P/Invoke 标记为安全关键将使透明代码无法调用它，并且会误导安全分析。
+当方法执行安全敏感性操作时，将被标记为 SecuritySafeCritical，但透明代码使用它们也是安全的。 安全透明度模型的一个基本规则是透明代码可能从不通过 P/Invoke 直接调用本机代码。 因此，将 P/Invoke 标记为安全关键将使透明代码无法调用它，并且会误导安全分析。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要使 P/Invoke 可用于透明代码，请为之公开安全可靠关键的包装器方法：
+若要使 P/Invoke 可用于透明代码，请为之公开安全可靠关键的包装器方法：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers
@@ -65,4 +65,4 @@ class C
 ```
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。

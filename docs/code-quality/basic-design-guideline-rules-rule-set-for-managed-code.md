@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571363"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919540"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>托管代码的“基本设计准则规则”规则集
-可以使用 Microsoft 基本设计准则规则规则集以专注于使代码更易于理解和使用。 您应包含此规则设置，如果你的项目包括库代码，或者如果你想要强制执行的代码易于维护的最佳实践。
+您可以使用 Microsoft 基本设计准则规则集来集中精力使您的代码更易于理解和使用。 如果你的项目包含库代码, 或者如果你希望为易于维护的代码强制实施最佳实践, 则应包含此规则集。
 
- 基本设计准则规则 Microsoft 最小值进行规则规则集中包含的所有规则。 最小的规则的列表，请参阅[托管代码的托管建议规则规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)。
+基本设计准则规则包括 Microsoft 最小 Recommeded Rules 规则集中的所有规则。 有关最低规则的列表, 请参阅[托管代码的 "托管建议规则" 规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)。
 
- 下表介绍的所有 Microsoft 基本设计准则规则规则集中规则。
+下表介绍了 Microsoft 基本设计准则规则集中的所有规则。
 
 |规则|描述|
 |----------|-----------------|

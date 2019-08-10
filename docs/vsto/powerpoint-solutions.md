@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f2ecd0adea8e3d71eebff6e532a44def68c01c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872042"
+ms.locfileid: "68926431"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 解决方案
   Visual Studio 提供可用于创建 Microsoft Office PowerPoint 的 VSTO 外接程序的项目模板。 可使用 VSTO 外接程序自动化 PowerPoint、扩展 PowerPoint 功能或自定义 PowerPoint 用户界面 (UI)。
@@ -58,7 +58,7 @@ ms.locfileid: "68872042"
  有关 PowerPoint PIA 设计的详细信息 (例如 PIA 中类和接口之间的差异以及如何实现 PIA 中的事件), 请参阅[Office 主互操作程序集中的类和接口的概述](http://go.microsoft.com/fwlink/?LinkId=199885)。
 
 ### <a name="vba-object-model-reference"></a>VBA 对象模型引用
- VBA 对象模型引用在 PowerPoint 对象模型被公开到 Visual Basic for Applications (VBA) 代码时记录该对象模型。 有关详细信息, 请参阅[PowerPoint 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199770)
+ VBA 对象模型引用在 PowerPoint 对象模型被公开到 Visual Basic for Applications (VBA) 代码时记录该对象模型。 有关详细信息, 请参阅[PowerPoint 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199770)。
 
  VBA 对象模型引用中的所有对象和成员都对应于 PowerPoint 主互操作程序集 (PIA) 中的类型和成员。 例如, VBA 对象模型引用中的表示对象对应于 PowerPoint PIA 中的[表示](/previous-versions/office/developer/office-2010/ff761925(v=office.14))类型。 虽然 VBA 对象模型引用提供大多数属性、方法和事件的代码示例，但如果你想要在使用 Visual Studio 创建的 PowerPoint VSTO 外接程序项目中使用它们，则必须将本引用中的 VBA 代码转换成 Visual Basic 或 Visual C#。
 

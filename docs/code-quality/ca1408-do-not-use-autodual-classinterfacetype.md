@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546028"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921988"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:请不要使用 AutoDual ClassInterfaceType
 
@@ -34,29 +34,29 @@ ms.locfileid: "62546028"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 组件对象模型 (COM) 可见类型将标有<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性设置为`AutoDual`的值<xref:System.Runtime.InteropServices.ClassInterfaceType>。
+组件对象模型 (COM) 可见类型被标记<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>为属性设置`AutoDual`为的值<xref:System.Runtime.InteropServices.ClassInterfaceType>。
 
 ## <a name="rule-description"></a>规则说明
- 使用双重接口的类型使客户端可以绑定到特定的接口布局。 如果在将来的版本中对该类型或任何基类型的布局进行更改，将中断绑定到该接口的 COM 客户端。 默认情况下，如果<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性未指定，则使用仅支持调度的接口。
+使用双重接口的类型使客户端可以绑定到特定的接口布局。 如果在将来的版本中对该类型或任何基类型的布局进行更改，将中断绑定到该接口的 COM 客户端。 默认情况下, 如果<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>未指定属性, 则使用仅调度接口。
 
- 除非以其他方式标记，所有公共的非泛型类型都是对 COM 可见所有非公共和泛型类型是对 COM 不可见
+除非另行标记, 否则所有公共非泛型类型都对 COM 可见;所有非公共和泛型类型对 COM 都不可见。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复此规则的冲突，请更改的值<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>归于`None`的值<xref:System.Runtime.InteropServices.ClassInterfaceType>显式定义接口。
+若要修复与此规则的冲突, 请将<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性的值更改`None`为的值<xref:System.Runtime.InteropServices.ClassInterfaceType> , 并显式定义接口。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 除非它是特定类型和其基类型的布局不会更改的未来版本中，不要禁止显示此规则的警告。
+请勿禁止显示此规则发出的警告, 除非确定类型及其基类型的布局在未来版本中将不会更改。
 
 ## <a name="example"></a>示例
- 下面的示例显示了违反了规则和要使用显式接口的类重新声明的类。
+下面的示例演示一个与规则冲突的类, 以及一个用于使用显式接口的类的重新声明。
 
- [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+[!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
-## <a name="related-rules"></a>相关的规则
- [CA1403:自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+## <a name="related-rules"></a>相关规则
+[CA1403自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412:将 ComSource 接口标记为 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412将 ComSource 接口标记为 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>请参阅
 
