@@ -488,8 +488,6 @@
       href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: VSPackages 故障排除
       href: troubleshooting-vspackages.md
-- name: Shell（集成或独立）
-  href: 'https://vspartner.com/pages/vsshells'
 - name: 提供 Visual Studio 扩展
   items:
     - name: 提供 Visual Studio 扩展
