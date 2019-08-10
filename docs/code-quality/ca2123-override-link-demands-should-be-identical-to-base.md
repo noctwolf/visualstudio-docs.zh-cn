@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52959279bca5aa0f86722050f6118f64997a901d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545040"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920814"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123:重写链接请求应与基相同
 
@@ -31,23 +31,23 @@ ms.locfileid: "62545040"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 公共或受保护方法的公共类型中重写的方法或实现一个接口，并且不具有相同[链接要求](/dotnet/framework/misc/link-demands)作为接口或虚方法。
+公共类型中的公共或受保护方法会重写方法或实现接口, 但不会与接口或虚方法具有相同的[链接要求](/dotnet/framework/misc/link-demands)。
 
 ## <a name="rule-description"></a>规则说明
- 该规则将一个方法与其基方法（该基方法为另一个类型中的接口或虚方法）相匹配，然后比较两者的链接请求。 如果在方法或基方法具有链接要求，并且另一个不会报告冲突。
+该规则将一个方法与其基方法（该基方法为另一个类型中的接口或虚方法）相匹配，然后比较两者的链接请求。 如果方法或基方法具有链接要求, 而另一种不具有链接要求, 则会报告冲突。
 
- 如果违反此规则，则恶意调用方只是调用不安全的方法，可以跳过链接要求。
+如果违反此规则, 则恶意调用方只需调用不安全的方法, 即可跳过该链接要求。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复此规则的冲突，请重写方法或实现应用相同的链接要求。 如果无法做到这一点，此方法的完全要求标记或完全删除该属性。
+若要修复与此规则的冲突, 请将相同的链接请求应用于重写方法或实现。 如果无法做到这一点, 请将方法标记为完全要求, 或者完全删除该属性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示各种违反此规则。
+下面的示例说明了此规则的各种冲突。
 
- [!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
+[!code-csharp[FxCop.Security.OverridesAndSecurity#1](../code-quality/codesnippet/CSharp/ca2123-override-link-demands-should-be-identical-to-base_1.cs)]
 
 ## <a name="see-also"></a>请参阅
 

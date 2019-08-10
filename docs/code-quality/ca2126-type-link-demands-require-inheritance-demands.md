@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdf92eae202f1ebb80b88e28307e7dacfbc0a39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2be42519f87c3c040c1f80c80d53d490853d986e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542385"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920755"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126:类型链接请求需要继承请求
 
@@ -35,32 +35,32 @@ ms.locfileid: "62542385"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 一个公共的非密封的类型受保护的链接要求，具有可重写的方法，并且类型和方法都不受继承要求保护。
+公共的非密封类型受链接要求保护, 具有可重写的方法, 并且类型和方法都不受继承要求保护。
 
 ## <a name="rule-description"></a>规则说明
- 对方法或其声明类型链接请求要求直接调用方的方法具有指定的权限。 在方法上的继承请求要求重写方法，以使指定的权限。 对一种类型的继承请求要求派生类具有指定的权限。
+对方法或其声明类型的链接需求要求方法的直接调用方具有指定的权限。 对方法的继承要求需要重写方法才能具有指定的权限。 对类型的继承需求要求派生类具有指定的权限。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要解决此规则的冲突，安全的类型或方法替换为链接要求相同的权限继承要求。
+若要修复与此规则的冲突, 请使用与链接要求相同的权限的继承请求来保护类型或方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例显示了违反了此规则的类型。
+下面的示例演示违反规则的类型。
 
- [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
- [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
- [!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
+[!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
+[!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
+[!code-csharp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2126-type-link-demands-require-inheritance-demands_1.cs)]
 
-## <a name="related-rules"></a>相关的规则
- [CA2108:检查有关值类型的声明性安全](../code-quality/ca2108-review-declarative-security-on-value-types.md)
+## <a name="related-rules"></a>相关规则
+[CA2108查看值类型的声明性安全](../code-quality/ca2108-review-declarative-security-on-value-types.md)
 
- [CA2112:受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+[CA2112受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA2122:不要间接公开方法使用链接请求](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
+[CA2122不要通过链接要求间接公开方法](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)
 
- [CA2123:重写链接请求应与基相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
+[CA2123重写链接请求应与基相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>请参阅
 

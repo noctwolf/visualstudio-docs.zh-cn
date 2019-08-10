@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b05228ef22dee20506b728164d22976feb662ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545011"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920499"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142:不应使用 LinkDemand 保护透明代码
 
@@ -27,20 +27,20 @@ ms.locfileid: "62545011"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 透明方法需要<xref:System.Security.Permissions.SecurityAction>或其他安全要求。
+透明方法需要<xref:System.Security.Permissions.SecurityAction>或其他安全要求。
 
 ## <a name="rule-description"></a>规则说明
- 需要 Linkdemand 来访问它们的透明方法将引发此规则。 安全透明代码不应负责验证某个操作的安全，因此不应要求权限。 透明方法不会为非特定的安全，因为它们不应作出任何安全决策。 此外，安全关键代码，这会使安全决策，不应依赖透明代码以之前进行此类决定。
+此规则在需要 Linkdemand 来访问它们的透明方法上触发。 安全透明代码不应负责验证某个操作的安全，因此不应要求权限。 因为透明方法应为安全特定方法, 所以它们不应进行任何安全决策。 此外, 保证安全决策的安全关键代码不应依赖透明代码来进行此类决定。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复此规则的冲突，请删除透明方法链接要求或此方法标记<xref:System.Security.SecuritySafeCriticalAttribute>属性，如果它正在执行安全检查，如安全要求。
+若要修复与此规则的冲突, 请删除透明方法的链接要求, 或在执行安全<xref:System.Security.SecuritySafeCriticalAttribute>检查 (如安全要求) 时使用特性标记该方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 在以下示例中，将引发规则方法因为该方法是透明的并标有 LinkDemand <xref:System.Security.PermissionSet> ，其中包含<xref:System.Security.Permissions.SecurityAction>。
+在下面的示例中, 规则在方法上触发, 因为方法是透明的, 并标记有<xref:System.Security.PermissionSet> <xref:System.Security.Permissions.SecurityAction>包含的 LinkDemand。
 
- [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]
 
- 不禁止显示此规则发出的警告。
+不禁止显示此规则发出的警告。

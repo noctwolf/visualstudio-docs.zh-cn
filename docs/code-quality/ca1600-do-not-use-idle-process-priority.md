@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797531"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921809"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600:不要使用 Idle 进程优先级
 
@@ -31,13 +31,13 @@ ms.locfileid: "62797531"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 当进程设置为时将引发此规则`ProcessPriorityClass.Idle`。
+当进程设置为时, `ProcessPriorityClass.Idle`将出现此规则。
 
 ## <a name="rule-description"></a>规则说明
- 不要将进程优先级设置为 Idle。 进程`System.Diagnostics.ProcessPriorityClass.Idle`它本应处于空闲状态，并因此将阻止进入待机状态时占用 CPU。
+不要将进程优先级设置为 Idle。 如果进程在其他情况下处于空闲状态, 则会占用CPU,因而会阻止待机。`System.Diagnostics.ProcessPriorityClass.Idle`
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 设置为进程`ProcessPriorityClass.BelowNormal`。
+将进程设置`ProcessPriorityClass.BelowNormal`为。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 仅当 Idle 进程优先级是必需的且可以安全地忽略移动性注意事项时，应禁止显示此规则。
+仅当需要空闲进程优先级时才应禁止显示此规则, 并且可以安全地忽略移动性注意事项。

@@ -8,17 +8,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560046"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919558"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>托管代码的“基本更正规则”规则集
-基本正确性规则规则集重点关注逻辑错误和使用的框架 Api 中的常见错误。 基本正确性规则最少量建议规则规则集中包含的规则。 有关详细信息，请参阅[托管代码的托管建议规则规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)应包含此规则集可展开上的所需的最低建议规则所报告的警告的列表。
+基本更正规则规则集重点介绍了使用框架 Api 时的逻辑错误和常见错误。 基本更正规则包括最小建议规则集中的规则。 有关详细信息, 请参阅[托管代码的 "托管建议规则" 规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)。应包括此规则集, 以便在建议的最低规则报告的警告列表中进行扩展。
 
- 下表介绍了 Microsoft 基本正确性规则规则集中的所有规则。
+下表介绍了 Microsoft 基本更正规则集中的所有规则。
 
 |规则|描述|
 |----------|-----------------|

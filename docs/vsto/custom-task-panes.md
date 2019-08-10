@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872123"
+ms.locfileid: "68926716"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一个用户界面面板，通常停靠在 Microsoft Office 应用程序中某一窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
@@ -124,7 +124,7 @@ ms.locfileid: "68872123"
 
  若要在 VSTO 外接程序仍在运行时清理任务窗格使用的资源，请使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 或 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 方法。 这些方法从 `CustomTaskPanes` 集合中删除指定的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象，并调用该对象的 <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> 方法。
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在卸载 VSTO 外接程序时自动清理自定义任务窗格使用的资源。 不要在项目中<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>的<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> `ThisAddIn_Shutdown`事件处理程序中调用或方法。 这些方法将引发 <xref:System.ObjectDisposedException>，因为 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在调用 `ThisAddIn_Shutdown` 之前清理 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象使用的资源。 有关的详细信息`ThisAddIn_Shutdown`, 请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在卸载 VSTO 外接程序时自动清理自定义任务窗格使用的资源。 不要在项目中<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>的<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> `ThisAddIn_Shutdown`事件处理程序中调用或方法。 这些方法将引发 <xref:System.ObjectDisposedException>，因为 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在调用 `ThisAddIn_Shutdown` 之前清理 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象使用的资源。 有关`ThisAddIn_Shutdown`的详细信息, 请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
 
 ## <a name="Managing"></a>在多个应用程序窗口中管理自定义任务窗格
  在使用多个窗口显示文档和其他项的应用程序中创建自定义任务窗格时，你需要进行额外的步骤来确保在用户希望显示任务窗格时任务窗格是可见的。
