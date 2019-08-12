@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825754"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926818"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 
-XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段的功能。 例如，在编写 XML 文件，而定位元素名的旁边，可以按**选项卡**来填充该元素与从该元素的架构信息生成的 XML 数据。
+"XML 编辑器" 可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如, 在创作 XML 文件时, 如果将其放置在元素名称旁边, 可以按**tab**键, 并使用从该元素的架构信息生成的 XML 数据来填充元素。
 
 此功能只适用于元素。 下列规则也适用：
 
@@ -43,32 +43,32 @@ XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段�
 
 ## <a name="example"></a>示例
 
- 在本部分中的步骤说明如何使用 XML 编辑器的架构生成 XML 代码段功能。
+本部分中的步骤说明如何使用 XML 编辑器的架构生成的 XML 代码段功能。
 
 > [!NOTE]
 > 在开始下列步骤之前，先将架构文件保存到本地计算机上。
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>若要创建新的 XML 文件并将它与 XML 架构相关联
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>创建新的 XML 文件并将其与 XML 架构关联
 
-1. 上**文件**菜单，依次指向**新建**，然后单击**文件**。
+1. 在 "**文件**" 菜单上, 指向 "**新建**", 然后单击 "**文件**"。
 
-2. 选择**XML 文件**中**模板**窗格，然后单击**打开**。
+2. 在 "**模板**" 窗格中选择 " **XML 文件**", 然后单击 "**打开**"。
 
      新文件将在编辑器中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8">`。
 
-3. 在文档属性窗口中，单击浏览按钮 ( **...** ) 上**架构**字段。
+3. 在文档 "属性" 窗口中, 单击 "**架构**" 字段上的 "浏览" 按钮 ( **...** )。
 
-     **XSD 架构**显示对话框。
+     将显示 " **XSD 架构**" 对话框。
 
 4. 单击 **添加**。
 
-     **打开 XSD 架构**显示对话框。
+     随即显示 "**打开 XSD 架构**" 对话框。
 
-5. 选择架构文件，然后单击**打开**。
+5. 选择该架构文件并单击 "**打开**"。
 
 6. 单击 **“确定”** 。
 
-     现在是 XML 架构与 XML 文档关联。
+     XML 架构现在与 XML 文档关联。
 
 ### <a name="to-generate-an-xml-snippet"></a>生成 XML 代码段
 
@@ -76,23 +76,23 @@ XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段�
 
 2. 成员列表中显示可能的项：
 
-     **！-** 添加注释。
+     **!--** 添加注释。
 
-     **!DOCTYPE**添加文档类型。
+     **!DOCTYPE**来添加文档类型。
 
-     **?** 若要添加的处理指令。
+     **?** 添加处理指令。
 
-     **请联系**添加根元素。
+     **Contact**来添加根元素。
 
-3. 选择**联系人**成员列表然后按**Enter**。
+3. 从成员列表中选择 "**联系人**", 然后按**enter**。
 
      编辑器将添加开始标记 `<Contact` 并将光标置于元素名的后面。
 
-4. 按**选项卡**生成的 XML 数据`Contact`元素基于其架构信息。
+4. 按**tab**键, 基于`Contact`元素的架构信息生成元素的 XML 数据。
 
 ## <a name="input"></a>输入
 
- 以下架构文件供该演练使用。
+以下架构文件供该演练使用。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段�
 
 ### <a name="output"></a>Output
 
- 以下是根据与 `Contact` 元素关联的架构信息生成的 XML 数据。 项目标记为`bold`指定 XML 代码段中的可编辑字段。
+以下是根据与 `Contact` 元素关联的架构信息生成的 XML 数据。 标记为`bold`的项指定 XML 代码段中的可编辑字段。
 
 ```xml
 <Contact>
