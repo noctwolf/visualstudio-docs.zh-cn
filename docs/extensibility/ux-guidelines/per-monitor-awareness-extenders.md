@@ -1,74 +1,80 @@
 ---
-title: Visual Studio 扩展程序的每个监视器感知功能支持
+title: Visual Studio 扩展程序的按监视器感知支持
 titleSuffix: ''
-description: 了解有关每个监视器-识别功能在 Visual Studio 2019 中可用的新扩展器支持。
+description: 了解 Visual Studio 2019 中提供的每监视器感知的新扩展程序支持。
 ms.date: 04/10/2019
 helpviewer_keywords:
 - Visual Studio, PMA, per-monitor-awareness, extenders, Windows Forms
 - Per-Monitor Awareness support for extenders
-ms.assetid: ''
 author: rub8n
 ms.author: rurios
 manager: anthc
-ms.prod: visual-studio-windows
 monikerRange: vs-2019
-ms.technology: vs-ide-general
-ms.topic: reference
-ms.workload:
-- multiple
-ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.topic: conceptual
+dev_langs:
+- CSharp
+- CPP
+ms.openlocfilehash: 2686248a087650f6170b72c8ef9b3a77e2ba275c
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793629"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957350"
 ---
-# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 扩展程序的每个监视器感知功能支持
-Visual Studio 2019 之前的版本必须设置为系统识别，而不是按监视器 DPI 感知 (PMA) 其 DPI 感知上下文。 运行中系统识别导致降级视觉对象体验 （例如模糊字体或图标），只要 Visual Studio 必须呈现跨具有不同的缩放比例或远程监视器到具有不同的显示配置的计算机例如 （不同Windows 扩展的)。
+# <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 扩展程序的按监视器感知支持
 
-Visual Studio 2019 DPI 感知上下文设置为 PMA，当环境支持此功能，允许 Visual Studio 来呈现根据托管它的位置显示的配置而不是单个系统定义的配置。 最终将转换为支持 PMA 模式的表面区域始终清晰 UI。
+Visual Studio 2019 之前的版本将其 DPI 感知上下文设置为 "系统感知", 而不是按监视器识别 DPI (PMA)。 在系统感知中运行时, 只要 Visual Studio 必须跨具有不同缩放因子的监视器进行呈现, 或在具有不同显示配置的计算机之间进行呈现 (例如不同Windows 缩放)。
 
-请参阅[在 Windows 上的高 DPI 桌面应用程序开发](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)本文档中介绍的有关条款和总体方案的详细信息文档。
+Visual Studio 2019 的 DPI 感知上下文设置为 PMA, 当环境支持它时, 允许 Visual Studio 根据其托管位置 (而不是单个系统定义的配置) 的配置进行呈现。 最终转换为支持 PMA 模式的表面区域的始终清晰的 UI。
+
+有关本文档中所述的条款和整体方案的详细信息, 请参阅[Windows 上的高 DPI 桌面应用程序开发](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)文档。
 
 ## <a name="quickstart"></a>快速入门
-- 确保在 PMA 模式下运行 Visual Studio (请参阅**启用 PMA**)
 
-- 常见方案的一组正确验证扩展插件的工作原理 (请参阅**测试你的扩展 PMA 问题**)
+- 确保 Visual Studio 在 PMA 模式下运行 (请参阅**启用 PMA**)
 
-- 如果你发现的问题，可以使用本文档中讨论的策略/建议来诊断并解决这些问题。 您还需要添加新[Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/)到你的项目以访问所需的 Api 的 NuGet 包。
+- 验证扩展在一组常见方案中是否正常工作 (请参阅**测试扩展中的 PMA 问题**)
 
-## <a name="enabling-pma"></a>启用 PMA
-若要启用 PMA Visual Studio 中的，需要满足以下要求：
-1) Windows 10 2018 年 4 月更新 (v1803，RS4) 或更高版本
-2) .NET framework 4.8 RTM 或更高版本
-3) 使用 visual Studio 2019 ["具有不同像素密度屏幕的优化呈现"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019)选项处于启用状态
+- 如果发现问题, 可以使用本文档中所述的策略/建议来诊断并解决这些问题。 还需要将新的[VisualStudio DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet 包添加到项目中, 以访问所需的 api。
 
-一旦满足这些要求，则 Visual Studio 将自动启用 PMA 模式整个过程。
+## <a name="enable-pma"></a>启用 PMA
+
+若要在 Visual Studio 中启用 PMA, 需要满足以下要求:
+
+- Windows 10 2018 年4月更新 (v1803、RS4) 或更高版本
+- .NET Framework 4.8 RTM 或更高版本
+- 启用了["针对具有不同像素密度的屏幕优化呈现"](../../ide/reference/general-environment-options-dialog-box.md)选项的 Visual Studio 2019
+
+满足这些要求后, Visual Studio 将自动在整个过程中启用 PMA 模式。
 
 > [!NOTE]
-> 仅当具有 Visual Studio 2019 Update #1 时，VS （例如属性浏览器） 中的 Windows 窗体内容将支持 PMA。
+> 只有在安装了 Visual Studio 2019 版本16.1 或更高版本时, Visual Studio 中 Windows 窗体内容 (例如属性浏览器) 才支持 PMA。
 
-## <a name="testing-your-extensions-for-pma-issues"></a>测试你的扩展 PMA 问题
+## <a name="test-your-extensions-for-pma-issues"></a>测试 PMA 问题的扩展
 
-Visual Studio 正式支持 WPF、 Windows 窗体、 Win32、 和 HTML/JS UI 框架。 当 Visual Studio 将进入 PMA 模式时，每个 UI 堆栈的行为有所不同。 因此，无论 UI 框架，建议执行测试流程是为了确保所有 UI 符合 PMA 模式。
+Visual Studio 正式支持 WPF、Windows 窗体、Win32 和 HTML/JS UI 框架。 将 Visual Studio 置于 PMA 模式下时, 每个 UI 堆栈的行为会有所不同。 因此, 无论 UI 框架如何, 都建议执行测试通过, 以确保所有 UI 都符合 PMA 模式。
 
-建议验证以下常见方案：
+建议你验证以下常见方案:
 
-1. 更改单个监视器环境的缩放比例，该应用程序时运行 *
-    - 此方案可帮助测试 UI 响应动态的 Windows 在 DPI 更改
+- 在应用程序运行时更改单个监视器环境的缩放比例。
 
-2. 停靠/移除便携式计算机在其中附加的监视器设置为主要和附加的监视器具有不同的缩放因子比在便携式计算机，运行该应用程序时。
-    - 此方案可帮助测试 UI 正在显示响应，添加或移除在 DPI 更改，以及处理动态显示
+  此方案有助于测试 UI 是否响应动态 Windows DPI 更改。
 
-3. 具有不同的缩放比例的多个监视器和它们之间移动应用程序。
-    - 此方案可帮助测试 UI 响应显示 DPI 更改
+- 停靠/脱开便携式计算机, 其中连接的监视器设置为主监视器, 而连接的监视器在运行应用程序时具有不同的缩放比例。
+
+  此方案有助于测试 UI 是否响应显示 DPI 更改, 以及动态添加或删除的处理显示。
+
+- 使多个监视器具有不同的缩放因子, 并在它们之间移动应用程序。
+
+  此方案有助于测试 UI 是否响应显示 DPI 更改
     
-4. 到在本地和远程计算机的主监视器所需不同的缩放比例的计算机的远程处理。
-    - 此方案可帮助测试 UI 响应动态的 Windows 在 DPI 更改
+- 当本地计算机和远程计算机的主监视器具有不同的缩放系数时, 远程处理到计算机中。
 
-你的 UI 是否可能会遇到问题的好初步测试是代码的利用是否*Microsoft.VisualStudio.Utilities.Dpi.DpiHelper*， *Microsoft.VisualStudio.PlatformUI.DpiHelper*，或*VsUI::CDpiHelper*类。 这些旧 DpiHelper 类仅支持系统 DPI 感知，PMA 过程时不会始终正常工作。
+  此方案有助于测试 UI 是否响应动态 Windows DPI 更改。
 
-这些 DpiHelpers 的典型用法如下：
+对 UI 是否可能存在问题的一个良好的初步测试是: 代码使用的是*VisualStudio、DpiHelper*、DpiHelper 还是 *VsUI:: CDpiHelper*类。 这些旧的 DpiHelper 类仅支持系统 DPI 感知, 在进程 PMA 时不会始终正常运行。
+
+这些 DpiHelpers 的典型用法如下所示:
 
 ```cs
 Point screenTopRight = logicalBounds.TopRight.LogicalToDeviceUnits();
@@ -83,81 +89,86 @@ POINT screenIntTopRight = new POINT
 IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 ```
 
-在上一示例中，表示一个窗口的逻辑边界矩形转换为设备单位，以便它可以传递给本机方法以返回准确的监视器指针需要设备坐标 MonitorFromPoint。
+在上面的示例中, 表示窗口逻辑边界的矩形将转换为设备单位, 以便可以将其传递给需要设备坐标才能返回准确监视器指针的本机方法 MonitorFromPoint。
 
-### <a name="classes-of-issues"></a>类的问题
-用于 Visual Studio 启用 PMA 模式后，UI 可能几种常见方式复制问题。 大多数，如果不是全部，这些问题可能在任何 Visual Studio 支持的 UI 框架中发生。 此外，这些问题也可能在当混合模式 DPI 缩放方案中托管一个用户界面 (请参阅 Windows[文档](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)若要了解详细信息)。 
+### <a name="classes-of-issues"></a>问题类别
+为 Visual Studio 启用 PMA 模式后, UI 可以通过多种常见方式复制问题。 大多数 (如果不是全部) 这些问题都可以在任何 Visual Studio 支持的 UI 框架中发生。 此外, 当在混合模式 DPI 缩放方案中承载一小部分 UI 时也可能会出现这些问题 (有关详细信息, 请参阅 Windows[文档](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows))。 
 
-#### <a name="win32-window-creation"></a>创建 Win32 窗口
-使用创建时 windows CreateWindow() 或 CreateWindowEx()，一种常见模式是坐标 (0，0) 处创建窗口 （主显示器的左上角），然后将其移动到其最终位置。 但是，这样做可能会导致窗口以触发 DPI 更改消息或事件时，它可以重新触发其他 UI 消息或事件，并最终会导致意外的行为或呈现。
+#### <a name="win32-window-creation"></a>Win32 窗口创建
+使用 CreateWindow () 或 CreateWindowEx () 创建 windows 时, 一种常见模式是创建坐标为 (0, 0) 的窗口 (主要显示的顶部/左侧), 然后将其移动到其最终位置。 但这样做可能会导致窗口触发 DPI 更改的消息或事件, 这可能重新触发其他 UI 消息或事件, 并最终导致意外行为或呈现。
 
-#### <a name="wpf-element-placement"></a>WPF 元素放置
-移动时使用旧 Microsoft.VisualStudio.Utilities.Dpi.DpiHelper 的 WPF 元素，左上角坐标可能不会计算正确元素是在非主 DPI。
+#### <a name="wpf-element-placement"></a>WPF 元素位置
+当使用旧的 VisualStudio 移动 WPF 元素时, 如果元素在非主 DPI 上, 则不能正确计算左上角的坐标。
 
-#### <a name="serialization-of-ui-element-sizes-or-positions"></a>序列化的 UI 元素大小或位置
-当在不同的 DPI 上下文比它已存储在恢复时 UI 大小或位置 （如果另存为设备单位） 时，它将定位，大小不正确。 这是因为设备单位具有固有的 DPI 关系。
+#### <a name="serialization-of-ui-element-sizes-or-positions"></a>UI 元素大小或位置的序列化
+当 UI 大小或位置 (如果保存为设备单元) 在不同于其存储位置的 DPI 上下文上还原时, 它将被定位并且大小不正确。 发生这种情况是因为设备单位具有固有的 DPI 关系。
 
-#### <a name="incorrect-scaling"></a>不正确缩放
-但当移动到具有不同 DPI 显示器，它们不重新缩放，因此，其内容，该怎么办太大或太小，在主 DPI 上创建的 UI 元素将正确，缩放。
+#### <a name="incorrect-scaling"></a>缩放不正确
+在主 DPI 上创建的 UI 元素将正确缩放, 但当移动到具有不同 DPI 的显示时, 它们不会重新缩放, 并且其内容太大或太小。
 
-#### <a name="incorrect-bounding"></a>不正确的边界
-同样，到扩展的问题，UI 元素将计算其边界正确地在其主 DPI 上下文中，但移动到非主 DPI 时，它们将不能正确计算的新边界。 在这种情况下，内容的窗口最终会太小或太大，相比宿主 UI，这会导致空的空间或剪辑。
+#### <a name="incorrect-bounding"></a>边界不正确
+与缩放问题类似, UI 元素会在其主 DPI 上下文中正确计算其边界, 但当移动到非主 DPI 时, 它们不会正确计算新边界。 在这种情况下, 与宿主 UI 相比, 内容窗口太小或太大, 这将导致空格或剪裁。
 
-#### <a name="drag--drop"></a>拖放
-每当在混合模式 DPI 方案 （例如不同的 UI 元素在不同的 DPI 感知模式呈现） 的拖放坐标可能是错误计算，导致最终存放位置最终会不正确。
+#### <a name="drag--drop"></a>拖 & drop
+无论何时在混合模式 DPI 方案 (例如, 在不同 DPI 识别模式下呈现的不同 UI 元素) 中, 拖放坐标都可能是 miscalculated 的, 导致最终放置位置最终出现错误。
 
 #### <a name="out-of-process-ui"></a>进程外 UI
-一些 UI 创建扩展的进程，如果创建外部过程在比 Visual Studio 不同 DPI 感知模式下，这可能会带来的任何以前的呈现问题。
+某些 UI 是在进程外创建的, 如果创建外部进程的 DPI 感知模式与 Visual Studio 不同, 这可能会导致出现前面的任何呈现问题。
 
-#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows 窗体控件、 图像或未正确呈现的布局
-并非所有的 Windows 窗体内容支持 PMA 模式。 因此，可能会看到呈现问题不正确的布局或缩放。 可能的解决方案在这种情况下是以显式呈现在"系统识别"DpiAwarenessContext 中的 Windows 窗体内容 (请参阅[到特定 DpiAwarenessContext 强制控件](#forcing-a-control-into-a-specific-dpiawarenesscontext))。
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>错误呈现 Windows 窗体控件、图像或布局
+并非所有 Windows 窗体内容都支持 PMA 模式。 因此, 可能会出现使用不正确的布局或缩放的呈现问题。 在这种情况下, 可能的解决方案是显式呈现 "系统感知" DpiAwarenessContext 中的 Windows 窗体内容 (请参阅将[控件强制转换为特定的 DpiAwarenessContext](#force-a-control-into-a-specific-dpiawarenesscontext))。
 
 #### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows 窗体控件或 windows 未显示
-此问题的主要原因之一是开发人员尝试重新设置父级控件或具有一个 DpiAwarenessContext 到窗口与不同 DpiAwarenessContext 窗口。
+导致此问题的主要原因之一是, 开发人员尝试将具有一个 DpiAwarenessContext 的控件或窗口与另一个 DpiAwarenessContext 的窗口进行重定。
 
-下图显示当前**默认**中作为父级 windows 的 Windows 操作系统限制：
+下图显示了父级窗口中当前的**默认**Windows 操作系统限制:
 
-![正确设置父级行为的屏幕截图](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+![正确的父级行为的屏幕截图](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> 您可以通过设置线程承载行为更改此行为 (请参阅[DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior))。
+> 您可以通过设置线程宿主行为 (请参阅[Dpi_Hosting_Behavior 枚举](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)) 来更改此行为。
 
-因此，如果设置不受支持模式之间的父子关系，它将失败，并且控件或窗口可能不会按预期方式呈现。
+因此, 如果在不受支持的模式之间设置父子关系, 它将失败, 并且可能无法按预期方式呈现控件或窗口。
 
-### <a name="diagnosing-issues"></a>诊断问题
-有许多标识 PMA 相关的问题时需要考虑的因素： 
+### <a name="diagnose-issues"></a>诊断问题
 
-1. 执行 UI 或预期逻辑的 API 或设备值。
-    - WPF UI 和 Api 通常使用逻辑值 （但并非总是如此）
+标识与 PMA 相关的问题时, 需要考虑以下几个因素: 
+
+- UI 或 API 是否需要逻辑或设备值？
+    - WPF UI 和 Api 通常使用逻辑值 (但并非总是)
     - Win32 UI 和 Api 通常使用设备值
 
-2. 这些值来自哪里？
-    - 如果从其他用户界面或 API 收到的值，是其传递设备或逻辑值。
-    - 如果从多个源中接收值，则执行它们都使用/预期相同类型的值或转换需要进行混合和匹配？
+- 值来自何处？
+    - 如果从其他 UI 或 API 接收值, 则它将传递设备或逻辑值。
+    - 如果从多个源接收值, 它们是否全部使用/预期相同类型的值, 或者是否需要混合和匹配转换？
 
-3. UI 中使用的常量和何种窗体这些用户位于？
+- UI 常量是否正在使用中, 什么是窗体？
 
-4. 线程是正确的值的 DPI 上下文中接收？
-    - 若要启用混合 DPI 托管的更改通常应将代码路径放在正确的环境，但是，主消息循环或事件流外部完成的工作可能会执行的错误的 DPI 上下文中。
+- 线程是否在其接收的值的正确的 DPI 上下文中？
 
-5. 值交叉 DPI 上下文边界？
-    - 拖放是坐标与 DPI 上下文的位置的常见情况。 窗口尝试执行正确的操作，但在某些情况下，宿主 UI 可能需要执行转换操作，以确保匹配的上下文边界。
+  启用混合 DPI 承载的更改通常应将代码路径放在正确的上下文中, 但在主消息循环之外完成的工作可能会在错误的 DPI 上下文中执行。
+
+- 是否跨越 DPI 上下文边界实现值？
+
+  拖动 & drop 是坐标可跨 DPI 上下文的常见情况。 窗口尝试执行正确的操作, 但在某些情况下, 宿主 UI 可能需要执行转换工作以确保上下文边界匹配。
 
 ### <a name="pma-nuget-package"></a>PMA NuGet 包
-可以在找到新 DpiAwarness 库[Microsoft.VisualStudio.DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet 包。
+可以在[VisualStudio DpiAwareness](https://www.nuget.org/packages/Microsoft.VisualStudio.DpiAwareness/) NuGet 包中找到新的 DpiAwarness 库。
 
 ### <a name="recommended-tools"></a>建议的工具
-以下工具可帮助跨不同的 UI 堆栈支持的 Visual Studio 的一些调试 PMA 相关的问题。
+以下工具可帮助调试 Visual Studio 支持的某些不同 UI 堆栈之间的 PMA 相关问题。
 
-#### <a name="snoop"></a>搜索
-Snoop 是带有内置的 Visual Studio XAML 工具不会有一些额外功能的 XAML 调试工具。 此外，Snoop 不需要主动调试 Visual Studio，以便能够查看和调整其 WPF UI。 Snoop 也可用于诊断 PMA 问题的两种主要方法用于验证逻辑位置坐标或大小指定边界内，用于验证 UI 具有正确的 DPI。
+#### <a name="snoop"></a>Snoop
+Snoop 是一个 XAML 调试工具, 它具有内置 Visual Studio XAML 工具没有的额外功能。 此外, Snoop 无需主动调试 Visual Studio 即可查看和调整其 WPF UI。 Snoop 的两种主要方法可用于诊断 PMA 问题, 用于验证逻辑放置坐标或大小边界, 验证 UI 是否具有正确的 DPI。
  
 #### <a name="visual-studio-xaml-tools"></a>Visual Studio XAML 工具
-如 Snoop，Visual Studio 中的 XAML 工具可以帮助诊断 PMA 问题。 一旦找到可能的原因，可以设置断点，并使用实时可视化树窗口中，以及调试窗口中，检查 UI 边界和当前的 DPI。
+与 Snoop 一样, Visual Studio 中的 XAML 工具可帮助诊断 PMA 问题。 找到可能的原因后, 你可以设置断点, 并使用 "实时可视化树" 窗口以及 "调试窗口" 来检查 UI 边界和当前 DPI。
 
-## <a name="strategies-for-fixing-pma-issues"></a>修复 PMA 问题的策略
-### <a name="replacing-dpihelper-calls"></a>将替换为 DpiHelper 调用
-在大多数情况下，在 PMA 模式下修复 UI 问题归结为将替换为在托管代码中的调用到旧*Microsoft.VisualStudio.Utilities.Dpi.DpiHelper*和*Microsoft.VisualStudio.PlatformUI.DpiHelper*类，通过调用新*Microsoft.VisualStudio.Utilities.DpiAwareness*帮助器类。 
+## <a name="strategies-for-fixing-pma-issues"></a>解决 PMA 问题的策略
+
+### <a name="replace-dpihelper-calls"></a>替换 DpiHelper 调用
+
+在大多数情况下, 修复 PMA 模式下的 UI 问题, 以将托管代码中的调用替换为旧的*VisualStudio DpiHelper*和 PlatformUI 类, 并调用新*的VisualStudio. DpiAwareness* helper 类。 
 
 ```cs
 // Remove this kind of use:
@@ -167,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-对于本机代码，它所需替换为对旧*VsUI::CDpiHelper*通过调用新类*VsUI::CDpiAwareness*类。 
+对于本机代码, 它会将对新的*VsUI:: CDpiHelper*类的调用替换为对新的*VsUI:: CDpiAwareness*类的调用。 
 
 ```cpp
 // Remove this kind of use:
@@ -181,28 +192,26 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsX(m_hwnd, &cx);
 VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 ```
 
-新的 DpiAwareness 和 CDpiAwareness 类提供了相同单位转换帮助程序 DpiHelper 类但需要额外的输入的参数： 要用于为引用的转换操作的 UI 元素。 务必要注意的图像缩放帮助器执行操作中不存在的新 DpiAwareness/CDpiAwareness 帮助程序，并根据需要[ImageService](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog?view=vs-2019)应改为使用。
+新的 DpiAwareness 和 CDpiAwareness 类提供与 DpiHelper 类相同的单位转换帮助程序, 但需要额外的输入参数: 用作转换操作参考的 UI 元素。 请务必注意, 新的 DpiAwareness/CDpiAwareness 帮助程序中不存在图像缩放帮助程序, 如果需要, 应改为使用[ImageService](../image-service-and-catalog.md) 。
 
-托管的 DpiAwareness 类为 WPF 视觉对象、 Windows 窗体控件和 Win32 Hwnd 和 HMONITORs （这种形式的 IntPtrs），提供了本机 CDpiAwareness 类产品/服务 HWND 和 HMONITOR 帮助器时的帮助程序。
+Managed DpiAwareness 类提供了针对 WPF 视觉对象、Windows 窗体控件以及 Win32 Hwnd 和 HMONITORs (两者都以 IntPtrs 的形式) 的帮助程序, 而 native CDpiAwareness 类提供 HWND 和 HMONITOR 帮助程序。
 
-### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>Windows Forms 对话框、 windows 或错误 DpiAwarenessContext 中显示的控件
-即使在之后使用 （由于 Windows 默认行为） 的不同 DpiAwarenessContexts windows 成功设置父级，用户可能仍会看到扩展问题以 windows 使用不同的 DpiAwarenessContexts 缩放以不同的方式。 因此，用户可能会看到模糊对齐/文本或图像 UI 上的问题。
+### <a name="windows-forms-dialogs-windows-or-controls-displayed-in-the-wrong-dpiawarenesscontext"></a>错误 DpiAwarenessContext 中显示的 Windows 窗体对话框、窗口或控件
+即使在成功地将 windows 与不同的 DpiAwarenessContexts (由于 Windows 默认行为) 配合后, 用户仍可能会发现缩放问题, 因为不同的 DpiAwarenessContexts 规模不同。 因此, 用户可能会在 UI 上看到对齐/模糊文本或图像问题。
 
-解决方案是在应用程序中设置所有窗口和控件的正确 DpiAwarenessContext 作用域。
+解决方案是为应用程序中的所有窗口和控件设置正确的 DpiAwarenessContext 范围。
 
-### <a name="top-level-mixed-mode-tlmm-dialogs"></a>顶级混合的模式 (TLMM) 对话框
-在创建时如模式对话框的顶级窗口，务必确保处于正确状态窗口 （和其句柄） 之前所创建线程。 线程可以放入系统深刻的认识，在本机使用 CDpiScope 帮助器或中的 DpiAwareness.EnterDpiScope 帮助程序管理。 （TLMM 通常应在非 WPF 对话框/windows 上。）
+### <a name="top-level-mixed-mode-tlmm-dialogs"></a>顶级混合模式 (TLMM) 对话框
+创建顶级窗口 (如模式对话框) 时, 请务必确保线程在创建窗口 (及其句柄) 之前处于正确状态。 可以在托管的本机或 DpiAwareness 中的 EnterDpiScope 帮助程序中使用 CDpiScope 帮助器将线程置于系统感知。 (TLMM 通常应在非 WPF 对话/windows 上使用。)
 
-### <a name="child-level-mixed-mode-clmm"></a>子级别混合的模式 (CLMM)
-默认情况下，子窗口接收当前线程 DPI 感知上下文如果创建没有父级或父级的 DPI 感知上下文时使用父创建。 若要创建不同的 DPI 感知上下文与其父与子，线程可以放入所需的 DPI 感知上下文。 然后可以没有父级的情况下创建子并将其手动重新设定到父窗口。
+### <a name="child-level-mixed-mode-clmm"></a>子级混合模式 (CLMM)
+默认情况下, 如果创建时没有父窗口, 则子窗口会接收当前线程的 DPI 感知上下文; 如果是使用父窗口创建的, 则为父窗口的 DPI 感知上下文。 若要创建具有与父对象不同的 DPI 感知上下文的子节点, 可以将该线程置于所需的 DPI 感知上下文中。 然后, 可以创建不带父窗口的子级, 并手动将其重定父级。
 
 #### <a name="clmm-issues"></a>CLMM 问题
-在正确的 DPI 感知环境应已运行大部分的主消息循环或事件链中进行 UI 计算工作。 但是，如果坐标或大小调整计算完成这些主要的工作流外部 （例如，期间是空闲时间的任务，或关闭 UI 线程，当前的 DPI 感知上下文可能不正确，导致 UI 被错放或错误大小调整问题。 用户界面将线程放入正确的状态的工作通常解决了问题。
+大多数作为主消息循环或事件链一部分发生的 UI 计算工作都应该已经在正确的 DPI 感知上下文中运行。 但是, 如果在这些主工作流之外 (例如在空闲时间任务期间或从 UI 线程中) 完成了坐标或大小调整计算, 则当前的 DPI 感知上下文可能会错误地导致 UI misplacement 或错误大小调整问题。 为 UI 工作将线程置于正确状态通常会解决此问题。
  
-#### <a name="opting-out-of-clmm"></a>选择退出 CLMM
-如果要迁移非 WPF 工具窗口以完全支持 PMA，它将需要选择退出 CLMM。 若要执行此操作，需要实现的新接口：IVsDpiAware。
-
-C#：
+#### <a name="opt-out-of-clmm"></a>选择退出 CLMM
+如果非 WPF 工具窗口正在迁移为完全支持 PMA, 则需要退出 CLMM。 为此, 需要实现新的接口:IVsDpiAware.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -212,8 +221,6 @@ public interface IVsDpiAeware
     uint Mode {get;}
 }
 ```
- 
-C++：
 
 ```cpp
 IVsDpiAware : public IUnknown
@@ -223,9 +230,9 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-对于托管语言，实现此接口的最佳位置是在同一类派生自*Microsoft.VisualStudio.Shell.ToolWindowPane*。 有关C++，若要实现此接口的最佳位置是在同一个类实现*IVsWindowPane*从 vsshell.h。
+对于托管语言, 实现此接口的最佳位置是在派生自*ToolWindowPane*的同一个类中。 对于C++, 实现此接口的最佳位置是从 Vsshell 实现*IVsWindowPane*的同一个类。
 
-模式属性的接口上返回的值是 __VSDPIMODE （和强制转换为 uint 中托管）：
+接口上的 Mode 属性返回的值是 __VSDPIMODE (并强制转换为托管中的 uint):
 
 ```cs
 enum __VSDPIMODE
@@ -236,17 +243,16 @@ enum __VSDPIMODE
 }
 ```
 
-- 不知道意味着需要处理 96 DPI，工具窗口时，Windows 将处理的所有其他 Dpi 缩放。 生成的内容进行轻微的模糊上。
-- 系统意味着需要处理的 DPI 的主要工具窗口显示 DPI。 任何具有匹配的 DPI 显示器将看起来正常，但如果 DPI 不同，或在会话期间发生更改，Windows 将处理的规模和它将是轻微的模糊。
-- PerMonitor 意味着工具窗口需要处理所有显示器上的所有 Dpi 时所使用的 DPI 发生更改。
+- 不知道, 如果工具窗口需要处理 96 DPI, Windows 将处理所有其他 Dpi 的缩放。 导致内容略微模糊。
+- 系统表示工具窗口需要为主显示器 DPI 处理 DPI。 任何具有匹配的 DPI 的显示都看起来很清晰, 但如果 DPI 在会话过程中不同或发生更改, 则 Windows 将处理缩放, 并且它会略微模糊。
+- PerMonitor 表示工具窗口需要处理所有显示器上的所有 Dpi, 并在 DPI 发生更改时处理。
 
 > [!NOTE]
-> Visual Studio 仅支持 PerMonitorV2 意识，因此 PerMonitor 枚举值转换为的 DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 Windows 值。
+> Visual Studio 仅支持 PerMonitorV2 感知, 因此 PerMonitor 枚举值会转换为 DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2 的 Windows 值。
 
-#### <a name="forcing-a-control-into-a-specific-dpiawarenesscontext"></a>到特定 DpiAwarenessContext 强制控件
-未在更新以支持 PMA 模式的旧 UI 可能仍需要在 PMA 模式下运行 Visual Studio 期间的细微调整。 一个此类修补程序需确保在正确 DpiAwarenessContext 中创建 UI。 若要强制转到特定 DpiAwarenessContext UI，可以输入下面的代码具有的 DPI 作用域：
+#### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>将控件强制转换为特定的 DpiAwarenessContext
 
-C#：
+当 Visual Studio 在 PMA 模式下运行时, 未更新为支持 PMA 模式的旧式 UI 仍需要进行次要调整才能工作。 其中一项修复涉及到确保在正确的 DpiAwarenessContext 中创建 UI。 若要将 UI 强制转换为特定的 DpiAwarenessContext, 可以使用以下代码输入 DPI 范围:
 
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
@@ -255,8 +261,6 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
     form.ShowDialog();
 }
 ```
-
-C++：
 
 ```cpp
 void MyClass::ShowDialog()
@@ -267,13 +271,14 @@ void MyClass::ShowDialog()
 ```
 
 > [!NOTE]
-> 强制 DpiAwarenessContext 仅适用于非 WPF UI 和顶级 WPF 对话框。 当创建 WPF UI 是只要内容插入到 WPF UI 树内的工具窗口或设计器中，托管时，它将转换为当前进程 DpiAwarenessContext。
+> 强制 DpiAwarenessContext 仅适用于非 WPF UI 和顶级 WPF 对话框。 在创建将在工具窗口或设计器中承载的 WPF UI 时, 一旦将内容插入 WPF UI 树, 它就会转换为当前进程 DpiAwarenessContext。
 
 ## <a name="known-issues"></a>已知问题
+
 ### <a name="windows-forms"></a>Windows 窗体
 
-若要优化的新混合方案，Windows 窗体更改如何创建控件和窗口时未显式设置它们的父级。 更早版本，而无需显式父控件用作控件或窗口正在创建的临时父级内部"停车窗口"。 
+若要针对新的混合模式方案进行优化, Windows 窗体更改了其父项没有显式设置时, 如何创建控件和窗口。 之前, 没有显式父级的控件使用内部 "停车窗口" 作为控件或窗口创建的临时父级。 
 
-在.NET 4.8 之前出现一个"停车窗口"，可在窗口的创建时从当前线程 DPI 感知上下文获取其 DpiAwarenessContext。 控件的句柄创建将由应用程序开发人员到预期最终/父父级时，任何没有父级的控件继承为停车窗口相同 DpiAwarenessContext。 如果"停车窗口"具有更高版本 DpiAwarenessContext 比最终父窗口，这将导致基于时间的故障。
+在 .NET 4.8 之前, 有一个 "停车场" 窗口, 它在窗口创建时从当前线程的 DPI 感知上下文中获取其 DpiAwarenessContext。 当创建控件的句柄时, 任何 unparented 控件都将继承与该窗口相同的 DpiAwarenessContext, 并将由应用程序开发人员将其重定父级为最终/预期父级。 如果 "停车窗口" 的 DpiAwarenessContext 高于最终的父窗口, 这将导致基于计时的故障。
 
-截至.NET 4.8，现在有了一个"停车"用于窗口已遇到每个 DpiAwarenessContext。 其他主要区别是创建控件时，不是在创建了句柄时，缓存用于控制 DpiAwarenessContext。 这意味着总体最终行为是相同的但可以打开以前是基于时间的问题成为一致的问题。 它还使应用程序开发人员更多确定性行为用于编写其 UI 代码，并正确地将其范围设置。
+从 .NET 4.8 开始, 现在已遇到的每个 DpiAwarenessContext 都有一个 "停车场" 窗口。 另一个主要区别是, 在创建控件时将缓存用于控件的 DpiAwarenessContext, 而不是在创建句柄时缓存。 这意味着总体的最终行为是相同的, 但可以将使用的基于计时的问题转换为一致的问题。 它还为应用程序开发人员提供了更具确定性的行为, 以便编写其 UI 代码并正确地对其进行限定。
