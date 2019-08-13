@@ -3,15 +3,15 @@ title: Office 365 权益 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解一些 Visual Studio 订阅中随附的 Office 365 权益。
-ms.openlocfilehash: 625d9ccf24c17b96afc9c79cc3b280c009e80fec
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250772"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787931"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 专业增强版
 
@@ -59,7 +59,7 @@ ms.locfileid: "68250772"
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 |  |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络。*
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络。 
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
@@ -70,3 +70,9 @@ ms.locfileid: "68250772"
 - 有关对 EMS 任何组件的技术支持，请访问 https://support.microsoft.com/allproducts ，然后选择产品。
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 产品/服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+
+## <a name="next-steps"></a>后续步骤
+请务必激活这些重要权益以充分利用 Visual Studio 订阅：
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure 信用额度](vs-azure.md)

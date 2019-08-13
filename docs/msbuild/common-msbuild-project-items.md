@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569861"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681281"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
-在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。
+在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项  。
 
 ## <a name="common-items"></a>常用项
  以下是所有通用项目项的列表。
@@ -38,10 +38,10 @@ ms.locfileid: "62569861"
 |FusionName|可选的字符串。 指定项的简单或强合成名称。<br /><br /> 此特性存在时，可以节省时间，因为程序集文件不必打开即可获取合成名称。|
 |SpecificVersion|可选的布尔值。 指定是否应仅引用合成名称中的版本。|
 |别名|可选的字符串。 引用的任何别名。|
-|Private|可选的布尔值。 指定是否应将引用复制到输出文件夹。 此特性与 Visual Studio IDE 中的引用的“复制本地”属性相匹配。|
+|Private|可选的布尔值。 指定是否应将引用复制到输出文件夹。 此特性与 Visual Studio IDE 中的引用的“复制本地”  属性相匹配。|
 
 ### <a name="comreference"></a>COMReference
- 表示项目中的 COM（非托管）组件引用。
+ 表示项目中的 COM（非托管）组件引用。 此项仅适用于 .NET 项目。
 
 |项元数据名称|说明|
 |---------------|-----------------|
@@ -54,7 +54,7 @@ ms.locfileid: "62569861"
 |Isolated|可选的布尔值。 指定组件是否为免注册组件。|
 
 ### <a name="comfilereference"></a>COMFileReference
- 表示馈送到 ResolvedComreference 目标中的类型库的列表。
+ 表示传递到 [ResolveComReference](resolvecomreference-task.md) 目标的 `TypeLibFiles` 参数的类型库的列表。 此项仅适用于 .NET 项目。
 
 |项元数据名称|说明|
 |---------------|-----------------|
@@ -86,7 +86,7 @@ ms.locfileid: "62569861"
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件。 |
 | AutoGen | 可选的布尔值。 指示是否已由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 为项目生成了文件。 |
 | 链接 | 可选的字符串。 文件在物理上处于项目文件的影响范围之外时要显示的符号路径。 |
-| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”中显示文件。 |
+| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”  中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
@@ -99,7 +99,7 @@ ms.locfileid: "62569861"
 | LastGenOutput | 必选字符串。 在此项上运行的任何文件生成器创建的文件的名称。 |
 | CustomToolNamespace | 必选字符串。 在此项上运行的任何文件生成器应在其中创建代码的命名空间。 |
 | 链接 | 可选的字符串。 如果文件在物理上处于项目的影响范围之外，则显示符号路径。 |
-| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”中显示文件。 |
+| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”  中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 | LogicalName | 必选字符串。 嵌入资源的逻辑名称。 |
 
@@ -115,10 +115,10 @@ ms.locfileid: "62569861"
 | 链接 | 可选的字符串。 文件在物理上处于项目的影响范围之外时要显示的符号路径。 |
 | PublishState | 必选字符串。 内容的发布状态，为以下任一项：<br /><br /> -   默认<br />-   已包括<br />-   已排除<br />-   数据文件<br />-   必备组件 |
 | IsAssembly | 可选的布尔值。 指定文件是否为程序集。 |
-| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”中显示文件。 |
+| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”  中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="none"></a>None
+### <a name="none"></a>无
  表示不应在生成过程中具有角色的文件。
 
 | 项元数据名称 | 说明 |
@@ -128,7 +128,7 @@ ms.locfileid: "62569861"
 | LastGenOutput | 必选字符串。 在此项上运行的任何文件生成器创建的文件的名称。 |
 | CustomToolNamespace | 必选字符串。 在此项上运行的任何文件生成器应在其中创建代码的命名空间。 |
 | 链接 | 可选的字符串。 文件在物理上处于项目的影响范围之外时要显示的符号路径。 |
-| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”中显示文件。 |
+| 可见 | 可选的布尔值。 指示是否要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的“解决方案资源管理器”  中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest

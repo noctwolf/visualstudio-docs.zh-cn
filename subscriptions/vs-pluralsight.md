@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 订阅中的 Pluralsight 权益 | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/25/2019
+ms.author: lank
+manager: lank
+ms.date: 08/02/2019
 ms.topic: conceptual
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
-ms.openlocfilehash: bc80d8d799a0cca92bfa78cb1e96424f227fe9ef
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784885"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787655"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -29,39 +29,30 @@ ms.locfileid: "67784885"
    > [!IMPORTANT]
    > 单击 Pluralsight 权益磁贴上的“获取代码”链接时，可能会收到以下消息：
    >
-   > **“请注意： 如果此前已通过 Visual Studio 订阅激活其他 Pluralsight 套餐，使用此代码可能无法创建新的 Pluralsight 帐户。”**
+   > **“请注意： 如果此前已通过 Visual Studio 订阅激活其他 Pluralsight 套餐，使用此代码可能无法创建新的 Pluralsight 帐户。” 
 
 2. 你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”  。
-   > [!div class="mx-imgBorder"]
-   > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. 将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。
    - 在窗体上提供所需的联系人信息
    - 单击复选框接受使用和隐私策略条款
    - 单击“我同意，激活权益”  。
-     > [!div class="mx-imgBorder"]
-     > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
-     > [!div class="mx-imgBorder"]
-     > ![Pluralsight 权益条款](_img/vs-pluralsight/vs-pluralsight-terms.png)
+   > [!div class="mx-imgBorder"]
+   > ![Pluralsight 激活你的权益](_img/vs-pluralsight/vs-pluralsight-create-account.png)
 
 5. 设置帐户可能需要一段时间。  设置完成后，会在页面上看到一条确认消息，并收到含有登录信息的电子邮件。  电子邮件将发送到创建帐户时指定的别名。  如果在查找邮件时遇到问题，请务必检查垃圾邮件文件夹。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 权益确认](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   >
+
    > [!NOTE]
    > 如果帐户不符合兑换新产品/服务的条件，则会在收到的电子邮件中说明因不符合条件以致创建帐户时出现问题。  其中还包含用于联系 Pluralsight 支持团队的信息，他们可解答有关帐户的任何问题。
+   
 
 6. 成功创建帐户后，收到的电子邮件将包含用户名，并请求创建密码。  提供密码，再次输入以确认，然后单击“登录到 Pluralsight”。 
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益欢迎电子邮件](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
 7. 输入欢迎电子邮件提供的用户名和刚刚创建的密码，然后单击“登录”。 
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 权益登录](_img/vs-pluralsight/vs-pluralsight-login.png)
 
 8. 就这么简单！  现在便可以开始学习数以千计的 Pluralsight 课程了！
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight 权益主页](_img/vs-pluralsight/vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>资格
 
@@ -75,7 +66,7 @@ ms.locfileid: "67784885"
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      计划      | 不可用 |       NA       |
 ||
 
-<sup>1</sup>  包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。*
+<sup>1</sup>  包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。 
 
 <sup>2</sup>  所选 Visual Studio 订阅中的 Pluralsight 权益随订阅一同续订。例如，如果你的年度订阅是每年续订一次，当你续订时也会获得每一年的权益。如果是多年订阅，你在订阅期间可获得 Pluralsight 权益。如果续订多年订阅，在续订后将再次获得该权益。 
 

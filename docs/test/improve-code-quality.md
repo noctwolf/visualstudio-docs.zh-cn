@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435eb2571f709f3ed5df4effbfdf3b5f4970457b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461399"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68712219"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的测试工具
 
@@ -26,9 +26,15 @@ Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的
 
 ## <a name="test-explorer"></a>测试资源管理器
 
-“测试资源管理器”窗口可帮助开发人员创建、管理和运行单元测试。 可以使用 Microsoft 单元测试框架或若干第三方和开源框架之一。
+“测试资源管理器”窗口可帮助开发人员创建、管理和运行单元测试  。 可以使用 Microsoft 单元测试框架或若干第三方和开源框架之一。
 
+::: moniker range="vs-2017"
 ![Visual Studio 测试资源管理器](media/devtest-testexplorer.png)
+::: moniker-end
+
+::: moniker range="vs-2019"
+![Visual Studio 测试资源管理器 16.2](media/vs-2019/test-explorer-16-2.PNG)
+::: moniker-end
 
 * [单元测试入门](unit-test-your-code.md)
 * [使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)

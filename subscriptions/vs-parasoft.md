@@ -1,17 +1,17 @@
 ---
 title: Parasoft Virtualize/SOAtest Professional 桌面权益 | Microsoft 文档
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtualize/SOA Test Professional 订阅。
-ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824645"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787717"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 
@@ -27,7 +27,10 @@ ms.locfileid: "67824645"
 
 3. 将重定向到 Parasoft 网站，可在此处创建帐户。  只需提供联系信息，然后单击“提交”  。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 权益：创建帐户](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Parasoft 权益：创建帐户](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > 页面上的表将显示全年的定价以及 Visual Studio 折扣。 此定价将在使用了六个月的订阅后适用。  
 
 4. 创建帐户后，可以看到一条已发送包含下载说明的电子邮件的通知。  （如果未在收件箱中看到此电子邮件，请记得检查垃圾邮件文件夹。）
 
@@ -56,14 +59,12 @@ ms.locfileid: "67824645"
 14. 指定希望安装应用程序快捷方式的位置，然后单击“下一步”  。
 
 15. 对于 HTTPS 网站上的某些功能测试，需要提供 SOAtest Web 根证书颁发机构证书。  选择是否安装根 CA 证书，单击“下一步”  。
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft 权益：根 CA 证书](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > Parasoft 强烈建议选择安装证书。
 
 16. 选择是否希望在安装期间创建桌面和快速启动图标，然后单击“下一步”  。
 
 17. 确认已选择的选项，然后单击“安装”，开始安装软件  。
-    > [!div class="mx-imgBorder"]
-    > ![Parasoft 权益：安装准备就绪](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. 安装完成后，请单击“完成”  。 现在就可以使用 Parasoft Virtualize/SOAtest Professional 桌面权益了！
 
@@ -78,7 +79,7 @@ ms.locfileid: "67824645"
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 ||
 
-<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务*。
+<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务  。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
@@ -89,3 +90,6 @@ ms.locfileid: "67824645"
   - Parasoft 资源中心： https://www.parasoft.com/resources/
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+
+## <a name="next-steps"></a>后续步骤
+通过激活 [Azure 信用额度](vs-azure.md)来充分利用你自己的开发沙盒。 

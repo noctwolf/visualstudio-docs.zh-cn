@@ -3,17 +3,17 @@ title: Visual Studio 订阅中的 Visual Studio IDE 权益 | Microsoft 文档
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE。
-ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824661"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787859"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 权益
+# <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 权益
 
 作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
 
@@ -34,7 +34,7 @@ ms.locfileid: "67824661"
 5. 单击蓝色的“下载”按钮。
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 下载详情](_img/vs-ide-experience/vs-ide-download-details.png)
-6. 若要立即安装，请单击“运行”  。
+6. 单击下载的安装程序包。  如果提示立即安装，请单击“运行”  。
 7. 在“用户帐户控制”对话框中，单击“是”  。
 8. 单击“继续”接受许可条款  。
 9. 安装程序启动时，在相应的选项卡上选择所需的工作负荷、各个组件和语言包。
@@ -43,9 +43,9 @@ ms.locfileid: "67824661"
 
 10. 单击“安装”  。
 
-11. 安装完成后，可以选择修改安装或启动 Visual Studio。  单击“启动”开始操作  。
+11. 安装完成后，可以选择修改安装或启动 Visual Studio。  单击“启动”开始操作  。  如果安装了多个版本，则会列出这些版本。
     > [!div class="mx-imgBorder"]
-    > ![启动 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![启动 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. 使用与 Visual Studio 订阅关联的帐户登录。
 
@@ -53,12 +53,9 @@ ms.locfileid: "67824661"
 
 14. Visual Studio 随即打开。 现在就可以使用 Visual Studio 了！
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![开始使用 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>资格
 
@@ -69,7 +66,7 @@ ms.locfileid: "67824661"
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  是         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务*。
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务  。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
@@ -81,3 +78,9 @@ ms.locfileid: "67824661"
   - 技术支持：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [文档](/visualstudio/)
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+
+## <a name="next-steps"></a>后续步骤
+安装 Visual Studio 后，请不要忘记激活以下其他重要权益：
+- [Azure DevOps](vs-azure-devops.md)
+- [Azure 信用额度](vs-azure.md)
+- [Windows 开发人员帐户](vs-windows-dev.md)

@@ -1,24 +1,22 @@
 ---
 title: Visual Studio 订阅中的 Azure 顾问聊天权益 | Microsoft 文档
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 订阅中包含的 Azure 顾问聊天权益。
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250839"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681737"
 ---
 # <a name="azure-advisory-chat"></a>Azure 顾问聊天
-
 实时获取开始使用 Azure 的帮助！ 包括针对 Azure PaaS 服务的顾问。  Azure 顾问聊天权益可用于 Visual Studio Enterprise Standard 和年度云订阅中。
 
 ## <a name="activation-steps"></a>激活步骤
-
 使用 Azure 顾问聊天非常简单。
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在“支持”部分找到“Azure 顾问聊天”磁贴，然后单击“立即聊天”  。
@@ -34,7 +32,6 @@ ms.locfileid: "68250839"
     > ![Azure 顾问聊天](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>资格
-
 |                                                      订阅级别                                                      |     信道      |    好处    | 是否续订？ |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise（标准）                                       | VL、Azure、零售 |   一年    |    是     |
@@ -42,7 +39,7 @@ ms.locfileid: "68250839"
 |                                          Visual Studio Test Professional（标准）                                          |        全部        | 不可用 |     No     |
 |                                                  MSDN 平台（标准）                                                   |        全部        | 不可用 |     No     |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、MCT*
+<sup>1</sup>  *包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、MCT 
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
@@ -57,3 +54,6 @@ ms.locfileid: "68250839"
 ## <a name="support-resources"></a>支持资源
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+
+## <a name="next-steps"></a>后续步骤
+许多 Visual Studio 订阅都包含 Azure 信用额度。  如果尚未激活，请查看 [Azure 权益](vs-azure.md)。 

@@ -1,5 +1,6 @@
 ---
-title: Blend 中的“笔”工具修改键
+title: “笔”工具修改键
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2aa8515dbe444ea3968714400b751d661b2a81
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 7e68e06a371f039c7d08b56b89305b1fe932a54a
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820445"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822122"
 ---
-# <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的“笔”工具修改键
+# <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的“笔”工具修改键
+
 下表列出了在使用“笔”工具 ![笔工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 创建路径时可用于修改此路径的快捷方式  。 “笔”  工具还可用于在现有路径上添加或删除点，或联接两个现有路径。
 
 |任务|操作步骤|指针|
@@ -36,7 +38,6 @@ ms.locfileid: "66820445"
 
 ## <a name="see-also"></a>请参阅
 
-- [键盘快捷方式和修改键](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [“美工板”修改键](../designers/artboard-modifier-keys-in-blend.md)
 - [“路径选择”工具修改键](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [绘制形状和路径](../designers/draw-shapes-and-paths.md)

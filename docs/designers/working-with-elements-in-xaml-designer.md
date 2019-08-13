@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823825"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821513"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>在 XAML 设计器中使用元素
 
@@ -21,7 +19,7 @@ ms.locfileid: "67823825"
 
 ## <a name="add-an-element-to-a-layout"></a>将元素添加到布局
 
-布局是调整元素在 UI 中的大小和位置的过程  。 若要放置可视元素，必须将这些元素置于布局[面板](/uwp/api/Windows.UI.Xaml.Controls.Panel)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) 类型的集合。 可使用各种 `Panel` 子元素（如 [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas)[StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) 和 [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid)）来充当布局容器以及在页面上放置和排列元素。
+布局是调整元素在 UI 中的大小和位置的过程  。 若要放置可视元素，必须将这些元素置于布局[面板](xref:Windows.UI.Xaml.Controls.Panel)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 类型的集合。 可使用各种 `Panel` 子元素（如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)、[StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) 和 [Grid](xref:Windows.UI.Xaml.Controls.Grid)）来充当布局容器以及在页面上放置和排列元素。
 
 默认情况下，`Grid` 面板用作页面或窗体中的顶级布局容器。 可在顶级页面布局内添加布局面板、控件或其他元素。
 
@@ -31,7 +29,7 @@ ms.locfileid: "67823825"
 
 - 将元素从“工具箱”拖到美工板  。
 
-- 在“工具箱”中，选择一种绘制工具（例如，[椭圆形](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse)或[矩形](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)），然后在活动面板上绘制元素  。
+- 在“工具箱”中，选择一种绘制工具（例如，[椭圆形](xref:Windows.UI.Xaml.Shapes.Ellipse)或[矩形](xref:Windows.UI.Xaml.Shapes.Rectangle)），然后在活动面板上绘制元素  。
 
 ## <a name="change-the-layering-order-of-elements"></a>更改元素的分层顺序
 
@@ -51,7 +49,7 @@ ms.locfileid: "67823825"
 
   - “置于底层”：将元素一直移到顺序的底层  。
 
-  更改属性窗口中“布局”部分的“ZIndex”属性   。 对于重叠元素，“ZIndex”属性优先于文档大纲窗口中显示的元素的顺序  。 当元素重叠时，“ZIndex”值较大的元素将显示在前面  。
+- 更改属性窗口中“布局”部分的“ZIndex”属性   。 对于重叠元素，“ZIndex”属性优先于文档大纲窗口中显示的元素的顺序  。 当元素重叠时，“ZIndex”值较大的元素将显示在前面  。
 
 ## <a name="change-the-alignment-of-an-element"></a>更改元素的对齐方式
 
@@ -88,7 +86,7 @@ XAML 设计器中的边距决定了美工板上元素周围的空白区域的大
 当打开边距装饰器而未设置相反边距时，请根据美工板中的元素的位置，将相反边距设置为正确的值。 对于相反的边距（如“左侧”和“右侧”边距），将始终至少设置一个属性   。
 
 > [!IMPORTANT]
-> 置于某些布局容器内的元素（如 <xref:Windows.UI.Xaml.Controls.Canvas>）没有边距装饰器。 置于 <xref:Windows.UI.Xaml.Controls.StackPanel> 内的元素对于左边距和右边距或上边距和下边距有边距装饰器，具体取决于 `StackPanel` 的方向。
+> 置于某些布局容器内的元素（如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)）没有边距装饰器。 置于 [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) 内的元素对于左边距和右边距或上边距和下边距有边距装饰器，具体取决于 `StackPanel` 的方向。
 
 ## <a name="group-and-ungroup-elements"></a>将元素分组和取消分组
 
@@ -101,7 +99,7 @@ XAML 设计器中的边距决定了美工板上元素周围的空白区域的大
 2. 右键单击选定的元素，指向“分组”，然后单击想要在其中放置该组的布局容器的类型  。
 
     > [!TIP]
-    > 如果选择 <xref:Windows.UI.Xaml.Controls.Viewbox><xref:Windows.UI.Xaml.Controls.Border>, 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 来分组元素，则元素将被放置于 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内的一个新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果在其中某个布局容器中对元素进行取消分组，则仅删除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，而保留 <xref:Windows.UI.Xaml.Controls.Grid> 面板。 若要删除 `Grid` 面板，请再次对这些元素进行取消分组。
+    > 如果选择 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 对元素进行分组，则这些元素会置于 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) 内的新 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板中。 如果在其中某个布局容器中对元素进行取消分组，则仅删除 [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox)、[Border](xref:Windows.UI.Xaml.Controls.Border) 或 [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer)，而保留 [Grid](xref:Windows.UI.Xaml.Controls.Grid) 面板。 若要删除 `Grid` 面板，请再次对这些元素进行取消分组。
 
 若要将元素取消分组并删除布局，请右键单击想要取消分组的组并单击“取消分组”  。 还可以通过右键单击文档大纲窗口中选定的项，然后单击“分组”或“取消分组”，以对元素进行分组或取消分组   。
 

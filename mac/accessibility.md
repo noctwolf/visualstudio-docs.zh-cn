@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824450"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787643"
 ---
 # <a name="accessibility"></a>可访问性
 
@@ -57,7 +57,7 @@ Visual Studio for Mac 提供下列辅助功能，旨在更方便残障人士使�
 
 若要启用或禁用 VoiceOver，请按“&#8984; + F5” 
 
-VoiceOver 命令在本指南中显示为“VO+key”**  ，其中 VO  指的是“VoiceOver 实用工具”  应用程序中设置的修饰符。 默认修饰符为“Ctrl + Alt”  。例如，根据 VoiceOver 修饰符，“VO + M”  表示“Ctrl + Alt + M”  。为简洁起见，光标键将称为“左”、“右”   等。
+VoiceOver 命令在本指南中显示为“VO+_key_”，其中 VO 指的是“VoiceOver 实用工具”应用程序中设置的修饰符    。 默认修饰符为“Ctrl + Alt”  。例如，根据 VoiceOver 修饰符，“VO + M”  表示“Ctrl + Alt + M”  。为简洁起见，光标键将称为“左”、“右”   等。
 
 若要浏览 Visual Studio for Mac 用户界面，请使用以下组合键：
 

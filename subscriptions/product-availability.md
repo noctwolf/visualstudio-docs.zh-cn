@@ -3,15 +3,15 @@ title: Visual Studio 订阅中软件下载的产品可用性 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅的软件下载中的产品可用性
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315388"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681698"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 订阅的软件下载中的产品可用性
 订阅者权益包含可以下载各种各样的软件。
@@ -38,4 +38,5 @@ ms.locfileid: "68315388"
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="next-steps"></a>后续步骤
-某些软件下载可能需要产品密钥才能安装和激活它们。  有关如何获取和管理产品密钥的详细信息，请参阅我们的产品密钥文章。 
+- 某些软件下载可能需要产品密钥才能安装和激活它们。  有关如何获取和管理产品密钥的详细信息，请参阅我们的[产品密钥](product-keys.md)文章。 
+- 了解如何[下载软件](download-software.md)。
