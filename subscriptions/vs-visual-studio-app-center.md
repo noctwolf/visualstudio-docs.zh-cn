@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 订阅中的 Visual Studio App Center 权益 | Microsoft 文档
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/31/2019
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826220"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787833"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -47,7 +47,7 @@ Visual Studio App Center 入门十分简单。
 | MSDN 平台（标准）                                          | VL、零售                                              | Included                                                            |是 |
 ||
 
-<sup>1</sup>  *包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。*
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。 
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
@@ -70,3 +70,6 @@ Visual Studio App Center 入门十分简单。
   - 签出完整的 [App Center 文档](/appcenter/)
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+
+## <a name="next-steps"></a>后续步骤
+Azure 是你的个人专享开发/测试用沙盒。  你可以预配虚拟机、云服务和其他 Azure 资源。 如果尚未激活你的 [Azure 权益](vs-azure.md)，请进行激活。 

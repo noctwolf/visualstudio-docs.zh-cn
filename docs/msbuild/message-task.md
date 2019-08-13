@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817369"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681155"
 ---
 # <a name="message-task"></a>Message 任务
 在生成期间记录消息。
@@ -41,7 +41,7 @@ ms.locfileid: "62817369"
 
  如果 `Condition` 参数的计算结果为 `true`，则将会记录 `Text` 参数值，并继续执行生成。 如果 `Condition` 参数不存在，则将记录消息文本。 有关日志记录的详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
- 默认情况下，该消息将发送到 MSBuild 控制台记录器。 通过设置 <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> 参数可以对此进行更改。 记录器解释 `Importance` 参数。
+ 默认情况下，该消息将发送到 MSBuild 控制台记录器。 通过设置 <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> 参数可以对此进行更改。 记录器解释 `Importance` 参数。 通常，当记录器详细级别设置为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` 或更高时，将发送设置为 `high` 的消息。 当记录器详细级别设置为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` 时，将发送设置为 `low` 的消息。
 
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 

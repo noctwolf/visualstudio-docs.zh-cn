@@ -6,14 +6,12 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f588395284891bab61a575f088931e2fc244bce
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846014"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822101"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -37,7 +35,7 @@ ms.locfileid: "62846014"
 
 1. 在未处理的异常对话框中，选择“单击此处重载设计器”  链接。
 
-2. 在菜单栏上，选择“调试” > “启动调试”以生成和运行应用程序。
+2. 在菜单栏上，选择“调试” > “启动调试”以生成和运行应用程序   。
 
      如果应用程序成功生成和运行，则设计时异常可能由设计器中运行的项目代码引起。
 
@@ -55,15 +53,15 @@ ms.locfileid: "62846014"
 
 5. 在项目代码中设置断点。
 
-6. 在 Visual Studio 的新实例中，选择菜单栏上的“调试” > “附加到进程”。
+6. 在 Visual Studio 的新实例中，选择菜单栏上的“调试” > “附加到进程”   。
 
-7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe” ，然后选择“附加”  按钮。
+7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe”  ，然后选择“附加”  按钮。
 
      ![XAML 设计器进程](../designers/media/xaml_attach.png)
 
      这是 Visual Studio 的第一个实例中 XAML 设计器的进程。
 
-8. 在 Visual Studio 的第一个实例中，选择菜单栏上的“调试” > “启动调试”。
+8. 在 Visual Studio 的第一个实例中，选择菜单栏上的“调试” > “启动调试”   。
 
      现即可单步执行设计器中运行的代码。
 
@@ -71,7 +69,7 @@ ms.locfileid: "62846014"
 
 - 在未处理的异常对话框中，选择“单击此处禁用正在运行的项目代码并重载设计器”  链接。
 
-- 或者，在 XAML 设计器的工具栏上，选择“禁用项目代码”按钮。
+- 或者，在 XAML 设计器的工具栏上，选择“禁用项目代码”按钮   。
 
      ![“禁用项目代码”按钮](../designers/media/xaml_disablecode.png)
 
@@ -88,15 +86,15 @@ ms.locfileid: "62846014"
 ## <a name="control-display-options"></a>控件显示选项
 
 > [!NOTE]
-> “控件显示选项”仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”功能。
+> “控件显示选项”  仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”  功能。
 
 在 XAML 设计器中，可以将“控件显示选项”更改为，仅显示 Windows SDK 中的平台控件。 这可能会提升 XAML 设计器的可靠性。
 
-若要更改“控件显示选项”，请单击设计器窗口左下角的图标，再选择“控件显示选项”下的选项：
+若要更改“控件显示选项”，请单击设计器窗口左下角的图标，再选择“控件显示选项”  下的选项：
 
 ![控件显示选项](../designers/media/control_display_options.png)
 
-当你选中“仅显示平台控件”后，SDK 中的所有自定义控件、客户用户控件等都不会完整呈现。 相反，它们会被替换为回退控件，以展示控件的大小和位置。
+当你选中“仅显示平台控件”  后，SDK 中的所有自定义控件、客户用户控件等都不会完整呈现。 相反，它们会被替换为回退控件，以展示控件的大小和位置。
 
 ## <a name="see-also"></a>请参阅
 

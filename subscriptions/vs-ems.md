@@ -1,52 +1,24 @@
 ---
 title: EMS 权益 |Microsoft 文档
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 08/05/2019
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安全性权益。
-ms.openlocfilehash: 240a3c78a6c1e327c09abb8c31624eca2861bbe0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 93b613d06c6cd8ebcb3b28437677339084a9b720
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250802"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787767"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
-Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + 安全性 (EMS)。  使用 EMS - Azure Active Directory、Microsoft Intune、Azure 信息保护、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security 保护和管理标识、设备、应用程序和数据。
+Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + 安全性 (EMS)。  使用 EMS - Azure Active Directory、Microsoft Intune、Azure 信息保护、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security 保护和管理标识、设备、应用程序和数据。 
 
-> [!NOTE]
-> 如果通过批量许可购买多年订阅，EMS 权益当前仅在第一年可用。
-
-## <a name="activation-steps"></a>激活步骤
-
-若要使用 EMS，需要设置帐户或使用现有帐户登录。
-
-1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-
-2. 在“工具”部分找到“企业移动性和安全性”磁贴，然后单击磁贴底部的“获取代码”  链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”  。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 权益磁贴](_img/vs-ems/vs-ems-tile.png)
-
-3. 在“企业移动性 + 安全性 E5”页上，可以使用现有订阅帐户登录或创建新的帐户。  若要创建新帐户，请填写所需信息，然后单击“下一步”  。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 权益：创建帐户](_img/vs-ems/vs-ems-create-account-cropped.png)
-
-4. 创建用户 ID 和密码。  单击“创建我的帐户”，然后继续  。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 权益：创建用户 ID](_img/vs-ems/vs-ems-userID-cropped.png)
-
-5. 接下来，请提供电话号码，以通过电话或短信接收验证码。  输入验证码，然后单击“下一步”  。
-   > [!div class="mx-imgBorder"]
-   > ![EMS 权益：验证](_img/vs-ems/vs-ems-robot-cropped.png)
-
-6. 下一页将显示登录页和用户 ID。  保存该信息，供之后使用。  单击“你已准备就绪….” 
-   > [!div class="mx-imgBorder"]
-   > ![已创建 EMS 权益帐户](_img/vs-ems/vs-ems-save-info-cropped.png)
-
-7. EMS 需要访问 Microsoft [Azure 门户](https://azure.microsoft.com)。  按照 EMS 登录页的三个步骤激活 Azure 订阅、添加用户并配置 EMS。
+> [!IMPORTANT]
+> “企业移动性 + 安全性 (EMS)”权益当前不适用于新激活，尽管我们对此权益进行了重大更改。  如果已激活该权益，则可以继续正常使用它。  
 
 ## <a name="eligibility"></a>资格
 
@@ -58,7 +30,7 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
-<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。*
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。 
 
 <sup>2</sup> 不包括：Microsoft 合作伙伴网络 (Professional) 
 
