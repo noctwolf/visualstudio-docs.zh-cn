@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747247"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918205"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建加载项
 
@@ -43,9 +43,9 @@ ms.locfileid: "66747247"
 
 外接程序是在 Visual Studio 集成开发环境 (IDE) 中运行的已编译的 DLL。 编译有助于保护知识产权和提高性能。 虽然可以手动创建外接程序，但可能会发现使用“外接程序向导”更为简便  。 此向导创建一个功能全面但却很基本的外接程序，创建完该程序后可立即运行它。 “外接程序向导”生成基本程序后，可向其添加代码并对其进行自定义  。
 
- “外接程序向导”让你可以为外接程序提供显示名称和说明  。 这两项内容都将出现在“外接程序管理器”中  。 还可以选择让向导生成代码，用于向“工具”菜单中添加可打开外接程序的命令  。 也可以选择为外接程序显示一个自定义“关于”对话框  。 向导完成时，将生成只有一个实现外接程序的类的新项目。 该类名为“Connect”。
+“外接程序向导”让你可以为外接程序提供显示名称和说明  。 这两项内容都将出现在“外接程序管理器”中  。 还可以选择让向导生成代码，用于向“工具”菜单中添加可打开外接程序的命令  。 也可以选择为外接程序显示一个自定义“关于”对话框  。 向导完成时，将生成只有一个实现外接程序的类的新项目。 该类名为“Connect”。
 
- 本主题末尾将使用外接程序管理器  。
+本主题末尾将使用外接程序管理器  。
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>使用“外接程序向导”创建外接程序
 
@@ -326,9 +326,9 @@ ms.locfileid: "66747247"
 
 另外，通过该选项页，可指定供 Visual Studio 在其中搜索 .AddIn 注册文件的文件夹  。 通过此方式，可对可读取 .AddIn 注册文件的位置进行限制，从而提高安全性  。 这可防止无意中使用 .AddIn 恶意文件  。
 
- **外接程序安全性设置**
+**外接程序安全性设置**
 
- 选项页中外接程序安全性的设置如下所示：
+选项页中外接程序安全性的设置如下所示：
 
 - **允许加载外接程序组件。** 默认情况下选中此选项。 在选中时，允许在 Visual Studio 中加载外接程序。 在未选中时，禁止在 Visual Studio 中加载外接程序。
 
