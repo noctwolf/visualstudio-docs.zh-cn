@@ -1,6 +1,6 @@
 ---
 title: 管理项目中的引用
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747042"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787624"
 ---
 # <a name="manage-references-in-a-project"></a>管理项目中的引用
 
@@ -45,6 +45,8 @@ ms.locfileid: "66747042"
 - COM 组件
 
 - 同一解决方案中项目的其他程序集或类库
+
+- 共享项目
 
 - XML Web services
 
@@ -109,16 +111,20 @@ Visual Basic、C#、C++ 和 JavaScript 通用 Windows 平台 (UWP) 应用可以�
 
 ## <a name="project-to-project-references"></a>项目到项目的引用
 
-项目到项目的引用是对包含程序集的项目的引用；通过使用 **“项目”** 选项卡进行创建。给定项目路径后，Visual Studio 可以找到程序集。
+项目到项目的引用是对包含程序集的项目的引用；通过使用“引用管理器”对话框中的“项目”  选项卡添加项目引用。 给定项目路径后，Visual Studio 可以找到程序集。
 
 如果拥有生成程序集的项目，则应引用该项目并且不使用文件引用（见下文）。 项目到项目的引用的一个优点是能够在生成系统中的项目之间创建依赖关系。 如果依赖项目在上次生成引用项目之后已发生更改，则将生成该依赖项目。 文件引用不会创建生成依赖关系，因此可以在不生成依赖项目的情况下生成引用项目，并且该引用可能会过时。 （也就是说，项目可以引用以前生成的项目版本。）这可能导致 bin  目录中所需的单个 DLL 同时存在多个版本，而这种情况实际是不可能出现的。 当此冲突发生时，你将看到一条消息，例如“警告：无法将项目 ‘project’ 中的依赖关系‘file’复制到运行目录，因为它将覆盖引用 ‘file’。”。 有关详细信息，请参阅[有关无效引用的疑难解答](../ide/troubleshooting-broken-references.md)和[如何：创建和删除项目依赖项](../ide/how-to-create-and-remove-project-dependencies.md)。
 
 > [!NOTE]
 > 如果一个项目的目标 .NET Framework 版本是 4.5，而另一个项目的目标版本是 2、3、3.5 或 4.0，则创建的是文件引用而非项目到项目的引用。
 
+## <a name="shared-project-references"></a>共享项目引用
+
+与大多数其他项目类型不同，  共享项目不包含任何二进制文件输出。 相反，代码将编译到引用它的每个项目中。 使用[共享项目](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)，可以编写由多个不同的应用程序项目引用的通用代码。 此代码作为每个引用项目的一部分进行编译，并且可以包含编译器指令以帮助将特定于平台的功能合并到共享代码库中。 在“引用管理器”对话框的“共享项目”选项卡上添加对共享项目的引用  。
+
 ## <a name="file-references"></a>文件引用
 
-文件引用是对 Visual Studio 项目上下文之外的程序集的直接引用。 通过使用“引用管理器”  中的“浏览”  选项卡进行创建。 当只有程序集或组件，而没有将其创建为输出的项目时，使用文件引用。
+文件引用是对 Visual Studio 项目上下文之外的程序集的直接引用。 通过使用“引用管理器”对话框中的“浏览”  选项卡进行创建。 当只有程序集或组件，而没有将其创建为输出的项目时，使用文件引用。
 
 ## <a name="see-also"></a>请参阅
 
