@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a3313f6393290a5f55c47653d11dba646dbb1b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24637ba56c3dfa2d9ce9c7e70452bcdc6788b51b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430991"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918720"
 ---
 # <a name="step-9-try-other-features"></a>步骤 9：尝试其他功能
 若要了解详细信息，请尝试更改图标和颜色、添加游戏计时器和声音。 若要使游戏更具挑战性，请尝试将图板变大并调整计时器。
 
- 若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。
+若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。
 
 ## <a name="to-try-other-features"></a>尝试其他功能
 

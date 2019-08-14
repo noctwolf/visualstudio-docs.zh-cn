@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662062"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923753"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>使用 Visual Studio 执行 Live Unit Testing
 
@@ -151,7 +151,7 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 
 如果解决方案包含 10 个或更多项目，那么当用户启动 Live Unit Testing 且没有永久性数据时，或当用户在顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “重置清理”选项时，Visual Studio 会显示下面的对话框，以警告用户在大型项目中动态运行大量测试可能会严重影响性能    。 如果用户选择“确定”  ，Live Unit Testing 会在解决方案中执行所有测试。 如果用户选择“取消”  ，可以选择要执行的测试。 有关如何执行此操作的信息，请参阅以下部分：[包括和排除测试项目和测试方法](#include-and-exclude-test-projects-and-test-methods)。
 
- ![大型项目的“Live Unit Testing”对话框](media/lut-large-project.png)
+![大型项目的“Live Unit Testing”对话框](media/lut-large-project.png)
 
 ## <a name="include-and-exclude-test-projects-and-test-methods"></a>包括和排除测试项目和测试方法
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946825"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919083"
 ---
 # <a name="list-threads-command"></a>“列出线程”命令
 显示当前程序中线程的列表。
@@ -31,12 +31,12 @@ Debug.ListThreads [index]
 ```
 
 ## <a name="arguments"></a>自变量
- `index`
+`index`
 
- 可选。 通过索引来选择要用作当前线程的线程。
+可选。 通过索引来选择要用作当前线程的线程。
 
 ## <a name="remarks"></a>备注
- 如果已指定，`index` 实际参数将指示的线程标记为当前线程。 星号 (*) 显示在当前线程旁边的列表中。
+如果已指定，`index` 实际参数将指示的线程标记为当前线程。 星号 (*) 显示在当前线程旁边的列表中。
 
 ## <a name="example"></a>示例
 
@@ -44,7 +44,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [“列出调用堆栈”命令](../../ide/reference/list-call-stack-command.md)
 - [“列出反汇编”命令](../../ide/reference/list-disassembly-command.md)

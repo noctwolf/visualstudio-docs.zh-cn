@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aedaf5c31eca900ec1730622dfc7ff6f026a61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7322ee72509a199e3b4168a0b24083fe463e2457
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789130"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925964"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>“选项”对话框 ->“项目”->“Visual Basic 默认值”
 指定 Visual Basic 项目选项的默认设置。 创建新项目时，指定选项语句会添加到代码编辑器的项目标头中。 选项应用于所有 Visual Basic 项目。
 
- 若要访问此对话框，在“工具”菜单上，单击“选项”，展开“项目和解决方案”文件夹，单击“VB 默认值”。
+若要访问此对话框，在“工具”菜单上，单击“选项”，展开“项目和解决方案”文件夹，单击“VB 默认值”     。
 
- Option Explicit
+ Option Explicit 
 
- 设置编译器默认设置，以便要求变量的显式声明。 默认情况下，“Option Explicit”设置为“On”。 有关详细信息，请参阅 [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit)。
+设置编译器默认设置，以便要求变量的显式声明。 默认情况下，“Option Explicit”设置为“On”   。 有关详细信息，请参阅 [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit)。
 
- Option Strict
+ Option Strict 
 
- 设置编译器默认值，以便要求显式收缩转换且不允许后期绑定。 默认情况下，“Option Strict”设置为“Off”。 有关详细信息，请参见 [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict)。
+设置编译器默认值，以便要求显式收缩转换且不允许后期绑定。 默认情况下，“Option Strict”设置为“Off”   。 有关详细信息，请参见 [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict)。
 
- Option Compare
+ Option Compare 
 
- 设置字符串比较的编译器默认设置：二进制（区分大小写）或文本（不区分大小写）。默认情况下，“Option Compare”设置为“二进制”。 有关详细信息，请参阅 [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare)。
+设置字符串比较的编译器默认设置：二进制（区分大小写）或文本（不区分大小写）。默认情况下，“Option Compare”设置为“二进制”   。 有关详细信息，请参阅 [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare)。
 
- Option Infer
+ Option Infer 
 
- 设置本地类型推断的编译器默认设置。 默认情况下，新创建的项目的“Option Infer”设置为“On”，在 Visual Basic 以前版本中创建的迁移项目的“Option Infer”设置为“Off”。 有关详细信息，请参阅 [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer)。
+设置本地类型推断的编译器默认设置。 默认情况下，新创建的项目的“Option Infer”设置为“On”，在 Visual Basic 以前版本中创建的迁移项目的“Option Infer”设置为“Off”    。 有关详细信息，请参阅 [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)

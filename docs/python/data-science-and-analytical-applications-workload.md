@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20ebd6def9fcac2336ca13118300737b66142812
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958279"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926384"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 
@@ -90,7 +90,7 @@ SQL Server 支持使用 Python 直接在 SQL Server 内执行高级分析。 SQL
 
 - **广泛的可用性，且不增加任何成本**：SQL Server 2017 及更高版本的所有版本（包括 Express Edition）均提供语言集成。
 
-要充分利用 SQL Server 集成，请使用 Visual Studio 安装程序安装具有“SQL Server Data Tools”选项的数据存储和处理工作负载。 后一个选项支持 SQL IntelliSense、语法突出显示和部署。
+要充分利用 SQL Server 集成，请使用 Visual Studio 安装程序安装具有“SQL Server Data Tools”选项的数据存储和处理工作负载   。 后一个选项支持 SQL IntelliSense、语法突出显示和部署。
 
 ![数据存储和处理工作负载](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![数据存储和处理工作负载选项](media/workload/data-storage-workload-options.png)
 
@@ -106,7 +106,7 @@ SQL Server 支持使用 Python 直接在 SQL Server 内执行高级分析。 SQL
 
 除数据科学和分析应用程序工作负载中的功能外，Azure Notebooks 服务和 Azure SDK for Python 也对数据科学有所助益。
 
-Azure SDK for Python 使得从运行在 Windows、Mac 和 Linux 上的应用程序中使用和管理 Microsoft Azure 服务更加方便。 有关详细信息，请参阅 [Azure SDK for Python](../python/azure-sdk-for-python.md)
+Azure SDK for Python 使得从运行在 Windows、Mac 和 Linux 上的应用程序中使用和管理 Microsoft Azure 服务更加方便。 有关详细信息，请参阅 [Azure SDK for Python](../python/azure-sdk-for-python.md)。
 
 Azure Notebooks（当前为预览版）对 Microsoft Azure 云中运行的 Jupyter 笔记本提供免费在线访问。 此服务包括用 Python、R 和 F# 编写的示例笔记本，可帮助用户入门。 请访问 [notebooks.azure.com](https://notebooks.azure.com/)。
 

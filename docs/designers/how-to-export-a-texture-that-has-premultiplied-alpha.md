@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893375"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924261"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含自左乘的 alpha 的纹理
 
@@ -26,7 +26,7 @@ ms.locfileid: "62893375"
 - 配置图像内容管道以生成预乘 alpha。
 
 ## <a name="premultiplied-alpha"></a>预乘 Alpha
- 预乘 Alpha 相对于常规非预乘 Alpha 来说具有若干优点，因为它通过透明度（允许通过的底色的量）来分离纹素添加的颜色（纹素添加到场景中的颜色），更好的体现了现实世界与物理材质的光线交互。 使用预乘 Alpha 的一些优点为：
+预乘 Alpha 相对于常规非预乘 Alpha 来说具有若干优点，因为它通过透明度（允许通过的底色的量）来分离纹素添加的颜色（纹素添加到场景中的颜色），更好的体现了现实世界与物理材质的光线交互。 使用预乘 Alpha 的一些优点为：
 
 - 与预乘 Alpha 混合的是一种结合性运算，无论按何种顺序混合纹理，混合多个半透明纹理的结果都是相同的。
 
@@ -40,9 +40,9 @@ ms.locfileid: "62893375"
 
 1. 从基本纹理开始。 加载现有图像文件，或根据[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)中所述进行创建。
 
-2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开纹理文件的快捷菜单，然后选择“属性”。 在“配置属性” > “常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。
+2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”  中，打开纹理文件的快捷菜单，然后选择“属性”  。 在“配置属性” > “常规”页上，将“项目类型”属性设置为“图像内容管道”     。 请确保将“内容”  属性设置为“是”  ，并且将“从生成中排除”  设置为“否”  ，然后选择“应用”  按钮。 将出现“图像内容管道”  配置属性页。
 
-3. 配置图像内容管道，生成预乘 Alpha。 在“配置属性” > “图像内容管道” > “常规”页上，将“转换为预乘 Alpha 格式”属性设置为“是 (/generatepremultipliedalpha)”。
+3. 配置图像内容管道，生成预乘 Alpha。 在“配置属性” > “图像内容管道” > “常规”页上，将“转换为预乘 Alpha 格式”属性设置为“是 (/generatepremultipliedalpha)”      。
 
 4. 选择“确定”  按钮。
 

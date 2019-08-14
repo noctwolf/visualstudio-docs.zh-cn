@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003718"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918481"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 性能测试中修复无法检测的动态参数
 
@@ -35,11 +35,11 @@ ms.locfileid: "63003718"
 
 为了演示可检测的和无法检测的动态参数，我们将创建一个简单的 ASP.NET Web 应用程序，该应用程序具有带几个控件和一些自定义代码的三个 Web 窗体。 我们接下来将了解如何隔离和处理动态参数。
 
-1. 创建一个名为 DynamicParameterSample 的新 ASP.NET 项目。
+1. 创建一个名为 DynamicParameterSample 的新 ASP.NET 项目。 
 
      ![创建一个空 ASP.NET Web 应用程序项目](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2. 添加名为 Querystring.aspx 的 Web 窗体。
+2. 添加名为 Querystring.aspx 的 Web 窗体。 
 
 3. 在设计视图中，将 HiddenField 拖动到页面上，然后将 (ID) 属性的值更改为 HiddenFieldSessionID。
 
@@ -62,7 +62,7 @@ ms.locfileid: "63003718"
     </html>
     ```
 
-5. 打开 Querystring.aspx.cs 文件，并将以下突出显示的代码添加到 Page_Load 方法：
+5. 打开 Querystring.aspx.cs 文件，并将以下突出显示的代码添加到 Page_Load 方法： 
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,25 +74,25 @@ ms.locfileid: "63003718"
     }
     ```
 
-6. 添加另一个名为 ASPQuery.aspx 的 Web 窗体。
+6. 添加另一个名为 ASPQuery.aspx 的 Web 窗体。 
 
-7. 在设计视图中，将标签拖动到页面上，并将其 (ID) 属性的值更改为“IndexLabel”。
+7. 在设计视图中，将标签拖动到页面上，并将其 (ID) 属性的值更改为“IndexLabel”。   
 
      ![向 Web 表单添加标签](../test/media/web_test_dynamicparameter_label.png)
 
-8. 将超链接拖动到页面上，并将其 Text 属性的值改为“Back”。
+8. 将超链接拖动到页面上，并将其 Text 属性的值改为“Back”。   
 
      ![添加指向 Web 表单的超链接](../test/media/web_test_dynamicparameter_hyperlink.png)
 
-9. 为 NavigationURL 属性选择 (…)。
+9. 为 NavigationURL 属性选择 (…)。  
 
      ![编辑 NavigateURL 属性](../test/media/web_test_dynamicparameter_hyperlink_navurl.png)
 
-     选择 Querystring.aspx。
+     选择 Querystring.aspx。 
 
      ![选择 URL 为 Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png)
 
-10. 打开 ASPQuery.aspx.cs 文件，并将以下突出显示的代码添加到 Page_Load 方法：
+10. 打开 ASPQuery.aspx.cs 文件，并将以下突出显示的代码添加到 Page_Load 方法： 
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -101,13 +101,13 @@ ms.locfileid: "63003718"
             }
     ```
 
-11. 添加第三个名为 JScriptQuery.aspx 的 Web 窗体。
+11. 添加第三个名为 JScriptQuery.aspx 的 Web 窗体。 
 
-     正如我们在第二页上进行的操作，将标签拖动到窗体上，将其 (ID) 属性设置为 IndexLabel 并将超链接拖动到窗体上，将其文本属性设置为“Back”并将其 NavigationURL 属性设置为 Querystring.aspx。
+     正如我们在第二页上进行的操作，将标签拖动到窗体上，将其 (ID) 属性设置为 IndexLabel 并将超链接拖动到窗体上，将其文本属性设置为“Back”并将其 NavigationURL 属性设置为 Querystring.aspx。        
 
      ![添加和配置第三个 Web 表单](../test/media/web_test_dynamicparameter_addwebform3.png)
 
-12. 打开 JScriptQuery.aspx.cs 文件，并将以下突出显示的代码添加到 Page_Load 方法：
+12. 打开 JScriptQuery.aspx.cs 文件，并将以下突出显示的代码添加到 Page_Load 方法： 
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -118,11 +118,11 @@ ms.locfileid: "63003718"
 
 13. 保存项目。
 
-14. 在“解决方案资源管理器”中，将 Querystring.aspx 设置为起始页。
+14. 在“解决方案资源管理器”中，将 Querystring.aspx 设置为起始页。  
 
      ![在 Querystring.aspx 上设置起始页](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. 按 Ctrl+F5 以在浏览器中运行该 Web 应用程序。+ 复制 URL。 当记录您的测试时，您将需要它。
+15. 按 Ctrl+F5 以在浏览器中运行该 Web 应用程序。  +  复制 URL。 当记录您的测试时，您将需要它。
 
 16. 尝试这两个链接。 它们都会显示消息“Success. Dynamic querystring parameter found.”（成功。已找到动态查询字符串参数。）
 
@@ -152,21 +152,21 @@ ms.locfileid: "63003718"
 
      Web 测试记录器可在你浏览 Web 应用程序时显示 HTTP 请求和响应 URL。
 
-6. 在测试记录器上选择“停止”按钮。
+6. 在测试记录器上选择“停止”按钮。 
 
      用于检测动态参数的对话框显示了一个进度栏，该进度栏显示了接收到的 HTTP 响应中的参数检测状态。
 
 7. 将自动检测 ASPQuery 页中的 CustomQueryString 的动态参数。 但是，不会检测 JScriptQuery 页中的 CustomQueryString 的动态参数。
 
-     选择“确定”以向 Querystring.aspx 添加提取规则，并将其绑定到 ASPQuery 页。
+     选择“确定”以向 Querystring.aspx 添加提取规则，并将其绑定到 ASPQuery 页。  
 
      ![提升未检测到的动态参数](../test/media/web_test_dynamicparameter_promotedialog.png)
 
-     提取规则将添加到 Querystring.aspx 的第一个请求。
+     提取规则将添加到 Querystring.aspx 的第一个请求。 
 
      ![已向请求添加提取规则](../test/media/web_test_dynamicparameter_autoextractionrule.png)
 
-     在 ASPQuery.aspx 的请求树中展开第二个请求，你会看到 CustomQueryString 的值已绑定到该提取规则。
+     在 ASPQuery.aspx 的请求树中展开第二个请求，你会看到 CustomQueryString 的值已绑定到该提取规则。 
 
      ![CustomQueryString 绑定到提取规则](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
@@ -178,21 +178,21 @@ ms.locfileid: "63003718"
 
      ![运行该 Web 性能测试](../test/media/web_test_dynamicparameter_runtest.png)
 
-2. JScriptQuery.aspx 页的第四个请求失败。 转到 Web 测试。
+2. JScriptQuery.aspx 页的第四个请求失败。  转到 Web 测试。
 
      ![测试结果中的动态参数错误](../test/media/web_test_dynamicparameter_runresults.png)
 
-     JScriptQuery.aspx 请求节点突出显示在编辑器中。 展开节点，您会发现 CustomQueryString 的“1v0yhyiyr0raa2w4j4pwf5zl”部分似乎是动态的。
+     JScriptQuery.aspx 请求节点突出显示在编辑器中。  展开节点，您会发现 CustomQueryString 的“1v0yhyiyr0raa2w4j4pwf5zl”部分似乎是动态的。
 
      ![CustomQueryString 中的可疑动态参数](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3. 返回到 Web 性能测试结果查看器，然后选择失败的 JScriptQuery.aspx 页。 然后，选择请求选项卡并验证是否清除“显示原始数据”复选框，向下滚动并选择“在 CustomQueryString 上快速查找”。
+3. 返回到 Web 性能测试结果查看器，然后选择失败的 JScriptQuery.aspx 页。  然后，选择请求选项卡并验证是否清除“显示原始数据”复选框，向下滚动并选择“在 CustomQueryString 上快速查找”。
 
      ![使用快速查找隔离该动态参数](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4. 从测试编辑器中可以看到，已为 JScriptQuery.aspx 请求的 CustomQueryString 分配值：`jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`，并且怀疑的动态部分为“1v0yhyiyr0raa2w4j4pwf5zl”。 在“查找内容”下拉列表中，移除该搜索字符串的可疑部分。 该字符串应为“CustomQueryString=jScriptQueryString___”。
+4. 从测试编辑器中可以看到，已为 JScriptQuery.aspx 请求的 CustomQueryString 分配值：`jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl`，并且怀疑的动态部分为“1v0yhyiyr0raa2w4j4pwf5zl”。  在“查找内容”下拉列表中，移除该搜索字符串的可疑部分。 该字符串应为“CustomQueryString=jScriptQueryString___”。
 
-     动态参数将存在错误的请求前面的一个请求中进行赋值。 因此，请选中“向上搜索”复选框，然后选择“查找下一个”，直到 Querystring.aspx 前面的请求突出显示在“请求”面板中。 此情况应在您选择“查找下一个”三次后发生。
+     动态参数将存在错误的请求前面的一个请求中进行赋值。 因此，请选中“向上搜索”复选框，然后选择“查找下一个”，直到 Querystring.aspx 前面的请求突出显示在“请求”面板中。  此情况应在您选择“查找下一个”三次后发生。
 
      ![使用快速查找隔离该动态参数](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
@@ -215,7 +215,7 @@ ms.locfileid: "63003718"
 
      ![选择记录的结果](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7. 在记录的结果中，选择第三个请求，即你在测试运行结果中隔离的相同的 Querystringrequest.aspx 请求。
+7. 在记录的结果中，选择第三个请求，即你在测试运行结果中隔离的相同的 Querystringrequest.aspx 请求。 
 
      ![在记录的结果中选择相同的请求](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -223,25 +223,25 @@ ms.locfileid: "63003718"
 
      ![为该动态参数添加一个提取规则](../test/media/web_test_dynamicparameter_recordedresultaddextractionrule.png)
 
-     新提取规则将添加到 Querystring.aspx 请求，并分配有值“Param0”。
+     新提取规则将添加到 Querystring.aspx 请求，并分配有值“Param0”。 
 
-     如果该对话框通知我们已找到要与参数绑定的提取文本的匹配项，请选择“是”。
+     如果该对话框通知我们已找到要与参数绑定的提取文本的匹配项，请选择“是”。 
 
      ![已创建提取规则](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8. 选择“查找下一个”。 我们需要更改第一个匹配项，它是 JScriptQuery 页的 CustomQueryString 的参数。
+8. 选择“查找下一个”。  我们需要更改第一个匹配项，它是 JScriptQuery 页的 CustomQueryString 的参数。
 
      ![查找和替换参数的文本](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
-9. 选择“替换”。
+9. 选择“替换”。 
 
      ![用参数替换文本](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     “JScriptQuery.aspx”请求下的 QueryString 参数使用以下新的上下文参数进行更新：CustomQueryString=jScriptQueryString___{{Param0}}。
+     “JScriptQuery.aspx”请求下的 QueryString 参数使用以下新的上下文参数进行更新：  CustomQueryString=jScriptQueryString___{{Param0}}。
 
      ![应用于查询字符串的参数](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
-10. 关闭“查找和替换”对话框。 请注意，检测到的动态参数与关联的未检测到的动态参数具有类似的请求树结构。
+10. 关闭“查找和替换”对话框。  请注意，检测到的动态参数与关联的未检测到的动态参数具有类似的请求树结构。
 
      ![检测到并关联了动态参数](../test/media/web_test_dynamicparameter_conclusion.png)
 
@@ -251,18 +251,18 @@ ms.locfileid: "63003718"
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>问：如果我的 Web 应用程序已被修改，我是否可以重新运行动态参数检测？
 
- **答：** 可以，请使用下列过程：
+**答：** 可以，请使用下列过程：
 
-1. 在工具栏中，选择“将动态参数提升为 Web 测试参数”按钮。
+1. 在工具栏中，选择“将动态参数提升为 Web 测试参数”按钮。 
 
-     完成检测过程之后，如果检测到任何动态参数，则将显示“将动态参数提升为 Web 测试参数”对话框。
+     完成检测过程之后，如果检测到任何动态参数，则将显示“将动态参数提升为 Web 测试参数”对话框。 
 
      动态参数将在“动态参数”列下列出。 从中提取动态参数以及绑定到动态参数的请求将在“从响应中提取参数”和“绑定到请求”列下列出。
 
-     如果在“将动态参数提升为 Web 测试参数”对话框中选择动态参数，则会在 Web 性能测试编辑器请求树中突出显示两个请求。 第一个请求是将添加提取规则的请求。 第二个请求是将绑定提取值的位置。
+     如果在“将动态参数提升为 Web 测试参数”对话框中选择动态参数，则会在 Web 性能测试编辑器请求树中突出显示两个请求。  第一个请求是将添加提取规则的请求。 第二个请求是将绑定提取值的位置。
 
 2. 选中或清除要自动关联的动态参数旁边的复选框。 默认情况下会选中所有动态参数。
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>问：我是否需要将 Visual Studio 配置为检测动态参数？
 
- **答：** 当记录 Web 性能测试时，默认的 Visual Studio 配置为检测动态参数。 但是，如果将 Visual Studio 选项配置为不检测动态参数，或使用其他动态参数修改了所测试的 Web 应用程序；仍可从 Web 性能测试编辑器运行动态参数检测。
+**答：** 当记录 Web 性能测试时，默认的 Visual Studio 配置为检测动态参数。 但是，如果将 Visual Studio 选项配置为不检测动态参数，或使用其他动态参数修改了所测试的 Web 应用程序；仍可从 Web 性能测试编辑器运行动态参数检测。

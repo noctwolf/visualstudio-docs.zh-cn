@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662075"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923677"
 ---
 # <a name="load-test-run-settings-properties"></a>负载测试运行设置属性
 
@@ -45,7 +45,7 @@ ms.locfileid: "68662075"
 |为已完成测试保存日志的频率 |指定写入测试日志的频率。 该数字指示将测试保存到测试日志的频率为每达到输入的测试数即保存一次。 例如，如果输入的值为 10，则指定第 10 个、20 个、30 个等测试将写入测试日志。 如果将该值设置为 0，则指定不保存任何测试日志。|
 |测试未通过时保存日志 |一个布尔值，它确定负载测试中测试未通过时是否保存测试日志。 默认值为 `True`。<br /><br /> 有关详细信息，请参阅[如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- 有关详细信息，请参阅[修改负载测试日志记录设置](../test/modify-load-test-logging-settings.md)。
+有关详细信息，请参阅[修改负载测试日志记录设置](../test/modify-load-test-logging-settings.md)。
 
 ## <a name="results-properties"></a>结果属性
 
@@ -70,7 +70,7 @@ ms.locfileid: "68662075"
 |测试迭代 |指定在完成负载测试之前要运行的单个测试的总数。 只有当“使用测试迭代”属性为 `True` 时，才应用此属性。|
 |使用测试迭代 |如果“使用测试迭代”为 `True`，负载测试将一直运行，直到负载测试中已完成单个测试的总数达到“测试迭代”属性指定的数量为止。 在这种情况下，将忽略基于时间的设置，包括“预热持续时间”、“运行持续时间”和“冷却持续时间”。 如果“使用测试迭代”为 `False`，将应用所有计时设置，而忽略“测试迭代”。|
 
- 有关详细信息，请参阅[如何：在运行设置中指定测试迭代次数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
+有关详细信息，请参阅[如何：在运行设置中指定测试迭代次数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
 
 ## <a name="timing-properties"></a>执行时间属性
 

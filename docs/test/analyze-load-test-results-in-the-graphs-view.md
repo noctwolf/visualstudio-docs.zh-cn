@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432021"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926470"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在负载测试分析器的关系图视图中分析负载测试结果
 
@@ -47,20 +47,20 @@ ms.locfileid: "66432021"
 |控制器和代理|有关运行负载测试的计算机的信息。 其中包括有关内存使用、处理器、物理磁盘和进程的数据。<br /><br /> 默认情况下，只收集“Available Mbytes”（可用的兆字节数）和“Processor Time”（处理器时间）计数器。|
 |事务响应时间|负载测试期间发生的事务的平均响应时间。|
 
- 可以在运行时和运行了测试之后在关系图上显示不同的计数器。
+可以在运行时和运行了测试之后在关系图上显示不同的计数器。
 
 > [!NOTE]
 > 只有响应时间性能计数器可以添加到自动生成的响应时间关系图中。
 
- 计数器信息同时显示在关系图中和关系图下方的图例中。 也可以放大关系图的某一部分。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+计数器信息同时显示在关系图中和关系图下方的图例中。 也可以放大关系图的某一部分。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 ## <a name="counters-displayed-in-graphs"></a>关系图中显示的计数器
 
- 关系图中会显示一些计数器  。 计数器引用在负载测试期间收集的数据，如每秒的测试数或平均测试时间。 有关计数器的详细信息，请参阅[为负载测试中的计算机指定计数器集和阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
+关系图中会显示一些计数器  。 计数器引用在负载测试期间收集的数据，如每秒的测试数或平均测试时间。 有关计数器的详细信息，请参阅[为负载测试中的计算机指定计数器集和阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
- 显示在关系图中的计数器的图例显示了几列有关负载测试运行的有用数据。 若要关闭关系图中任何数据的显示，请清除图例中对应行的复选框。
+显示在关系图中的计数器的图例显示了几列有关负载测试运行的有用数据。 若要关闭关系图中任何数据的显示，请清除图例中对应行的复选框。
 
- 图例包含以下列：
+图例包含以下列：
 
 |计数器|计数器的名称|
 |-|-|
@@ -87,11 +87,11 @@ ms.locfileid: "66432021"
 
 ## <a name="related-tasks"></a>相关任务
 
- [在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)
+[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)
 
- [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>请参阅
 

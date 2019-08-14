@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132163"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926656"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ DLL 单元测试
 
- 测试 DLL 代码有多种方式，具体取决于是否导出要测试的函数。 选择以下方式之一：
+测试 DLL 代码有多种方式，具体取决于是否导出要测试的函数。 选择以下方式之一：
 
- **单元测试仅调用从 DLL 导出的函数：** 按照[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)中所述添加单独的测试项目。 在测试项目中，添加对 DLL 项目的引用。
+**单元测试仅调用从 DLL 导出的函数：** 按照[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)中所述添加单独的测试项目。 在测试项目中，添加对 DLL 项目的引用。
 
- 转到过程[引用从 DLL 项目导出的函数的具体步骤](#projectRef)。
+转到过程[引用从 DLL 项目导出的函数的具体步骤](#projectRef)。
 
- **DLL 生成为 .exe 文件：** 添加单独的测试项目。 将其与输出对象文件关联起来。
+**DLL 生成为 .exe 文件：** 添加单独的测试项目。 将其与输出对象文件关联起来。
 
- 转到过程[将测试与对象或库文件相关联的具体步骤](#objectRef)。
+转到过程[将测试与对象或库文件相关联的具体步骤](#objectRef)。
 
- **单元测试调用不从 DLL 导出的非成员函数，并且 DLL 可以生成为静态库：** 更改 DLL 项目，以将它编译为 .lib 文件  。 添加引用所测试项目的单独测试项目。
+**单元测试调用不从 DLL 导出的非成员函数，并且 DLL 可以生成为静态库：** 更改 DLL 项目，以将它编译为 .lib 文件  。 添加引用所测试项目的单独测试项目。
 
- 此方法的好处是，允许测试使用非导出成员，但测试仍保留在单独的项目中。
+此方法的好处是，允许测试使用非导出成员，但测试仍保留在单独的项目中。
 
- 转到过程[将 DLL 更改为静态库的具体步骤](#staticLink)。
+转到过程[将 DLL 更改为静态库的具体步骤](#staticLink)。
 
- **单元测试必须调用不导出的非成员函数，并且代码必须生成为动态链接库 (DLL)：** 在产品代码所在项目中添加单元测试。
+**单元测试必须调用不导出的非成员函数，并且代码必须生成为动态链接库 (DLL)：** 在产品代码所在项目中添加单元测试。
 
- 转到过程[在同一项目中添加单元测试的具体步骤](#sameProject)。
+转到过程[在同一项目中添加单元测试的具体步骤](#sameProject)。
 
 ## <a name="create-the-tests"></a>创建测试
 
@@ -93,7 +93,7 @@ ms.locfileid: "67132163"
       1. 在“文件”菜单上，选择“新建” > “项目”    。 在“添加新项目”对话框中，将“语言”设置为 C++ 并在搜索框中键入“测试”   。 然后，选择“本机测试项目”  。
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
       1. 在“文件”菜单中，选择“新建”>“项目”>“Visual C++”>“测试”>“C++ 单元测试项目”       。

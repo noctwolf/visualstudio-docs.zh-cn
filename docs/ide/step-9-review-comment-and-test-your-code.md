@@ -11,17 +11,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad984f82d6d3bdcabf3a5a6952751cfa944a0eb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 15c5cfbd419cc34f4d26cdb90da03f38e28a26c4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416614"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925889"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：检查代码、为代码添加注释和测试代码
 接下来，将向代码添加注释。 注释是一个说明，它不会更改程序的行为。 它使阅读您代码的人更容易理解代码的行为。 在代码中添加注释是一个好习惯。 在 Visual C# 中，可用两个正斜杠 (//) 将一行标记为一个注释。 在 Visual Basic 中，可用一个单引号 (') 将一行标记为一个注释。 添加注释后即可测试你的程序。 当您处理您的项目时，最好经常运行和测试代码，以便您可在代码变复杂之前尽早捕获和修复任何问题。 这称为“迭代测试”  。
 
- 您刚才构建了可用的程序，虽然尚未完成，但已能够下载图片。 在向代码添加注释并测试代码之前，请先花点时间了解一些代码概念，因为您将会频繁使用这些概念：
+您刚才构建了可用的程序，虽然尚未完成，但已能够下载图片。 在向代码添加注释并测试代码之前，请先花点时间了解一些代码概念，因为您将会频繁使用这些概念：
 
 - 双击“Windows 窗体设计器”  中的“显示图片”  按钮后，IDE 会自动将一个方法  添加到程序的代码中。
 

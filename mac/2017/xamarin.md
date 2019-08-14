@@ -1,16 +1,16 @@
 ---
-title: Visual Studio for Mac 中的 Xamarin
+title: Xamarin
 description: '使用 Visual Studio for Mac 中的 Xamarin，可创建面向 iOS、Mac、Android、tvOS 和 watchOS 的跨平台应用程序 '
 author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9b150c55e54b851e96e3bfb22e5e9a77646f7d7
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985527"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872259"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 移动应用开发
 
@@ -55,6 +55,6 @@ Xamarin Inspector 提供一个具有用户工具的交互式 C# 控制台。 它
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-它包括一个独立应用程序，可提供面向各种编程平台（Android、iOS、Mac 和 Windows）并集成到 IDE 调试工作流的内容丰富的 C# 控制台。 
+它包括一个独立应用程序，可提供面向各种编程平台（Android、iOS、Mac 和 Windows）并集成到 IDE 调试工作流的内容丰富的 C# 控制台。
 
 有关详细信息，请参阅 [Xamarin Inspector](/xamarin/tools/inspector/) 指南。

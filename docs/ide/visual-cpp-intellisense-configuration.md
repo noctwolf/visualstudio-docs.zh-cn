@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605ad454d00387d9a9094a518b4afed279fcc190
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b8d52114e742d5a8176166744a4edc2975f674a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461587"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925858"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>配置用于 IntelliSense 的 C++ 项目
 
@@ -38,7 +38,7 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
 ![VC++ Include 目录](media/vcpp-intellisense-include-paths.png)
 
- 若要查看生成宏（如 VC_IncludePath  ）的当前值，请选择“Include 目录”行，再单击右侧的下拉列表。 然后，选择“\<编辑>”  ，并单击“宏”  按钮。
+若要查看生成宏（如 VC_IncludePath  ）的当前值，请选择“Include 目录”行，再单击右侧的下拉列表。 然后，选择“\<编辑>”  ，并单击“宏”  按钮。
 
 ### <a name="makefile-projects"></a>生成文件项目
 
@@ -79,18 +79,18 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 此时，输出窗口会显示传递到 IntelliSense 编译器的命令行。 下面展示了示例输出：
 
 ```output
- [IntelliSense] Configuration Name: Debug|Win32
- [IntelliSense] Toolset IntelliSense Identifier:
- [IntelliSense] command line options:
- /c
- /I.
- /IC:\Repo\Includes
- /DWIN32
- /DDEBUG
- /D_DEBUG
- /Zc:wchar_t-
- /Zc:forScope
- /Yustdafx.h
+[IntelliSense] Configuration Name: Debug|Win32
+[IntelliSense] Toolset IntelliSense Identifier:
+[IntelliSense] command line options:
+/c
+/I.
+/IC:\Repo\Includes
+/DWIN32
+/DDEBUG
+/D_DEBUG
+/Zc:wchar_t-
+/Zc:forScope
+/Yustdafx.h
 ```
 
 此信息可有助于了解为什么 IntelliSense 会提供不准确的信息。 例如，如果项目的 Include 目录包含 $(MyVariable)\Include  ，而诊断日志却显示 /I\Include  作为 Include 路径，表明 $(MyVariable)  未经评估，已从最终 include 路径中删除。
@@ -110,10 +110,10 @@ IntelliSense 生成即使不生成二进制文件，也仍可能会发生故障�
 错误消息可能会提示启用设计时跟踪：
 
 ```output
- error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
- configuration 'Debug|x64'. IntelliSense might be unavailable.
- Set environment variable TRACEDESIGNTIME=true and restart
- Visual Studio to investigate.
+error: Designtime build failed for project 'E:\src\MyProject\MyProject.vcxproj',
+configuration 'Debug|x64'. IntelliSense might be unavailable.
+Set environment variable TRACEDESIGNTIME=true and restart
+Visual Studio to investigate.
 ```
 
 如果你将环境变量 TRACEDESIGNTIME 设置为 true，并重启 Visual Studio，%TEMP% 目录中便会有可能有助于诊断生成故障的日志文件。

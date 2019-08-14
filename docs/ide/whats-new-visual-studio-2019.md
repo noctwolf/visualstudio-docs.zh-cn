@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493333"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918790"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -65,7 +65,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) 通过使用人工智能 (AI) 来提高软件开发工作的效率。 IntelliCode 将在 GitHub 上训练 2,000 个开源项目（每个项目包含 100 个星级）以生成这些建议。
 
- ![Visual Studio 2019 中的 IntelliCode 动画](media/vs-2019/IntelliCode.gif)
+![Visual Studio 2019 中的 IntelliCode 动画](media/vs-2019/IntelliCode.gif)
 
 下面是 Visual Studio IntelliCode 帮助提高生产力的几种方法：
 

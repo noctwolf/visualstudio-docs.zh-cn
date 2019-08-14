@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046848"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919479"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -46,7 +46,7 @@ ms.locfileid: "67046848"
 
 ## <a name="navigate-within-your-code"></a>在代码中导航
 
- 你可以使用各种技术更快地查找并移动到代码中的特定位置。
+你可以使用各种技术更快地查找并移动到代码中的特定位置。
 
 - **为代码行添加书签**。 你可以使用书签来快速浏览到文件中的特定代码行。
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820950"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926791"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -465,7 +465,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 通过改进测试代码，可使测试方法更可靠并提供更多信息。 但更重要的是，被测代码也得到改进。
 
 > [!TIP]
-> 此演练使用用于托管代码的 Microsoft 单元测试框架。 “测试资源管理器”还可以在具有“测试资源管理器”适配器的第三方单元测试框架中运行测试   。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
+> 此演练使用用于托管代码的 Microsoft 单元测试框架。 “测试资源管理器”还可以在具有“测试资源管理器”适配器的第三方单元测试框架中运行测试   。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)。
 
 ## <a name="see-also"></a>请参阅
 

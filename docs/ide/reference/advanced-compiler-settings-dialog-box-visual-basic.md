@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 590e7917cdc37242b6fc73699aa8ce6b3e8ba24f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461464"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919360"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 
@@ -38,7 +38,7 @@ ms.locfileid: "68461464"
 
 ## <a name="optimizations"></a>优化
 
- 以下选项可以指定优化，在某些情况下缩小程序文件、加快程序运行速度或加速生成过程。
+以下选项可以指定优化，在某些情况下缩小程序文件、加快程序运行速度或加速生成过程。
 
 **不做整数溢出检查**
 
@@ -52,11 +52,11 @@ ms.locfileid: "68461464"
 
  **DLL 基址**
 
- 此文本框以十六进制格式显示默认 DLL 基址。 在类库和控件库项目中，可以使用此文本框指定创建 DLL 时将要使用的基址。
+此文本框以十六进制格式显示默认 DLL 基址。 在类库和控件库项目中，可以使用此文本框指定创建 DLL 时将要使用的基址。
 
  **生成调试信息**
 
- 从列表中选择“无”、“完整”或“仅 pdb”    。 “无”指定不生成调试信息  。 “完整”指定生成完整调试信息，“仅 pdb”指定仅生成 PDB 调试信息   。 该选项的默认值为“完整”  。
+从列表中选择“无”、“完整”或“仅 pdb”    。 “无”指定不生成调试信息  。 “完整”指定生成完整调试信息，“仅 pdb”指定仅生成 PDB 调试信息   。 该选项的默认值为“完整”  。
 
 ## <a name="compilation-constants"></a>编译常量
 
@@ -64,15 +64,15 @@ ms.locfileid: "68461464"
 
  “定义 DEBUG 常量” 
 
- 默认为选中此复选框，指定设置 DEBUG 常量。
+默认为选中此复选框，指定设置 DEBUG 常量。
 
  “定义 TRACE 常量” 
 
- 默认为选中此复选框，指定设置 TRACE 常量。
+默认为选中此复选框，指定设置 TRACE 常量。
 
  **自定义常量**
 
- 在此文本框中输入应用程序的任何自定义常量。 条目应使用以下形式用逗号分隔：**Name1="Value1",Name2="Value2",Name3="Value3"** 。
+在此文本框中输入应用程序的任何自定义常量。 条目应使用以下形式用逗号分隔：**Name1="Value1",Name2="Value2",Name3="Value3"** 。
 
 ## <a name="other-settings"></a>其他设置
 

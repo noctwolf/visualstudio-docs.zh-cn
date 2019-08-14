@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461563"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918888"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 
@@ -49,11 +49,11 @@ ms.locfileid: "68461563"
 
  **是**
 
- 在生成日志文件中列出环境变量。 此选项指定在生成 C++ 项目期间，将所有环境变量回显到生成日志文件中。
+在生成日志文件中列出环境变量。 此选项指定在生成 C++ 项目期间，将所有环境变量回显到生成日志文件中。
 
  **否**
 
- 不在生成日志文件中显示环境变量。
+不在生成日志文件中显示环境变量。
 
 ## <a name="build-timing"></a>生成计时
 
@@ -63,7 +63,7 @@ ms.locfileid: "68461563"
 
  **否**
 
- 禁用生成计时。
+禁用生成计时。
 
 ## <a name="maximum-concurrent-c-compilations"></a>最大并发 C++ 编译数
 
