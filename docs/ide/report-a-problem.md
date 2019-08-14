@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309811"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925986"
 ---
 # <a name="overview-report-a-problem"></a>概述：报告问题
 
@@ -110,7 +110,7 @@ ms.locfileid: "67309811"
 
 建议使用搜索来确保尚未报告所要报告的问题。 如果找到与问题相符的现有项目，请关注并对该问题票证进行投票。
 
- 提供可以帮助团队重现你所遇问题的所有信息。  此信息包括必要的重现步骤、代码片段、屏幕截图、重现记录、日志文件和其他项目。  此处介绍[如何报告 Visual Studio 的问题](./how-to-report-a-problem-with-visual-studio.md)。
+提供可以帮助团队重现你所遇问题的所有信息。  此信息包括必要的重现步骤、代码片段、屏幕截图、重现记录、日志文件和其他项目。  此处介绍[如何报告 Visual Studio 的问题](./how-to-report-a-problem-with-visual-studio.md)。
 
 ### <a name="how-is-my-feedback-prioritized"></a>我的反馈是如何设置优先级的？
 

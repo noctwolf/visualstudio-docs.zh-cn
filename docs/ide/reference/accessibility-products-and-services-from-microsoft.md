@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793079"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926275"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 
@@ -46,19 +46,19 @@ Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 
 
 ## <a name="windows"></a> Windows 辅助功能
 
- Windows 操作系统具备许多内置辅助功能，这些功能适用于不便打字或使用鼠标、失明或视力较差，或者失聪或具有听力障碍的人群。 安装时将安装这些功能。 有关这些功能的详细信息，请参阅 Windows 中的“帮助”和 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站。
+Windows 操作系统具备许多内置辅助功能，这些功能适用于不便打字或使用鼠标、失明或视力较差，或者失聪或具有听力障碍的人群。 安装时将安装这些功能。 有关这些功能的详细信息，请参阅 Windows 中的“帮助”和 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站。
 
 ### <a name="free-step-by-step-tutorials"></a>免费分步教程
 
- Microsoft 提供了一系列分步教程，这些教程提供了有关如何调整计算机上的辅助功能选项和设置的详细过程。 此信息以并行格式提供，以便你能够了解如何使用鼠标和/或键盘。
+Microsoft 提供了一系列分步教程，这些教程提供了有关如何调整计算机上的辅助功能选项和设置的详细过程。 此信息以并行格式提供，以便你能够了解如何使用鼠标和/或键盘。
 
- 若要查找 Microsoft 产品的分步教程，请参阅 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站。
+若要查找 Microsoft 产品的分步教程，请参阅 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站。
 
 ### <a name="assistive-technology-products-for-windows"></a>Windows 辅助技术产品
 
- 提供各种辅助技术产品以便残障人士更方便地使用计算机。 可以在 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站上搜索在 Windows 上运行的辅助性技术产品的目录。
+提供各种辅助技术产品以便残障人士更方便地使用计算机。 可以在 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站上搜索在 Windows 上运行的辅助性技术产品的目录。
 
- 如果使用辅助技术，请务必在升级软件或硬件之前与辅助技术供应商联系，以检查是否存在可能的兼容性问题。
+如果使用辅助技术，请务必在升级软件或硬件之前与辅助技术供应商联系，以检查是否存在可能的兼容性问题。
 
 ## <a name="altfortmats"></a> 替代格式的文档
 

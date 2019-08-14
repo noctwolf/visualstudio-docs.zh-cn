@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a122b9fbc97816b114ba2ff6274756f9e2093eef
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970052"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919162"
 ---
 # <a name="list-call-stack-command"></a>“列出调用堆栈”命令
 显示当前调用堆栈。
@@ -34,71 +34,73 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 ```
 
 ## <a name="arguments"></a>自变量
- `index`（可选）。 设置当前堆栈帧且不显示任何输出。
+
+`index`\
+可选。 设置当前堆栈帧且不显示任何输出。
 
 ## <a name="switches"></a>开关
- 每个开关都可以使用其完整形式或缩写形式来调用。
+每个开关都可以使用其完整形式或缩写形式来调用。
 
- /Count:`number` [or] /C:`number`
+/Count:`number` [or] /C:`number`
 
- 可选。 要显示的调用堆栈的最大数量。 默认值为无限制。
+可选。 要显示的调用堆栈的最大数量。 默认值为无限制。
 
- /ShowTypes:`yes`|`no` [or] /T:`yes`|`no`
+/ShowTypes:`yes`|`no` [or] /T:`yes`|`no`
 
- 可选。 指定是否显示参数类型。 默认值是 `yes`。
+可选。 指定是否显示参数类型。 默认值是 `yes`。
 
- /ShowNames:`yes``no` [or] /N:`yes``no`
+/ShowNames:`yes``no` [or] /N:`yes``no`
 
- 可选。 指定是否显示参数名称。 默认值是 `yes`。
+可选。 指定是否显示参数名称。 默认值是 `yes`。
 
- /ShowValues:`yes``no` [or] /V:`yes``no`
+/ShowValues:`yes``no` [or] /V:`yes``no`
 
- 可选。 指定是否显示参数值。 默认值是 `yes`。
+可选。 指定是否显示参数值。 默认值是 `yes`。
 
- /ShowModule:`yes``no` [or] /M:`yes``no`
+/ShowModule:`yes``no` [or] /M:`yes``no`
 
- 可选。 指定是否显示模块名称。 默认值是 `yes`。
+可选。 指定是否显示模块名称。 默认值是 `yes`。
 
- /ShowLineOffset:`yes``no` [or] /#:`yes``no`
+/ShowLineOffset:`yes``no` [or] /#:`yes``no`
 
- 可选。 指定是否显示线偏移。 默认值是 `no`。
+可选。 指定是否显示线偏移。 默认值是 `no`。
 
- /ShowByteOffset:`yes``no` [or] /B:`yes``no`
+/ShowByteOffset:`yes``no` [or] /B:`yes``no`
 
- 可选。 指定是否显示字节偏移。 默认值是 `no`。
+可选。 指定是否显示字节偏移。 默认值是 `no`。
 
- /ShowLanguage:`yes``no` [or] /L:`yes``no`
+/ShowLanguage:`yes``no` [or] /L:`yes``no`
 
- 可选。 指定是否显示语言。 默认值是 `no`。
+可选。 指定是否显示语言。 默认值是 `no`。
 
- /IncludeCallsAcrossThreads:`yes``no` [or] /I:`yes`|`no`
+/IncludeCallsAcrossThreads:`yes``no` [or] /I:`yes`|`no`
 
- 可选。 指定是否包括对其他线程的调用或包括来自其他线程的调用。 默认值是 `no`。
+可选。 指定是否包括对其他线程的调用或包括来自其他线程的调用。 默认值是 `no`。
 
- /ShowExternalCode:`yes`|`no`
+/ShowExternalCode:`yes`|`no`
 
- 可选。 指定是否为调用堆栈显示“仅我的代码”。 “仅我的代码”关闭时，将显示所有非用户代码。 “仅我的代码”开启时，非用户代码在调用堆栈输出中显示为 `[external]`。
+可选。 指定是否为调用堆栈显示“仅我的代码”。 “仅我的代码”关闭时，将显示所有非用户代码。 “仅我的代码”开启时，非用户代码在调用堆栈输出中显示为 `[external]`。
 
- 线程：`n`
+线程：`n`
 
- 可选。 显示线程 `n` 的调用堆栈。 如果没有指定线程，则显示当前线程的调用堆栈。
+可选。 显示线程 `n` 的调用堆栈。 如果没有指定线程，则显示当前线程的调用堆栈。
 
 ## <a name="remarks"></a>备注
- 对参数或开关所做的更改将应用于对此命令的将来的调用。 如果发出 Debug.ListCallStackby 本身，则显示整个调用堆栈。 如果指定一个索引，例如，
+对参数或开关所做的更改将应用于对此命令的将来的调用。 如果发出 Debug.ListCallStackby 本身，则显示整个调用堆栈。 如果指定一个索引，例如，
 
 ```cmd
 Debug.ListCallStack 2
 ```
 
- 则当前堆栈帧被设置为该帧（本例中为第二个帧）。
+则当前堆栈帧被设置为该帧（本例中为第二个帧）。
 
- 还可使用此命令的预定义别名 (kb) 编写此命令。 例如，可以输入
+还可使用此命令的预定义别名 (kb) 编写此命令。 例如，可以输入
 
 ```cmd
 kb 2
 ```
 
- 将当前堆栈帧设置为第二个帧。
+将当前堆栈帧设置为第二个帧。
 
 ## <a name="example"></a>示例
 
@@ -106,7 +108,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [“列出反汇编”命令](../../ide/reference/list-disassembly-command.md)
 - [“列出线程”命令](../../ide/reference/list-threads-command.md)

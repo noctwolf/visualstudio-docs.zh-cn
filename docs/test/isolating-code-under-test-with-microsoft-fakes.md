@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431737"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926639"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
@@ -245,8 +245,8 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 你还可以为特定实例、构造函数和属性创建填充码。 有关详细信息，请参阅[使用填充码将应用与其他程序集相隔离以供单元测试使用](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
 ## <a name="in-this-section"></a>本节内容
- [使用存根针对单元测试隔离应用程序的各个部分](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
+[使用存根针对单元测试隔离应用程序的各个部分](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
- [使用填充码针对单元测试将应用程序与程序集隔离](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+[使用填充码针对单元测试将应用程序与程序集隔离](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
- [Microsoft Fakes 中的代码生成、编译和命名约定](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+[Microsoft Fakes 中的代码生成、编译和命名约定](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

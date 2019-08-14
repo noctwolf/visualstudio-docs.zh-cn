@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14e2d6f2c753c56d1628d20e921b7dff2aa83471
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950643"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926010"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 
@@ -31,30 +31,30 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>自变量
- `URL`
+`URL`
 
- 必需。 网站的 URL（统一资源定位器）。
+必需。 网站的 URL（统一资源定位器）。
 
 ## <a name="switches"></a>开关
- /new
+/new
 
- 可选。 指定在 Web 浏览器的新实例中显示页。
+可选。 指定在 Web 浏览器的新实例中显示页。
 
- /ext
+/ext
 
- 可选。 指定在 IDE 外部的默认 Web 浏览器中显示页。
+可选。 指定在 IDE 外部的默认 Web 浏览器中显示页。
 
 ## <a name="remarks"></a>备注
- ShowWebBrowser 命令的别名是“导航”或“nav”。
+ShowWebBrowser 命令的别名是“导航”或“nav”    。
 
 ## <a name="example"></a>示例
- 以下示例显示在 IDE 外部的 Web 浏览器中的 Microsoft Docs 主页。 如果 Web 浏览器的实例已打开，则使用它；否则启动一个新实例。
+以下示例显示在 IDE 外部的 Web 浏览器中的 Microsoft Docs 主页。 如果 Web 浏览器的实例已打开，则使用它；否则启动一个新实例。
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [“命令”窗口](../../ide/reference/command-window.md)

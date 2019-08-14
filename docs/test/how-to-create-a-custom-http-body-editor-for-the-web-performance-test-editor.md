@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 30ce24b0cb48e88ddb77cf3576d40f95ed022ba0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745831"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926513"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -117,9 +117,9 @@ ms.locfileid: "66745831"
 private MessageEditorControl messageEditorControl
 ```
 
- messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> 方法创建的插件对话框中。 此外，messageEditorControl 的 <xref:System.Windows.Forms.RichTextBox> 将由 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的内容进行填充。 但是，除非 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 返回 `true`，否则无法创建插件。 对于此编辑器，如果 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 中的 `true` 包含“xml”，则 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> 返回 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>。
+messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> 方法创建的插件对话框中。 此外，messageEditorControl 的 <xref:System.Windows.Forms.RichTextBox> 将由 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的内容进行填充。 但是，除非 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 返回 `true`，否则无法创建插件。 对于此编辑器，如果 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> 中的 `true` 包含“xml”，则 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> 返回 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>。
 
- 当完成字符串主体的编辑并且用户在插件对话框中单击“确定”时，将调用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> 以获取字符串形式的已编辑文本，并在 Web 测试性能编辑器的请求中更新“字符串主体”   。
+当完成字符串主体的编辑并且用户在插件对话框中单击“确定”时，将调用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> 以获取字符串形式的已编辑文本，并在 Web 测试性能编辑器的请求中更新“字符串主体”   。
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>创建类并实现 IStringHttpBodyEditorPlugin 接口
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 46ad996f7c3b1eeff4a3eb928442879f0b7275aa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416608"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925887"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 窗体上只有一个 <xref:System.Windows.Forms.PictureBox>。 当添加此控件时，IDE 自动将其命名为“pictureBox1”  。 只有一个名为“checkBox1”  的 <xref:System.Windows.Forms.CheckBox>。 很快，你将编写一些代码，并且这些代码将引用到上述的 CheckBox 和 PictureBox。 因为上述每种控件都只有一个控件，所以当你在代码中看到  “pictureBox1”或  “checkBox1”时，应知道其中的含义。
@@ -24,9 +24,9 @@ ms.locfileid: "68416608"
 > [!NOTE]
 > 在 Visual Basic 中，任何控件名称的第一个字母默认是首字母大写，因此名称为 **“PictureBox1”** 、 **“CheckBox1”** 等等。
 
- 窗体上包含四个按钮，IDE 将它们分别命名为“button1”  、“button2”  、“button3”  和  “button4”。 只看这些按钮的当前名称，你并不知道哪个按钮是“关闭”  按钮，哪个按钮是“显示图片”  按钮。 这就是为按钮控件提供包含更多信息的名字会很有帮助的原因。
+窗体上包含四个按钮，IDE 将它们分别命名为“button1”  、“button2”  、“button3”  和  “button4”。 只看这些按钮的当前名称，你并不知道哪个按钮是“关闭”  按钮，哪个按钮是“显示图片”  按钮。 这就是为按钮控件提供包含更多信息的名字会很有帮助的原因。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或[教程 1：在 C# 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或[教程 1：在 C# 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-name-your-button-controls"></a>要命名按钮控件
 

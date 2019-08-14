@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: e35641371ebac33c7a89426290927b6045bc4e3e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836117"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924082"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -40,7 +40,7 @@ IntelliSense 代码片段是预编写的代码段，可以随时使用 Visual St
 | - |-----------------|
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference-element)|包含有关代码段所需的程序集引用的信息。|
 
- 需要一个文本值。 此文本指定代码段引用的程序集。
+需要一个文本值。 此文本指定代码段引用的程序集。
 
 ## <a name="author-element"></a>Author 元素
 
@@ -56,7 +56,7 @@ IntelliSense 代码片段是预编写的代码段，可以随时使用 Visual St
 | - |-----------------|
 |[Header 元素](../ide/code-snippets-schema-reference.md#header-element)|包含有关代码段的常规信息。|
 
- 需要一个文本值。 此文本指定代码段的作者。
+需要一个文本值。 此文本指定代码段的作者。
 
 ## <a name="code-element"></a>代码元素
 
@@ -212,7 +212,7 @@ $selected$ is a great color. I love $selected$.
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal-element)|定义代码段的可编辑文本字段。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object-element)|定义代码段的可编辑对象字段。|
 
- 需要一个文本值。 此文本指定文本或对象的默认值，该默认值用于填充你可以编辑的代码段的字段。
+需要一个文本值。 此文本指定文本或对象的默认值，该默认值用于填充你可以编辑的代码段的字段。
 
 ## <a name="description-element"></a>Description 元素
 
@@ -228,7 +228,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Header 元素](../ide/code-snippets-schema-reference.md#header-element)|包含有关代码段的常规信息。|
 
- 需要一个文本值。 此文本描述代码段。
+需要一个文本值。 此文本描述代码段。
 
 ## <a name="function-element"></a>Function 元素
 
@@ -248,7 +248,7 @@ $selected$ is a great color. I love $selected$.
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal-element)|定义代码段的可编辑文本字段。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object-element)|定义代码段的可编辑对象字段。|
 
- 需要一个文本值。 此文本指定当文本或对象字段在 Visual Studio 中获得焦点时要执行的函数。
+需要一个文本值。 此文本指定当文本或对象字段在 Visual Studio 中获得焦点时要执行的函数。
 
 ## <a name="header-element"></a>Header 元素
 
@@ -518,7 +518,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Header 元素](../ide/code-snippets-schema-reference.md#header-element)|包含有关代码段的常规信息。|
 
- 文本值是可选的。 此文本可作为插入代码段的快捷方式使用。
+文本值是可选的。 此文本可作为插入代码段的快捷方式使用。
 
 ## <a name="snippet-element"></a>Snippet 元素
 
@@ -599,7 +599,7 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Header 元素](../ide/code-snippets-schema-reference.md#header-element)|指定有关代码段的常规信息。|
 
- 需要一个文本值。 此文本指定代码段的标题。
+需要一个文本值。 此文本指定代码段的标题。
 
 ## <a name="tooltip-element"></a>ToolTip 元素
 
@@ -616,7 +616,7 @@ $selected$ is a great color. I love $selected$.
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal-element)|定义代码段的可编辑文本字段。|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object-element)|定义代码段的可编辑对象字段。|
 
- 需要一个文本值。 此文本指定要与代码段中的对象或文本关联的工具提示说明。
+需要一个文本值。 此文本指定要与代码段中的对象或文本关联的工具提示说明。
 
 ## <a name="type-element"></a>Type 元素
 

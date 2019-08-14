@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: e69c75b00ddb98148e9985820e577031ead0a275
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501205"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918822"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步骤 5：向窗体添加控件
 在此步骤中，将向窗体添加控件（如 <xref:System.Windows.Forms.PictureBox> 控件和 <xref:System.Windows.Forms.CheckBox> 控件）。 然后向窗体添加 <xref:System.Windows.Forms.Button> 控件。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或[教程 1：在 C# 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或[教程 1：在 C# 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-add-controls-to-your-form"></a>向窗体添加控件
 

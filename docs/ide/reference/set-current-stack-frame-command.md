@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24880f997d604d3db11ae19a6220c2789da7648f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934530"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926078"
 ---
 # <a name="set-current-stack-frame-command"></a>“设置当前堆栈帧”命令
 允许设置特定堆栈帧。
@@ -30,9 +30,9 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>自变量
- `index`
+`index`
 
- 必需。 通过其索引选择堆栈帧。
+必需。 通过其索引选择堆栈帧。
 
 ## <a name="example"></a>示例
 
@@ -40,7 +40,7 @@ Debug.SetCurrentStackFrame index
 >Debug.SetCurrentStackFrame 1
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [“命令”窗口](../../ide/reference/command-window.md)

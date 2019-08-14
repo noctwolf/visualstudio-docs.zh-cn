@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea4d559921fc7cf387116d013906891c74a4ed8c
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 5828fb114a4df559c46dd6ae7f64887ab48e7429
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822346"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919524"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -29,7 +29,7 @@ Visual Studio 具有内置辅助功能，这些辅助功能与屏幕阅读器以
 
 ## <a name="save-your-ide-settings"></a>保存 IDE 设置
 
- 可以通过保存窗口布局、键盘映射方案和其他首选项来自定义 IDE 体验。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
+可以通过保存窗口布局、键盘映射方案和其他首选项来自定义 IDE 体验。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="modify-your-ide-for-high-contrast-viewing"></a>修改 IDE 实现高对比度查看
 

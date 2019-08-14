@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746384"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926136"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 
@@ -46,41 +46,41 @@ ms.locfileid: "66746384"
 
  **参考资料**
 
- 此列表显示项目中的所有引用，包括使用的或未使用的引用。
+此列表显示项目中的所有引用，包括使用的或未使用的引用。
 
  **添加**
 
- 单击此按钮即可向“引用”  列表添加一个引用或 Web 引用。
+单击此按钮即可向“引用”  列表添加一个引用或 Web 引用。
 
- 选择“引用”即可通过“添加引用”对话框向项目添加引用  。
+选择“引用”即可通过“添加引用”对话框向项目添加引用  。
 
- 选择“Web 引用”  即可通过“添加 Web 引用”  对话框向项目添加 Web 引用。
+选择“Web 引用”  即可通过“添加 Web 引用”  对话框向项目添加 Web 引用。
 
  **移除**
 
- 在“引用”列表中选择一个或多个引用，然后单击此按钮即可将其删除  。
+在“引用”列表中选择一个或多个引用，然后单击此按钮即可将其删除  。
 
  更新 Web 引用 
 
- 在“引用”  列表中选择一个 Web 引用，然后单击此按钮即可进行更新。
+在“引用”  列表中选择一个 Web 引用，然后单击此按钮即可进行更新。
 
  导入的命名空间 
 
- 可以在此框中键入自己的命名空间，并单击“添加用户导入”，将其添加到命名空间列表  。
+可以在此框中键入自己的命名空间，并单击“添加用户导入”，将其添加到命名空间列表  。
 
- 可以为用户导入的命名空间创建别名。 为此，可以使用“别名=命名空间”的格式输入别名和命名空间   。 使用长命名空间时此格式十分有用，例如：`Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`。
+可以为用户导入的命名空间创建别名。 为此，可以使用“别名=命名空间”的格式输入别名和命名空间   。 使用长命名空间时此格式十分有用，例如：`Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`。
 
  添加用户导入 
 
- 单击此按钮即可将在“导入的命名空间”框中指定的命名空间添加到导入的命名空间列表  。 只有在所指定的命名空间已不在列表中时，此按钮才是活动的。
+单击此按钮即可将在“导入的命名空间”框中指定的命名空间添加到导入的命名空间列表  。 只有在所指定的命名空间已不在列表中时，此按钮才是活动的。
 
  命名空间列表 
 
- 此列表显示所有可用的命名空间。 已选择项目中所含命名空间对应的复选框。
+此列表显示所有可用的命名空间。 已选择项目中所含命名空间对应的复选框。
 
  更新用户导入 
 
- 在命名空间列表中选择用户指定的命名空间，在“导入的命名空间”框中键入要替换的名称，然后单击此按钮，更改为新的命名空间  。 只有当所选的命名空间是通过使用“添加用户导入”按钮添加到列表中时，按钮才是活动的  。 可以添加：
+在命名空间列表中选择用户指定的命名空间，在“导入的命名空间”框中键入要替换的名称，然后单击此按钮，更改为新的命名空间  。 只有当所选的命名空间是通过使用“添加用户导入”按钮添加到列表中时，按钮才是活动的  。 可以添加：
 
 - 类或命名空间，例如 <xref:System.Math?displayProperty=fullName>。
 
@@ -88,7 +88,7 @@ ms.locfileid: "66746384"
 
 - XML 命名空间，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [管理项目中的引用](../../ide/managing-references-in-a-project.md)
 - [如何：添加或删除导入的命名空间 (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
