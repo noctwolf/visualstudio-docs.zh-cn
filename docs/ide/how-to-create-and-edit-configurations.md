@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f5f8e389e3dfe91252149fb4c3d3c1e59f38b0
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415587"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925766"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 
@@ -44,7 +44,7 @@ ms.locfileid: "68415587"
 
 在“配置管理器”对话框中，可以使用“活动解决方案配置”下拉列表选择解决方案级生成配置，修改现有配置或创建新的配置   。 可以使用“活动解决方案平台”下拉列表选择配置面向的平台、修改现有平台或添加新的平台  。 “项目上下文”窗格会列出解决方案中的项目  。 对于每个项目，可以选择项目特定的配置和平台、修改现有配置和平台、创建新配置或添加新平台。 使用解决方案级配置生成或部署解决方案时，还可以选择指示是否包含每个项目的复选框。
 
- 设置所需配置后，可以设置适用于这些配置的项目属性。
+设置所需配置后，可以设置适用于这些配置的项目属性。
 
 ### <a name="set-properties-based-on-configurations"></a>根据配置设置属性
 

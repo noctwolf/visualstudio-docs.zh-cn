@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970156"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926223"
 ---
 # <a name="list-disassembly-command"></a>“列出反汇编”命令
 开始调试进程，并允许指定如何处理错误。
@@ -32,31 +32,31 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ```
 
 ## <a name="switches"></a>开关
- 每个开关都可以使用其完整形式或缩写形式来调用。
+每个开关都可以使用其完整形式或缩写形式来调用。
 
- /count: `number` [or] /c: `number` [or] /length: `number` [or] /l: `number`
+/count: `number` [or] /c: `number` [or] /length: `number` [or] /l: `number`
 
- 可选。 要显示的指令数。 默认值为 8。
+可选。 要显示的指令数。 默认值为 8。
 
- /endaddress: `expression` [or] /e: `expression`
+/endaddress: `expression` [or] /e: `expression`
 
- 可选。 停止反汇编的地址。
+可选。 停止反汇编的地址。
 
- /codebytes:`yes`&#124;`no` [or] /bytes:`yes`&#124;`no` [or] /b:`yes`&#124;`no`
+/codebytes:`yes`&#124;`no` [or] /bytes:`yes`&#124;`no` [or] /b:`yes`&#124;`no`
 
- 可选。 指示是否显示代码字节。 默认值是 `no`。
+可选。 指示是否显示代码字节。 默认值是 `no`。
 
- /source:`yes`&#124;`no` [or] /s:`yes`&#124;`no`
+/source:`yes`&#124;`no` [or] /s:`yes`&#124;`no`
 
- 可选。 指示是否显示源代码。 默认值是 `no`。
+可选。 指示是否显示源代码。 默认值是 `no`。
 
- /symbolnames:`yes`&#124;`no` [or] /names:`yes`&#124;`no` [or] /n:`yes`&#124;`no`
+/symbolnames:`yes`&#124;`no` [or] /names:`yes`&#124;`no` [or] /n:`yes`&#124;`no`
 
- 可选。 指示是否显示符号名称。 默认值是 `yes`。
+可选。 指示是否显示符号名称。 默认值是 `yes`。
 
  [/linenumbers:`yes`&#124;`no`]
 
- 可选。 启用查看与源代码关联的行号。 /source 开关必须具有 `yes` 的值来使用 /linenumbers 开关。
+可选。 启用查看与源代码关联的行号。 /source 开关必须具有 `yes` 的值来使用 /linenumbers 开关。
 
 ## <a name="example"></a>示例
 
@@ -64,7 +64,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [“列出调用堆栈”命令](../../ide/reference/list-call-stack-command.md)
 - [“列出线程”命令](../../ide/reference/list-threads-command.md)

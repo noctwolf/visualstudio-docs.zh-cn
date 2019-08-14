@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461621"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918374"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用于运行负载测试的测试代理和测试控制器的概述
 
@@ -69,17 +69,17 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 测试代理作为一种服务运行，它侦听来自测试控制器的请求以启动新的测试。 当测试代理收到请求时，测试代理服务将启动在其上运行测试的一个进程。 每个测试代理都运行相同的负载测试。
 
- 测试代理由管理员分配权重，并且根据测试代理的权重分配负载。 例如，如果测试代理 1 的权重为 30，测试代理 2 的权重为 70，而且负载设置为 1000 个用户，则测试代理 1 将模拟 300 个虚拟用户，而测试代理 2 将模拟 700 个虚拟用户。 请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
+测试代理由管理员分配权重，并且根据测试代理的权重分配负载。 例如，如果测试代理 1 的权重为 30，测试代理 2 的权重为 70，而且负载设置为 1000 个用户，则测试代理 1 将模拟 300 个虚拟用户，而测试代理 2 将模拟 700 个虚拟用户。 请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
 
- 测试代理接受一组测试和一组模拟参数作为输入。 关键概念是测试独立于在其中运行它们的计算机。
+测试代理接受一组测试和一组模拟参数作为输入。 关键概念是测试独立于在其中运行它们的计算机。
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>测试控制器和测试代理连接点
 
 下图演示测试控制器、测试代理和客户端之间的连接点。 它概述了用于传入和传出连接的端口以及在这些端口上使用的安全限制。
 
- ![测试控制器和测试代理的端口和安全性](./media/test-controller-agent-firewall.png)
+![测试控制器和测试代理的端口和安全性](./media/test-controller-agent-firewall.png)
 
- 有关详细信息，请参阅[为测试控制器和测试代理配置端口](../test/configure-ports-for-test-controllers-and-test-agents.md)。
+有关详细信息，请参阅[为测试控制器和测试代理配置端口](../test/configure-ports-for-test-controllers-and-test-agents.md)。
 
 ## <a name="test-controller-and-agent-installation-information"></a>测试控制器和代理安装信息
 

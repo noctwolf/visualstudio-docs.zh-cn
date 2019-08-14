@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432299"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918453"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
@@ -110,9 +110,9 @@ Fakes 代码生成器为对生成的 Fakes 程序集可见的类型生成填充�
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **强名称程序集中的内部类型**
+**强名称程序集中的内部类型**
 
- 如果已填充的程序集具有强名称，并且希望访问该程序集的内部类型：
+如果已填充的程序集具有强名称，并且希望访问该程序集的内部类型：
 
 - 测试程序集和 Fakes 程序集都必须具有强名称。
 
@@ -179,11 +179,11 @@ Fakes 程序集的编译可极大地加快生成时间。 通过为独立集中�
 
 在团队生成环境中，所有生成输出合并到一个目录中。 如果有多个项目使用 Fakes，可能发生不同版本的 Fakes 程序集相互覆盖的情况。 例如，来自 .NET Framework 2.0 的 TestProject1 fakes mscorlib.dll 和 .NET Framework 4 的 TestProject2 fakes mscorlib.dll 都会产生一个 mscorlib.Fakes.dll Fakes 程序集    。
 
- 要避免出现此问题，在添加 .fakes 文件时，Fakes 应自动为非项目引用创建版本限定的 Fakes 程序集名称  。 在创建 Fakes 程序集名称时，版本限定的 Fakes 程序集名称将嵌入版本号：
+要避免出现此问题，在添加 .fakes 文件时，Fakes 应自动为非项目引用创建版本限定的 Fakes 程序集名称  。 在创建 Fakes 程序集名称时，版本限定的 Fakes 程序集名称将嵌入版本号：
 
- 假定程序集为 MyAssembly，版本为 1.2.3.4，则 Fakes 程序集名称为 MyAssembly.1.2.3.4.Fakes。
+假定程序集为 MyAssembly，版本为 1.2.3.4，则 Fakes 程序集名称为 MyAssembly.1.2.3.4.Fakes。
 
- 你可以通过在 .fakes 中编辑程序集元素的版本属性来更改或删除此版本  ：
+你可以通过在 .fakes 中编辑程序集元素的版本属性来更改或删除此版本  ：
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>填充类型和存根类型命名约定
 
- **命名空间**
+**命名空间**
 
 - 向命名空间添加 .Fakes 后缀。
 
