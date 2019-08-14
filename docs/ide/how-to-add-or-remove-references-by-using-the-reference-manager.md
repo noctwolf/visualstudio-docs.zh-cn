@@ -1,6 +1,6 @@
 ---
 title: 在引用管理器中添加引用
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -21,30 +21,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825490"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787894"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
-可以使用“引用管理器”  对话框添加和管理对你、Microsoft 或其他公司开发的组件的引用。 如果要开发通用 Windows 应用，你的项目将自动引用所有正确的 Windows SDK DLL。 如果要开发 .NET 应用程序，你的项目将自动引用 mscorlib.dll  。 一些 .NET API 在必须手动添加的组件中进行公开。 对 COM 组件或自定义组件的引用必须手动添加。
+可以使用“引用管理器”对话框添加和管理对你、Microsoft 或其他公司开发的组件的引用。 如果要开发通用 Windows 应用，你的项目将自动引用所有正确的 Windows SDK DLL。 如果要开发 .NET 应用程序，你的项目将自动引用 mscorlib.dll  。 一些 .NET API 在必须手动添加的组件中进行公开。 对 COM 组件或自定义组件的引用必须手动添加。
 
 ## <a name="reference-manager-dialog-box"></a>“引用管理器”对话框
 
-“引用管理器”  对话框在左侧显示不同类别，具体取决于项目类型：
+“引用管理器”对话框在左侧显示不同类别，具体取决于项目类型：
 
-- **程序集**，包含“框架”和“扩展”子组   。
+- **程序集**，包含“框架”和“扩展”子组  
 
-- **COM**，列出可供引用的所有 COM 组件。
+- **COM**，列出可供引用的所有 COM 组件
 
-- **解决方案**，包含“项目”子组  。
+- **项目**
+
+- **共享项目**
 
 - **Windows**，包含“核心”和“扩展”子组   。 可以使用“对象浏览器”  浏览 Windows SDK 或扩展 SDK 中的引用。
 
-- **浏览**，包含“最近”子组  。
+- **浏览**，包含“最近”子组 
 
 ## <a name="add-a-reference"></a>添加引用
 
@@ -62,7 +64,7 @@ ms.locfileid: "67825490"
 
 所有桌面项目都包含对 mscorlib 的隐式引用  。 Visual Basic 项目包含对 <xref:Microsoft.VisualBasic> 的隐式引用。 即使已将 System.Core 从引用列表删除，所有项目仍包含对其的隐式引用  。
 
-如果项目类型不支持程序集，则此选项卡不会显示在“引用管理器”对话框中  。
+如果项目类型不支持程序集，则此选项卡不会显示在“引用管理器”对话框中。
 
 “程序集”选项卡包含两个子选项卡  ：
 
@@ -142,6 +144,10 @@ ms.locfileid: "67825490"
 > [!NOTE]
 > 面向 NET Framework 4 的项目与面向 .NET Framework 4 Client Profile 的项目不兼容。
 
+## <a name="shared-projects-tab"></a>“共享项目”选项卡
+
+在“引用管理器”对话框的“共享项目”选项卡上添加对共享项目的引用  。 使用[共享项目](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows)，可以编写由多个不同的应用程序项目引用的通用代码。
+
 ## <a name="universal-windows-tab"></a>通用 Windows 选项卡
 
 “通用 Windows”选项卡列出特定于运行 Windows 操作系统的平台的所有 SDK  。
@@ -155,28 +161,28 @@ ms.locfileid: "67825490"
 
 “扩展”列出用于扩展目标 Windows 平台的用户 SDK  。
 
-SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”选项卡中，应用于调用了“引用管理器”对话框的项目的 SDK 将作为单个项列出   。 添加到项目时，所有 SDK 内容将由 Visual Studio 使用，这样，用户无需采取任何额外操作即可使用 IntelliSense、工具箱、设计器、对象浏览器、生成、部署、调试和打包中的 SDK 内容。
+SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”选项卡中，应用于调用了“引用管理器”对话框的项目的 SDK 将作为单个项列出  。 添加到项目时，所有 SDK 内容将由 Visual Studio 使用，这样，用户无需采取任何额外操作即可使用 IntelliSense、工具箱、设计器、对象浏览器、生成、部署、调试和打包中的 SDK 内容。
 
 若要了解如何在“扩展”选项卡中显示 SDK，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)  。
 
 > [!NOTE]
-> 如果项目引用的 SDK 依赖于另一 SDK，则只有在用户手动添加对另一 SDK 的引用后，Visual Studio 才会使用另一 SDK。 当用户在“扩展”选项卡上选择 SDK 时，“引用管理器”对话框会在结果窗格中列出所有依赖项，从而帮助你找出 SDK 依赖项   。
+> 如果项目引用的 SDK 依赖于另一 SDK，则只有在用户手动添加对另一 SDK 的引用后，Visual Studio 才会使用另一 SDK。 当用户在“扩展”选项卡上选择 SDK 时，“引用管理器”对话框会在详细信息窗格中列出所有依赖项，从而帮助你找出 SDK 依赖项  。
 
-如果项目类型不支持扩展，则此选项卡不会显示在“引用管理器”对话框中  。
+如果项目类型不支持扩展，则此选项卡不会显示在“引用管理器”对话框中。
 
 ## <a name="com-tab"></a>“COM”选项卡
 
 “COM”选项卡列出可供引用的所有 COM 组件  。 如果要添加对包含内部清单的已注册 COM DLL 的引用，请先注销该 DLL。 否则，Visual Studio 会将程序集引用作为 ActiveX 控件而不是本机 DLL 添加。
 
-如果项目类型不支持 COM，则此选项卡不会显示在“引用管理器”对话框中  。
+如果项目类型不支持 COM，则此选项卡不会显示在“引用管理器”对话框中。
 
-## <a name="browse-button"></a>“浏览”按钮
+## <a name="browse"></a>浏览
 
 可以使用“浏览”  按钮浏览查找文件系统中的组件。
 
 一个项目可以引用面向其他框架版本的组件。 例如，可以创建一个面向 .NET Framework 4.7、但引用面向 .NET Framework 4 的组件的应用程序。 有关详细信息，请参阅[框架定位概述](../ide/visual-studio-multi-targeting-overview.md)。
 
-避免在同一个解决方案中添加对另一个项目的输出的文件引用，因为这可能导致编译错误。 而应使用“引用管理器”  对话框的“解决方案”  选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关无效引用的疑难解答](../ide/troubleshooting-broken-references.md)。
+避免在同一个解决方案中添加对另一个项目的输出的文件引用，因为这可能导致编译错误。 而应使用“引用管理器”对话框的“解决方案”  选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关无效引用的疑难解答](../ide/troubleshooting-broken-references.md)。
 
 无法浏览到 SDK 并将其添加到项目。 只能浏览到文件（例如程序集或 .winmd）并将其添加到项目  。
 
@@ -201,7 +207,7 @@ SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”�
 
 ## <a name="search"></a>搜索
 
-“引用管理器”  对话框中的搜索栏在具有焦点的选项卡上运行。 例如，在“解决方案”选项卡具有焦点时，如果用户在搜索栏中键入“System”，则除非解决方案具有包含“System”的项目名称，否则搜索不会返回任何结果  。
+“引用管理器”对话框中的搜索栏在具有焦点的选项卡上运行。 例如，在“解决方案”选项卡具有焦点时，如果用户在搜索栏中键入“System”，则除非解决方案具有包含“System”的项目名称，否则搜索不会返回任何结果  。
 
 ## <a name="see-also"></a>请参阅
 
