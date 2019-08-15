@@ -996,6 +996,12 @@
                       href: ide/reference/options-text-editor-xml-formatting.md
                     - name: 杂项
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
+            - name: Windows Forms Designer — Windows 窗体设计器
+              items:
+                - name: 常规
+                  href: ide/reference/options-windows-forms-designer.md
+                - name: 数据 UI 自定义
+                  href: ide/reference/options-windows-forms-designer-data-ui-customization.md
             - name: XAML 设计器
               href: ide/reference/xaml-designer.md
         - name: “输出”窗口

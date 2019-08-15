@@ -93,6 +93,10 @@
                   href: l2dbform-xaml-cs-source-code.md
 - name: Windows 窗体
   items:
+    - name: Windows 窗体设计器概述
+      href: windows-forms-designer-overview.md
+    - name: Windows 窗体设计器入门
+      href: walkthrough-windows-forms-designer.md
     - name: '教程 1：创建图片查看器 (C#)'
       items:
         - name: 概述
