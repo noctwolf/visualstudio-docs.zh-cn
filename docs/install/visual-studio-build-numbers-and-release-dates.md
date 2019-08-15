@@ -2,24 +2,22 @@
 title: Visual Studio 内部版本号和发布日期
 titleSuffix: ''
 description: Visual Studio 已发布的版本和生成号列表，按日期排序。
-keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/06/2019
+ms.date: 08/14/2019
 ms.topic: reference
-helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f07b8c0fc5317f6646868ad61ba61e42754a79c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 9da89a2964dc5c4f33d4a0619a1b93c901054d3b
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870728"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024541"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -31,6 +29,9 @@ ms.locfileid: "68870728"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.2.2 | Release | 2019 年 8 月 13 日 | 16.2.29209.62 |
+| 16.3.0 | 预览版 2 | 2019 年 8 月 13 日 | 16.3.29209.152 |
+| 16.0.7 | Release | 2019 年 8 月 13 日 | 16.0.28803.571 |
 | 16.2.1 | Release | 2019 年 8 月 6 日 | 16.2.29201.188 |
 | 16.2.0 | Release | 2019 年 7 月 24 日 | 16.2.29123.88 |
 | 16.3.0 | 预览版 1 | 2019 年 7 月 24 日 | 16.3.29123.89 |
@@ -89,6 +90,8 @@ ms.locfileid: "68870728"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.15 | Release | 2019 年 8 月 13 日 | 15.9.28307.812 |
+| 15.0.26 | Release | 2019 年 8 月 13 日 | 15.0.26228.96 |
 | 15.9.14 | Release | 2019 年 7 月 9 日 | 15.9.28307.770 |
 | 15.0.25 | Release | 2019 年 7 月 9 日 | 15.0.26228.92 |
 | 15.9.13 | Release | 2019 年 6 月 11 日 | 15.9.28307.718 |
