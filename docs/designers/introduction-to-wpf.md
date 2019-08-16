@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ef227bb30703a41fe9519114a2bc9904e902f2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714812"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924447"
 ---
 # <a name="wpf-overview"></a>WPF 概述
 
@@ -239,7 +239,7 @@ End Namespace
 
 下面的标记将 <xref:System.Windows.Controls.TextBox> 绑定到自定义 `Person` 对象的实例。
 
- ```xaml
+```xaml
  <Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -249,7 +249,7 @@ End Namespace
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
  </Window>
- ```
+```
 
 [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/VisualBasic/introduction-to-wpf_6.vb)]
 [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../designers/codesnippet/CSharp/introduction-to-wpf_6.cs)]
@@ -597,7 +597,7 @@ WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例
 </ResourceDictionary>
 ```
 
- 下面的示例引用上一个示例中定义的资源字典，以便在应用程序中共享它。
+下面的示例引用上一个示例中定义的资源字典，以便在应用程序中共享它。
 
 ```xaml
 <Application
