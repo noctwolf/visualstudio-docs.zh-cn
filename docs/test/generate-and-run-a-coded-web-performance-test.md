@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49691b2031d1d935871a73833924e9dc4aa46dcd
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002555"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918409"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 
@@ -85,16 +85,16 @@ ms.locfileid: "63002555"
 ## <a name="qa"></a>问题解答
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>问：是否能一次运行多个测试？
- **答：** 能，请使用“解决方案资源管理器”中的右键单击菜单（关联菜单）。
+**答：** 能，请使用“解决方案资源管理器”  中的右键单击菜单（关联菜单）。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>问：我是否应在生成编码的测试之前和之后添加数据源？
- **答：** 可在你生成编码的测试之前更轻松地添加[数据源](../test/add-a-data-source-to-a-web-performance-test.md)，因为将为你自动生成代码。
+**答：** 可在你生成编码的测试之前更轻松地添加[数据源](../test/add-a-data-source-to-a-web-performance-test.md)，因为将为你自动生成代码。
 
- 当你使用数据源运行编码测试时，你可能看到以下错误消息：
+当你使用数据源运行编码测试时，你可能看到以下错误消息：
 
- **无法运行测试\<测试名称 > 代理\<计算机名 >：对象引用未设置为某个对象的实例。**
+**无法运行测试\<测试名称 > 代理\<计算机名 >：对象引用未设置为某个对象的实例。**
 
- 发生此错误的原因是，你有为测试类定义的 DataSourceAttribute，而没有相应的 DataBindingAttribute。 若要纠正此错误，请添加适当的 DataBindingAttribute 并将其删除，或从代码中将其注释掉。
+发生此错误的原因是，你有为测试类定义的 DataSourceAttribute，而没有相应的 DataBindingAttribute。 若要纠正此错误，请添加适当的 DataBindingAttribute 并将其删除，或从代码中将其注释掉。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>问：我是否应在生成编码的测试之前和之后添加验证和提取规则？
- **答：** 在你生成编码的测试之前，可以更轻松地添加验证规则和提取规则；但是，我们建议你使用[编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)来进行验证。
+**答：** 在你生成编码的测试之前，可以更轻松地添加验证规则和提取规则；但是，我们建议你使用[编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)来进行验证。
