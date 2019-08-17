@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe9b53a02f5a2c12b734c793557c69868a973e8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 377188183acdaa9aa86ae3344c8f6d5727b82ccc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841506"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546839"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:不要使用 FlagsAttribute 标记枚举
 
@@ -36,49 +36,49 @@ ms.locfileid: "65841506"
 
 ## <a name="cause"></a>原因
 
-枚举标记有<xref:System.FlagsAttribute>和它与一个或多个值的两个或其他组合定义枚举值。
+枚举标记有<xref:System.FlagsAttribute> , 它具有一个或多个不是两个或一个或多个枚举上已定义值组合的值。
 
-默认情况下，此规则仅查看外部可见的枚举，但这是[可配置](#configurability)。
+默认情况下, 此规则仅查看外部可见的枚举, 但这是[可配置](#configurability)的。
 
 ## <a name="rule-description"></a>规则说明
 
-枚举应具有<xref:System.FlagsAttribute>存在仅当枚举中定义的每个值为两个或一系列的强大功能定义的值。
+仅当枚举中<xref:System.FlagsAttribute>定义的每个值都是2的幂或定义的值的组合时, 枚举才应该存在。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复此规则的冲突，请删除<xref:System.FlagsAttribute>枚举中。
+若要修复与此规则的冲突, <xref:System.FlagsAttribute>请从枚举中删除。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
 不禁止显示此规则发出的警告。
 
-## <a name="configurability"></a>可配置性
+## <a name="configurability"></a>配置
 
-如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是传统分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 editorconfig 文件中添加以下键/值对:
 
 ```ini
 dotnet_code_quality.ca2217.api_surface = private, internal
 ```
 
-此类别 （用法） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以为此规则、所有规则或此类别中的所有规则 (使用情况) 配置此选项。 有关详细信息, 请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="examples"></a>示例
 
-下面的代码演示一个枚举， `Color`，包含值 3。 3 不是两个或任何定义的值的组合的强大功能。 `Color`枚举不应标记有<xref:System.FlagsAttribute>。
+下面的代码演示一个包含值`Color`3 的枚举。 3不是2的幂, 也不是任何定义的值的组合。 枚举不应<xref:System.FlagsAttribute>标记为。 `Color`
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-下面的代码演示一个枚举`Days`，满足为标有需求的<xref:System.FlagsAttribute>:
+下面的代码演示一个满足`Days` <xref:System.FlagsAttribute>标记的要求的枚举:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_2.vb)]
 
-## <a name="related-rules"></a>相关的规则
+## <a name="related-rules"></a>相关规则
 
-[CA1027:用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>请参阅
 

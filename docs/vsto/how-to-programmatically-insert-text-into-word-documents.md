@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式向 Word 文档中插入文本
-ms.date: 02/02/2017
+title: 如何：以编程方式将文本插入 Word 文档
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ff5e0314e9834bd3d0f048bc82780d7e4af073d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412577"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551815"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式向 Word 文档中插入文本
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式将文本插入 Word 文档
   向 Microsoft Office Word 文档中插入文本主要有三种方式：
 
 - 在范围中插入文本。
@@ -33,9 +33,11 @@ ms.locfileid: "63412577"
 - 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Selection> 方法在光标或所选位置处插入文本。
 
 > [!NOTE]
-> 你还可以将文本插入到内容控件和书签中。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)并[Bookmark 控件](../vsto/bookmark-control.md)。
+> 你还可以将文本插入到内容控件和书签中。 有关详细信息, 请参阅[内容控件](../vsto/content-controls.md)和[书签控件](../vsto/bookmark-control.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="insert-text-in-a-range"></a>在范围中插入文本
  使用 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Range> 属性在文档中插入文本。
@@ -86,7 +88,7 @@ ms.locfileid: "63412577"
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]
 
-## <a name="insert-text-using-typetext"></a>插入文本使用 TypeText
+## <a name="insert-text-using-typetext"></a>使用 TypeText 插入文本
  <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 方法可在所选位置处插入文本。 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 的行为有所不同，具体取决于用户计算机上设置的选项。 以下过程中的代码声明了一个 <xref:Microsoft.Office.Interop.Word.Selection> 对象变量，如果 **Overtype** 选项已打开，则会将其关闭。 如果 **Overtype** 选项已激活，则关闭旁的任何文本将被覆盖。
 
 ### <a name="to-insert-text-using-the-typetext-method"></a>若要使用 TypeText 方法插入文本
@@ -118,7 +120,7 @@ ms.locfileid: "63412577"
     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]
 
-   此外可以使用<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A>方法<xref:Microsoft.Office.Interop.Word.Selection>对象，它模拟的功能**退格符**键盘上键。 但是，当涉及到插入和操作文本时，<xref:Microsoft.Office.Interop.Word.Range> 对象将提供更多控件。
+   你还可以使用<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> <xref:Microsoft.Office.Interop.Word.Selection>对象的方法, 该方法模仿键盘上**Backspace**键的功能。 但是，当涉及到插入和操作文本时，<xref:Microsoft.Office.Interop.Word.Range> 对象将提供更多控件。
 
    以下示例显示了完整的代码。 若要使用此示例，请运行项目中的 `ThisDocument` 或 `ThisAddIn` 类的代码。
 
@@ -126,6 +128,6 @@ ms.locfileid: "63412577"
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
 ## <a name="see-also"></a>请参阅
-- [如何：以编程方式设置文本格式在文档中](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [如何：以编程方式设置文档中文本的格式](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [如何：以编程方式在文档中定义和选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以编程方式在文档中扩展范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

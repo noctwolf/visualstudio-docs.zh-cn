@@ -1,5 +1,5 @@
 ---
-title: 与分析器的 EditorConfig
+title: EditorConfig 与分析器
 ms.date: 03/11/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,53 +9,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571467"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547889"
 ---
-# <a name="analyzers-faq"></a>分析器常见问题解答
+# <a name="code-analysis-faq"></a>代码分析常见问题解答
 
-此页包含有关 Roslyn 分析器在 Visual Studio 中一些常见问题的解答。
+本页包含有关 Visual Studio 中基于 .NET Compiler Platform 代码分析的一些常见问题的解答。
 
-## <a name="roslyn-analyzers-versus-editorconfig"></a>与.editorconfig Roslyn 分析器
+## <a name="code-analysis-versus-editorconfig"></a>代码分析与 EditorConfig
 
-**问：**:应使用 Roslyn 分析器或.editorconfig 代码样式？
+**问**:是否应该使用代码分析或 EditorConfig 来检查代码样式？
 
-**答**：Roslyn 分析器和.editorconfig 文件工作手中手。 在定义代码样式[.editorconfig 文件中](../ide/editorconfig-code-style-settings-reference.md)或在[文本编辑器选项](../ide/code-styles-and-quick-actions.md)页上，要实际配置内置到 Visual Studio 中的 Roslyn 分析器。 EditorConfig 文件还可用于配置一些第三方分析器的程序包，例如[FxCop 分析器](configure-fxcop-analyzers.md)。
+**答**：代码分析和 editorconfig 文件工作。 在[editorconfig 文件](../ide/editorconfig-code-style-settings-reference.md)或 "[文本编辑器" 选项](../ide/code-styles-and-code-cleanup.md)页上定义代码样式时, 实际上是在配置内置于 Visual Studio 中的代码分析器。 EditorConfig 文件还可用于配置某些第三方分析器包, 例如[FxCop 分析器](configure-fxcop-analyzers.md)。
 
-## <a name="editorconfig-versus-rule-sets"></a>与规则集的 EditorConfig
+## <a name="editorconfig-versus-rule-sets"></a>EditorConfig 与规则集
 
-**问：**:应配置使用规则集或.editorconfig 文件我分析器？
+**问**:我应该使用规则集还是 editorconfig 文件配置分析器？
 
-**答**：规则集和.editorconfig 文件是互相排斥的方法可用于配置分析器。 它们可以共存。 [规则集](analyzer-rule-sets.md)让您可以启用和禁用规则并设置其严重程度。 EditorConfig 文件未提供其他方法来配置规则。 适用于 FxCop 分析器.editorconfig 文件让你[定义哪些类型的代码分析](fxcop-analyzer-options.md)。 对于内置到 Visual Studio 分析器，.editorconfig 文件让你[定义首选的代码样式](../ide/editorconfig-code-style-settings-reference.md)代码库。
+**答**：规则集和 editorconfig 文件是用于配置分析器的相互排斥的方式。 它们可以共存。 [规则集](analyzer-rule-sets.md)使你可以启用和禁用规则并设置其严重性。 EditorConfig 文件提供了其他配置规则的方法。 对于 FxCop 分析器, editorconfig 文件允许[定义要分析的代码类型](fxcop-analyzer-options.md)。 对于内置于 Visual Studio 的分析器, editorconfig 文件允许你为基本代码[定义首选代码样式](../ide/editorconfig-code-style-settings-reference.md)。
 
-除了规则集和.editorconfig 文件，某些第三方分析器配置通过使用标记为文本文件[其他文件](../ide/build-actions.md#build-action-values)为C#和 VB 编译器。
+除了规则集和 editorconfig 文件外, 某些第三方分析器还通过使用标记为C#和 VB 编译器的[附加文件](../ide/build-actions.md#build-action-values)的文本文件进行配置。
 
 > [!NOTE]
-> 不能使用 EditorConfig 文件配置静态代码分析规则，而规则集。
+> 不能使用 EditorConfig 文件来配置旧分析, 而规则集也可以。
 
-## <a name="analyzers-in-ci-builds"></a>在 CI 生成中的分析器
+## <a name="code-analysis-in-ci-builds"></a>CI 生成中的代码分析
 
-**问：**:分析器是否在持续集成 (CI) 生成工作？
+**问**:在持续集成 (CI) 版本中, 基于 .NET Compiler Platform 的代码分析是否起作用？
 
-**答**：可以。 适用于从 NuGet 包安装的分析器，这些规则是[在生成时强制实施](roslyn-analyzers-overview.md#build-errors)，其中包括在 CI 生成过程。 从这两个 CI 生成方面规则配置中使用的分析器[规则集](analyzer-rule-sets.md)并[.editorconfig 文件](configure-fxcop-analyzers.md)。 目前，内置到 Visual Studio 中的代码分析器不是作为 NuGet 包，可用，因此这些规则也不会强制在 CI 生成。
+**答**：可以。 对于从 NuGet 包安装的分析器, 将[在生成时强制执行](roslyn-analyzers-overview.md#build-errors)这些规则, 包括在 CI 生成过程中。 CI 生成中使用的分析器遵循[规则集](analyzer-rule-sets.md)和[editorconfig 文件](configure-fxcop-analyzers.md)中的规则配置。 目前, Visual Studio 中内置的代码分析器不作为 NuGet 包提供, 因此在 CI 生成中无法强制执行这些规则。
 
-## <a name="ide-analyzers-versus-stylecop"></a>StyleCop 与 IDE 分析器
+## <a name="ide-analyzers-versus-stylecop"></a>IDE 分析器与 StyleCop
 
-**问：**:在 Visual Studio IDE 代码分析器和 StyleCop 分析器之间的区别是什么？
+**问**:Visual Studio IDE 代码分析器和 StyleCop 分析器之间的区别是什么？
 
-**答**：Visual Studio IDE 包括内置分析器，查找这两种代码样式和质量问题。 这些规则帮助您使用新语言功能，因为它们暴露出来并提高你的代码的可维护性。 不断更新，IDE 分析器随每个 Visual Studio 版本。
+**答**：Visual Studio IDE 包含内置分析器, 用于查找代码样式和质量问题。 这些规则可帮助你在引入新语言功能时使用它们, 并改进代码的可维护性。 IDE 分析器随每个 Visual Studio 版本不断地进行更新。
 
-[StyleCop 分析器](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)是第三方分析器作为 NuGet 包安装，在代码中的样式一致性检查。 一般情况下，StyleCop 规则可以设置个人首选项代码基而无需做出推荐一种样式。
+[StyleCop 分析器](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)是作为 NuGet 包安装的第三方分析器, 用于检查代码中的样式一致性。 通常, StyleCop 规则允许你为基本代码设置个人首选项, 而无需对另一种样式进行建议。
 
-## <a name="analyzers-versus-static-code-analysis"></a>分析器与静态代码分析
+## <a name="code-analyzers-versus-legacy-analysis"></a>代码分析器与传统分析
 
-**问：**:分析器和静态代码分析之间的区别是什么？
+**问**:传统分析和基于 .NET Compiler Platform 的代码分析之间有何区别？
 
-**答**：分析器分析源代码实时和期间编译，而静态代码分析将分析二进制文件后完成生成。 有关详细信息，请参阅[与静态代码分析的 Roslyn 分析器](roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis)并[FxCop 分析器常见问题解答](fxcop-analyzers-faq.md)。
+**答**: 基于 .NET Compiler Platform 的代码分析实时分析源代码, 并在编译期间分析二进制文件。 有关详细信息, 请参阅[基于 .NET Compiler Platform 的分析与传统分析](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis)和[FxCop 分析器常见问题解答](fxcop-analyzers-faq.md)。
 
 ## <a name="see-also"></a>请参阅
 
