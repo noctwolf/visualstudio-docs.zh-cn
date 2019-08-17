@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: a59346cb70269d4d2b405279fc9ea5573a879b1e
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401313"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546993"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214:不要在构造函数中调用可重写的方法
 
@@ -35,26 +35,26 @@ ms.locfileid: "66401313"
 
 ## <a name="cause"></a>原因
 
-未密封的类型的构造函数调用在其类中定义的虚方法。
+未密封类型的构造函数将调用在其类中定义的虚方法。
 
 ## <a name="rule-description"></a>规则说明
 
-当调用虚方法时，直到运行时未选择执行该方法的实际类型。 当构造函数调用虚方法时，就可以调用该方法的实例的构造函数不执行。
+调用虚方法时, 在运行时之前不会选择执行方法的实际类型。 当构造函数调用虚方法时, 调用方法的实例的构造函数可能未执行。
 
 > [!NOTE]
-> 此规则的二进制分析实现包含不同的诊断消息的" **\[构造函数名称] 包含由类定义的虚方法的调用会导致调用链。查看意想不到的后果的以下调用堆栈**"。 [FxCop 分析器](install-fxcop-analyzers.md)实现的此规则具有的诊断消息"**不要在构造函数中调用可重写方法**"。
+> 此规则的旧分析实现具有不同的诊断消息 " **\[构造函数名称] 包含一个调用链, 该调用链会导致调用类定义的虚方法。查看以下调用堆栈中是否有意外**的结果:。 此规则的[FxCop 分析器](install-fxcop-analyzers.md)实现具有 "**请勿在构造函数中调用可重写方法**" 的诊断消息。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要解决此规则的冲突，请勿调用类型的从该类型的构造函数内的虚拟方法。
+若要修复与此规则的冲突, 请不要从该类型的构造函数内调用类型的虚拟方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-不禁止显示此规则发出的警告。 构造函数应重新设计，以消除对虚拟方法的调用。
+不禁止显示此规则发出的警告。 应对构造函数进行重新设计, 以消除对虚拟方法的调用。
 
 ## <a name="example"></a>示例
 
-下面的示例演示了违反此规则的效果。 测试应用程序创建的实例`DerivedType`，这将导致其基类 (`BadlyConstructedType`) 构造函数来执行。 `BadlyConstructedType`构造函数不正确调用虚拟方法`DoSomething`。 如输出所示，`DerivedType.DoSomething()`之前执行`DerivedType`的构造函数执行。
+下面的示例演示违反此规则的效果。 测试应用程序将创建的实例`DerivedType`, 这将导致它的基类`BadlyConstructedType`() 构造函数执行。 `BadlyConstructedType`的构造函数错误地调用了`DoSomething`虚方法。 如输出所示, `DerivedType.DoSomething()`在执行`DerivedType`构造函数之前执行。
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

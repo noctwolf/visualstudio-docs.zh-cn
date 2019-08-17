@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad062154b8213d021c8c265aaf287d3a9335d0e4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 4b294b267aa7bb1a2912ed42807ac0f878c87838
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922883"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547655"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:实现标准异常构造函数
 
@@ -44,7 +44,7 @@ ms.locfileid: "68922883"
 
 - public NewException (string, Exception)
 
-此外, 如果您运行的是旧的 FxCop 静态代码分析, 而不是[基于 Roslyn 的 fxcop 分析器](../code-quality/roslyn-analyzers-overview.md), 则缺少第四个构造函数也会生成冲突:
+此外, 如果您运行的是旧的 FxCop 分析, 而不是[基于 .NET Compiler Platform 的 fxcop 分析器](../code-quality/roslyn-analyzers-overview.md), 则缺少第四个构造函数也会生成冲突:
 
 - protected 或 private NewException (SerializationInfo, StreamingContext)
 

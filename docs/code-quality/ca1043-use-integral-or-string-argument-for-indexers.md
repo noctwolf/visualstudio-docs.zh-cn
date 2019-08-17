@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ca381d88524535ad042b5bd3efda25f8cc350fa4
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: aeec6e202ccb7f3075b04d29bdef7d171ae545f7
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842124"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547687"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:将整型或字符串参数用于索引器
 
@@ -36,41 +36,41 @@ ms.locfileid: "65842124"
 
 ## <a name="cause"></a>原因
 
-某个类型包含一个索引器，而不使用索引类型<xref:System.Int32?displayProperty=fullName>， <xref:System.Int64?displayProperty=fullName>， <xref:System.Object?displayProperty=fullName>，或<xref:System.String?displayProperty=fullName>。
+类型包含索引器, 该索引器使用的索引类型<xref:System.Int32?displayProperty=fullName>不<xref:System.Int64?displayProperty=fullName>是<xref:System.Object?displayProperty=fullName>、、 <xref:System.String?displayProperty=fullName>或。
 
-默认情况下，此规则只看起来在公共和受保护类型，但这是[可配置](#configurability)。
+默认情况下, 此规则仅查看公共和受保护的类型, 但这是[可配置](#configurability)的。
 
 ## <a name="rule-description"></a>规则说明
 
-索引器，也就是说，索引属性，应为索引使用整数或字符串类型。 这些类型通常用于数据结构编制索引，并且提高库的可用性。 使用<xref:System.Object>类型应被限制为这种情况下，不能在设计时指定特定整型或字符串类型。 如果设计需要其他类型的索引，请重新考虑是否该类型表示逻辑数据存储区。 如果它不表示逻辑数据存储区，使用一种方法。
+索引器 (即索引属性) 应将整型或字符串类型用于索引。 这些类型通常用于索引数据结构并提高库的可用性。 应将<xref:System.Object>类型的使用限制为在设计时无法指定特定整数或字符串类型的情况。 如果设计需要索引的其他类型, 请重新考虑该类型是否表示逻辑数据存储区。 如果它不表示逻辑数据存储, 请使用方法。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要解决此规则的冲突，更改为整数或字符串类型的索引，或使用一种方法，而不是索引器。
+若要修复与此规则的冲突, 请将索引更改为整数或字符串类型, 或者使用方法而不是索引器。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-禁止显示此规则仅在仔细考虑要使用非标准索引器后的警告。
+仅在仔细考虑非标准索引器的需求之后, 禁止显示此规则发出的警告。
 
-## <a name="configurability"></a>可配置性
+## <a name="configurability"></a>配置
 
-如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是传统分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 editorconfig 文件中添加以下键/值对:
 
 ```ini
 dotnet_code_quality.ca1043.api_surface = private, internal
 ```
 
-此类别 （设计） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以为此规则、所有规则或此类别中的所有规则 (设计) 配置此选项。 有关详细信息, 请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example"></a>示例
 
-下面的示例演示使用的索引器<xref:System.Int32>索引。
+下面的示例演示一个使用<xref:System.Int32>索引的索引器。
 
 [!code-csharp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CSharp/ca1043-use-integral-or-string-argument-for-indexers_1.cs)]
 [!code-cpp[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/CPP/ca1043-use-integral-or-string-argument-for-indexers_1.cpp)]
 [!code-vb[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/VisualBasic/ca1043-use-integral-or-string-argument-for-indexers_1.vb)]
 
-## <a name="related-rules"></a>相关的规则
+## <a name="related-rules"></a>相关规则
 
-- [CA1023:索引器不应是多维](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
-- [CA1024： 在适用处在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1023索引器不应是多维的](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+- [CA1024使用适当的属性](../code-quality/ca1024-use-properties-where-appropriate.md)

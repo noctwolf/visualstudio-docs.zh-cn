@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604768"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547515"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052:静态容器类型应为 Static 或 NotInheritable
 
@@ -59,7 +59,7 @@ ms.locfileid: "68604768"
 
 ## <a name="configurability"></a>配置
 
-如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是通过静态代码分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 EditorConfig 文件中添加以下键/值对:
+如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是传统分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 EditorConfig 文件中添加以下键/值对:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

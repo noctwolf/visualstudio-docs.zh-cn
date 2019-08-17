@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: eee81a96e6841aa77e2056a95bd18979724b62e5
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c91de575abe8b19a5d8f6fca864e2bc452da7cb2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842397"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547647"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028:枚举存储应为 Int32
 
@@ -35,53 +35,53 @@ ms.locfileid: "65842397"
 
 ## <a name="cause"></a>原因
 
-枚举的基础类型不是<xref:System.Int32?displayProperty=fullName>。
+枚举的基础类型不<xref:System.Int32?displayProperty=fullName>是。
 
-默认情况下，此规则仅查看公共枚举，但这是[可配置](#configurability)。
+默认情况下, 此规则仅查看公共枚举, 但这是[可配置](#configurability)的。
 
 ## <a name="rule-description"></a>规则说明
 
-枚举是一种值类型，它定义一组相关的已命名常数。 默认情况下，<xref:System.Int32?displayProperty=fullName>数据类型用于存储常量值。 即使您可以更改此基础类型，不需要或不建议在大多数情况下。 通过使用数据类型的最小实现任何显著的性能提升<xref:System.Int32>。 如果您不能使用默认数据类型，则应使用一个公共语言系统 (CLS)-符合整型<xref:System.Byte>， <xref:System.Int16>， <xref:System.Int32>，或<xref:System.Int64>以确保所有枚举值，可以都表示符合 cls 的编程语言。
+枚举是一种值类型，它定义一组相关的已命名常数。 默认情况下, <xref:System.Int32?displayProperty=fullName>数据类型用于存储常量值。 尽管你可以更改此基础类型, 但在大多数情况下不需要或建议使用此类型。 使用小于的数据类型<xref:System.Int32>, 不会显著提高性能。 如果无法使用默认数据类型, 则应使用符合公共语言系统 (CLS) 的整数<xref:System.Byte>类型 ( <xref:System.Int32>、 <xref:System.Int16>、或<xref:System.Int64> ), 以确保枚举的所有值都可以在中表示符合 CLS 的编程语言。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复与此规则的冲突，除非存在大小或兼容性问题，请使用<xref:System.Int32>。 情况下，<xref:System.Int32>不够大，若要保存的值，请使用<xref:System.Int64>。 如果向后兼容性需要较小的数据类型，请使用<xref:System.Byte>或<xref:System.Int16>。
+若要修复与此规则的冲突, 除非存在大小或兼容性问题<xref:System.Int32>, 否则请使用。 对于不太<xref:System.Int32>大而无法保存值的情况, 请使用<xref:System.Int64>。 如果向后兼容性要求较小的数据<xref:System.Byte>类型<xref:System.Int16>, 请使用或。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-仅当需要向后兼容性，禁止显示此规则的警告。 在应用程序中，不符合此规则通常不会导致问题。 在库中，其中语言互操作性是必需的不符合此规则可能产生负面影响你的用户。
+仅当后向兼容性问题需要时, 才禁止显示此规则发出的警告。 在应用程序中, 未能遵守此规则通常不会导致问题。 在需要语言互操作性的库中, 未能遵守此规则可能会对用户造成不利影响。
 
-## <a name="configurability"></a>可配置性
+## <a name="configurability"></a>配置
 
-如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是传统分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 editorconfig 文件中添加以下键/值对:
 
 ```ini
 dotnet_code_quality.ca1028.api_surface = private, internal
 ```
 
-此类别 （设计） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以为此规则、所有规则或此类别中的所有规则 (设计) 配置此选项。 有关详细信息, 请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
-## <a name="example-of-a-violation"></a>冲突的示例
+## <a name="example-of-a-violation"></a>冲突示例
 
-下面的示例演示两个不使用推荐的基础数据类型的枚举。
+下面的示例演示两个不使用建议的基础数据类型的枚举。
 
 [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
 [!code-csharp[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_1.cs)]
 
-## <a name="example-of-how-to-fix"></a>如何解决问题的示例
+## <a name="example-of-how-to-fix"></a>解决方法的示例
 
-下面的示例通过将基础数据类型更改为修复了上一冲突<xref:System.Int32>。
+下面的示例通过将基础数据类型更改为来<xref:System.Int32>修复前面的冲突。
 
 [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
 [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_2.vb)]
 
-## <a name="related-rules"></a>相关的规则
+## <a name="related-rules"></a>相关规则
 
-- [CA1008:枚举应具有零值](../code-quality/ca1008-enums-should-have-zero-value.md)
-- [CA1027:用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217:不使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
-- [CA1700:未命名的枚举值 Reserved](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
-- [CA1712:不要使用类型名称的枚举值的前缀](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+- [CA1008枚举应具有零值](../code-quality/ca1008-enums-should-have-zero-value.md)
+- [CA1027用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217不要用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1700不要命名 "Reserved" 枚举值](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+- [CA1712不要将类型名称作为枚举值的前缀](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>请参阅
 

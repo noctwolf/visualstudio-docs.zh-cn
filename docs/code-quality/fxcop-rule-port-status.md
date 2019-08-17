@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604879"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551070"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 规则端口状态
 
-如果以前在 Visual Studio 的早期版本中使用了静态代码分析, 则可能想知道哪些规则在当前实现中作为[FxCop 分析器](install-fxcop-analyzers.md)提供。 此页列出了已移植的规则以及尚未移植的规则, 以及是否有计划对它们进行端口。
+如果以前在 Visual Studio 中使用了静态代码分析, 则可能想知道哪些规则在当前实现中作为[FxCop 分析器](install-fxcop-analyzers.md)提供。 此页列出了已移植的规则以及尚未移植的规则, 以及是否有计划对它们进行端口。
 
 ## <a name="ported-rules"></a>移植的规则
 
@@ -208,7 +208,7 @@ CA9999 | 分析器版本不匹配
 
 ### <a name="rules-that-may-be-ported"></a>可移植的规则
 
-以下 FxCop 静态代码分析规则尚未实现为分析器, 但仍可能是这样。 这可能是由于技术原因导致的, 或者只是规则的优先级较低。 有关每个规则的移植状态的详细信息, 请单击 "**跟踪问题**" 列中的链接。
+以下 FxCop 旧分析规则尚未实现为分析器, 但仍可能是。 这可能是由于技术原因导致的, 或者只是规则的优先级较低。 有关每个规则的移植状态的详细信息, 请单击 "**跟踪问题**" 列中的链接。
 
 规则 ID | 跟踪问题
 --- | ---
@@ -271,7 +271,7 @@ CA9999 | 分析器版本不匹配
 
 ### <a name="deprecated-rules"></a>弃用的规则
 
-以下 FxCop 静态代码分析规则已弃用, 不能作为分析器实现。 有关详细信息, 可以在[roslyn-分析器 GitHub 问题页](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上按规则 ID (例如**CA1009**) 进行搜索。
+以下 FxCop 旧分析规则已弃用, 不能作为分析器实现。 有关详细信息, 可以在[roslyn-分析器 GitHub 问题页](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上按规则 ID (例如**CA1009**) 进行搜索。
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

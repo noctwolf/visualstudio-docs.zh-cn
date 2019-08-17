@@ -1,6 +1,6 @@
 ---
 title: PowerPoint 解决方案
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926431"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551468"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 解决方案
   Visual Studio 提供可用于创建 Microsoft Office PowerPoint 的 VSTO 外接程序的项目模板。 可使用 VSTO 外接程序自动化 PowerPoint、扩展 PowerPoint 功能或自定义 PowerPoint 用户界面 (UI)。
@@ -31,8 +31,7 @@ ms.locfileid: "68926431"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> 有兴趣开发跨[多个平台](https://dev.office.com/add-in-availability)扩展 Office 体验的解决方案？ 查看新的 " [Office 外接程序" 模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 与 VSTO 外接程序和解决方案相比, Office 外接程序的占用空间较小, 可以使用几乎任何 web 编程技术 (例如 HTML5、JavaScript、CSS3 和 XML) 生成它们。
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![视频链接](../vsto/media/playvideo.gif "视频链接")有关相关的视频演示, 请[参阅如何实现:为 Microsoft PowerPoint 创建外接程序？](http://go.microsoft.com/fwlink/?LinkId=132767).
 

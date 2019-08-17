@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841654"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547115"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725:参数名应与基方法中的声明保持一致
 
@@ -32,9 +32,9 @@ ms.locfileid: "65841654"
 
 ## <a name="cause"></a>原因
 
-方法重写中的参数名称不匹配基方法声明中参数的名称或该方法的接口声明中参数的名称。
+方法重写中的参数名称与方法的基声明中的参数名称或该方法的接口声明中的参数名称不匹配。
 
-默认情况下，此规则仅查看外部可见方法，但这是[可配置](#configurability)。
+默认情况下, 此规则仅查看外部可见方法, 但这是[可配置](#configurability)的。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -42,18 +42,18 @@ ms.locfileid: "65841654"
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复此规则的冲突，请重命名参数以匹配基声明。 解决方法是一项重大更改对 COM 可见方法。
+若要修复与此规则的冲突, 请重命名参数以匹配基声明。 此修补程序是对 COM 可见方法的重大更改。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-不要禁止显示除以前发布的库中的 COM 可见方法的此规则的警告。
+请勿禁止显示此规则发出的警告, 但之前已发布的库中的 COM visible 方法除外。
 
-## <a name="configurability"></a>可配置性
+## <a name="configurability"></a>配置
 
-如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是传统分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 editorconfig 文件中添加以下键/值对:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-此类别 （命名） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以为此规则、所有规则或此类别中的所有规则 (命名) 配置此选项。 有关详细信息, 请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。

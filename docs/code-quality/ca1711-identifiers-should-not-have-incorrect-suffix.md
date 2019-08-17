@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9377dcf03bcbb8087d152ef98986f31c12c94c45
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 8b047669b962d5e38cd37132f84ae653ba30f9dc
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841933"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547292"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:标识符应采用正确的后缀
 
@@ -32,15 +32,15 @@ ms.locfileid: "65841933"
 
 ## <a name="cause"></a>原因
 
-标识符具有正确的后缀。
+标识符的后缀不正确。
 
-默认情况下，此规则仅查看外部可见标识符，但这是[可配置](#configurability)。
+默认情况下, 此规则仅查看外部可见的标识符, 但这是[可配置](#configurability)的。
 
 ## <a name="rule-description"></a>规则说明
 
-按照约定，只有扩展某些基类型或实现特定接口或从这些类型派生的类型的类型的名称应与特定的保留后缀结尾。 其他类型名称不应使用这些保留的后缀。
+按照约定, 只有扩展某些基类型或实现某些接口的类型的名称, 或从这些类型派生的类型的名称应以特定的保留后缀结尾。 其他类型名称不应使用这些保留的后缀。
 
-下表列出了保留的后缀的基类型和接口与它们相关联。
+下表列出了保留的后缀以及与它们关联的基类型和接口。
 
 |Suffix|基类型/接口|
 |------------|--------------------------|
@@ -55,41 +55,41 @@ ms.locfileid: "65841933"
 |堆栈|<xref:System.Collections.Stack?displayProperty=fullName>|
 |流|<xref:System.IO.Stream?displayProperty=fullName>|
 
-此外，以下后缀应**不**使用：
+此外,**不**应使用以下后缀:
 
 - `Delegate`
 
 - `Enum`
 
-- `Impl` (使用`Core`相反)
+- `Impl``Core` (改用)
 
-- `Ex` 或类似的后缀，以使其不同于早期版本的相同的类型
+- `Ex`或类似的后缀, 以将其与同一类型的早期版本区分开来
 
-命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
+命名约定为面向公共语言运行时的库提供了通用的外观。 这减少了新软件库所需的学习曲线, 并使客户可以放心地了解库是由具有开发托管代码的专业技能的人员开发的。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-删除类型名称的后缀。
+从类型名称中删除后缀。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
 除非后缀在应用程序域中具有明确的含义，否则不要禁止显示来自此规则的警告。
 
-## <a name="configurability"></a>可配置性
+## <a name="configurability"></a>配置
 
-如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+如果从[FxCop 分析器](install-fxcop-analyzers.md)(而不是传统分析) 运行此规则, 则可以根据其可访问性, 将基本代码的哪些部分配置为在上运行此规则。 例如, 若要指定规则只应针对非公共 API 图面运行, 请在项目中的 editorconfig 文件中添加以下键/值对:
 
 ```ini
 dotnet_code_quality.ca1711.api_surface = private, internal
 ```
 
-此类别 （命名） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
+您可以为此规则、所有规则或此类别中的所有规则 (命名) 配置此选项。 有关详细信息, 请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
-## <a name="related-rules"></a>相关的规则
+## <a name="related-rules"></a>相关规则
 
-- [CA1710:标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [属性](/dotnet/standard/design-guidelines/attributes)
+- [特性](/dotnet/standard/design-guidelines/attributes)
 - [处理和引发事件](/dotnet/standard/events/index)
