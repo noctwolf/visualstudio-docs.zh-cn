@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 896531325b3630b97a5cc076955fae6201defac6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826084"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870207"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>编码的 UI 测试的最佳做法
 
@@ -42,11 +42,11 @@ ms.locfileid: "67826084"
 
 - 如果用户界面 (UI) 更改，请重新记录测试方法或断言方法，或重新记录现有测试方法中受影响的部分。
 
-- 为受测应用程序中的每个模块创建一个单独的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 文件。 有关详细信息，请参阅[使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)。
+- 为受测应用程序中的每个模块创建一个单独的 [UIMap](/previous-versions/dd580454(v=vs.140)) 文件。 有关详细信息，请参阅[使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)。
 
 - 在受测应用程序中创建 UI 控件时，请使用有意义的名称。 使用有意义的名称比自动生成的控件名称更清晰，更易于使用。
 
-- 如果通过用 API 编码来创建断言，请为 UIMap.cs 文件中 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类部分中的每个断言创建一个方法  。 若要执行断言，请从测试方法中调用此方法。
+- 如果通过用 API 编码来创建断言，请为 UIMap.cs  文件中 [UIMap](/previous-versions/dd580454(v=vs.140)) 类部分中的每个断言创建一个方法。 若要执行断言，请从测试方法中调用此方法。
 
 - 如果直接用 API 编码，请在代码中尽可能使用 UIMap.Designer.cs 文件中生成的类中的属性和方法  。 这些类将使您的工作更简单可靠，并帮助您提高效率。
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>请参阅
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)
 - [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)

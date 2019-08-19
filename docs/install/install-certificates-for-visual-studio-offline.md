@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 74732249f5a82974f3df66df4b95357cdcf71c79
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826283"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925800"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -150,25 +150,19 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
   * 根证书：**Microsoft 根证书颁发机构**
     * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
 
-**更新**：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，Visual Studio 安装程序只需要在系统上安装根证书。
+**更新**：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，Visual Studio 安装程序只需要在系统上安装根证书。 这些证书存储在 .cer 文件而不是 .p12 文件中。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-* **ManifestSignCertificates.p12** 包含：
-  * 中间证书：**Microsoft 代码签名 PCA 2011**
-    * 不要求。 如果存在，可以在某些情况下提高性能。
+* ManifestSignCertificates.cer  包含：
   * 根证书：**Microsoft 根证书颁发机构 2011**
     * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
-* **ManifestCounterSignCertificates.p12** 包含：
-  * 中间证书：**Microsoft 时间戳 PCA 2010**
-    * 不要求。 如果存在，可以在某些情况下提高性能。
+* ManifestCounterSignCertificates.cer  包含：
   * 根证书：**Microsoft 根证书颁发机构 2010**
     * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
-* **Vs_installer_opc.SignCertificates.p12** 包含：
-  * 中间证书：**Microsoft 代码签名 PCA**
-    * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
+* Vs_installer_opc.SignCertificates.cer  包含：
   * 根证书：**Microsoft 根证书颁发机构**
     * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
 

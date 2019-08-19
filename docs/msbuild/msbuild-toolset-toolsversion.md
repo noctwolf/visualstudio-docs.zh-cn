@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7da41b1b82299bd32d1af805ea6226690e79115
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747385"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926371"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 
@@ -60,7 +60,7 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- 可通过定义自定义工具集来修改 `MSBuildToolsPath` 的值。 有关详细信息，请参阅[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)
+ 可通过定义自定义工具集来修改 `MSBuildToolsPath` 的值。 有关详细信息，请参阅[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。
 
  当在命令行上生成解决方案并为 msbuild.exe  指定 `ToolsVersion` 时，所有项目及其项目到项目的依赖项均基于该 `ToolsVersion` 生成，即便解决方案中的每个项目都指定了自己的 `ToolsVersion` 也是如此。 若要根据每个项目定义 `ToolsVersion` 值，请参阅[替代 ToolsVersion 设置](../msbuild/overriding-toolsversion-settings.md)。
 
@@ -106,7 +106,7 @@ MSBuild 提供了两种方式来访问工具集：
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 返回某个文件的路径，该文件通常位于托管工具文件夹中。
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 返回生成工具的路径。
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) 返回生成工具的路径。
 
 ### <a name="sub-toolsets"></a>子工具集
 

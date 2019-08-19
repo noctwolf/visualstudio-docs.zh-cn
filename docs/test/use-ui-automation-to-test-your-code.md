@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824695"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926645"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用编码的 UI 测试来测试代码
 
@@ -158,7 +158,7 @@ ms.locfileid: "67824695"
 
 ## <a name="validate-the-properties-of-ui-controls"></a>验证 UI 控件的属性
 
-使用“编码的 UI 测试生成器”  ，可以向测试的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 添加用户界面 (UI) 控件，也可为使用 UI 控件断言的验证方法生成代码。
+使用“编码的 UI 测试生成器”  ，可以向测试的 [UIMap](/previous-versions/dd580454(v=vs.140)) 添加用户界面 (UI) 控件，也可为使用 UI 控件断言的验证方法生成代码。
 
 要为 UI 控件生成断言，请选择“编码的 UI 测试生成器”中的“添加断言”工具，并且将其拖放到想要验证是否正确的受测应用程序上的控件   。 在框确定控件的轮廓时，释放鼠标。 此时将立即在 UIMap.Designer.cs 文件中创建该控件类代码  。
 
@@ -402,10 +402,10 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 使用派生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>如 [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) 或 [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)）的控件，可以直接获取或设置其属性值。 以下代码演示了部分示例：
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>从 UI 测试控件获取属性
 
@@ -455,7 +455,6 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [录制和播放手动测试](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [创建编码的 UI 测试来测试 UWP 应用](test-uwp-app-with-coded-ui-test.md)

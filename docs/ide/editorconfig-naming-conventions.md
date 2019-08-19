@@ -1,6 +1,6 @@
 ---
 title: EditorConfig 文件适用的 .NET 命名约定
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345702"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957430"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -165,7 +165,8 @@ ms.locfileid: "68345702"
 
 严重性 | 效果
 ------------ | -------------
-none 或 silent | 如未遵循此样式，则不会向用户显示任何内容，但自动生成的代码会遵循此样式。
+无 | 完全禁止显示规则。
+重构或无提示 | 如未遵循此样式，则不会向用户显示任何内容，但自动生成的代码会遵循此样式。
 建议 | 如未遵循此样式，则会以建议形式向用户显示此样式（如前两个字符下带点）。 这在编译时没有影响。
 warning | 如未遵循此样式，“错误列表”中会显示编译器警告  。
 error | 如未遵循此样式，“错误列表”中会显示编译器错误  。

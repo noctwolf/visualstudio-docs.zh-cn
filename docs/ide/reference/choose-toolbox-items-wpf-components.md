@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744983"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68869763"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>“选择工具箱项”->“WPF 组件”
 
@@ -77,7 +77,7 @@ ms.locfileid: "66744983"
 
 - 如果将解决方案配置从“调试”更改为“发布”，或从“发布”更改为“调试”，则不能正确更新。 这是因为该引用不是项目引用，而是磁盘上的程序集引用。 如果控件属于当前解决方案，从“调试”更改为“发布”时，项目将继续引用该控件的调试版本。
 
-此外，如果将设计时元数据应用到自定义控件，而且此元数据指定将 <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> 设置为 `false`，则该控件不会出现在“工具箱”中。
+此外，如果将设计时元数据应用到自定义控件，而且此元数据指定将 [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) 设置为 `false`，则该控件不会出现在“工具箱”中。
 
 可以通过映射控件的命名空间和程序集，直接在 XAML 视图中引用控件。
 
