@@ -10,7 +10,7 @@
 #### [Visual Studio 与 GitHub Enterprise](access-github.md)
 #### Microsoft 合作伙伴网络
 ##### [面向合作伙伴的订阅](program-mpn.md)
-##### [管理 MPN 订阅](manage-mpn-subscriptions.md)
+##### [管理面向 MPN 的订阅](manage-mpn-subscriptions.md)
 #### [启动 Microsoft](program-startups.md)
 ### 登录 
 #### [激活零售订阅](activate-store-subscriptions.md)
