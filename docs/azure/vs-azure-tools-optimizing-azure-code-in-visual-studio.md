@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5422d8cb56a9df1fad40857f6802e55ebd11b2ed
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3f9094b4d668df37c25da075d0cee590052f910d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675498"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919812"
 ---
 # <a name="optimizing-your-azure-code"></a>优化 Azure 代码
 对使用 Microsoft Azure 的应用程序进行编程时，应遵循某些编码做法，以免在云环境中应用程序的伸缩性、行为和性能出现问题。 Microsoft 提供了 Azure 代码分析工具，该工具可识别并确定部分常见问题并帮助你解决这些问题。 可以通过 NuGet 在 Visual Studio 中下载该工具。
@@ -415,8 +415,8 @@ AP5000
 使用诊断配置设计器将诊断设置移到诊断配置文件（SDK 2.5 和更高版本的 diagnostics.wadcfg 或 diagnostics.wadcfgx）。 此外，建议安装 [Azure SDK 2.5](http://go.microsoft.com/fwlink/?LinkId=513188) 并使用最新的诊断功能。
 
 1. 在要配置的角色的快捷菜单上，选择“属性”，并选择“配置”选项卡。
-2. 在“诊断”部分中，确保“启用诊断”复选框已选中。
-3. 选择“配置”按钮。
+2. 在“诊断”部分中，确保“启用诊断”复选框已选中。  
+3. 选择“配置”按钮。 
 
    ![访问“启用诊断”选项](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 

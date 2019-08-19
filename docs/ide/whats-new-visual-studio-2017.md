@@ -18,16 +18,16 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583354"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925907"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
-针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 而更新
+针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 而更新 
 
 想从 Visual Studio 早期版本升级？ 以下是 Visual Studio 2017 的优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
 
@@ -36,14 +36,14 @@ ms.locfileid: "62583354"
 
 以下是我们自上一版本 Visual Studio 2015 以来所做更改的高级扼要重述：
 
-* **[重新定义了基础知识](#redefined-fundamentals)**。 新的安装体验意味着安装速度更快，并且能够在需要时立即安装。
-* **[性能和工作效率](#performance-and-productivity)**。 我们专注于新型、现代化的移动、云和桌面开发功能。 并且与以前相比，现在的 Visual Studio 启动速度更快、响应能力更强、使用的内存更少。
-* **[使用 Azure 开发云应用](#cloud-app-development-with-azure)**。 通过内置的 Azure 工具套件，可以轻松地创建由 Microsoft Azure 提供支持的云优先应用。 借助 Visual Studio，可以轻松配置、构建、调试、打包和部署 Azure 上的应用和服务。
-* **[Windows 应用开发](#windows-app-development)**。 使用 Visual Studio 2017 中的 UWP 模板创建一个可用于所有 Windows 10 设备的项目 &ndash; PC、平板电脑、电话、Xbox、HoloLens、 Surface Hub 等。
-* **[移动应用开发](#mobile-app-development)**。 使用 Xamarin 进行创新并快速得出结果。Xamarin 将多平台移动需求统一到一个核心基本代码和技能集。
-* **[跨平台开发](#cross-platform-development)**。 向任意目标平台无缝提供软件。 通过 Redgate 数据工具将 DevOps 流程扩展到 SQL Server 中，并在 Visual Studio 中安全地自动处理数据库部署。 或使用 .NET Core 编写在 Windows、Linux 和 macOS 操作系统上运行的未修改的应用和库。
-* **[游戏开发](#games-development)**。 借助 Visual Studio Tools Unity (VSTU)，可以使用 Visual Studio 在 C# 中编写游戏和编辑器脚本，随后使用其功能强大的调试器查找和修复错误。
-* **[AI 开发](#ai-development)**。 通过 Visual Studio Tools for AI，可使用 Visual Studio 的高效功能加快 AI 创新。 生成、测试和部署与 Azure 机器学习无缝集成的深入学习/AI 解决方案，从而实现强大的试验功能。
+* **[重新定义了基础知识](#redefined-fundamentals)** 。 新的安装体验意味着安装速度更快，并且能够在需要时立即安装。
+* **[性能和工作效率](#performance-and-productivity)** 。 我们专注于新型、现代化的移动、云和桌面开发功能。 并且与以前相比，现在的 Visual Studio 启动速度更快、响应能力更强、使用的内存更少。
+* **[使用 Azure 开发云应用](#cloud-app-development-with-azure)** 。 通过内置的 Azure 工具套件，可以轻松地创建由 Microsoft Azure 提供支持的云优先应用。 借助 Visual Studio，可以轻松配置、构建、调试、打包和部署 Azure 上的应用和服务。
+* **[Windows 应用开发](#windows-app-development)** 。 使用 Visual Studio 2017 中的 UWP 模板创建一个可用于所有 Windows 10 设备的项目 &ndash; PC、平板电脑、电话、Xbox、HoloLens、 Surface Hub 等。
+* **[移动应用开发](#mobile-app-development)** 。 使用 Xamarin 进行创新并快速得出结果。Xamarin 将多平台移动需求统一到一个核心基本代码和技能集。
+* **[跨平台开发](#cross-platform-development)** 。 向任意目标平台无缝提供软件。 通过 Redgate 数据工具将 DevOps 流程扩展到 SQL Server 中，并在 Visual Studio 中安全地自动处理数据库部署。 或使用 .NET Core 编写在 Windows、Linux 和 macOS 操作系统上运行的未修改的应用和库。
+* **[游戏开发](#games-development)** 。 借助 Visual Studio Tools Unity (VSTU)，可以使用 Visual Studio 在 C# 中编写游戏和编辑器脚本，随后使用其功能强大的调试器查找和修复错误。
+* **[AI 开发](#ai-development)** 。 通过 Visual Studio Tools for AI，可使用 Visual Studio 的高效功能加快 AI 创新。 生成、测试和部署与 Azure 机器学习无缝集成的深入学习/AI 解决方案，从而实现强大的试验功能。
 
 > [!NOTE]
 > 有关 Visual Studio 2017 中新增功能的完整列表，请参阅[当前发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)。 若要查看将来要推出的功能，请参阅[预览发行说明](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)。
@@ -56,17 +56,17 @@ ms.locfileid: "62583354"
 
 通过 Visual Studio，可以在需要时更轻松快速地安装所需功能。 而且，还能完全卸载干净。
 
-安装 Visual Studio 时，可以注意到最重要的更改是全新的安装体验。 在“工作负荷”选项卡上，你将看到表示常见框架、语言和平台的分组安装选项。 它涵盖 Windows、Linux 和 iOS 上从 .NET 桌面开发到 C++ 应用程序开发的所有内容。
+安装 Visual Studio 时，可以注意到最重要的更改是全新的安装体验。 在“工作负荷”  选项卡上，你将看到表示常见框架、语言和平台的分组安装选项。 它涵盖 Windows、Linux 和 iOS 上从 .NET 桌面开发到 C++ 应用程序开发的所有内容。
 
 选择所需的工作负载，并在需要时对其进行更改。
 
- ![Visual Studio 2017 安装对话框](../install/media/install-visual-studio-enterprise.png)
+![Visual Studio 2017 安装对话框](../install/media/install-visual-studio-enterprise.png)
 
 并且还可以选择微调安装：
 
-* 想要选择自己的组件而不是使用工作负载？ 请从安装程序选择“单个组件”选项卡。
-* 想要在不更改 Windows 语言选项的情况下立即安装语言包？ 选择安装程序的“语言包”选项卡。
-* **15.7 中的新增功能**：想要更改 Visual Studio 的安装位置？ 选择安装程序的“安装选项”选项卡。
+* 想要选择自己的组件而不是使用工作负载？ 请从安装程序选择“单个组件”选项卡  。
+* 想要在不更改 Windows 语言选项的情况下立即安装语言包？ 选择安装程序的“语言包”  选项卡。
+* **15.7 中的新增功能**：想要更改 Visual Studio 的安装位置？ 选择安装程序的“安装选项”  选项卡。
 
 若要更深入地了解新的安装体验，包括指导你进行演练的分步说明，请参阅[安装 Visual Studio](../install/install-visual-studio.md) 页。
 
@@ -90,7 +90,7 @@ ms.locfileid: "62583354"
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>按需加载扩展速度更快
 
-Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根据需要加载扩展，而不是在 IDE 启动时加载。 想了解哪些扩展会影响启动、解决方案加载和键入性能？ 可以在“帮助” > “管理 Visual Studio 性能”中查看此信息。
+Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根据需要加载扩展，而不是在 IDE 启动时加载。 想了解哪些扩展会影响启动、解决方案加载和键入性能？ 可以在“帮助” > “管理 Visual Studio 性能”中查看此信息   。
 
   ![Visual Studio 2017 中的“选项”对话框](media/vs2017ide-manage-vs-perf.png)
 
@@ -98,7 +98,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 现在登录 Visual Studio 时，能更轻松地通过你最喜爱的扩展设置每个开发环境。 通过在云中创建同步列表，新漫游扩展管理器会跟踪所有你喜欢的扩展。
 
-若要查看 Visual Studio 中的扩展列表，请单击“工具” > “扩展和更新”，再单击“漫游扩展管理器”。
+若要查看 Visual Studio 中的扩展列表，请单击“工具” > “扩展和更新”，再单击“漫游扩展管理器”    。
 
 ![Visual Studio 2017 -“扩展和更新”对话框](media/vs2017ide-extensions-and-updates.png)
 
@@ -108,14 +108,14 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 使用漫游扩展管理器时，列表中会出现 3 种图标类型：
 
-* ![“漫游”图标](media/vs2017ide-roamedicon.png) **_漫游_**：存在于漫游列表中，但未在计算机上安装的扩展。
-  （可通过“下载”按钮安装这些扩展。）
-* ![“漫游且已安装”图标](media/vs2017ide-roamedinstalledicon.png) **_漫游且已安装_**：存在于漫游列表中且已在此环境中安装的所有扩展。
-  （如果确定不希望漫游，可通过“停止漫游”按钮删除它们。）
-* ![“已安装”图标](media/vs2017ide-installedicon.png) **_已安装_**：此环境中已安装、但不属于漫游列表的所有扩展。
-  （可通过“启动漫游”按钮将扩展添加到漫游列表。）
+* ![“漫游”图标](media/vs2017ide-roamedicon.png) **_漫游_** ：存在于漫游列表中，但未在计算机上安装的扩展。
+  （可通过“下载”  按钮安装这些扩展。）
+* ![“漫游且已安装”图标](media/vs2017ide-roamedinstalledicon.png) **_漫游且已安装_** ：存在于漫游列表中且已在此环境中安装的所有扩展。
+  （如果确定不希望漫游，可通过“停止漫游”  按钮删除它们。）
+* ![“已安装”图标](media/vs2017ide-installedicon.png) **_已安装_** ：此环境中已安装、但不属于漫游列表的所有扩展。
+  （可通过“启动漫游”  按钮将扩展添加到漫游列表。）
 
-在登录时下载的任何扩展将作为“漫游且已安装”添加到列表中。 该扩展随即成为“漫游”列表的一部分，可以从任何计算机访问它。
+在登录时下载的任何扩展将作为“漫游且已安装”  添加到列表中。 该扩展随即成为“漫游”列表的一部分，可以从任何计算机访问它。
 
 ### <a name="experience-live-unit-testing"></a>体验 Live Unit Testing
 
@@ -145,7 +145,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 #### <a name="keep-keybinding-profiles-consistent"></a>保证键绑定配置文件的一致性
 
-**15.8 中的新增功能**：现可让不同工具中的键绑定与这两个新的键盘配置文件保持一致：Visual Studio Code 和 ReSharper (Visual Studio)。 可单击“工具” > “选项” > “常规” > “键盘”，在顶部下拉菜单下找到这些方案。
+**15.8 中的新增功能**：现可让不同工具中的键绑定与这两个新的键盘配置文件保持一致：Visual Studio Code 和 ReSharper (Visual Studio)。 可单击“工具” > “选项” > “常规” > “键盘”，在顶部下拉菜单下找到这些方案     。
 
   ![适用于 Visual Studio Code 和 ReSharper 的新的键绑定配置文件](media/vs-keyboard-mappings-code-resharper.png)
 
@@ -174,15 +174,15 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 我们改善了导航体验，可让你更自信地从 A 导航到 B，同时减少此过程中的干扰。
 
-* **15.4 中的新增功能**：转到定义（Ctrl+单击或 F12）&ndash; 鼠标用户按 Ctrl，然后单击成员，可以更轻松地导航到成员定义。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](go-to-and-peek-definition.md)。
+* **15.4 中的新增功能**：转到定义（Ctrl+单击或 F12）&ndash; 鼠标用户按 Ctrl，然后单击成员，可以更轻松地导航到成员定义      。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](go-to-and-peek-definition.md)。
 
-* **转到实现** (Ctrl+F12) &ndash; 从任何基类型或基成员转到各种实现。
+* **转到实现** (Ctrl+F12) &ndash; 从任何基类型或基成员转到各种实现   。
 
-* **转到全部**（Ctrl+T 或 Ctrl+,）&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
+* **转到全部**（Ctrl+T 或 Ctrl+,）&ndash; 直接导航到任何文件/类型/成员/符号声明     。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
 
   ![改进后的“转到全部”](media/vs2017ide-navigation-go-to.png)
 
-* **查找所有引用** (Shift+F12) &ndash; 通过语法着色，可以按项目、定义和路径的组合对“查找所有引用”的结果进行分组。 还可以“锁定”结果，这样既可以继续查找其他引用，又不会丢失原始结果。
+* **查找所有引用** (Shift+F12) &ndash; 通过语法着色，可以按项目、定义和路径的组合对“查找所有引用”的结果进行分组   。 还可以“锁定”结果，这样既可以继续查找其他引用，又不会丢失原始结果。
 
   ![新的“查找所有引用”工具](media/vs2017ide-find-all-references.png)
 
@@ -220,7 +220,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 **15.5 中的新增功能**：IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动拍摄应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
-可以通过使用“调试”工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。 后退或前进到某个事件会自动激活所选事件的历史调试。
+可以通过使用“调试”工具栏中的“后退”和前进”按钮浏览和查看快照    。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。   后退或前进到某个事件会自动激活所选事件的历史调试。
 
 ![Visual Studio 中新的“异常帮助程序”对话框](../debugger/media/intellitrace-step-back-icons-description.png  "“后退”和“前进”按钮")
 
@@ -235,7 +235,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 **15.5 中的新增功能**：
 
 * Visual Studio 包含现在支持多阶段 Dockerfile 的用于 Docker 容器的工具，简化了创建优化容器映像的过程。
-* 默认情况下，当打开具有 Docker 支持的项目时，Visual Studio 会在后台自动拉取、生成并运行必要的容器映像。 可以通过 Visual Studio 中的“在后台自动启动容器”设置禁用此操作。
+* 默认情况下，当打开具有 Docker 支持的项目时，Visual Studio 会在后台自动拉取、生成并运行必要的容器映像。 可以通过 Visual Studio 中的“在后台自动启动容器”设置禁用此操作  。
 
 ## <a name="cloud-app-development-with-azure"></a>使用 Azure 开发云应用
 
@@ -262,7 +262,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 通用 Windows 平台 (UWP) 是 Windows 10 的应用平台。 只需使用一个 API 集、一个应用包和一个存储便可开发适用于所有 Windows 10 设备的 UWP 应用 &ndash; PC、平板电脑、手机、Xbox、HoloLens、Surface Hub 等。 UWP 支持不同屏幕大小以及各种交互模型：无论是触控、鼠标及键盘、游戏控制器还是触笔。 UWP 应用的核心是这样一种理念，即用户可获得跨所有设备的移动体验，并可随时使用任何最便捷或最高效的设备完成手头任务。
 
- ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png)
+![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png)
 
 &mdash;从 C#、Visual Basic、C++ 或 JavaScript 中&mdash;选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 Visual Studio 2017 提供所有语言的 UWP 应用模板，借助该模板可创建一个适用于所有设备的项目。 工作完成后，可以生成应用包，并从 Visual Studio 中将其提交到 Microsoft Store，以面向任何使用 Windows 10 设备的客户推出应用。
 
@@ -283,13 +283,13 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ### <a name="entitlements-editor"></a>权利编辑器
 
-**15.3 中的新增功能**：为满足 iOS 开发需求，我们添加了独立的权利编辑器。 它包含便于浏览、用户友好的 UI。 要启动它，请双击 entitlements.plist 文件。
+**15.3 中的新增功能**：为满足 iOS 开发需求，我们添加了独立的权利编辑器。 它包含便于浏览、用户友好的 UI。 要启动它，请双击 entitlements.plist  文件。
 
 ![Xamarin 的权利编辑器](media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
-**15.4 中的新增功能**：通过 Xamarin Live，开发人员可直接在 iOS 和 Android 设备上持续部署、测试和调试应用。 下载 Xamarin Live Player &mdash; 可在 App Store 或 Google Play 中获取 &mdash; 后，可将设备与 Visual Studio 配对，彻底改变生成移动应用的方式。 此功能现已包含在 Visual Studio 中，转到“工具” > “选项” > “Xamarin” > “其他” > “启用 Xamarin Live Player”即可启用此功能。
+**15.4 中的新增功能**：通过 Xamarin Live，开发人员可直接在 iOS 和 Android 设备上持续部署、测试和调试应用。 下载 Xamarin Live Player &mdash; 可在 App Store 或 Google Play 中获取 &mdash; 后，可将设备与 Visual Studio 配对，彻底改变生成移动应用的方式。 此功能现已包含在 Visual Studio 中，转到“工具” > “选项” > “Xamarin” > “其他” > “启用 Xamarin Live Player”即可启用此功能      。
 
 ![Xamarin Live Player 对、部署和实时编辑模式的动画](media/xamarinliveplayer.gif)
 
@@ -366,8 +366,8 @@ Visual Studio 2017 所有版本随附：
 
 我们经常更新 Visual Studio 2017 的新功能，以使开发体验越来越好。 下面是一些最值得注意的更新（处于实验预览状态）的扼要重述：
 
-* [实时共享](https://visualstudio.microsoft.com/services/live-share/)，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](/visualstudio/intellicode/faq)。
+* [实时共享](https://visualstudio.microsoft.com/services/live-share/)，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作  。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** ，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](/visualstudio/intellicode/faq)。
 
 想要了解更多关于 Visual Studio 2017 的其他功能吗？ 请参阅 [Visual Studio 路线图](/visualstudio/productinfo/vs2018-roadmap)页。
 
@@ -377,11 +377,11 @@ Visual Studio 2017 所有版本随附：
 
 为什么将反馈发送至 Visual Studio 团队？ 因为我们严肃对待客户反馈。 这会给予我们巨大的行事动力。
 
-如果有关于如何改进 Visual Studio 的建议，或想要详细了解产品支持选项，请参阅[与我们交流](talk-to-us.md)页。
+如果有关于如何改进 Visual Studio 的建议，或想要详细了解产品支持选项，请参阅[向我们发送反馈](feedback-options.md)页。
 
 ### <a name="report-a-problem"></a>报告问题
 
- 有时，一条消息不足以说明所遇问题的总体影响。 如果遇到挂起、崩溃或其他性能问题，可利用“报告问题”工具与我们轻松共享重现步骤和支持文件（如屏幕截图以及跟踪和堆转储文件）。 有关如何使用此工具的详细信息，请参阅[如何报告问题](how-to-report-a-problem-with-visual-studio.md)页。
+有时，一条消息不足以说明所遇问题的总体影响。 如果遇到挂起、崩溃或其他性能问题，可利用“报告问题”  工具与我们轻松共享重现步骤和支持文件（如屏幕截图以及跟踪和堆转储文件）。 有关如何使用此工具的详细信息，请参阅[如何报告问题](how-to-report-a-problem-with-visual-studio.md)页。
 
 ## <a name="see-also"></a>请参阅
 

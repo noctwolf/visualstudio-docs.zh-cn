@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821409"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918045"
 ---
 # <a name="installation"></a>安装
 
@@ -37,14 +37,14 @@ ms.locfileid: "67821409"
 
 ## <a name="prepare-your-local-machine"></a>准备本地计算机
 
-在本地计算机上定型深度学习模型前，请先确保已安装适用的先决条件工具。 这包括确保已安装 NVIDIA GPU（若有）的最新驱动程序和库。 还应确保已安装 Python 和 Python 库（如 NumPy、SciPy），以及你打算在项目中使用的相应深度学习框架（如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 和 Chainer）。
+在本地计算机上定型深度学习模型前，请先确保已安装适用的先决条件工具。 这包括确保已安装 NVIDIA GPU（若有）的最新驱动程序和库。 还要确保已安装 Python 和 Python 库（如 NumPy、SciPy），以及你打算在项目中使用的相应深度学习框架（如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 和 Chainer）。
 
 > [!NOTE]
 > 以下各小节中的软件简介摘自其主页。
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU 驱动程序
 
-深入学习框架利用 NVIDIA GPU 让机器按照针对真实人工智能的速度、准确性和规模进行学习。 如果计算机具有 NVIDIA GPU 卡，请访问[此处](http://www.nvidia.com/Download/index.aspx)或尝试进行操作系统更新以安装最新驱动程序。
+深入学习框架利用 NVIDIA GPU 让机器按照针对真实人工智能的速度、准确性和规模进行学习。 如果计算机具有 NVIDIA GPU 卡，请参阅 [NVIDIA 驱动程序下载](http://www.nvidia.com/Download/index.aspx)或尝试更新操作系统以安装最新驱动程序。
 
 ### <a name="cuda"></a>CUDA
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > CNTK 当前不支持 macOS。
 
-若要安装 CNTK Python 程序包，请参阅[如何安装 CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)
+若要安装 CNTK Python 包，请参阅[如何安装 CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)。
 
 ### <a name="tensorflow"></a>TensorFlow
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) 是旨在提高灵活性的基于 Python 的深入学习框架。 它提供基于**按运行定义方法**（也称为 动态计算关系图）的自动区分 API 以及面向对象的高级 API 来构建并训练神经网络。
+[Chainer](https://chainer.org/) 是旨在提高灵活性的基于 Python 的深入学习框架。 它提供基于通过运行定义方法（也称为动态计算图）的自动差异化 API 以及面向对象的高级 API 来构建和训练神经网络。
 
 若要启用 CUDA 支持，请安装 [CuPy](https://github.com/cupy/cupy)：
 

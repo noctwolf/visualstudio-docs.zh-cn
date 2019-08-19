@@ -1,7 +1,7 @@
 ---
 title: 创建基于网络的安装
 description: 了解如何创建用于在企业中部署 Visual Studio 的网络安装点。
-ms.date: 04/26/2019
+ms.date: 08/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 766e3a35c6f9b775373fb7a096000177cfee131d
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365331"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870776"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>创建 Visual Studio 的网络安装
 
@@ -85,6 +85,8 @@ ms.locfileid: "67365331"
 ## <a name="copy-the-layout-to-a-network-share"></a>将布局复制到网络共享
 
 在网络共享上托管布局，以便用户可以从其他计算机运行。
+
+下面的示例使用 [xcopy](/windows-server/administration/windows-commands/xcopy/)。 如果需要，还可以使用 [robocopy](/windows-server/administration/windows-commands/robocopy/)。  
 
 ::: moniker range="vs-2017"
 

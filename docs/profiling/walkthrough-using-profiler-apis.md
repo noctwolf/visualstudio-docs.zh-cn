@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428130"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870281"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 
@@ -31,13 +31,13 @@ ms.locfileid: "63428130"
  通过 Visual Studio 探查器，可以限制数据收集。 本演练提供一个示例，说明如何使用探查器 API 限制数据收集。 Visual Studio 探查器提供一个 API，用于从应用程序内部控制数据收集。
 
  ::: moniker range=">=vs-2019"
- 对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio \2019\Team Tools\Performance Tools\PerfSDK 目录中。  对于 64 位应用，文件夹为 Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK
+ 对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中  。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio \2019\Team Tools\Performance Tools\PerfSDK 目录中    。  对于 64 位应用，文件夹为 Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK 
  ::: moniker-end
  ::: moniker range="vs-2017"
- 对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio \2017\Team Tools\Performance Tools\PerfSDK 目录。  对于 64 位应用，文件夹为 Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK
+ 对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中  。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio \2017\Team Tools\Performance Tools\PerfSDK 目录    。  对于 64 位应用，文件夹为 Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK 
  ::: moniker-end
 
- 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。 对于 64 位应用，文件夹为 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Profiler>。
+ 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中  。 此 DLL 位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录  。 对于 64 位应用，文件夹为 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64  。 有关详细信息，请参阅[探查器](/previous-versions/ms242704(v=vs.140))。
 
 ## <a name="prerequisites"></a>系统必备
  本演练假定用户选择的开发环境配置为支持调试和采样。 以下主题概述了这些系统必备：
@@ -63,7 +63,7 @@ DataCollection.CurrentId);
 1. 在 Visual Studio 中创建一个新的 C# 项目，或使用命令行生成，具体取决于用户的选择。
 
     > [!NOTE]
-    > 生成必须引用 Microsoft.VisualStudio.Profiler.dll 库，该库位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。
+    > 生成必须引用 Microsoft.VisualStudio.Profiler.dll 库，该库位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录   。
 
 2. 将以下代码复制并粘贴到项目中：
 
@@ -126,15 +126,15 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中收集和查看数据
 
-1. 打开 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在“分析”菜单上指向“探查器”，然后选择“新建性能会话”。
+1. 打开 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE。 在“分析”菜单上指向“探查器”，然后选择“新建性能会话”    。
 
-2. 将编译的二进制文件添加到“性能资源管理器”窗口的“目标”列表中。 右键单击“目标”，然后选择“添加目标二进制文件”。 在“添加目标二进制文件”对话框中找到二进制文件，然后单击“打开”。
+2. 将编译的二进制文件添加到“性能资源管理器”  窗口的“目标”  列表中。 右键单击“目标”  ，然后选择“添加目标二进制文件”  。 在“添加目标二进制文件”  对话框中找到二进制文件，然后单击“打开”  。
 
-3. 从“性能资源管理器”工具栏上的“方法”列表中选择“检测”。
+3. 从“性能资源管理器”  工具栏上的“方法”  列表中选择“检测”  。
 
-4. 单击“启动并启用分析功能”。
+4. 单击“启动并启用分析功能”  。
 
-    探查器将检测和执行该二进制文件，并创建一个性能报告文件。 性能报告文件将显示在“性能资源管理器”的“报告”节点中。
+    探查器将检测和执行该二进制文件，并创建一个性能报告文件。 性能报告文件将显示在“性能资源管理器”  的“报告”  节点中。
 
 5. 打开生成的性能报告文件。
 
@@ -166,11 +166,11 @@ DataCollection.CurrentId);
 
 8. 键入以下命令：**VSPerfReport /calltrace:\<>.vsp**
 
-     当前目录中即会创建一个 .csv 文件，该文件包含得到的性能数据。
+     当前目录中即会创建一个 .csv 文件，该文件包含得到的性能数据  。
 
 ## <a name="see-also"></a>请参阅
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [探查器](/previous-versions/ms242704(v=vs.140))
 - [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)
 - [入门](../profiling/getting-started-with-performance-tools.md)
 - [通过命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07cdc27cb47a6de46585f573d78b5af00631c2a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e43706462cadce7f27efc9509ccb2c02677d43b1
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002388"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870087"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>扩展编码的 UI 测试和操作录制
 
@@ -33,7 +33,7 @@ ms.locfileid: "63002388"
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)
 - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
