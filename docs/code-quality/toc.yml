@@ -1,48 +1,48 @@
 - name: 代码分析文档
   href: index.md
-- name: 托管代码分析
+- name: 分析托管代码
   items:
     - name: 概述
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn 分析器（源分析）
+    - name: 代码分析
       items:
         - name: 概述
           displayName: 'roslyn analyzers, source analysis'
           href: roslyn-analyzers-overview.md
         - name: 安装
           href: install-roslyn-analyzers.md
-        - name: Configuration
+        - name: 配置
           href: use-roslyn-analyzers.md
         - name: 启用完整解决方案分析
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: FAQ
           href: analyzers-faq.md
-    - name: Roslyn 分析器（静态代码分析）
+    - name: 旧版分析
       items:
         - name: 概述
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: 静态代码分析演练
+        - name: 旧版分析演练
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 迁移
           href: fxcop-analyzers.yml
-        - name: 手动运行代码分析
+        - name: 手动运行旧版分析
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: Configuration
+        - name: 配置
           items:
-            - name: 为二进制文件分析器配置代码分析
+            - name: 配置旧版分析
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 启用自动代码分析
+            - name: 启用自动旧版代码分析
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: 自定义代码分析字典
+            - name: 自定义旧版代码分析字典
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: 禁止
           items:
-            - name: 禁止对生成的代码显示静态代码分析警告
+            - name: 禁止对生成的代码显示旧版分析警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: 代码分析应用程序错误
+        - name: 旧版分析应用程序错误
           items:
-            - name: 代码分析策略错误
+            - name: 旧版分析策略错误
               href: code-analysis-policy-errors.md
             - name: 概述
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: 如何创建或更新签入策略
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: 实现代码分析签入策略
+            - name: 实现旧版分析签入策略
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: 强制执行可维护的代码
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -119,7 +119,7 @@
           href: fxcop-analyzers.yml
         - name: 安装
           href: install-fxcop-analyzers.md
-        - name: Configuration
+        - name: 配置
           items:
             - name: 概述
               href: configure-fxcop-analyzers.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: FAQ
           href: fxcop-analyzers-faq.md
-    - name: 从静态分析迁移到 FxCop 分析器
+    - name: 从旧版分析迁移到 FxCop 分析器
       items:
         - name: 概述
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: CA5386：避免对 SecurityProtocolType 值进行硬编码
                   href: ca5386.md
+                - name: CA5397：不使用已弃用的 SslProtocols 值
+                  href: ca5397.md
+                - name: CA5398：避免硬编码的 SslProtocols 值
+                  href: ca5398.md
             - name: 用法警告
               items:
                 - name: 概述
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: 自动功能挂起
               href: automatic-feature-suspension.md
-- name: C/C++ 代码分析
+- name: 分析 C/C++ 代码
   items:
     - name: 概述
       displayName: C++ code analysis
