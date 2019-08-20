@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483553"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870860"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 
@@ -33,7 +33,7 @@ ms.locfileid: "68483553"
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>在服务器资源管理器中访问你的 Azure 帐户
 
-按 Ctrl  +Alt  +S  ，打开“服务器资源管理器”  。 展开“Azure”节点，注意它包含 Azure 帐户中可用的资源，该资源与用于登录 Visual Studio 的帐户相关联  。 它看上去类似于下图：
+若要打开服务器资源管理器，请选择“查看” > “服务器资源管理器”   （或者，如果使用的是“常规”[环境设置](../ide/environment-settings.md)  ，请按 Ctrl+Alt+S）   。 展开“Azure”节点，注意它包含 Azure 帐户中可用的资源，该资源与用于登录 Visual Studio 的帐户相关联  。 它看上去类似于下图：
 
 ![展开了 Azure 节点的服务器资源管理器](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

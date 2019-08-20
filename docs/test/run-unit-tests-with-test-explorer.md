@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711271"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918173"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -169,7 +169,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 |**类**|按包含类对测试进行分组。|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>按特征分组
+### <a name="traits"></a>Traits
 
 特征通常是类别名称/值对，但也可以是单个类别。 特性可以分配给由单元测试框架标识为测试方法的方法。 单元测试框架可以定义特征类别。 你可以向特征类别添加值，以便定义自己的类别名称/值对。 用于指定特征类别和值的语法由单元测试框架定义。
 
@@ -187,7 +187,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 **适用于 C++ 的 Microsoft 单元测试框架中的特征**
 
- 请参阅[如何使用适用于 C++ 的 Microsoft 单元测试框架](how-to-use-microsoft-test-framework-for-cpp.md)。
+请参阅[如何使用适用于 C++ 的 Microsoft 单元测试框架](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ## <a name="create-custom-playlists"></a>创建自定义播放列表
 
@@ -215,7 +215,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ![在单独的“测试资源管理器”选项卡中打开播放列表](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 右键单击并选择“添加到播放列表” > “新建播放列表”   。 
+**若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 右键单击并选择“添加到播放列表” > “新建播放列表”   。
 
 若要打开播放列表，请选择 Visual Studio 工具栏中的播放列表图标，然后从菜单中选择以前保存的播放列表文件  。
 ::: moniker-end
@@ -229,7 +229,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>对测试列进行筛选、排序和重新排列
 
-可以对列进行筛选、排序和重新排列。 
+可以对列进行筛选、排序和重新排列。
 * 若要筛选到特定特征，请单击“特征”列顶部的“筛选器”图标。
 
   ![列筛选器](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析单元测试代码覆盖率
 
-你可以使用 Visual Studio 代码覆盖率工具确定你的单元测试实际测试的产品代码量。 你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。
+可以使用 Visual Studio Enterprise 版本中提供的 Visual Studio 代码覆盖率工具确定你的单元测试实际测试的产品代码量。 你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。
 
 在解决方案中为测试方法运行代码覆盖率：
 
@@ -331,6 +331,8 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 |-|------------------------|
 |测试资源管理器.调试上下文中的所有测试|Ctrl+R、Ctrl+T    |
 |测试资源管理器.运行上下文中的所有测试|Ctrl+R、T   |
+|测试资源管理器.运行所有测试|Ctrl  +R  、A |
+|测试资源管理器.重复上次运行|Ctrl  +R  、L |
 
 > [!NOTE]
 > 无法运行抽象类中的测试，因为仅在抽象类中定义测试，但未实例化。 若要运行抽象类中的测试，请创建派生自该抽象类的类。
