@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72182607369094781050b94b1003398479dfe2cb
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 1131f9cf0e77fd4fe68e4bc5c033491aa6dd34e1
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459138"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585190"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>托管代码的“安全规则”规则集
-应包括 Microsoft 安全规则规则集以最大程度地报告潜在安全问题数。
+
+使用 Microsoft 安全规则规则集进行旧代码分析以最大程度地提高报告的潜在安全问题的数量。
 
 |规则|描述|
 |----------|-----------------|
@@ -66,13 +67,13 @@ ms.locfileid: "65459138"
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|请勿使用不安全的反序列化程序 BinaryFormatte|
 |[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|在未先设置 BinaryFormatter.Binder 的情况下，请不要调用 BinaryFormatter.Deserialize|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|在调用 BinaryFormatter.Deserialize 之前，确保设置 BinaryFormatter.Binder|
-|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|不要使用不安全反序列化程序 losformatter 将其中|
-|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|不要使用不安全反序列化程序 NetDataContractSerializer|
-|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|反序列化而无需第一个设置 NetDataContractSerializer.Binder|
+|[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md)|请勿使用不安全的反序列化程序 LosFormatter|
+|[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)|请勿使用不安全的反序列化程序 NetDataContractSerializer|
+|[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)|在未先设置 NetDataContractSerializer.Binder 的情况下，请不要反序列化|
 |[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md)|确保在反序列化之前设置 NetDataContractSerializer.Binder|
-|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|不要使用不安全反序列化程序 ObjectStateFormatter|
-|[CA2321](ca2321.md)|反序列化与使用 SimpleTypeResolver JavaScriptSerializer|
-|[CA2322](ca2322.md)|确保 JavaScriptSerializer 之前未初始化与 SimpleTypeResolver 反序列化|
+|[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md)|请勿使用不安全的反序列化程序 ObjectStateFormatter|
+|[CA2321](ca2321.md)|请勿使用 SimpleTypeResolver 对 JavaScriptSerializer 进行反序列化|
+|[CA2322](ca2322.md)|确保在反序列化之前没有使用 SimpleTypeResolver 初始化 JavaScriptSerializer|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|查看 SQL 注入漏洞的代码|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|查看 XSS 漏洞的代码|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|查看文件路径注入漏洞的代码|

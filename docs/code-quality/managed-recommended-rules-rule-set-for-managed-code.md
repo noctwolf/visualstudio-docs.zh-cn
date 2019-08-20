@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2060c9c2db3dd3d60efb07b1e23c445a47d54b5d
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823538"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585063"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>托管代码的“托管建议规则”规则集
-可以使用“Microsoft 托管建议规则”规则集重点解决托管代码中最关键的问题，包括潜在的安全漏洞、应用程序崩溃和其他重要的逻辑和设计错误。 应包含此规则集创建项目的任何自定义规则集中。
+
+使用 "Microsoft 托管建议规则" 规则集来重点关注托管代码中最关键的问题, 包括潜在的安全漏洞、应用程序崩溃和其他重要的逻辑和设计错误。 此规则集包括 "[托管最小规则](managed-minimum-rules-rule-set-for-managed-code.md)" 规则集中的所有规则。
+
+在你为项目创建的任何自定义规则集中包含此规则集。
 
 |规则|描述|
 |----------|-----------------|

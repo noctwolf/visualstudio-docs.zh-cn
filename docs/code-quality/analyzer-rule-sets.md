@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0be66559802188503c3b8f8c1c2cf2955dbd8a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68410fd43f182873c27e3d5fed742bed7ba8a4ed
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547951"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585144"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>分析器包规则集
 
 某些 NuGet 分析器包附带了预定义规则集。 例如, [CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet 分析器包附带的规则集 (从版本2.6.2 开始) 根据规则的类别 (如安全性、命名或性能) 启用或禁用规则。 使用规则集可以轻松地快速查看与特定规则类别相关的规则冲突。
 
-如果要从旧的 "FxCop" 分析迁移到基于 .NET Compiler Platform 的代码分析, 则这些规则集使你可以继续使用以前使用过的相同规则配置。
+如果要从旧的 "FxCop" 分析迁移到基于 .NET Compiler Platform 的代码分析, 则这些规则集使你可以继续使用[之前使用的](rule-set-reference.md)类似规则配置。
 
 ## <a name="use-analyzer-package-rule-sets"></a>使用分析器包规则集
 
@@ -58,7 +58,7 @@ ms.locfileid: "69547951"
 
 此外, 包中的每个规则类别都有两个规则集, 如性能或安全性。 一个规则集启用类别的所有规则, 一个规则集遵循类别中每个规则的默认严重性和启用设置。
 
-[CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet 分析器包包含以下类别的规则集, 这些规则集与可用于旧分析的规则集匹配:
+[CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet 分析器包包含以下类别的规则集:
 
 - 设计
 - 文档

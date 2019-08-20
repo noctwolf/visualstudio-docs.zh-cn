@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77a0878ff3e359a4cca5c52a2ea8118273bbf2a2
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820656"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585261"
 ---
 # <a name="native-minimum-rules-rule-set"></a>“本机最少量规则”规则集
-Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全漏洞和应用程序崩溃的最关键问题。 应在你为本机项目创建的任何自定义规则集中包含此规则集。
+
+Microsoft 本机最小规则重点关注本机代码中的最关键问题, 包括潜在的安全漏洞和应用程序崩溃。
+
+在您为本机项目创建的任何自定义规则集中包含此规则集。
 
 |规则|描述|
 |----------|-----------------|
@@ -68,7 +71,7 @@ Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全�
 |[C6518](../code-quality/c6518.md)|不可写的缓冲区的可写入大小|
 |[C6522](../code-quality/c6522.md)|无效大小的字符串类型|
 |[C6525](../code-quality/c6525.md)|无效大小字符串的不可访问的位置|
-|[C6527](../code-quality/c6527.md)|无效的批注：NeedsRelease 属性不用于 void 类型的值|
+|[C6527](../code-quality/c6527.md)|无效的批注:"NeedsRelease" 属性不能用于 void 类型的值|
 |[C6530](../code-quality/c6530.md)|无法识别的格式字符串样式|
 |[C6540](../code-quality/c6540.md)|对该函数使用属性批注将使其现有的所有 __declspec 批注无效|
 |[C6551](../code-quality/c6551.md)|大小规范无效：表达式不可分析|
@@ -89,18 +92,18 @@ Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全�
 |[C28182](../code-quality/c28182.md)|取消引用 NULL 指针。 该指针包含与另一指针相同的 NULL 值。|
 |[C28202](../code-quality/c28202.md)|非法引用非静态成员|
 |[C28203](../code-quality/c28203.md)|对类成员的不明确的引用。|
-|[C28205](../code-quality/c28205.md)|\_成功\_或\_上\_失败\_在非法上下文中使用|
+|[C28205](../code-quality/c28205.md)|\_在\_非法上下文\_中\_使用成功或\_失败|
 |[C28206](../code-quality/c28206.md)|若左操作数指向结构，则使用“->”|
 |[C28207](../code-quality/c28207.md)|若左操作数是一个结构，则使用“.”|
 |[C28210](../code-quality/c28210.md)|__on_failure 上下文的批注不得位于显式的 pre 上下文中|
 |[C28211](../code-quality/c28211.md)|SAL_context 所需的静态上下文名称|
 |[C28212](../code-quality/c28212.md)|批注所需的指针表达式|
-|[C28213](../code-quality/c28213.md)|\_使用\_声明\_批注\_批注必须用于引用，无需修改，之前的声明。|
+|[C28213](../code-quality/c28213.md)|\_Use\_decl 批注批注\_必须用于引用之前的声明, 而无需修改。\_|
 |[C28214](../code-quality/c28214.md)|特性参数的名称必须为 p1...p9|
 |[C28215](../code-quality/c28215.md)|不能将 typefix 应用于已包含 typefix 的参数|
 |[C28216](../code-quality/c28216.md)|checkReturn 批注仅应用于特定函数参数的后置条件。|
 |[C28217](../code-quality/c28217.md)|对于函数，批注的参数数目与在文件中找到的数目不匹配|
-|[C28218](../code-quality/c28218.md)|对于函数参数，批注的参数不匹配，在文件中找到|
+|[C28218](../code-quality/c28218.md)|对于函数参数, 批注的参数与在文件中找到的参数不匹配|
 |[C28219](../code-quality/c28219.md)|批注中的批注参数所需的枚举成员|
 |[C28220](../code-quality/c28220.md)|批注中的批注参数所需的整数表达式|
 |[C28221](../code-quality/c28221.md)|批注中的参数所需的字符串表达式|
@@ -137,7 +140,7 @@ Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全�
 |[C28267](../code-quality/c28267.md)|在函数中找到了批注的语法错误。|
 |[C28272](../code-quality/c28272.md)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](../code-quality/c28273.md)|对于函数，线索与函数声明不一致|
-|[C28275](../code-quality/c28275.md)|参数\_宏\_值\_为 null|
+|[C28275](../code-quality/c28275.md)|\_宏\_值的\_参数为 null|
 |[C28279](../code-quality/c28279.md)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](../code-quality/c28280.md)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](../code-quality/c28282.md)|格式字符串必须位于前置条件中|
@@ -145,7 +148,7 @@ Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全�
 |[C28286](../code-quality/c28286.md)|对于函数，在其结尾附近出现语法错误|
 |[C28287](../code-quality/c28287.md)|对于函数，在 \_At\_() 批注中出现语法错误（无法识别的参数名）|
 |[C28288](../code-quality/c28288.md)|对于函数，在 \_At\_() 批注中出现语法错误（无效的参数名）|
-|[C28289](../code-quality/c28289.md)|对于函数：ReadableTo 或 WritableTo 没有限制规范作为参数|
+|[C28289](../code-quality/c28289.md)|对于函数:ReadableTo 或 WritableTo 没有用作参数的限制规范|
 |[C28290](../code-quality/c28290.md)|函数的批注包含的外部对象数量多于实际的参数数量|
 |[C28291](../code-quality/c28291.md)|deref 级别 0 处的 post null/notnull 对于函数无意义。|
 |[C28300](../code-quality/c28300.md)|运算符的不可兼容类型的表达式操作数|
