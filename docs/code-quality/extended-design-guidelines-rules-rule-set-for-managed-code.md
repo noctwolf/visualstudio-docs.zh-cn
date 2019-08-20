@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975904"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585075"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 
-Microsoft 扩展的设计准则规则规则集扩展了基本设计准则规则，以最大程度地报告的可用性和可维护性问题。 额外的强调置于命名准则。 应考虑包含此规则设置，如果你的项目包括库代码，或者如果你想要强制实施用于编写易于维护的代码的最高标准。
+Microsoft 扩展的设计准则规则集对基本设计准则规则进行了扩展, 以最大程度地提高所报告的可用性和可维护性问题。 特别强调的是命名准则。 如果你的项目包含库代码, 或者如果你想要强制编写易于维护的代码, 则应考虑包含此规则集。
 
-扩展设计准则规则包括所有 Microsoft 基本设计准则规则。 基本设计准则规则包括所有 Microsoft 最少量建议规则。 有关详细信息，请参阅[托管代码的基本设计准则规则规则集](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)和[托管建议规则规则集的托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+扩展的设计准则规则包括 "[基本设计准则规则](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)" 规则集中的所有规则, 其中包括 "[托管建议规则](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)" 规则集中的规则。
 
-下表描述了中的 Microsoft 扩展的设计准则规则规则集的所有规则。
+下表介绍了 Microsoft 扩展的设计准则规则集中的所有规则。
 
 |规则|描述|
 |----------|-----------------|

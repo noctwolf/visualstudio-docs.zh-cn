@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816395"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584979"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>托管代码的“全球化规则”规则集
-可以使用 Microsoft 全球化规则规则集重点解决可能会阻止数据从不同的语言、 区域设置和区域性以正确显示在应用程序中的问题。 您应包含此规则集，如果你的应用程序进行本地化，全球化的、 或两个。
+
+使用 "Microsoft 全球化规则" 规则集将重点放在可能阻止应用程序中的数据在不同语言、区域设置和区域性中正确显示的问题。 如果你的应用程序已本地化、全球化, 则应包含此规则集。
 
 |规则|描述|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|指定 MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免快捷键重复|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|请不要对区域设置特定的字符串进行硬编码|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|不要对区域设置特定的字符串进行硬编码|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|请不要将文本作为本地化参数传递|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|指定 CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|指定 IFormatProvider|
