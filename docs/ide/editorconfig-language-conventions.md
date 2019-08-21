@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 7b88824e6be7dbb216aa14ca9a22fd692474ec2f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
+ms.openlocfilehash: 2231d3637b4a016d1da783d65d4237b9f5d6bab2
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787424"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551417"
 ---
 # <a name="language-conventions"></a>语言约定
 
@@ -38,11 +38,11 @@ Visual Studio 中 EditorConfig 的语言约定分为两类：适用于 Visual Ba
 
 对于每个语言约定，可指定一个定义是否或何时以此样式为首选项的值。 许多规则都接受 `true`（以此样式为首选项）或 `false`（不以此样式为首选项）值；其他规则接受诸如 `when_on_single_line` 或 `never` 之类的值。 此规则的第二部分指定严重性。 
 
-### <a name="severity"></a>严重性
+### <a name="severity"></a>Severity
 
 语言约定严重性指定在哪个级别执行该样式。 下表列出了可能的严重性值及其效果：
 
-严重性 | 效果
+Severity | 效果
 :------- | ------
 `none` | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。 “快速操作和重构”菜单中永远不会出现严重性为 `none` 的规则  。 大多数情况下，此情况被视为“禁用”或“忽略”。
 `silent`（在 Visual Studio 2017 版本 15.8 以及更高版本中也是 `refactoring`） | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。 严重性为 `silent` 的规则参与清理，并在“快速操作和重构”菜单中显示  。
@@ -1435,7 +1435,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 
 #### <a name="csharp_prefer_simple_default_expression"></a>csharp\_prefer\_simple\_default_expression
 
-此样式规则与在编译器可以推断表达式类型的情况下，[默认值表达式的 `default` 文本](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)的使用有关。
+此样式规则与在编译器可以推断表达式类型的情况下，[默认值表达式的 `default` 文本](/dotnet/csharp/language-reference/operators/default#default-literal)的使用有关。
 
 |||
 |-|-|

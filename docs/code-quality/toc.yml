@@ -162,31 +162,31 @@
           items:
             - name: 概述
               href: rule-set-reference.md
-            - name: “所有规则”规则集
+            - name: 所有规则
               href: all-rules-rule-set.md
-            - name: 托管代码的“基本更正规则”规则集
+            - name: 基本更正规则
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“基本设计准则规则”规则集
+            - name: 基本设计指南规则
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“扩展的更正规则”规则集
+            - name: 扩展的更正规则
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“扩展的设计准则规则”规则集
+            - name: 扩展的设计指南规则
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“全球化规则”规则集
+            - name: 全球化规则
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“托管最少量规则”规则集
+            - name: 托管最低规则
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“托管建议规则”规则集
+            - name: 托管建议规则
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: “混合最少量规则”规则集
+            - name: 混合最低规则
               href: mixed-minimum-rules-rule-set.md
-            - name: “混合建议规则”规则集
+            - name: 混合建议规则
               href: mixed-recommended-rules-rule-set.md
-            - name: “本机最少量规则”规则集
+            - name: 本机最低规则
               href: native-minimum-rules-rule-set.md
-            - name: “本机建议规则”规则集
+            - name: 本机建议规则
               href: native-recommended-rules-rule-set.md
-            - name: 托管代码的“安全规则”规则集
+            - name: 安全性规则
               href: security-rules-rule-set-for-managed-code.md
         - name: 禁止显示警告
           href: in-source-suppression-overview.md

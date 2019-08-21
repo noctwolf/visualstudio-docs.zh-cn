@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: 2ceedf18b936c0b1e8553ceb3bb1fdbc75035dfa
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483733"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551442"
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 
@@ -159,7 +159,7 @@ public MyMethod()
 
 ### <a name="remove-type-from-default-value-expression"></a>从“默认”值表达式中删除类型
 
-此快速操作从默认值表达式中删除值类型，并在编译器可推断出表达式类型时使用 [默认文本](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
+此快速操作从默认值表达式中删除值类型，并在编译器可推断出表达式类型时使用 [默认文本](/dotnet/csharp/language-reference/operators/default#default-literal)。
 
 ```csharp
 // Before
