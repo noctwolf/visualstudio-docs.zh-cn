@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 未使用的值分配、变量和参数
                       href: ide/reference/unused-values-parameters.md
+                    - name: 自动换行和对齐调用链接
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 自动换行、缩进和对齐参数
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 演练：基于使用情况生成代码
