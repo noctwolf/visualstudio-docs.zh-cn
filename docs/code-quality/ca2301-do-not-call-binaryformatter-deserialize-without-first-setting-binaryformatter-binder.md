@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2301
 - DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder
-ms.openlocfilehash: d9ac57ae00631088dacd9a23c502ba7693d5a903
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: 0291aa4d8130cfdc9b919e0c8430e56ef0f95296
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083907"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891185"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301：在未先设置 BinaryFormatter.Binder 的情况下，请不要调用 BinaryFormatter.Deserialize
 
@@ -31,25 +31,25 @@ ms.locfileid: "65083907"
 
 ## <a name="cause"></a>原因
 
-一个<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>反序列化方法是调用或引用，但未<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性集。
+在未设置属性的<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>情况下调用或引用反序列化方法。<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>规则说明
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-此规则查找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>反序列化方法调用或引用，当<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>不具有其<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>设置。 如果你想要禁止与任何反序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>而不考虑<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性，禁用此规则并[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)，并启用规则[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
+此规则在<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>没有<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>设置时<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>查找反序列化方法调用或引用。 如果要禁止任何反序列<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>化, 而不考虑<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性, 请禁用此规则并[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md), 并启用规则[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-- 如果可能，而是使用安全的序列化程序和**不允许攻击者能够指定任意类型进行反序列化**。 一些更安全的序列化程序包括：
+- 如果可能, 请使用安全的序列化程序, 而**不允许攻击者指定任意要反序列化的类型**。 一些更安全的序列化程序包括:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永远不会使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果必须使用类型解析程序，到预期的列表限制反序列化的类型。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-从不使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果必须使用类型解析程序, 请将反序列化类型限制为预期列表。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - Newtonsoft Json.NET-使用 TypeNameHandling.None。 如果必须为 TypeNameHandling 使用另一个值，限制对具有自定义 ISerializationBinder 预期列表反序列化的类型。
+  - Newtonsoft.json Json.NET-使用 TypeNameHandling。 如果必须为 TypeNameHandling 使用其他值, 请将反序列化类型限制为具有自定义 ISerializationBinder 的预期列表。
   - 协议缓冲区
-- 使序列化的数据篡改。 在序列化之后, 密码学角度上登录序列化的数据。 在反序列化之前验证的加密签名。 保护从公布的加密密钥和密钥轮换的设计。
-- 限制反序列化的类型。 实现一个自定义<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 反序列化之前<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>，将<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性设置为您的自定义的一个实例<xref:System.Runtime.Serialization.SerializationBinder>。 在重写<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果类型为意外，引发异常。
+- 使序列化的数据不会被篡改。 序列化后, 对序列化的数据进行加密签名。 在反序列化之前, 验证加密签名。 保护加密密钥不被泄露, 并为密钥轮换设计。
+- 限制反序列化的类型。 实现自定义<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 使用<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>反序列化之前, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>请将属性设置为自定义<xref:System.Runtime.Serialization.SerializationBinder>的实例。 在重写<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>的方法中, 如果类型意外, 将引发异常以停止反序列化。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
@@ -226,8 +226,8 @@ Public Class ExampleClass
 End Class
 ```
 
-## <a name="related-rules"></a>相关的规则
+## <a name="related-rules"></a>相关规则
 
-[CA2300:不要使用不安全反序列化程序 BinaryFormatter](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
+[CA2300:不要使用不安全的反序列化程序 BinaryFormatter](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
 
-[CA2302:确保在调用 BinaryFormatter.Deserialize 之前设置 BinaryFormatter.Binder](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)
+[CA2302:请确保在调用 BinaryFormatter 之前设置 BinaryFormatter](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)
