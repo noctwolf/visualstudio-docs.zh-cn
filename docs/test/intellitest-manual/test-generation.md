@@ -55,7 +55,7 @@ IntelliTest 需要构造对象时，将根据需要在序列中自动添加对�
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>参数化单元测试
 
-参数化单元测试 (PUT) 是采用参数的测试。 传统单元测试通常是 closed 方法，PUT 与之不同，可采用任何参数集。 是不是很简单？ 是的 - IntelliTest 将从此尝试[生成（最小）输入集](input-generation.md)，[完全涵盖](input-generation.md#dynamic-code-coverage)可从测试访问的代码。
+参数化单元测试 (PUT) 是采用参数的测试。 传统单元测试通常是封闭的方法，PUT 与之不同，可采用任何参数集。 是不是很简单？ 是的 - IntelliTest 将从此尝试[生成（最小）输入集](input-generation.md)，[完全涵盖](input-generation.md#dynamic-code-coverage)可从测试访问的代码。
 
 PUT 使用 [PexMethod](attribute-glossary.md#pexmethod) 自定义属性定义，其方式与 MSTest（或 NUnit、xUnit）类似。 PUT 实例方法按逻辑分组成使用 [PexClass](attribute-glossary.md#pexclass) 标记的类。 下面的示例展示了 MyPexTest 类中存储的简单 PUT：
 
@@ -136,7 +136,7 @@ void SomeTest() {...}
 只要 IntelliTest 能找到内部类型，就可以对其进行“测试”。 若要使 IntelliTest 找到类型，可通过 Visual Studio IntelliTest 向导将以下属性添加到产品或测试项目：
 
 ```csharp
-[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
+[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
 ```
 
 <a name="assumptions-and-assertions"></a>
