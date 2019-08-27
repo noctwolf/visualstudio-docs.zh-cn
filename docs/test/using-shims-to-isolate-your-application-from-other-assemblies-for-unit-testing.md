@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="BKMK_Limitations"></a>限制
 
-填充码无法用于 .NET 基类库 **mscorlib** 和 **System** 中的所有类型。
+填充码无法用于 .NET 基类库 mscorlib 和 System 中的所有类型。
 
 ## <a name="see-also"></a>请参阅
 
